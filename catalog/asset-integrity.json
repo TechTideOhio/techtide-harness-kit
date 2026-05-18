@@ -16655,7 +16655,7 @@
     },
     {
       "tree": "plugins",
-      "aggregate_sha256": "383ae400d6ac7a89f2d097ce6351e7720c5f9556b501b8613e5bd3ec43d46651",
+      "aggregate_sha256": "2437487202b4bf25a10f992da8fc50ffead66ca0613734bea490c61914e0670a",
       "files": [
         {
           "path": "plugins/techtide-cross-platform-agent-template/.codex-plugin/plugin.json",
@@ -16664,14 +16664,14 @@
         },
         {
           "path": "plugins/techtide-harness-kit/.codex-plugin/plugin.json",
-          "sha256": "0169d2dbb51b3e4f7e8a4cb30150c381eb7c0eab1d2f7f461c2677886a6a8543",
+          "sha256": "3b3f139a3e419d9fe3dfba8addc3d99542f93f79bfbb1ad53aabfa11879d2735",
           "bytes": 1937
         }
       ]
     },
     {
       "tree": ".claude-plugin",
-      "aggregate_sha256": "32df7a902eebe2ccd8df6152b50679fb620a3a88d49a6583c94d551e6aa6766a",
+      "aggregate_sha256": "feed37e2c238672ffb6baafee03795b2edd983f602149da11ed2fa3c5136c887",
       "files": [
         {
           "path": ".claude-plugin/marketplace.json",
@@ -16680,7 +16680,7 @@
         },
         {
           "path": ".claude-plugin/plugin.json",
-          "sha256": "ccc96415f17a3c13ac24ab571474b7af1e97b718ccef37d084e07e5d18440ec1",
+          "sha256": "3446034460091b060375b484fe221c33668610805e9a41e4d42480bbca62a1fb",
           "bytes": 35635
         },
         {
@@ -16692,11 +16692,11 @@
     },
     {
       "tree": ".cursor-plugin",
-      "aggregate_sha256": "02ae66ef9954d02d6c1e8c7b270120e0ac1f6d6e701c2aedcc2f4836345632a1",
+      "aggregate_sha256": "a03ab2eba624e778afbf0c5e8f7133a3017088c40495da94741282a05adf0f7b",
       "files": [
         {
           "path": ".cursor-plugin/plugin.json",
-          "sha256": "fd3d472577fa794d9620af7338a25152d08eb56ef34fe81c8b7addf8536f9d5d",
+          "sha256": "037b01ea76df419a2df2baf7097058d00d785811bb679274f4b091b802af06ee",
           "bytes": 33871
         },
         {
@@ -16708,11 +16708,11 @@
     },
     {
       "tree": ".github/plugin",
-      "aggregate_sha256": "b0a1d0e27d22ff5149d44fd0c91659ef618340fb332acba89766226aaa439e12",
+      "aggregate_sha256": "b3d8a51a006661252b38f837b84afe3d4b169741de2e64b2be1205b4e3018ab6",
       "files": [
         {
           "path": ".github/plugin/marketplace.json",
-          "sha256": "e0176f561859103fb6cbf184cef4ac4fba4aad7a774163b6a0530f26a4c09f0a",
+          "sha256": "1c01508c85c8537c959e6bc12d5641bb9394cb17dd1cefe58d6f4ff141c0cf69",
           "bytes": 835
         },
         {
@@ -21158,7 +21158,7 @@
     },
     {
       "path": "SECURITY.md",
-      "sha256": "cc45e310bb6314464a0c152ae499dc0b7cbfa154a9b062a0b9b2fee9f2d7e9b5",
+      "sha256": "24e589a442133da9d922b2f77967dc582d48c10453631f4b0011ec6f3ae8b182",
       "bytes": 7016
     },
     {
@@ -21193,7 +21193,7 @@
     },
     {
       "path": "package.json",
-      "sha256": "ef2a6019172e03a13de2564960e35c00daa68159627f31ed89c0c8d521b9750e",
+      "sha256": "7285f42e20391c991fa636cac6a8d676becddbbf07f6272daf33fa835f8e997d",
       "bytes": 6553
     },
     {
@@ -21202,5 +21202,5 @@
       "bytes": 3961
     }
   ],
-  "aggregate_sha256": "3b0b06d6f5d400ccec3c2b8ea84ff289a4003da8f9061c461065b6fc082cf185"
+  "aggregate_sha256": "eb2b66a19f493746496d71880594428087aa7b2788bbe735c1279b9818d17a2b"
 }

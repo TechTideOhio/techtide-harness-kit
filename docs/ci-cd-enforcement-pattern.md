@@ -1,4 +1,4 @@
-# CI/CD Enforcement Pattern
+﻿# CI/CD Enforcement Pattern
 
 > How to enforce TFA live-guard and review agents at the pipeline layer so guardrails run without developer opt-in.
 
@@ -18,21 +18,21 @@ Pipeline enforcement solves all three: the guardrail runs at the merge gate, reg
 
 ```
 PR opened
-    │
-    ▼
-[CI: thk-review-gate]          ← BEFORE layer: review agents
-    │
-    ▼
+    â”‚
+    â–¼
+[CI: thk-review-gate]          â† BEFORE layer: review agents
+    â”‚
+    â–¼
 Merge to main
-    │
-    ▼
-[CD: thk-live-guard-gate]      ← AT layer: live-guard agents
-    │
-    ▼
+    â”‚
+    â–¼
+[CD: thk-live-guard-gate]      â† AT layer: live-guard agents
+    â”‚
+    â–¼
 Deployment executes
-    │
-    ▼
-[CD: thk-verify-step]          ← AFTER layer: verification + evidence artifact
+    â”‚
+    â–¼
+[CD: thk-verify-step]          â† AFTER layer: verification + evidence artifact
 ```
 
 Each gate uses the same `thk-export-agents` CLI to install the correct agent harness into the pipeline runner, then invokes it via the platform's native agent execution mechanism.
@@ -52,7 +52,7 @@ Or pin via `package.json`:
 ```json
 {
   "devDependencies": {
-    "@techtide/harness-kit": "^1.8.0"
+    "@techtide/harness-kit": "^1.0.0"
   }
 }
 ```

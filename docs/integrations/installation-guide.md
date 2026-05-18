@@ -1,4 +1,4 @@
-# Installation Guide - TechTide Harness Kit
+﻿# Installation Guide - TechTide Harness Kit
 
 **Audience:** engineers setting up TechTide Harness Kit in any supported coding harness.
 **Scope:** all eight install paths with prerequisites, step-by-step commands, verification, advanced configuration, pinning, and troubleshooting.
@@ -92,14 +92,14 @@ Add to `~/.claude` (user-level) or `<repo>/.claude`
       "source": {
         "source": "github",
         "repo": "TechTideOhio/techtide-harness-kit",
-        "ref": "v1.8.0"
+        "ref": "v1.0.0"
       }
     }
   }
 }
 ```
 
-Replace `v1.8.0` with any tag from the
+Replace `v1.0.0` with any tag from the
 [releases page](https://github.com/TechTideOhio/techtide-harness-kit/releases).
 
 ### What gets installed
@@ -165,7 +165,7 @@ Replace `master` in the URL with a tag or SHA:
 ```json
 {
   "extraKnownMarketplaces": [
-    "https://raw.githubusercontent.com/TechTideOhio/techtide-harness-kit/v1.8.0/.github/plugin/marketplace.json"
+    "https://raw.githubusercontent.com/TechTideOhio/techtide-harness-kit/v1.0.0/.github/plugin/marketplace.json"
   ]
 }
 ```
@@ -199,12 +199,12 @@ Replace `master` in the URL with a tag or SHA:
 ```bash
 git clone https://github.com/TechTideOhio/techtide-harness-kit
 # For a pinned version:
-git clone --branch v1.8.0 https://github.com/TechTideOhio/techtide-harness-kit
+git clone --branch v1.0.0 https://github.com/TechTideOhio/techtide-harness-kit
 ```
 
 **Step 2 - register the plugin directory in Cursor:**
 
-Open Cursor → `Settings` → `Plugins` → `Add Plugin Directory` → select the cloned directory.
+Open Cursor â†’ `Settings` â†’ `Plugins` â†’ `Add Plugin Directory` â†’ select the cloned directory.
 
 Or via the Cursor Extension API (e.g., from a VS Code extension or workspace script):
 
@@ -225,7 +225,7 @@ manifest enumerates all **331 Cursor agent adapters** explicitly via the
 ```json
 {
   "name": "techtide-harness-kit",
-  "version": "1.8.0",
+  "version": "1.0.0",
   "agents": [
     "agents/aws/aws-cost-optimization/harnesses/cursor.agent.md",
     "agents/aws/aws-security-posture/harnesses/cursor.agent.md",
@@ -241,7 +241,7 @@ Cursor also auto-discovers `rules/` at the repo root.
 ```bash
 cd techtide-harness-kit
 git fetch origin
-git checkout v1.8.0   # or `git pull origin master` for latest
+git checkout v1.0.0   # or `git pull origin master` for latest
 ```
 
 Cursor picks up changes automatically after the directory is re-scanned.
@@ -293,7 +293,7 @@ cd techtide-harness-kit
 
 **Step 2 - add Powers in Kiro:**
 
-In Kiro, open the **Powers panel** → `Add Custom Power` → `Local Directory`.
+In Kiro, open the **Powers panel** â†’ `Add Custom Power` â†’ `Local Directory`.
 
 Paste the absolute path for each Power you need, one at a time. For example:
 
@@ -426,7 +426,7 @@ enabled = true
 [marketplaces.techtide-harness-kit]
 source_type = "git"
 source = "https://github.com/TechTideOhio/techtide-harness-kit.git"
-ref = "v1.8.0"
+ref = "v1.0.0"
 ```
 
 ### What gets installed
@@ -483,7 +483,7 @@ versioned exports with full control over what gets written to your repo.
 npm install @techtide/harness-kit@latest
 
 # Pinned release (recommended for production)
-npm install @techtide/harness-kit@1.8.0
+npm install @techtide/harness-kit@1.0.0
 ```
 
 **Step 2 - export agents for your platform and role:**
@@ -591,12 +591,12 @@ silently pull in new agents and behavior changes. Pin when:
 
 | Harness | How to pin |
 |---------|-----------|
-| Claude Code | Set `"ref": "v1.8.0"` in `extraKnownMarketplaces` source |
+| Claude Code | Set `"ref": "v1.0.0"` in `extraKnownMarketplaces` source |
 | Copilot CLI | Replace `master` with tag in the raw URL |
-| Cursor | `git checkout v1.8.0` in the cloned repo |
-| Kiro | `git checkout v1.8.0` in the cloned repo |
-| Gemini / npm | `npm install @techtide/harness-kit@1.8.0` |
-| Codex | Set `ref = "v1.8.0"` in `config.toml` |
+| Cursor | `git checkout v1.0.0` in the cloned repo |
+| Kiro | `git checkout v1.0.0` in the cloned repo |
+| Gemini / npm | `npm install @techtide/harness-kit@1.0.0` |
+| Codex | Set `ref = "v1.0.0"` in `config.toml` |
 | thk-export-agents | Pin the npm package version |
 | Skills CLI | **Not supported** - avoid for reproducible environments |
 

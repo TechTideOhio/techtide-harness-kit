@@ -1,4 +1,4 @@
-# Skills CLI Integration Guide
+﻿# Skills CLI Integration Guide
 
 This document covers the three supported install paths for TechTide Harness Kit content, their trust postures, and verified command syntax. It is intended for engineers who want to understand what each path fetches, from where, and with what level of integrity assurance before running anything.
 
@@ -20,7 +20,7 @@ Install the versioned npm package. The exporter CLI (`thk-export-agents`) is bun
 
 ```bash
 # Install a specific version
-npm install @techtide/harness-kit@1.8.0
+npm install @techtide/harness-kit@1.0.0
 
 # Or install latest and lock via package-lock.json / npm-shrinkwrap.json
 npm install @techtide/harness-kit@latest

@@ -1,6 +1,6 @@
 {
   "name": "techtide-harness-kit",
-  "version": "2.0.1",
+  "version": "1.0.0",
   "description": "Portable, eval-backed marketplace for enterprise agent skills, specialist agents, rules, MCP references, and trust evidence.",
   "author": {
     "name": "Alex Cinovoj / TechTide",
