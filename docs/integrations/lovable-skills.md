@@ -24,16 +24,16 @@ This writes one Lovable-compliant archive per supported vibe-coding skill. The d
 
 ```text
 exports/lovable/
-├── README.md
-├── manifest.json
-├── archives/
-│   ├── lovable-native-packaging-bridge.zip
-│   └── ...
-└── skills/
-    ├── lovable-native-packaging-bridge/
-    │   ├── SKILL.md
-    │   └── references/
-    └── ...
+README.md
+manifest.json
+archives/
+  lovable-native-packaging-bridge.zip
+  ...
+skills/
+  lovable-native-packaging-bridge/
+    SKILL.md
+    references/
+  ...
 ```
 
 Upload one ZIP at a time in Lovable:
@@ -42,6 +42,36 @@ Upload one ZIP at a time in Lovable:
 2. Choose Archive.
 3. Upload one ZIP from `exports/lovable/archives/`.
 4. Repeat for each skill your workspace needs.
+
+## Use The GitHub Tab
+
+Lovable's GitHub tab expects a public repository URL, not a release asset URL.
+These featured starter repositories contain exactly one skill each and can be
+pasted directly into the Repository URL field:
+
+```text
+https://github.com/TechTideOhio/lovable-native-packaging-bridge
+```
+
+```text
+https://github.com/TechTideOhio/techtide-lovable-build-loop-operator
+```
+
+```text
+https://github.com/TechTideOhio/techtide-lovable-production-handoff
+```
+
+```text
+https://github.com/TechTideOhio/techtide-v0-ui-prompt-hardener
+```
+
+```text
+https://github.com/TechTideOhio/techtide-replit-fullstack-bootstrap
+```
+
+Use the Archive tab for the release ZIP assets. A release download URL such as
+`https://github.com/TechTideOhio/techtide-harness-kit/releases/download/.../*.zip`
+is not a public repository URL.
 
 ## Generate One Skill
 
@@ -74,7 +104,7 @@ The validator checks that every generated package has `SKILL.md`, stays within L
 For public distribution, generate the packages with a release tag:
 
 ```bash
-node scripts/generate-lovable-skills.mjs --write --release-tag v1.0.2
+node scripts/generate-lovable-skills.mjs --write --release-tag v1.0.3
 ```
 
 Then upload the files in `exports/lovable/archives/` to the matching GitHub release. The generated manifest includes release asset URLs for each archive.

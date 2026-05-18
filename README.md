@@ -37,33 +37,34 @@ Do not import the full repo or the `skills/lovable` folder into Lovable. Lovable
 currently imports one skill per public repository or ZIP archive, so large repo
 URLs can fail with a file-count error.
 
-Copy one of these release links into Lovable's import flow, or download the ZIP
-and upload it from the Archive tab. Each block is separate so it can be copied
-on its own.
+Use Lovable's GitHub tab with one of these public one-skill repository URLs.
+Each block is separate so it can be copied on its own.
 
 ```text
-https://github.com/TechTideOhio/techtide-harness-kit/releases/download/v1.0.2/lovable-native-packaging-bridge.zip
+https://github.com/TechTideOhio/lovable-native-packaging-bridge
 ```
 
 ```text
-https://github.com/TechTideOhio/techtide-harness-kit/releases/download/v1.0.2/techtide-lovable-build-loop-operator.zip
+https://github.com/TechTideOhio/techtide-lovable-build-loop-operator
 ```
 
 ```text
-https://github.com/TechTideOhio/techtide-harness-kit/releases/download/v1.0.2/techtide-lovable-production-handoff.zip
+https://github.com/TechTideOhio/techtide-lovable-production-handoff
 ```
 
 ```text
-https://github.com/TechTideOhio/techtide-harness-kit/releases/download/v1.0.2/techtide-v0-ui-prompt-hardener.zip
+https://github.com/TechTideOhio/techtide-v0-ui-prompt-hardener
 ```
 
 ```text
-https://github.com/TechTideOhio/techtide-harness-kit/releases/download/v1.0.2/techtide-replit-fullstack-bootstrap.zip
+https://github.com/TechTideOhio/techtide-replit-fullstack-bootstrap
 ```
 
-Full instructions and all generated packages are in
+For Lovable's Archive tab, download one ZIP from the
+[v1.0.3 release](https://github.com/TechTideOhio/techtide-harness-kit/releases/tag/v1.0.3)
+instead. Full instructions and all generated packages are in
 [docs/integrations/lovable-skills.md](docs/integrations/lovable-skills.md) and
-the [v1.0.2 release](https://github.com/TechTideOhio/techtide-harness-kit/releases/tag/v1.0.2).
+the release assets.
 
 ## What This Is
 
