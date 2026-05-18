@@ -15,6 +15,7 @@
   </p>
 
   <p>
+    <a href="#lovable-skills-ready">Lovable Skills</a> |
     <a href="#try-in-10-minutes">Try in 10 minutes</a> |
     <a href="#what-this-is">What this is</a> |
     <a href="#catalog">Catalog</a> |
@@ -25,6 +26,31 @@
 
   <img src="assets/readme/showcase-hero.svg" alt="TechTide Harness Kit product overview" width="100%" />
 </div>
+
+## Lovable Skills Ready
+
+Lovable Skills launched on May 18, 2026. TechTide Harness Kit ships a
+Lovable-compatible export path today: **71 focused skill ZIPs**, one skill per
+archive, each shaped with `SKILL.md` in the package root or one wrapping folder.
+
+Do not import the full repo or the `skills/lovable` folder into Lovable. Lovable
+currently imports one skill per public repository or ZIP archive, so large repo
+URLs can fail with a file-count error.
+
+Copy one of these release links into Lovable's import flow, or download the ZIP
+and upload it from the Archive tab:
+
+```text
+https://github.com/TechTideOhio/techtide-harness-kit/releases/download/v1.0.1/lovable-native-packaging-bridge.zip
+https://github.com/TechTideOhio/techtide-harness-kit/releases/download/v1.0.1/techtide-lovable-build-loop-operator.zip
+https://github.com/TechTideOhio/techtide-harness-kit/releases/download/v1.0.1/techtide-lovable-production-handoff.zip
+https://github.com/TechTideOhio/techtide-harness-kit/releases/download/v1.0.1/techtide-v0-ui-prompt-hardener.zip
+https://github.com/TechTideOhio/techtide-harness-kit/releases/download/v1.0.1/techtide-replit-fullstack-bootstrap.zip
+```
+
+Full instructions and all generated packages are in
+[docs/integrations/lovable-skills.md](docs/integrations/lovable-skills.md) and
+the [v1.0.1 release](https://github.com/TechTideOhio/techtide-harness-kit/releases/tag/v1.0.1).
 
 ## What This Is
 
