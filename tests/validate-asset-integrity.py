@@ -126,7 +126,11 @@ def walk_tree(tree: str) -> list[dict]:
     if not base.is_dir():
         raise AssertionError(f"missing tree: {tree}")
     files: list[dict] = []
-    for path in sorted(p for p in base.rglob("*") if p.is_file()):
+    paths = sorted(
+        (p for p in base.rglob("*") if p.is_file()),
+        key=lambda p: p.relative_to(ROOT).as_posix().casefold(),
+    )
+    for path in paths:
         if path.is_symlink():
             # Symlinks are followed by is_file() but their target may lie
             # outside the repo, producing a misleading integrity guarantee.

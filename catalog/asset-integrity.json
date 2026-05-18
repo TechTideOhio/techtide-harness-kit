@@ -16740,7 +16740,7 @@
     },
     {
       "tree": "tests",
-      "aggregate_sha256": "c627c5efd72f3124778772f3951b388dec7e6bc6f24a7c2a598ab8989e294e68",
+      "aggregate_sha256": "49a905071c1f50fe96b6c32e097f1eb3fdd17b2a9ebbbb93a2c4c06c8e511d85",
       "files": [
         {
           "path": "tests/_generate_maestro_routing_fixtures.py",
@@ -21059,8 +21059,8 @@
         },
         {
           "path": "tests/validate-asset-integrity.py",
-          "sha256": "ecd7b4b4ef211fd776645d06b8e948b64dc077dfcd28da7fe2bb4d41bf569173",
-          "bytes": 7866
+          "sha256": "62abe68b43fe224592903ef233cf601b2bb9519a793d7c8922ed09fbbd22f0d9",
+          "bytes": 7966
         },
         {
           "path": "tests/validate-aws-progressive-disclosure.py",
@@ -21144,8 +21144,8 @@
         },
         {
           "path": "tests/validate-skill-manifest.py",
-          "sha256": "db25ba24907fea742088d3768a0a565e4579040780895dde8cb4934b67ab3712",
-          "bytes": 3904
+          "sha256": "abb41cb1a802884d9f514133877ba8453a69e1461a190f3eb8866d095c4ee045",
+          "bytes": 4004
         }
       ]
     }
@@ -21202,5 +21202,5 @@
       "bytes": 3961
     }
   ],
-  "aggregate_sha256": "b72938c01a4ba63967e9e67d95306860a8cd8e944612e84e301be812de7e9016"
+  "aggregate_sha256": "3b0b06d6f5d400ccec3c2b8ea84ff289a4003da8f9061c461065b6fc082cf185"
 }

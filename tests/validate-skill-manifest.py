@@ -41,7 +41,11 @@ def load_json(path: Path):
 
 def skill_files(skill_path: Path) -> list[dict]:
     files: list[dict] = []
-    for path in sorted(p for p in skill_path.rglob("*") if p.is_file()):
+    paths = sorted(
+        (p for p in skill_path.rglob("*") if p.is_file()),
+        key=lambda p: p.relative_to(ROOT).as_posix().casefold(),
+    )
+    for path in paths:
         rel = path.relative_to(ROOT).as_posix()
         data = canonical_bytes(path)
         files.append({
