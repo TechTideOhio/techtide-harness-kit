@@ -1,0 +1,6 @@
+{
+  "route": [
+    "techtide-aws-live-ecs-rollout-guard-agent"
+  ],
+  "mode": "live-guard-gate"
+}

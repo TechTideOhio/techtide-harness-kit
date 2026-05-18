@@ -1,0 +1,38 @@
+name: Enterprise mission proposal
+description: Propose a discover/build/govern/prove/transfer mission pack.
+title: "[mission]: "
+labels: ["enterprise-mission", "needs-triage"]
+body:
+  - type: dropdown
+    id: mission
+    attributes:
+      label: Mission stage
+      options:
+        - discover
+        - build
+        - govern
+        - prove
+        - transfer
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Workflow and buyer/user
+      description: Describe the repeatable enterprise workflow and who owns it.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Source evidence
+      description: Link official docs, public examples, or sanitized implementation notes.
+    validations:
+      required: true
+  - type: textarea
+    id: gates
+    attributes:
+      label: Approval gates and evals
+      description: List required approval gates, test fixtures, and validation commands.
+    validations:
+      required: true

@@ -1,0 +1,34 @@
+{
+  "id": "techtide-terraform-reviewer",
+  "name": "Terraform Reviewer",
+  "type": "agent",
+  "provider": "terraform",
+  "harnesses": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "gemini",
+    "kiro",
+    "other"
+  ],
+  "summary": "Review Terraform modules, plans, state assumptions, and provider usage for safety, drift, and least privilege.",
+  "source_type": "original",
+  "official_docs": [
+    "https://developer.hashicorp.com/terraform/docs",
+    "https://developer.hashicorp.com/terraform/cli/commands/plan"
+  ],
+  "security_notes": "Default to review and plan mode. Do not apply Terraform changes unless the user explicitly requests apply and the workspace is confirmed.",
+  "last_verified": "2026-04-27",
+  "path": "agents/terraform/techtide-terraform-reviewer",
+  "author": "github: TechTide",
+  "version": "0.1.0",
+  "harness_variants": {
+    "codex": "agents/terraform/techtide-terraform-reviewer/harnesses/codex.toml",
+    "claude-code": "agents/terraform/techtide-terraform-reviewer/harnesses/claude-code.agent.md",
+    "copilot": "agents/terraform/techtide-terraform-reviewer/harnesses/copilot.agent.md",
+    "cursor": "agents/terraform/techtide-terraform-reviewer/harnesses/cursor.agent.md",
+    "gemini": "agents/terraform/techtide-terraform-reviewer/harnesses/gemini.agent.md",
+    "kiro-ide": "agents/terraform/techtide-terraform-reviewer/harnesses/kiro-ide.agent.md",
+    "kiro-cli": "agents/terraform/techtide-terraform-reviewer/harnesses/kiro-cli.agent.json"
+  }
+}

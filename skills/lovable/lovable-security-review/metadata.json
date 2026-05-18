@@ -1,0 +1,37 @@
+{
+  "id": "lovable-security-review",
+  "name": "Lovable Security Review",
+  "type": "skill",
+  "provider": "lovable",
+  "harnesses": [
+    "other"
+  ],
+  "summary": "Review Lovable code changes for auth, authorization, injection, secrets, dependency risk, and unsafe defaults.",
+  "source_type": "reference-only",
+  "official_docs": [
+    "https://docs.lovable.dev/features/skills"
+  ],
+  "security_notes": "Review source, license, code changes, secrets, and provider-specific activation semantics before installation, export, or production use.",
+  "last_verified": "2026-05-17",
+  "path": "skills/lovable/lovable-security-review",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/external-skill-research.mjs",
+  "version": "0.1.0",
+  "lifecycle": "beta",
+  "source_urls": [
+    "https://github.com/alirezarezvani/claude-skills",
+    "https://github.com/sickn33/antigravity-awesome-skills",
+    "https://docs.lovable.dev/features/skills"
+  ],
+  "source_repo": "https://github.com/alirezarezvani/claude-skills",
+  "source_path": "synthesized/capabilities/security-review.md",
+  "source_license": "documentation-reference-only",
+  "source_commit": "2026-05-17T08:01:49Z",
+  "upstream_author": "TechTide synthesis from verified sources",
+  "import_mode": "techtide-synthesis",
+  "verification_status": "candidate-valid",
+  "duplicate_hash": "81d5549d250a8161b36a72c40f838f64d0d09875445e857b34d54b7ac4a17fb0",
+  "native_skill_surface": "Lovable workspace skills imported from chat, GitHub, or ZIP",
+  "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
+}

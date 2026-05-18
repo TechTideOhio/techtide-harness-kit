@@ -1,0 +1,37 @@
+{
+  "id": "lovable-multi-agent-orchestration",
+  "name": "Lovable Multi-Agent Orchestration",
+  "type": "skill",
+  "provider": "lovable",
+  "harnesses": [
+    "other"
+  ],
+  "summary": "Coordinate Lovable with other agents by splitting work into bounded scopes, clear contracts, integration checks, and review gates.",
+  "source_type": "reference-only",
+  "official_docs": [
+    "https://docs.lovable.dev/features/skills"
+  ],
+  "security_notes": "Review source, license, code changes, secrets, and provider-specific activation semantics before installation, export, or production use.",
+  "last_verified": "2026-05-17",
+  "path": "skills/lovable/lovable-multi-agent-orchestration",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/external-skill-research.mjs",
+  "version": "0.1.0",
+  "lifecycle": "beta",
+  "source_urls": [
+    "https://github.com/gsd-build/get-shit-done",
+    "https://github.com/alirezarezvani/claude-skills",
+    "https://docs.lovable.dev/features/skills"
+  ],
+  "source_repo": "https://github.com/gsd-build/get-shit-done",
+  "source_path": "synthesized/capabilities/multi-agent-orchestration.md",
+  "source_license": "documentation-reference-only",
+  "source_commit": "2026-05-17T18:53:56Z",
+  "upstream_author": "TechTide synthesis from verified sources",
+  "import_mode": "techtide-synthesis",
+  "verification_status": "candidate-valid",
+  "duplicate_hash": "7e39963d4c2e699ac508d61e2aa5965ad26c5bd2c52ec6a1c3147c865df146f9",
+  "native_skill_surface": "Lovable workspace skills imported from chat, GitHub, or ZIP",
+  "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
+}

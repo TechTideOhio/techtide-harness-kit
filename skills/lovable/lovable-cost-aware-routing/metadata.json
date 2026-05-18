@@ -1,0 +1,37 @@
+{
+  "id": "lovable-cost-aware-routing",
+  "name": "Lovable Cost Aware Routing",
+  "type": "skill",
+  "provider": "lovable",
+  "harnesses": [
+    "other"
+  ],
+  "summary": "Route Lovable and companion tool work by task risk, context size, model cost, latency, and verification needs.",
+  "source_type": "reference-only",
+  "official_docs": [
+    "https://docs.lovable.dev/features/skills"
+  ],
+  "security_notes": "Review source, license, code changes, secrets, and provider-specific activation semantics before installation, export, or production use.",
+  "last_verified": "2026-05-17",
+  "path": "skills/lovable/lovable-cost-aware-routing",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/external-skill-research.mjs",
+  "version": "0.1.0",
+  "lifecycle": "beta",
+  "source_urls": [
+    "https://github.com/alirezarezvani/claude-skills",
+    "https://github.com/gsd-build/get-shit-done",
+    "https://docs.lovable.dev/features/skills"
+  ],
+  "source_repo": "https://github.com/alirezarezvani/claude-skills",
+  "source_path": "synthesized/capabilities/cost-aware-routing.md",
+  "source_license": "documentation-reference-only",
+  "source_commit": "2026-05-17T08:01:49Z",
+  "upstream_author": "TechTide synthesis from verified sources",
+  "import_mode": "techtide-synthesis",
+  "verification_status": "candidate-valid",
+  "duplicate_hash": "063232309c5cc153911d309c447f2e284a7c3ee69a54ba07242df724e29bc20d",
+  "native_skill_surface": "Lovable workspace skills imported from chat, GitHub, or ZIP",
+  "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
+}

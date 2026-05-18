@@ -1,0 +1,36 @@
+{
+  "id": "techtide-aws-live-serverless-release-guard-agent",
+  "name": "AWS Live Serverless Release Guard",
+  "type": "agent",
+  "provider": "aws",
+  "harnesses": [
+    "codex",
+    "copilot",
+    "claude-code",
+    "cursor",
+    "gemini",
+    "kiro"
+  ],
+  "summary": "Agent for techtide-aws-live-serverless-release-guard. Guard live Lambda and serverless release actions with alias targeting, canary or linear rollout discipline, alarms, rollback hooks, and explicit production approval.",
+  "source_type": "adapted",
+  "official_docs": [
+    "https://docs.aws.amazon.com/lambda/latest/dg/configuration-aliases.html",
+    "https://docs.aws.amazon.com/lambda/latest/dg/configuring-alias-routing.html",
+    "https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html",
+    "https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-configurations.html"
+  ],
+  "security_notes": "Live serverless rollout actions require exact alias or deployment targeting, explicit approval, alarms, rollback posture, and post-change observation. Never shift traffic casually in a live environment.",
+  "last_verified": "2026-04-29",
+  "path": "agents/aws/techtide-aws-live-serverless-release-guard-agent",
+  "author": "github: TechTide",
+  "version": "0.2.0",
+  "harness_variants": {
+    "codex": "agents/aws/techtide-aws-live-serverless-release-guard-agent/harnesses/codex.toml",
+    "claude-code": "agents/aws/techtide-aws-live-serverless-release-guard-agent/harnesses/claude-code.agent.md",
+    "copilot": "agents/aws/techtide-aws-live-serverless-release-guard-agent/harnesses/copilot.agent.md",
+    "cursor": "agents/aws/techtide-aws-live-serverless-release-guard-agent/harnesses/cursor.agent.md",
+    "gemini": "agents/aws/techtide-aws-live-serverless-release-guard-agent/harnesses/gemini.agent.md",
+    "kiro-ide": "agents/aws/techtide-aws-live-serverless-release-guard-agent/harnesses/kiro-ide.agent.md",
+    "kiro-cli": "agents/aws/techtide-aws-live-serverless-release-guard-agent/harnesses/kiro-cli.agent.json"
+  }
+}

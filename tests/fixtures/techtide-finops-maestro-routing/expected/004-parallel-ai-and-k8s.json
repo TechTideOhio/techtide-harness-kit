@@ -1,0 +1,4 @@
+{
+  "route": ["techtide-finops-ai-economist-agent", "techtide-finops-kubernetes-rightsizer-agent"],
+  "mode": "parallel (2)"
+}

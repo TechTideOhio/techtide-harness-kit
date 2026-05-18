@@ -1,0 +1,255 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - master
+  # Manual dispatch for forensics/recovery: lets a maintainer re-run the
+  # release pipeline without producing a no-op commit. semantic-release
+  # is idempotent - if the latest tag already covers HEAD it logs
+  # "There are no relevant changes, so no new version is released."
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Run semantic-release in --dry-run mode (no publish, no tag, no commit)."
+        required: false
+        default: "false"
+        type: choice
+        options: ["false", "true"]
+
+# Top-level least-privilege baseline (Scorecard Token-Permissions).
+# Write scopes are granted only on the `release` job that needs them.
+permissions:
+  contents: read
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      # contents:write - semantic-release pushes the chore(release) commit
+      #   and creates the GitHub release/tag.
+      # issues:write, pull-requests:write - semantic-release/github comments
+      #   on related issues/PRs (disabled in our config but the plugin
+      #   probes the scope at startup).
+      # id-token:write - OIDC for npm provenance and Sigstore attestations.
+      # attestations:write - actions/attest-build-provenance writes the
+      #   attestation bundle.
+      contents: write
+      issues: write
+      pull-requests: write
+      id-token: write
+      attestations: write
+    steps:
+      # persist-credentials must be true here because @semantic-release/git
+      # pushes the `chore(release): X.Y.Z [skip ci]` commit (CHANGELOG.md +
+      # package.json bump) back to master. Without persisted creds the push
+      # silently no-ops and no tag/release is produced, which previously
+      # blocked v1.4.0. This workflow only runs on push to master (trusted
+      # ref) so token persistence is acceptable.
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
+        with:
+          node-version: "22"
+
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: "3.x"
+
+      - name: Capture pre-release state
+        run: |
+          PRE_TAG="$(git describe --tags --abbrev=0 2>/dev/null || echo none)"
+          PRE_VERSION="$(node -p "require('./package.json').version")"
+          echo "PRE_TAG=$PRE_TAG" >> "$GITHUB_ENV"
+          echo "PRE_VERSION=$PRE_VERSION" >> "$GITHUB_ENV"
+
+      # Diagnostics: surface the inputs semantic-release sees. If the
+      # pipeline silently no-ops, this section makes it obvious whether
+      # NPM_TOKEN is wired, what commits are eligible, and whether the
+      # remote URL is configured. No secret values are printed.
+      - name: Pre-release diagnostics
+        env:
+          NPM_TOKEN_PRESENT: ${{ secrets.NPM_TOKEN != '' }}
+        run: |
+          echo "::group::Token presence"
+          echo "NPM_TOKEN configured: ${NPM_TOKEN_PRESENT}"
+          echo "GITHUB_TOKEN scopes (probe): contents=write expected for this job"
+          echo "::endgroup::"
+          echo "::group::Git remote and HEAD"
+          git remote -v
+          git log --oneline -10
+          echo "::endgroup::"
+          echo "::group::Commits since last tag"
+          if [ "$PRE_TAG" != "none" ]; then
+            git log --oneline "$PRE_TAG"..HEAD
+          else
+            echo "No previous tag; semantic-release will treat all history as candidate."
+          fi
+          echo "::endgroup::"
+          echo "::group::package.json identity"
+          node -e "const p=require('./package.json'); console.log(JSON.stringify({name:p.name,version:p.version,repository:p.repository,publishConfig:p.publishConfig}, null, 2));"
+          echo "::endgroup::"
+
+      - name: Validate
+        run: |
+          python3 tests/validate-catalog.py
+          python3 tests/validate-skill-manifest.py
+          python3 tests/validate-asset-integrity.py
+          python3 tests/validate-mcp-trust-matrix.py
+          python3 tests/validate-no-lifecycle-scripts.py
+          python3 tests/validate-links.py --offline
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate SBOM (pre-release source SBOM)
+        uses: anchore/sbom-action@e22c389904149dbc22b58101806040fa8d37a610 # v0.24.0
+        with:
+          path: .
+          format: spdx-json
+          output-file: sbom.spdx.json
+          upload-artifact: false
+          upload-release-assets: false
+
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          DRY_FLAG=""
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            DRY_FLAG="--dry-run"
+            echo "Running semantic-release in dry-run mode."
+          fi
+          # --debug surfaces the exact reason semantic-release does or
+          # does not produce a release; without it the action exits 0
+          # with a single-line "no relevant changes" message that hides
+          # plugin failures (auth errors, push errors, etc).
+          npx semantic-release --debug $DRY_FLAG
+
+      # After semantic-release publishes to npm, the working tree holds the
+      # newly bumped version. `npm pack` here produces a tarball that is
+      # byte-identical to the one already published to the npm registry
+      # (npm pack is deterministic from package.json + the `files` allowlist).
+      # We attest THIS local tarball with GitHub artifact attestations on top
+      # of the npm-provenance Sigstore bundle that `npm publish` already
+      # produced. This is the documented "option (a)" trade-off: simpler and
+      # reproducible, no extra registry round-trip.
+      - name: Pack released tarball for attestation
+        id: pack
+        run: |
+          # Only pack and attest if a release was actually published.
+          POST_VERSION="$(node -p "require('./package.json').version")"
+          if [ "$POST_VERSION" = "$PRE_VERSION" ]; then
+            echo "no_release=true" >> "$GITHUB_OUTPUT"
+            echo "No version bump detected; skipping pack + attest."
+            exit 0
+          fi
+          TARBALL="$(npm pack --silent)"
+          echo "tarball=$TARBALL" >> "$GITHUB_OUTPUT"
+          echo "no_release=false" >> "$GITHUB_OUTPUT"
+          echo "Packed: $TARBALL"
+
+      - name: Attest npm tarball provenance
+        if: steps.pack.outputs.no_release != 'true'
+        uses: actions/attest-build-provenance@a2bbfa25375fe432b6a289bc6b6cd05ecd0c4c32 # v4.1.0
+        with:
+          subject-path: ${{ steps.pack.outputs.tarball }}
+
+      - name: Attest SBOM provenance
+        if: steps.pack.outputs.no_release != 'true'
+        id: attest-sbom
+        uses: actions/attest-build-provenance@a2bbfa25375fe432b6a289bc6b6cd05ecd0c4c32 # v4.1.0
+        with:
+          subject-path: sbom.spdx.json
+
+      # Attest the cross-asset integrity manifest. The manifest is the
+      # canonical, machine-checkable record of every skill, agent, rule,
+      # MCP reference, schema, and governance file in this release. A
+      # downstream consumer can verify any individual asset by recomputing
+      # its sha256 and comparing it to the entry in the attested manifest,
+      # without having to trust the npm tarball file list or the git
+      # history independently.
+      #
+      # The manifest is regenerated AFTER the semantic-release version bump
+      # via scripts/release-prepare.mjs (wired into .releaserc.js as an
+      # @semantic-release/exec prepare step). That keeps the package.json
+      # hash inside the manifest aligned with the bumped version recorded
+      # in the released tarball.
+      - name: Attest asset integrity manifest
+        if: steps.pack.outputs.no_release != 'true'
+        id: attest-asset-integrity
+        uses: actions/attest-build-provenance@a2bbfa25375fe432b6a289bc6b6cd05ecd0c4c32 # v4.1.0
+        with:
+          subject-path: catalog/asset-integrity.json
+
+      # Upload SBOM, tarball, and the attestation bundles produced by
+      # actions/attest-build-provenance (written to runner temp paths exposed
+      # via step outputs) to the GitHub Release that semantic-release just
+      # created. We use `gh release upload` keyed on the tag semantic-release
+      # produced rather than wiring `@semantic-release/github` `assets`,
+      # because the tarball cannot exist until the version bump has happened.
+      - name: Upload SBOM, tarball, and attestations to GitHub Release
+        if: steps.pack.outputs.no_release != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Use package.json (written by semantic-release prepare) rather than
+          # git describe: after the chore(release) push the remote tag may not
+          # yet be visible in the local git index, causing git describe to fall
+          # back to the previous tag and hitting HTTP 422 on an immutable release.
+          POST_TAG="v$(node -p "require('./package.json').version")"
+          echo "Uploading release assets to tag: $POST_TAG"
+          gh release upload "$POST_TAG" \
+            "${{ steps.pack.outputs.tarball }}" \
+            sbom.spdx.json \
+            catalog/asset-integrity.json \
+            --clobber
+
+      - name: Verify release result and write summary
+        if: always()
+        env:
+          PACKAGE_NAME: "@techtide/harness-kit"
+        run: |
+          POST_TAG="$(git describe --tags --abbrev=0 2>/dev/null || echo none)"
+          POST_VERSION="$(node -p "require('./package.json').version")"
+          RELEASE_CREATED=false
+
+          if [ "$POST_TAG" != "$PRE_TAG" ] || [ "$POST_VERSION" != "$PRE_VERSION" ]; then
+            RELEASE_CREATED=true
+          fi
+
+          NPM_VERSION=""
+          if [ "$RELEASE_CREATED" = true ]; then
+            for attempt in 1 2 3 4 5; do
+              NPM_VERSION="$(npm view "$PACKAGE_NAME" version 2>/dev/null || true)"
+              if [ "$NPM_VERSION" = "$POST_VERSION" ]; then
+                break
+              fi
+              sleep 5
+            done
+          fi
+
+          {
+            echo "# Release verification"
+            echo
+            echo "- Branch: \`master\`"
+            echo "- Pre-release tag: \`$PRE_TAG\`"
+            echo "- Pre-release version: \`$PRE_VERSION\`"
+            echo "- Post-release tag: \`$POST_TAG\`"
+            echo "- Post-release version: \`$POST_VERSION\`"
+            echo "- Release created: \`$RELEASE_CREATED\`"
+            if [ "$RELEASE_CREATED" = true ]; then
+              echo "- npm version seen: \`${NPM_VERSION:-not-found}\`"
+            else
+              echo "- npm version check: skipped because no new release was detected"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          if [ "$RELEASE_CREATED" = true ] && [ "$NPM_VERSION" != "$POST_VERSION" ]; then
+            echo "Release appears to have been created, but npm does not show version $POST_VERSION for $PACKAGE_NAME" >&2
+            exit 1
+          fi

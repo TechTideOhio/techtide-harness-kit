@@ -1,0 +1,29 @@
+{
+  "id": "techtide-ai-generated-code-security-hardener",
+  "name": "TechTide Code Security Hardener",
+  "type": "skill",
+  "provider": "techtide",
+  "harnesses": [
+    "codex",
+    "claude-code",
+    "copilot",
+    "gemini",
+    "cursor",
+    "kiro",
+    "other"
+  ],
+  "summary": "Harden untrusted code by reviewing authentication, authorization, injection surfaces, dependency risk, secret exposure, unsafe defaults, and data handling.",
+  "source_type": "original",
+  "official_docs": [
+    "https://docs.anthropic.com/en/docs/claude-code/overview",
+    "https://developers.openai.com/codex/"
+  ],
+  "security_notes": "Do not execute unknown code or dependency install scripts unless the user explicitly approves the risk.",
+  "last_verified": "2026-05-17",
+  "path": "skills/techtide/techtide-ai-generated-code-security-hardener",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/techtide-skill-ingestion.mjs",
+  "version": "0.1.0",
+  "lifecycle": "stable"
+}

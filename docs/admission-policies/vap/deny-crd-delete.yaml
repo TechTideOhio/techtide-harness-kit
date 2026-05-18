@@ -1,0 +1,65 @@
+# =============================================================================
+# Kubernetes-native ValidatingAdmissionPolicy: techtide-deny-crd-delete
+# Requires Kubernetes 1.30+ (VAP GA).
+#
+# Equivalent of docs/admission-policies/kyverno/deny-crd-delete.yaml
+# for clusters that prefer the built-in admission mechanism over Kyverno.
+#
+# CEL expression logic:
+#   Deny if the principal is NOT in the techtide-platform group
+#   AND is NOT a ServiceAccount in the techtide-system namespace.
+#
+# Note on cluster-admin / system:masters: The Kubernetes API server does not
+# evaluate ValidatingAdmissionPolicy for requests from the system:masters group.
+# This policy cannot block cluster-admin principals. See
+# docs/least-privilege-rbac.md threat model item 3.
+# =============================================================================
+apiVersion: admissionregistration.k8s.io/v1
+kind: ValidatingAdmissionPolicy
+metadata:
+  name: techtide-deny-crd-delete
+  annotations:
+    techtide.ai/layer: "L4-admission"
+    techtide.ai/complement: "L3-rbac"
+    techtide.ai/contract: "docs/least-privilege-rbac.md"
+    techtide.ai/severity: "high"
+    techtide.ai/description: >-
+      CRD deletion removes the CRD and cascades to delete all Custom Resource
+      instances cluster-wide, destroying CNI, mesh, and storage operator state.
+      Denies DELETE on CustomResourceDefinition for non-platform principals.
+spec:
+  failurePolicy: Fail
+  matchConstraints:
+    resourceRules:
+      - apiGroups: ["apiextensions.k8s.io"]
+        apiVersions: ["v1"]
+        resources: ["customresourcedefinitions"]
+        operations: ["DELETE"]
+  validations:
+    - expression: >-
+        ('techtide-platform' in request.userInfo.groups) ||
+        request.userInfo.username.startsWith('system:serviceaccount:techtide-system:')
+      message: >-
+        DELETE on CustomResourceDefinition is restricted to techtide-platform
+        group members and ServiceAccounts in techtide-system. CRD deletion
+        cascades to destroy all CR instances cluster-wide, removing CNI, mesh,
+        and storage operator state irreversibly. Contact the platform team.
+        See docs/admission-policies/README.md for the L4 policy model.
+      reason: Forbidden
+
+---
+# =============================================================================
+# ValidatingAdmissionPolicyBinding: binds the policy cluster-wide
+# =============================================================================
+apiVersion: admissionregistration.k8s.io/v1
+kind: ValidatingAdmissionPolicyBinding
+metadata:
+  name: techtide-deny-crd-delete-binding
+  annotations:
+    techtide.ai/layer: "L4-admission"
+spec:
+  policyName: techtide-deny-crd-delete
+  validationActions:
+    - Deny
+  matchResources:
+    namespaceSelector: {}

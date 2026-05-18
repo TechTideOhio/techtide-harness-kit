@@ -1,0 +1,6 @@
+{
+  "route": [
+    "techtide-huawei-live-gaussdb-mutation-guard-agent"
+  ],
+  "mode": "live-guard-gate"
+}

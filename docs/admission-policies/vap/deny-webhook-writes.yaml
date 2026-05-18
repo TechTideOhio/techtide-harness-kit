@@ -1,0 +1,79 @@
+# =============================================================================
+# Kubernetes-native ValidatingAdmissionPolicy: techtide-deny-webhook-writes
+# Requires Kubernetes 1.30+ (VAP GA).
+#
+# Equivalent of docs/admission-policies/kyverno/deny-webhook-writes.yaml
+# for clusters that prefer the built-in admission mechanism over Kyverno.
+#
+# Covers both MutatingWebhookConfiguration and ValidatingWebhookConfiguration
+# via two resourceRules entries within a single matchConstraints block.
+#
+# CEL expression logic:
+#   Deny if the principal is NOT in the techtide-platform group
+#   AND is NOT a ServiceAccount in the techtide-system namespace.
+#
+# Note on cluster-admin / system:masters: The Kubernetes API server does not
+# evaluate ValidatingAdmissionPolicy for requests from the system:masters group.
+# This policy cannot block cluster-admin principals. See
+# docs/least-privilege-rbac.md threat model item 3.
+#
+# Self-protection note: This policy protects ValidatingWebhookConfiguration
+# objects. An attacker who gains cluster-admin can still remove the Kyverno
+# webhook or this VAP binding. The only protection against that is ensuring
+# cluster-admin is never handed to automated principals - enforced by the L3
+# RBAC pre-flight check in each live-guard agent.
+# =============================================================================
+apiVersion: admissionregistration.k8s.io/v1
+kind: ValidatingAdmissionPolicy
+metadata:
+  name: techtide-deny-webhook-writes
+  annotations:
+    techtide.ai/layer: "L4-admission"
+    techtide.ai/complement: "L3-rbac"
+    techtide.ai/contract: "docs/least-privilege-rbac.md"
+    techtide.ai/severity: "critical"
+    techtide.ai/description: >-
+      Webhook config changes can intercept or silently drop any API call
+      cluster-wide. Denies CREATE, UPDATE, PATCH, DELETE on
+      MutatingWebhookConfiguration and ValidatingWebhookConfiguration
+      for non-platform principals.
+spec:
+  failurePolicy: Fail
+  matchConstraints:
+    resourceRules:
+      - apiGroups: ["admissionregistration.k8s.io"]
+        apiVersions: ["v1"]
+        resources: ["mutatingwebhookconfigurations"]
+        operations: ["CREATE", "UPDATE", "PATCH", "DELETE"]
+      - apiGroups: ["admissionregistration.k8s.io"]
+        apiVersions: ["v1"]
+        resources: ["validatingwebhookconfigurations"]
+        operations: ["CREATE", "UPDATE", "PATCH", "DELETE"]
+  validations:
+    - expression: >-
+        ('techtide-platform' in request.userInfo.groups) ||
+        request.userInfo.username.startsWith('system:serviceaccount:techtide-system:')
+      message: >-
+        Writes to MutatingWebhookConfiguration and ValidatingWebhookConfiguration
+        are restricted to techtide-platform group members and ServiceAccounts in
+        techtide-system. Webhook config changes can intercept or silently drop any
+        API call cluster-wide, enabling credential harvesting or admission control
+        bypass. Contact the platform team. See docs/admission-policies/README.md.
+      reason: Forbidden
+
+---
+# =============================================================================
+# ValidatingAdmissionPolicyBinding: binds the policy cluster-wide
+# =============================================================================
+apiVersion: admissionregistration.k8s.io/v1
+kind: ValidatingAdmissionPolicyBinding
+metadata:
+  name: techtide-deny-webhook-writes-binding
+  annotations:
+    techtide.ai/layer: "L4-admission"
+spec:
+  policyName: techtide-deny-webhook-writes
+  validationActions:
+    - Deny
+  matchResources:
+    namespaceSelector: {}

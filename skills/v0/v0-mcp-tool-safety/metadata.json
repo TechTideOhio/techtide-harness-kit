@@ -1,0 +1,39 @@
+{
+  "id": "v0-mcp-tool-safety",
+  "name": "v0 MCP Tool Safety",
+  "type": "skill",
+  "provider": "v0",
+  "harnesses": [
+    "other"
+  ],
+  "summary": "Review v0 tool and MCP usage for credential scope, network egress, mutation risk, logging, and human approval gates.",
+  "source_type": "reference-only",
+  "official_docs": [
+    "https://vercel.com/docs/v0",
+    "https://vercel.com/docs/agent-resources/skills"
+  ],
+  "security_notes": "Review source, license, code changes, secrets, and provider-specific activation semantics before installation, export, or production use.",
+  "last_verified": "2026-05-17",
+  "path": "skills/v0/v0-mcp-tool-safety",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/external-skill-research.mjs",
+  "version": "0.1.0",
+  "lifecycle": "beta",
+  "source_urls": [
+    "https://github.com/alirezarezvani/claude-skills",
+    "https://github.com/sickn33/antigravity-awesome-skills",
+    "https://vercel.com/docs/v0",
+    "https://vercel.com/docs/agent-resources/skills"
+  ],
+  "source_repo": "https://github.com/alirezarezvani/claude-skills",
+  "source_path": "synthesized/capabilities/mcp-tool-safety.md",
+  "source_license": "documentation-reference-only",
+  "source_commit": "2026-05-17T08:01:49Z",
+  "upstream_author": "TechTide synthesis from verified sources",
+  "import_mode": "techtide-synthesis",
+  "verification_status": "candidate-valid",
+  "duplicate_hash": "d619d18410a4a30f65722894a2165cd6fe6691f08667168127ebe398b36ab538",
+  "native_skill_surface": "v0 and Vercel skill-compatible UI generation workflows",
+  "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
+}

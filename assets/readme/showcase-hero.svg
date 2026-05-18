@@ -1,0 +1,96 @@
+<svg width="1280" height="520" viewBox="0 0 1280 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">TechTide Harness Kit showcase hero</title>
+  <desc id="desc">A product graphic showing skills, agents, trust metadata, validation, and supported harnesses flowing through the TechTide Harness Kit.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08111F"/>
+      <stop offset="0.52" stop-color="#0E2740"/>
+      <stop offset="1" stop-color="#06352F"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="190" y1="94" x2="1086" y2="441" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#37D4FF"/>
+      <stop offset="0.5" stop-color="#5DF2A8"/>
+      <stop offset="1" stop-color="#FFD166"/>
+    </linearGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.18 0 0 0 0 0.89 0 0 0 0 1 0 0 0 0.45 0"/>
+      <feBlend in="SourceGraphic" mode="screen"/>
+    </filter>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+      .sans { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .small { font-size: 18px; fill: #A9BED3; }
+      .label { font-size: 20px; font-weight: 700; fill: #F7FBFF; }
+      .metric { font-size: 44px; font-weight: 800; fill: #FFFFFF; }
+      .caption { font-size: 16px; fill: #B9CCDC; }
+    </style>
+  </defs>
+
+  <rect width="1280" height="520" rx="34" fill="url(#bg)"/>
+  <path d="M82 392C211 297 322 351 452 258C581 165 678 127 808 171C937 214 1008 317 1199 205" stroke="url(#accent)" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+  <path d="M85 188C213 278 335 230 460 289C585 347 681 385 829 310C976 236 1059 137 1196 169" stroke="#7FE7C4" stroke-width="2" stroke-linecap="round" opacity="0.24"/>
+
+  <g opacity="0.18">
+    <path d="M160 70H1120" stroke="#E6F7FF"/>
+    <path d="M160 450H1120" stroke="#E6F7FF"/>
+    <path d="M160 70V450" stroke="#E6F7FF"/>
+    <path d="M1120 70V450" stroke="#E6F7FF"/>
+    <path d="M160 165H1120" stroke="#E6F7FF"/>
+    <path d="M160 260H1120" stroke="#E6F7FF"/>
+    <path d="M160 355H1120" stroke="#E6F7FF"/>
+    <path d="M400 70V450" stroke="#E6F7FF"/>
+    <path d="M640 70V450" stroke="#E6F7FF"/>
+    <path d="M880 70V450" stroke="#E6F7FF"/>
+  </g>
+
+  <g filter="url(#softGlow)">
+    <circle cx="236" cy="240" r="62" fill="#102B45" stroke="#37D4FF" stroke-width="2"/>
+    <circle cx="236" cy="240" r="38" fill="#0B1C2F" stroke="#5DF2A8" stroke-width="2">
+      <animate attributeName="r" values="36;42;36" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M222 239H250M236 225V253" stroke="#F7FBFF" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <g>
+    <rect x="348" y="110" width="204" height="96" rx="18" fill="#0D2035" stroke="#244B67"/>
+    <text x="374" y="149" class="label sans">Skills</text>
+    <text x="374" y="187" class="metric sans">487</text>
+
+    <rect x="574" y="110" width="204" height="96" rx="18" fill="#0D2035" stroke="#244B67"/>
+    <text x="600" y="149" class="label sans">Agents</text>
+    <text x="600" y="187" class="metric sans">348</text>
+
+    <rect x="800" y="110" width="204" height="96" rx="18" fill="#0D2035" stroke="#244B67"/>
+    <text x="826" y="149" class="label sans">Providers</text>
+    <text x="826" y="187" class="metric sans">27</text>
+  </g>
+
+  <g>
+    <rect x="348" y="248" width="656" height="142" rx="22" fill="#09192A" stroke="#315C73"/>
+    <text x="378" y="293" class="label sans">TechTide Harness Kit</text>
+    <text x="378" y="329" class="small sans">One year of agentic engineering practice, packaged as portable skills,</text>
+    <text x="378" y="359" class="small sans">specialist agents, trust metadata, validation, and installable marketplaces.</text>
+    <g class="mono" font-size="17" fill="#8FF0CF">
+      <text x="378" y="410">validate -> export -> review -> route -> ship</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="1042" y="120" width="120" height="54" rx="14" fill="#0D2035" stroke="#39677D"/>
+    <text x="1062" y="153" class="caption sans">Codex</text>
+    <rect x="1042" y="192" width="120" height="54" rx="14" fill="#0D2035" stroke="#39677D"/>
+    <text x="1062" y="225" class="caption sans">Claude</text>
+    <rect x="1042" y="264" width="120" height="54" rx="14" fill="#0D2035" stroke="#39677D"/>
+    <text x="1062" y="297" class="caption sans">Cursor</text>
+    <rect x="1042" y="336" width="120" height="54" rx="14" fill="#0D2035" stroke="#39677D"/>
+    <text x="1062" y="369" class="caption sans">Kiro</text>
+  </g>
+
+  <circle cx="82" cy="392" r="5" fill="#37D4FF">
+    <animate attributeName="opacity" values="0.25;1;0.25" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1199" cy="205" r="5" fill="#FFD166">
+    <animate attributeName="opacity" values="1;0.25;1" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

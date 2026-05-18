@@ -1,0 +1,8 @@
+{
+  "route": [
+    "techtide-huawei-iam-least-privilege-review-agent",
+    "techtide-huawei-landing-zone-architect-agent",
+    "techtide-huawei-waf-security-review-agent"
+  ],
+  "mode": "parallel (3)"
+}

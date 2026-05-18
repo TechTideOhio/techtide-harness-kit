@@ -1,0 +1,34 @@
+{
+  "id": "techtide-oci-identity-access-governor-agent",
+  "name": "OCI Identity Access Governor",
+  "type": "agent",
+  "provider": "oci",
+  "harnesses": [
+    "codex",
+    "copilot",
+    "claude-code",
+    "cursor",
+    "gemini",
+    "kiro"
+  ],
+  "summary": "Agent for techtide-oci-identity-access-governor. Govern OCI Identity and Access Management with least-privilege policy review, compartment scoping, group/dynamic-group analysis, and safe access-change workflows.",
+  "source_type": "adapted",
+  "official_docs": [
+    "https://docs.oracle.com/en-us/iaas/Content/home.htm",
+    "https://www.oracle.com/cloud/"
+  ],
+  "security_notes": "OCI agents can inspect or guide changes to cloud resources. Use least-privilege access, read-only discovery first, and explicit approval for mutations.",
+  "last_verified": "2026-04-27",
+  "path": "agents/oci/techtide-oci-identity-access-governor-agent",
+  "harness_variants": {
+    "codex": "agents/oci/techtide-oci-identity-access-governor-agent/harnesses/codex.toml",
+    "copilot": "agents/oci/techtide-oci-identity-access-governor-agent/harnesses/copilot.agent.md",
+    "claude-code": "agents/oci/techtide-oci-identity-access-governor-agent/harnesses/claude-code.agent.md",
+    "cursor": "agents/oci/techtide-oci-identity-access-governor-agent/harnesses/cursor.agent.md",
+    "gemini": "agents/oci/techtide-oci-identity-access-governor-agent/harnesses/gemini.agent.md",
+    "kiro-ide": "agents/oci/techtide-oci-identity-access-governor-agent/harnesses/kiro-ide.agent.md",
+    "kiro-cli": "agents/oci/techtide-oci-identity-access-governor-agent/harnesses/kiro-cli.agent.json"
+  },
+  "author": "github: TechTide",
+  "version": "0.2.0"
+}

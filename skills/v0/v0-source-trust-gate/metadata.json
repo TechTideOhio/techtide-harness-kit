@@ -1,0 +1,37 @@
+{
+  "id": "v0-source-trust-gate",
+  "name": "v0 Source Trust Gate",
+  "type": "skill",
+  "provider": "v0",
+  "harnesses": [
+    "other"
+  ],
+  "summary": "Verify v0 skill, rule, and agent sources before installation or reuse by checking primary docs, repository identity, license, native surface, and privacy risk.",
+  "source_type": "reference-only",
+  "official_docs": [
+    "https://vercel.com/docs/v0",
+    "https://vercel.com/docs/agent-resources/skills"
+  ],
+  "security_notes": "Review source, license, code changes, secrets, and provider-specific activation semantics before installation, export, or production use.",
+  "last_verified": "2026-05-17",
+  "path": "skills/v0/v0-source-trust-gate",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/external-skill-research.mjs",
+  "version": "0.1.0",
+  "lifecycle": "stable",
+  "source_urls": [
+    "https://vercel.com/docs/v0",
+    "https://vercel.com/docs/agent-resources/skills"
+  ],
+  "source_repo": "https://vercel.com/docs/v0",
+  "source_path": "synthesized/capabilities/source-trust-gate.md",
+  "source_license": "documentation-reference-only",
+  "source_commit": "2026-05-17",
+  "upstream_author": "TechTide synthesis from verified sources",
+  "import_mode": "techtide-synthesis",
+  "verification_status": "candidate-valid",
+  "duplicate_hash": "f229f8780384d64fad4fad744f3e8e46ac4ac486391133c614da21bf20b4e769",
+  "native_skill_surface": "v0 and Vercel skill-compatible UI generation workflows",
+  "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
+}

@@ -1,0 +1,38 @@
+{
+  "id": "techtide-hetzner-cost-optimization-analyst-agent",
+  "name": "Hetzner Cloud Cost Optimization Analyst",
+  "type": "agent",
+  "provider": "hetzner",
+  "harnesses": [
+    "codex",
+    "copilot",
+    "claude-code",
+    "cursor",
+    "gemini",
+    "kiro"
+  ],
+  "summary": "Advisory agent for reviewing Hetzner Cloud instance types, resource utilization, idle waste, and cost savings across Servers, Volumes, Load Balancers, Floating IPs, Primary IPs, and Storage Boxes.",
+  "source_type": "original",
+  "official_docs": [
+    "https://docs.hetzner.cloud/",
+    "https://www.hetzner.com/cloud/pricing/",
+    "https://docs.hetzner.com/"
+  ],
+  "security_notes": "Never recommend deleting Volumes or snapshots that serve as the only recovery path. Unattached Floating IPs and Primary IPs incur cost \u2014 flag them but verify attachment state before recommending deletion. Do not expose project API tokens or billing credentials in analysis output.",
+  "last_verified": "2026-05-10",
+  "path": "agents/hetzner/techtide-hetzner-cost-optimization-analyst-agent",
+  "version": "0.1.0",
+  "author": "github: TechTide",
+  "companion_skills": [
+    "techtide-hetzner-cost-optimization-analyst"
+  ],
+  "harness_variants": {
+    "codex": "agents/hetzner/techtide-hetzner-cost-optimization-analyst-agent/harnesses/codex.toml",
+    "copilot": "agents/hetzner/techtide-hetzner-cost-optimization-analyst-agent/harnesses/copilot.agent.md",
+    "claude-code": "agents/hetzner/techtide-hetzner-cost-optimization-analyst-agent/harnesses/claude-code.agent.md",
+    "cursor": "agents/hetzner/techtide-hetzner-cost-optimization-analyst-agent/harnesses/cursor.agent.md",
+    "gemini": "agents/hetzner/techtide-hetzner-cost-optimization-analyst-agent/harnesses/gemini.agent.md",
+    "kiro-ide": "agents/hetzner/techtide-hetzner-cost-optimization-analyst-agent/harnesses/kiro-ide.agent.md",
+    "kiro-cli": "agents/hetzner/techtide-hetzner-cost-optimization-analyst-agent/harnesses/kiro-cli.agent.json"
+  }
+}

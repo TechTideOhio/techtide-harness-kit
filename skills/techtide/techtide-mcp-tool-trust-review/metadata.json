@@ -1,0 +1,29 @@
+{
+  "id": "techtide-mcp-tool-trust-review",
+  "name": "TechTide MCP Tool Trust Review",
+  "type": "skill",
+  "provider": "techtide",
+  "harnesses": [
+    "codex",
+    "claude-code",
+    "copilot",
+    "gemini",
+    "cursor",
+    "kiro",
+    "other"
+  ],
+  "summary": "Review MCP servers, tool connectors, and agent tool surfaces for trust boundaries, credential scope, network egress, mutation risk, logging, and approval gates.",
+  "source_type": "original",
+  "official_docs": [
+    "https://docs.anthropic.com/en/docs/claude-code/overview",
+    "https://developers.openai.com/codex/"
+  ],
+  "security_notes": "Never include raw secrets or service-role keys in trust review artifacts. Record presence, scope, and rotation status only.",
+  "last_verified": "2026-05-17",
+  "path": "skills/techtide/techtide-mcp-tool-trust-review",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/techtide-skill-ingestion.mjs",
+  "version": "0.1.0",
+  "lifecycle": "stable"
+}

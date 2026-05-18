@@ -1,0 +1,29 @@
+{
+  "id": "techtide-multi-agent-worktree-dispatch",
+  "name": "TechTide Multi-Agent Worktree Dispatch",
+  "type": "skill",
+  "provider": "techtide",
+  "harnesses": [
+    "codex",
+    "claude-code",
+    "copilot",
+    "gemini",
+    "cursor",
+    "kiro",
+    "other"
+  ],
+  "summary": "Split substantial engineering work across agents or worktrees with disjoint ownership, clear contracts, validation checkpoints, and integration review.",
+  "source_type": "original",
+  "official_docs": [
+    "https://docs.anthropic.com/en/docs/claude-code/overview",
+    "https://developers.openai.com/codex/"
+  ],
+  "security_notes": "Do not delegate production mutations, secret handling, or external-recipient writes without explicit approval and audit logs.",
+  "last_verified": "2026-05-17",
+  "path": "skills/techtide/techtide-multi-agent-worktree-dispatch",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/techtide-skill-ingestion.mjs",
+  "version": "0.1.0",
+  "lifecycle": "stable"
+}

@@ -1,0 +1,6 @@
+{
+  "route": [
+    "techtide-aws-ecs-service-remediation-operator-agent"
+  ],
+  "mode": "single"
+}

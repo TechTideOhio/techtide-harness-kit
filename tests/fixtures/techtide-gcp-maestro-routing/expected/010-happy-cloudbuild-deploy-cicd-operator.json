@@ -1,0 +1,6 @@
+{
+  "route": [
+    "techtide-gcp-cloudbuild-deploy-cicd-operator-agent"
+  ],
+  "mode": "single"
+}

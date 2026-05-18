@@ -1,0 +1,6 @@
+{
+  "route": [
+    "techtide-azure-live-aks-rollout-guard-agent"
+  ],
+  "mode": "live-guard-gate"
+}

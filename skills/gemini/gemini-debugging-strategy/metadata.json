@@ -1,0 +1,38 @@
+{
+  "id": "gemini-debugging-strategy",
+  "name": "Gemini CLI Debugging Strategy",
+  "type": "skill",
+  "provider": "gemini",
+  "harnesses": [
+    "gemini"
+  ],
+  "summary": "Run a disciplined Gemini CLI debugging loop that captures symptoms, isolates reproduction, tests hypotheses, patches narrowly, and verifies the fix.",
+  "source_type": "reference-only",
+  "official_docs": [
+    "https://github.com/google-gemini/gemini-skills",
+    "https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/cli-reference.md"
+  ],
+  "security_notes": "Review source, license, code changes, secrets, and provider-specific activation semantics before installation, export, or production use.",
+  "last_verified": "2026-05-17",
+  "path": "skills/gemini/gemini-debugging-strategy",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/external-skill-research.mjs",
+  "version": "0.1.0",
+  "lifecycle": "beta",
+  "source_urls": [
+    "https://github.com/alirezarezvani/claude-skills",
+    "https://github.com/sickn33/antigravity-awesome-skills",
+    "https://github.com/google-gemini/gemini-skills"
+  ],
+  "source_repo": "https://github.com/alirezarezvani/claude-skills",
+  "source_path": "synthesized/capabilities/debugging-strategy.md",
+  "source_license": "documentation-reference-only",
+  "source_commit": "2026-05-17T08:01:49Z",
+  "upstream_author": "TechTide synthesis from verified sources",
+  "import_mode": "techtide-synthesis",
+  "verification_status": "candidate-valid",
+  "duplicate_hash": "623a474e200123dd3e9db649485233bd670c2510b30b81e86b87adfab1d71abf",
+  "native_skill_surface": "Gemini CLI SKILL.md packages",
+  "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
+}

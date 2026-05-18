@@ -1,0 +1,29 @@
+{
+  "id": "techtide-windows-local-automation-guard",
+  "name": "TechTide Windows Local Automation Guard",
+  "type": "skill",
+  "provider": "techtide",
+  "harnesses": [
+    "codex",
+    "claude-code",
+    "copilot",
+    "gemini",
+    "cursor",
+    "kiro",
+    "other"
+  ],
+  "summary": "Run local Windows automation safely by checking resolved paths, shell boundaries, destructive command risk, background process visibility, and approval needs.",
+  "source_type": "original",
+  "official_docs": [
+    "https://docs.anthropic.com/en/docs/claude-code/overview",
+    "https://developers.openai.com/codex/"
+  ],
+  "security_notes": "Never compose recursive deletes from unverified paths. Never echo environment variables or secrets into logs.",
+  "last_verified": "2026-05-17",
+  "path": "skills/techtide/techtide-windows-local-automation-guard",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/techtide-skill-ingestion.mjs",
+  "version": "0.1.0",
+  "lifecycle": "stable"
+}

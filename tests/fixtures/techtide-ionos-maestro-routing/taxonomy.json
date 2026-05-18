@@ -1,0 +1,48 @@
+{
+  "provider": "ionos",
+  "domains": {
+    "cost-optimization-analyst": {
+      "keywords": [
+        "cost",
+        "optimization",
+        "analyst"
+      ],
+      "agent": "techtide-ionos-cost-optimization-analyst-agent"
+    },
+    "datacenter-designer-reviewer": {
+      "keywords": [
+        "datacenter",
+        "IONOS Data Center",
+        "DCD",
+        "multi-AZ",
+        "LAN",
+        "NIC"
+      ],
+      "agent": "techtide-ionos-datacenter-designer-reviewer-agent"
+    },
+    "kubernetes-platform-operator": {
+      "keywords": [
+        "kubernetes",
+        "IONOS",
+        "PodDisruptionBudget"
+      ],
+      "agent": "techtide-ionos-kubernetes-platform-operator-agent"
+    },
+    "security-compliance-reviewer": {
+      "keywords": [
+        "security",
+        "compliance",
+        "GDPR",
+        "ISO",
+        "IAM"
+      ],
+      "agent": "techtide-ionos-security-compliance-reviewer-agent"
+    }
+  },
+  "live_guards": [
+    "techtide-ionos-live-database-lifecycle-guard-agent"
+  ],
+  "gate_mode": "live-guard-gate",
+  "live_guard_intent": "(destroy|delete|terminate|rollout to prod|rollout to production|approve.*production|promote.*to (?:prod|production)|key destruction|policy change in prod|mutate (?:rbac|iam|policy)|change-set.*apply|live (?:apply|push|deploy)|force[- ]push.*main|drop\\s+(?:table|database)|swap\\s+production\\s+slot)",
+  "parallel_threshold": 0.8
+}

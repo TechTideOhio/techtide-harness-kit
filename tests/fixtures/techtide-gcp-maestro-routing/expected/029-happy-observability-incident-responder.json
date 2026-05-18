@@ -1,0 +1,6 @@
+{
+  "route": [
+    "techtide-gcp-observability-incident-responder-agent"
+  ],
+  "mode": "single"
+}

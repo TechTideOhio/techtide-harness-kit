@@ -1,0 +1,129 @@
+{
+  "manifest_version": 1,
+  "generated_by": "scripts/proof-layer.mjs",
+  "generated_at": "2026-05-17",
+  "owner": "Alex Cinovoj / TechTide",
+  "positioning": "Implementation-grade enterprise agent missions that sit above individual skills.",
+  "missions": [
+    {
+      "id": "discover",
+      "name": "Discover",
+      "summary": "Map a workflow, score value and risk, define an ROI hypothesis, and identify the smallest governed pilot.",
+      "risk_tier": "L1",
+      "data_classes": [
+        "sanitized-workflow-notes",
+        "public-docs",
+        "redacted-process-metadata"
+      ],
+      "approval_gates": [
+        "business-owner confirms scope",
+        "security owner confirms data class"
+      ],
+      "eval_guidance": [
+        "workflow map has owner, trigger, systems, failure modes",
+        "risk tier is justified before build work begins"
+      ],
+      "recommended_skills": [
+        "techtide-prompt-to-architecture-extractor",
+        "techtide-context-packaging-onboarding",
+        "techtide-cost-aware-model-routing"
+      ]
+    },
+    {
+      "id": "build",
+      "name": "Build",
+      "summary": "Turn the chosen pilot into a prototype-to-production handoff with repo onboarding, tool routing, and implementation proof.",
+      "risk_tier": "L2",
+      "data_classes": [
+        "source-code",
+        "sanitized-fixtures",
+        "non-production-configuration"
+      ],
+      "approval_gates": [
+        "repo owner approves write scope",
+        "human reviews code before merge"
+      ],
+      "eval_guidance": [
+        "implementation plan names files and rollback",
+        "tests or manual proofs cover user-facing behavior"
+      ],
+      "recommended_skills": [
+        "techtide-lovable-production-handoff",
+        "techtide-ai-tool-decision-router",
+        "techtide-test-generation-validation-debt"
+      ]
+    },
+    {
+      "id": "govern",
+      "name": "Govern",
+      "summary": "Define permissions, approvals, identity posture, audit logging, MCP/tool trust, and runtime guardrails.",
+      "risk_tier": "L3",
+      "data_classes": [
+        "permission-inventory",
+        "redacted-secrets-presence",
+        "audit-metadata"
+      ],
+      "approval_gates": [
+        "security owner approves tool scopes",
+        "named approver required for production mutation"
+      ],
+      "eval_guidance": [
+        "dangerous actions are blocked or gated",
+        "tool permissions distinguish read, write, network, and secret access"
+      ],
+      "recommended_skills": [
+        "techtide-mcp-tool-trust-review",
+        "techtide-human-approval-gate-designer",
+        "techtide-ai-generated-code-security-hardener"
+      ]
+    },
+    {
+      "id": "prove",
+      "name": "Prove",
+      "summary": "Run evals, golden traces, adversarial prompts, regression tests, and evidence summaries before promotion.",
+      "risk_tier": "L2",
+      "data_classes": [
+        "test-fixtures",
+        "redacted-traces",
+        "validation-results"
+      ],
+      "approval_gates": [
+        "release owner accepts residual risk",
+        "security findings are triaged before production"
+      ],
+      "eval_guidance": [
+        "prompt-injection and tool-misuse fixtures pass",
+        "validation output is reproducible from documented commands"
+      ],
+      "recommended_skills": [
+        "techtide-agent-autopsy-report",
+        "techtide-lovable-self-heal-debugger",
+        "techtide-skill-extraction-promotion"
+      ]
+    },
+    {
+      "id": "transfer",
+      "name": "Transfer",
+      "summary": "Package docs, runbooks, ownership, training, and support loops so the client team can own the agent workflow.",
+      "risk_tier": "L1",
+      "data_classes": [
+        "runbooks",
+        "training-material",
+        "sanitized-decision-log"
+      ],
+      "approval_gates": [
+        "business owner accepts runbook",
+        "operator confirms escalation path"
+      ],
+      "eval_guidance": [
+        "runbook covers normal, degraded, and rollback states",
+        "ownership and maintenance cadence are explicit"
+      ],
+      "recommended_skills": [
+        "techtide-cross-harness-export-hygiene",
+        "techtide-windows-local-automation-guard",
+        "techtide-knowledge-ingestion-guardrail-review"
+      ]
+    }
+  ]
+}

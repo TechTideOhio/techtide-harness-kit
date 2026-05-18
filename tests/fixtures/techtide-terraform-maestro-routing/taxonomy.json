@@ -1,0 +1,107 @@
+{
+  "provider": "terraform",
+  "domains": {
+    "reviewer": {
+      "keywords": [
+        "reviewer",
+        "Review Terraform",
+        "hcl",
+        "hashicorp",
+        "tf file",
+        "main.tf",
+        "tfvars",
+        ".tf",
+        "terraform validate",
+        "terraform init",
+        "provider config",
+        "workspace",
+        "terraform workspace",
+        "backend config",
+        "data source",
+        "locals",
+        "output terraform",
+        "variable terraform"
+      ],
+      "agent": "techtide-terraform-reviewer"
+    },
+    "module-authoring": {
+      "keywords": [
+        "terraform module",
+        "write module",
+        "module composition",
+        "terraform registry",
+        "local module",
+        "module source",
+        "module input",
+        "module output",
+        "reusable module",
+        "child module"
+      ],
+      "agent": "techtide-terraform-reviewer"
+    },
+    "state-management": {
+      "keywords": [
+        "terraform state",
+        "state file",
+        "tfstate",
+        "remote state",
+        "state backend",
+        "state locking",
+        "state drift",
+        "terraform import",
+        "state move",
+        "s3 backend"
+      ],
+      "agent": "techtide-terraform-reviewer"
+    },
+    "plan-safety-review": {
+      "keywords": [
+        "terraform plan",
+        "plan review",
+        "destroy safety",
+        "terraform destroy",
+        "plan diff",
+        "blast radius",
+        "plan output",
+        "resource replacement",
+        "force replace",
+        "plan analysis"
+      ],
+      "agent": "techtide-terraform-reviewer"
+    },
+    "security-compliance": {
+      "keywords": [
+        "tfsec",
+        "checkov",
+        "terrascan",
+        "terraform security",
+        "iam policy terraform",
+        "least privilege",
+        "security scan",
+        "compliance terraform",
+        "policy validation",
+        "terraform audit"
+      ],
+      "agent": "techtide-terraform-reviewer"
+    },
+    "cost-estimation": {
+      "keywords": [
+        "infracost",
+        "terraform cost",
+        "cost estimation",
+        "terraform spend",
+        "resource cost",
+        "monthly estimate",
+        "cost forecast",
+        "pricing terraform",
+        "budget terraform",
+        "cost analysis"
+      ],
+      "agent": "techtide-terraform-reviewer"
+    }
+  },
+  "live_guards": [],
+  "gate_mode": "live-guard-gate",
+  "live_guard_intent": "(destroy|delete|terminate|rollout to prod|rollout to production|approve.*production|promote.*to (?:prod|production)|key destruction|policy change in prod|mutate (?:rbac|iam|policy)|change-set.*apply|live (?:apply|push|deploy)|force[- ]push.*main|drop\\s+(?:table|database)|swap\\s+production\\s+slot)",
+  "parallel_threshold": 0.8
+}

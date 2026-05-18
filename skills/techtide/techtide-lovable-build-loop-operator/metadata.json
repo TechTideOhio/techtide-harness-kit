@@ -1,0 +1,29 @@
+{
+  "id": "techtide-lovable-build-loop-operator",
+  "name": "TechTide Lovable Build Loop Operator",
+  "type": "skill",
+  "provider": "techtide",
+  "harnesses": [
+    "codex",
+    "claude-code",
+    "copilot",
+    "gemini",
+    "cursor",
+    "kiro",
+    "other"
+  ],
+  "summary": "Operate the Lovable build loop from prompt setup through scaffold, iteration, preview verification, export, and repo handoff while keeping app output inspectable.",
+  "source_type": "original",
+  "official_docs": [
+    "https://docs.lovable.dev/features/skills",
+    "https://docs.anthropic.com/en/docs/claude-code/overview"
+  ],
+  "security_notes": "Use mock data by default. Do not paste real credentials, customer records, or private business exports into Lovable prompts or previews.",
+  "last_verified": "2026-05-17",
+  "path": "skills/techtide/techtide-lovable-build-loop-operator",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/techtide-skill-ingestion.mjs",
+  "version": "0.1.0",
+  "lifecycle": "stable"
+}

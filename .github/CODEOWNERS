@@ -1,0 +1,66 @@
+# CODEOWNERS
+#
+# This file defines code ownership for pull request review routing.
+# GitHub automatically requests a review from the listed owner(s) whenever
+# a pull request modifies files that match a rule below.
+# The most-specific matching rule wins.
+#
+# Reference:
+# https://docs.github.com/en/repositories/managing-your-repositories-settings-and-customizations/customizing-your-repository/about-code-owners
+
+# Default fallback - covers anything not matched by a more-specific rule
+* @TechTide
+
+# ---------------------------------------------------------------------------
+# Critical infrastructure paths
+# ---------------------------------------------------------------------------
+/.github/       @TechTide
+/scripts/       @TechTide
+/schemas/       @TechTide
+/catalog/       @TechTide
+/tests/         @TechTide
+/CLAUDE.md      @TechTide
+
+# ---------------------------------------------------------------------------
+# Provider-scoped agent directories
+# ---------------------------------------------------------------------------
+/agents/argocd/         @TechTide
+/agents/aws/            @TechTide
+/agents/azure/          @TechTide
+/agents/backstage/      @TechTide
+/agents/cert-manager/   @TechTide
+/agents/cilium/         @TechTide
+/agents/falco/          @TechTide
+/agents/finops/         @TechTide
+/agents/fluxcd/         @TechTide
+/agents/istio/          @TechTide
+/agents/kubernetes/     @TechTide
+/agents/kyverno/        @TechTide
+/agents/oci/            @TechTide
+/agents/opentelemetry/  @TechTide
+/agents/prometheus/     @TechTide
+/agents/sigstore/       @TechTide
+/agents/terraform/      @TechTide
+/agents/velero/         @TechTide
+
+# ---------------------------------------------------------------------------
+# Provider-scoped skill directories
+# ---------------------------------------------------------------------------
+/skills/argocd/         @TechTide
+/skills/aws/            @TechTide
+/skills/azure/          @TechTide
+/skills/backstage/      @TechTide
+/skills/cert-manager/   @TechTide
+/skills/cilium/         @TechTide
+/skills/falco/          @TechTide
+/skills/finops/         @TechTide
+/skills/fluxcd/         @TechTide
+/skills/istio/          @TechTide
+/skills/kubernetes/     @TechTide
+/skills/kyverno/        @TechTide
+/skills/oci/            @TechTide
+/skills/opentelemetry/  @TechTide
+/skills/prometheus/     @TechTide
+/skills/sigstore/       @TechTide
+/skills/terraform/      @TechTide
+/skills/velero/         @TechTide

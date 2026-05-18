@@ -1,0 +1,39 @@
+{
+  "id": "gemini-cost-aware-routing",
+  "name": "Gemini CLI Cost Aware Routing",
+  "type": "skill",
+  "provider": "gemini",
+  "harnesses": [
+    "gemini"
+  ],
+  "summary": "Route Gemini CLI and companion tool work by task risk, context size, model cost, latency, and verification needs.",
+  "source_type": "reference-only",
+  "official_docs": [
+    "https://github.com/google-gemini/gemini-skills",
+    "https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/cli-reference.md"
+  ],
+  "security_notes": "Review source, license, code changes, secrets, and provider-specific activation semantics before installation, export, or production use.",
+  "last_verified": "2026-05-17",
+  "path": "skills/gemini/gemini-cost-aware-routing",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/external-skill-research.mjs",
+  "version": "0.1.0",
+  "lifecycle": "beta",
+  "source_urls": [
+    "https://github.com/alirezarezvani/claude-skills",
+    "https://github.com/gsd-build/get-shit-done",
+    "https://github.com/google-gemini/gemini-skills",
+    "https://github.com/sickn33/antigravity-awesome-skills"
+  ],
+  "source_repo": "https://github.com/alirezarezvani/claude-skills",
+  "source_path": "synthesized/capabilities/cost-aware-routing.md",
+  "source_license": "documentation-reference-only",
+  "source_commit": "2026-05-17T08:01:49Z",
+  "upstream_author": "TechTide synthesis from verified sources",
+  "import_mode": "techtide-synthesis",
+  "verification_status": "candidate-valid",
+  "duplicate_hash": "28a61dcb0b12964df84956df4d684d678d93ab4d52c1f6bdf8d9b3d2e4822faf",
+  "native_skill_surface": "Gemini CLI SKILL.md packages",
+  "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
+}

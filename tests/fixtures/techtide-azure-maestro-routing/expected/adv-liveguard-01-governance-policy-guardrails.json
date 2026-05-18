@@ -1,0 +1,6 @@
+{
+  "route": [
+    "techtide-azure-governance-policy-guardrails-agent"
+  ],
+  "mode": "live-guard-gate"
+}

@@ -1,0 +1,472 @@
+{
+  "provider": "huawei",
+  "domains": {
+    "cce-container-platform-operator": {
+      "keywords": [
+        "cce",
+        "container",
+        "Operate CCE",
+        "SWR",
+        "ASM",
+        "IEF"
+      ],
+      "agent": "techtide-huawei-cce-container-platform-operator-agent"
+    },
+    "certificate-manager-issuer-review": {
+      "keywords": [
+        "certificate",
+        "issuer",
+        "huawei-certificate",
+        "manager-issuer",
+        "Review Huawei Cloud",
+        "SSL",
+        "SCM",
+        "ELB SSL"
+      ],
+      "agent": "techtide-huawei-certificate-manager-issuer-review-agent"
+    },
+    "change-impact-advisor": {
+      "keywords": [
+        "change",
+        "impact",
+        "huawei-change",
+        "impact-advisor",
+        "Pre",
+        "Organizations SCP",
+        "IAM"
+      ],
+      "agent": "techtide-huawei-change-impact-advisor-agent"
+    },
+    "codearts-devops-operator": {
+      "keywords": [
+        "codearts",
+        "devops",
+        "huawei-codearts",
+        "devops-operator",
+        "Build",
+        "Huawei CodeArts",
+        "CodeHub",
+        "Deploy"
+      ],
+      "agent": "techtide-huawei-codearts-devops-operator-agent"
+    },
+    "compliance-sovereignty": {
+      "keywords": [
+        "compliance",
+        "sovereignty",
+        "Advise",
+        "MLPS",
+        "Level",
+        "China",
+        "Trusted Cloud"
+      ],
+      "agent": "techtide-huawei-compliance-sovereignty-agent"
+    },
+    "cost-anomaly-watch-coordinator": {
+      "keywords": [
+        "cost",
+        "anomaly",
+        "watch",
+        "huawei-cost",
+        "anomaly-watch",
+        "Coordinate Huawei Cloud",
+        "CBC Cost Center",
+        "day-over",
+        "Budget Management"
+      ],
+      "agent": "techtide-huawei-cost-anomaly-watch-coordinator-agent"
+    },
+    "cost-finops-analyst": {
+      "keywords": [
+        "cost",
+        "finops",
+        "analyst",
+        "huawei-cost",
+        "finops-analyst",
+        "Analyze Huawei Cloud",
+        "CBC",
+        "Cost Center"
+      ],
+      "agent": "techtide-huawei-cost-finops-analyst-agent"
+    },
+    "daily-operations-briefing-coordinator": {
+      "keywords": [
+        "daily",
+        "briefing",
+        "huawei-daily",
+        "operations-briefing",
+        "Coordinate",
+        "CBC",
+        "Enterprise Project"
+      ],
+      "agent": "techtide-huawei-daily-operations-briefing-coordinator-agent"
+    },
+    "dew-kms-lifecycle-steward": {
+      "keywords": [
+        "dew",
+        "kms",
+        "lifecycle",
+        "Manage DEW",
+        "Data Encryption Workshop",
+        "CSMS",
+        "CBH",
+        "DBSS"
+      ],
+      "agent": "techtide-huawei-dew-kms-lifecycle-steward-agent"
+    },
+    "drs-data-replication-operator": {
+      "keywords": [
+        "drs",
+        "data",
+        "replication",
+        "Plan",
+        "Data Replication Service",
+        "real-time",
+        "CDM",
+        "ETL"
+      ],
+      "agent": "techtide-huawei-drs-data-replication-operator-agent"
+    },
+    "dws-dli-data-analyst": {
+      "keywords": [
+        "dws",
+        "dli",
+        "data",
+        "analyst",
+        "Operate DWS",
+        "GaussDB DWS",
+        "Spark",
+        "Flink",
+        "MRS"
+      ],
+      "agent": "techtide-huawei-dws-dli-data-analyst-agent"
+    },
+    "ecs-compute-operator": {
+      "keywords": [
+        "ecs",
+        "compute",
+        "Manage ECS",
+        "IMS",
+        "DeH",
+        "CSBS"
+      ],
+      "agent": "techtide-huawei-ecs-compute-operator-agent"
+    },
+    "event-driven-architecture-review": {
+      "keywords": [
+        "event",
+        "driven",
+        "architecture",
+        "huawei-event",
+        "driven-architecture",
+        "Review Huawei Cloud",
+        "DMS",
+        "Distributed Message Service",
+        "Kafka"
+      ],
+      "agent": "techtide-huawei-event-driven-architecture-review-agent"
+    },
+    "functiongraph-serverless-operator": {
+      "keywords": [
+        "functiongraph",
+        "serverless",
+        "Deploy",
+        "ServiceStage",
+        "CSE"
+      ],
+      "agent": "techtide-huawei-functiongraph-serverless-operator-agent"
+    },
+    "gaussdb-rds-dba": {
+      "keywords": [
+        "gaussdb",
+        "rds",
+        "dba",
+        "Manage GaussDB",
+        "MySQL",
+        "PostgreSQL",
+        "Oracle",
+        "DDS"
+      ],
+      "agent": "techtide-huawei-gaussdb-rds-dba-agent"
+    },
+    "iac-change-safety-review": {
+      "keywords": [
+        "iac",
+        "change",
+        "safety",
+        "huawei-iac",
+        "change-safety",
+        "Review Terraform",
+        "RFS",
+        "Resource Formation Service"
+      ],
+      "agent": "techtide-huawei-iac-change-safety-review-agent"
+    },
+    "iam-least-privilege-review": {
+      "keywords": [
+        "iam",
+        "least",
+        "privilege",
+        "Audit IAM",
+        "fine-grained",
+        "SCP",
+        "Organizations"
+      ],
+      "agent": "techtide-huawei-iam-least-privilege-review-agent"
+    },
+    "ief-edge-computing-operator": {
+      "keywords": [
+        "ief",
+        "edge",
+        "computing",
+        "Manage IEF",
+        "Intelligent Edge Fabric",
+        "IoT",
+        "cloud-edge"
+      ],
+      "agent": "techtide-huawei-ief-edge-computing-operator-agent"
+    },
+    "landing-zone-architect": {
+      "keywords": [
+        "landing",
+        "zone",
+        "Set",
+        "Huawei Cloud Organizations",
+        "SCP",
+        "IAM",
+        "fine-grained",
+        "Enterprise Projects"
+      ],
+      "agent": "techtide-huawei-landing-zone-architect-agent"
+    },
+    "load-balancer-traffic-engineer": {
+      "keywords": [
+        "load",
+        "balancer",
+        "traffic",
+        "huawei-load",
+        "balancer-traffic",
+        "Huawei Cloud ELB",
+        "ELB",
+        "HTTP",
+        "HTTPS"
+      ],
+      "agent": "techtide-huawei-load-balancer-traffic-engineer-agent"
+    },
+    "migration-architect": {
+      "keywords": [
+        "migration",
+        "huawei-migration",
+        "Plan",
+        "MgC",
+        "Migration Center",
+        "SMS"
+      ],
+      "agent": "techtide-huawei-migration-architect-agent"
+    },
+    "modelarts-mlops-engineer": {
+      "keywords": [
+        "modelarts",
+        "mlops",
+        "Manage ModelArts",
+        "GPU",
+        "Ascend NPU",
+        "Pangu",
+        "AI Gallery"
+      ],
+      "agent": "techtide-huawei-modelarts-mlops-engineer-agent"
+    },
+    "network-architect": {
+      "keywords": [
+        "network",
+        "huawei-network",
+        "Design Huawei Cloud",
+        "VPC",
+        "ELB",
+        "VPN",
+        "DC Gateway"
+      ],
+      "agent": "techtide-huawei-network-architect-agent"
+    },
+    "obs-data-perimeter-governor": {
+      "keywords": [
+        "obs",
+        "data",
+        "perimeter",
+        "huawei-obs",
+        "data-perimeter",
+        "Govern Huawei Cloud",
+        "Object Storage Service",
+        "ACL"
+      ],
+      "agent": "techtide-huawei-obs-data-perimeter-governor-agent"
+    },
+    "obs-storage-steward": {
+      "keywords": [
+        "obs",
+        "storage",
+        "Manage OBS",
+        "ACL",
+        "SFS",
+        "EVS",
+        "CBR"
+      ],
+      "agent": "techtide-huawei-obs-storage-steward-agent"
+    },
+    "observability-incident-responder": {
+      "keywords": [
+        "observability",
+        "incident",
+        "huawei-observability",
+        "incident-responder",
+        "Respond",
+        "CES",
+        "Cloud Eye",
+        "LTS"
+      ],
+      "agent": "techtide-huawei-observability-incident-responder-agent"
+    },
+    "registry-artifact-governor": {
+      "keywords": [
+        "registry",
+        "artifact",
+        "huawei-registry",
+        "artifact-governor",
+        "Govern Huawei Cloud",
+        "SWR",
+        "Software Repository",
+        "Container"
+      ],
+      "agent": "techtide-huawei-registry-artifact-governor-agent"
+    },
+    "resilience-bcdr-review": {
+      "keywords": [
+        "resilience",
+        "bcdr",
+        "huawei-resilience",
+        "bcdr-review",
+        "Review Huawei Cloud",
+        "GaussDB High Availability",
+        "CBR"
+      ],
+      "agent": "techtide-huawei-resilience-bcdr-review-agent"
+    },
+    "secmaster-security-operations": {
+      "keywords": [
+        "secmaster",
+        "security",
+        "Drive SecMaster SIEM",
+        "SOAR",
+        "HSS",
+        "CFW",
+        "WAF",
+        "Anti"
+      ],
+      "agent": "techtide-huawei-secmaster-security-operations-agent"
+    },
+    "serverless-production-readiness": {
+      "keywords": [
+        "serverless",
+        "production",
+        "readiness",
+        "huawei-serverless",
+        "production-readiness",
+        "Review FunctionGraph",
+        "VPC",
+        "cold-start",
+        "LTS"
+      ],
+      "agent": "techtide-huawei-serverless-production-readiness-agent"
+    },
+    "solution-architect": {
+      "keywords": [
+        "solution",
+        "huawei-solution",
+        "Design Huawei Cloud",
+        "enterprise-project",
+        "MLPS",
+        "multi-zone",
+        "multi-region"
+      ],
+      "agent": "techtide-huawei-solution-architect-agent"
+    },
+    "support-incident-coordinator": {
+      "keywords": [
+        "support",
+        "incident",
+        "huawei-support",
+        "incident-coordinator",
+        "Coordinate Huawei Cloud",
+        "Premium Support SLA",
+        "Account Manager",
+        "TAM"
+      ],
+      "agent": "techtide-huawei-support-incident-coordinator-agent"
+    },
+    "ticket-triage-escalation-coordinator": {
+      "keywords": [
+        "ticket",
+        "triage",
+        "escalation",
+        "huawei-ticket",
+        "triage-escalation",
+        "Triage Huawei Cloud",
+        "Huawei Cloud Premium",
+        "Support SLA",
+        "Account Manager"
+      ],
+      "agent": "techtide-huawei-ticket-triage-escalation-coordinator-agent"
+    },
+    "waf-cost-optimization-review": {
+      "keywords": [
+        "waf",
+        "cost",
+        "optimization",
+        "Assess Huawei Cloud",
+        "ECS",
+        "Kunpeng Arm",
+        "Spot Instance",
+        "Enterprise Project",
+        "Cost Center"
+      ],
+      "agent": "techtide-huawei-waf-cost-optimization-review-agent"
+    },
+    "waf-reliability-review": {
+      "keywords": [
+        "waf",
+        "reliability",
+        "Assess Huawei Cloud",
+        "ELB",
+        "Auto Scaling",
+        "GaussDB",
+        "RDS",
+        "multi-AZ"
+      ],
+      "agent": "techtide-huawei-waf-reliability-review-agent"
+    },
+    "waf-security-review": {
+      "keywords": [
+        "waf",
+        "security",
+        "Assess Huawei Cloud",
+        "IAM SCP",
+        "VPC",
+        "DEW",
+        "SecMaster SIEM",
+        "SOAR"
+      ],
+      "agent": "techtide-huawei-waf-security-review-agent"
+    }
+  },
+  "live_guards": [
+    "techtide-huawei-live-cce-rollout-guard-agent",
+    "techtide-huawei-live-cost-budget-action-guard-agent",
+    "techtide-huawei-live-gaussdb-mutation-guard-agent",
+    "techtide-huawei-live-iam-policy-change-guard-agent",
+    "techtide-huawei-live-kms-key-destruction-guard-agent",
+    "techtide-huawei-live-obs-bucket-policy-guard-agent"
+  ],
+  "gate_mode": "live-guard-gate",
+  "live_guard_intent": "(destroy|delete|terminate|rollout to prod|rollout to production|approve.*production|promote.*to (?:prod|production)|key destruction|policy change in prod|mutate (?:rbac|iam|policy)|change-set.*apply|live (?:apply|push|deploy)|force[- ]push.*main|drop\\s+(?:table|database)|swap\\s+production\\s+slot)",
+  "parallel_threshold": 0.8
+}

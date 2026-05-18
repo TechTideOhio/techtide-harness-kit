@@ -1,0 +1,30 @@
+{
+  "id": "techtide-cursor-claude-codex-workflow-router",
+  "name": "TechTide Cursor Claude Codex Workflow Router",
+  "type": "skill",
+  "provider": "techtide",
+  "harnesses": [
+    "codex",
+    "claude-code",
+    "copilot",
+    "gemini",
+    "cursor",
+    "kiro",
+    "other"
+  ],
+  "summary": "Coordinate Cursor, Claude Code, and Codex across a coding task so inline edits, repo reasoning, tests, and final review happen in the right lane.",
+  "source_type": "original",
+  "official_docs": [
+    "https://docs.cursor.com/context/rules",
+    "https://docs.anthropic.com/en/docs/claude-code/overview",
+    "https://developers.openai.com/codex/"
+  ],
+  "security_notes": "Never let one tool silently undo another tool's edits. Review diffs before committing or deploying code.",
+  "last_verified": "2026-05-17",
+  "path": "skills/techtide/techtide-cursor-claude-codex-workflow-router",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/techtide-skill-ingestion.mjs",
+  "version": "0.1.0",
+  "lifecycle": "stable"
+}

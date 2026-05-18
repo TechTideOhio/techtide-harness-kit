@@ -1,0 +1,13 @@
+{
+  "name": "techtide-harness-kit",
+  "summary": "Open, portable, eval-backed marketplace for enterprise agent skills, agents, missions, rules, MCP references, and trust evidence.",
+  "last_updated": "2026-05-17",
+  "catalogs": {
+    "skills": "catalog/skills.json",
+    "agents": "catalog/agents.json",
+    "rules": "catalog/rules.json",
+    "mcp_references": "catalog/mcp-references.json",
+    "skill_trust": "catalog/skill-trust.json",
+    "enterprise_missions": "catalog/enterprise-missions.json"
+  }
+}

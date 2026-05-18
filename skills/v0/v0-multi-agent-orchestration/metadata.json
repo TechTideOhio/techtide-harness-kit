@@ -1,0 +1,39 @@
+{
+  "id": "v0-multi-agent-orchestration",
+  "name": "v0 Multi-Agent Orchestration",
+  "type": "skill",
+  "provider": "v0",
+  "harnesses": [
+    "other"
+  ],
+  "summary": "Coordinate v0 with other agents by splitting work into bounded scopes, clear contracts, integration checks, and review gates.",
+  "source_type": "reference-only",
+  "official_docs": [
+    "https://vercel.com/docs/v0",
+    "https://vercel.com/docs/agent-resources/skills"
+  ],
+  "security_notes": "Review source, license, code changes, secrets, and provider-specific activation semantics before installation, export, or production use.",
+  "last_verified": "2026-05-17",
+  "path": "skills/v0/v0-multi-agent-orchestration",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/external-skill-research.mjs",
+  "version": "0.1.0",
+  "lifecycle": "beta",
+  "source_urls": [
+    "https://github.com/gsd-build/get-shit-done",
+    "https://github.com/alirezarezvani/claude-skills",
+    "https://vercel.com/docs/v0",
+    "https://vercel.com/docs/agent-resources/skills"
+  ],
+  "source_repo": "https://github.com/gsd-build/get-shit-done",
+  "source_path": "synthesized/capabilities/multi-agent-orchestration.md",
+  "source_license": "documentation-reference-only",
+  "source_commit": "2026-05-17T18:53:56Z",
+  "upstream_author": "TechTide synthesis from verified sources",
+  "import_mode": "techtide-synthesis",
+  "verification_status": "candidate-valid",
+  "duplicate_hash": "34c013216655bfce71c7a985a91aaa2f593487272c087d52ee9a3e3428a5bb4a",
+  "native_skill_surface": "v0 and Vercel skill-compatible UI generation workflows",
+  "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
+}

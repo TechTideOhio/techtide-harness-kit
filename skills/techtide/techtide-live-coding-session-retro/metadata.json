@@ -1,0 +1,29 @@
+{
+  "id": "techtide-live-coding-session-retro",
+  "name": "TechTide Live Coding Session Retro",
+  "type": "skill",
+  "provider": "techtide",
+  "harnesses": [
+    "codex",
+    "claude-code",
+    "copilot",
+    "gemini",
+    "cursor",
+    "kiro",
+    "other"
+  ],
+  "summary": "Turn a live coding session into reusable engineering memory by extracting decisions, failed paths, tool choices, verification evidence, and skill candidates.",
+  "source_type": "original",
+  "official_docs": [
+    "https://docs.anthropic.com/en/docs/claude-code/overview",
+    "https://developers.openai.com/codex/"
+  ],
+  "security_notes": "Redact private paths, customer data, prompt payloads with secrets, and production identifiers before publishing a retro.",
+  "last_verified": "2026-05-17",
+  "path": "skills/techtide/techtide-live-coding-session-retro",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/techtide-skill-ingestion.mjs",
+  "version": "0.1.0",
+  "lifecycle": "beta"
+}

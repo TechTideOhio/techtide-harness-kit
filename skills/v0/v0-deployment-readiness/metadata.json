@@ -1,0 +1,39 @@
+{
+  "id": "v0-deployment-readiness",
+  "name": "v0 Deployment Readiness",
+  "type": "skill",
+  "provider": "v0",
+  "harnesses": [
+    "other"
+  ],
+  "summary": "Use v0 to decide whether an app, feature, or prototype is ready for deployment, rollback, and operational ownership.",
+  "source_type": "reference-only",
+  "official_docs": [
+    "https://vercel.com/docs/v0",
+    "https://vercel.com/docs/agent-resources/skills"
+  ],
+  "security_notes": "Review source, license, code changes, secrets, and provider-specific activation semantics before installation, export, or production use.",
+  "last_verified": "2026-05-17",
+  "path": "skills/v0/v0-deployment-readiness",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/external-skill-research.mjs",
+  "version": "0.1.0",
+  "lifecycle": "beta",
+  "source_urls": [
+    "https://github.com/gsd-build/get-shit-done",
+    "https://github.com/sickn33/antigravity-awesome-skills",
+    "https://vercel.com/docs/v0",
+    "https://vercel.com/docs/agent-resources/skills"
+  ],
+  "source_repo": "https://github.com/gsd-build/get-shit-done",
+  "source_path": "synthesized/capabilities/deployment-readiness.md",
+  "source_license": "documentation-reference-only",
+  "source_commit": "2026-05-17T18:53:56Z",
+  "upstream_author": "TechTide synthesis from verified sources",
+  "import_mode": "techtide-synthesis",
+  "verification_status": "candidate-valid",
+  "duplicate_hash": "dc5063472220759cf1d95d0193ec58f576c8e93e7e7b40a6e8d8730a912cdc2f",
+  "native_skill_surface": "v0 and Vercel skill-compatible UI generation workflows",
+  "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
+}

@@ -1,0 +1,36 @@
+{
+  "id": "techtide-aws-live-ecs-rollout-guard-agent",
+  "name": "AWS Live ECS Rollout Guard",
+  "type": "agent",
+  "provider": "aws",
+  "harnesses": [
+    "codex",
+    "copilot",
+    "claude-code",
+    "cursor",
+    "gemini",
+    "kiro"
+  ],
+  "summary": "Agent for techtide-aws-live-ecs-rollout-guard. Guard live Amazon ECS and Fargate rollout actions with service targeting, deployment circuit breaker or alarm checks, rollback posture, and explicit approval before mutation.",
+  "source_type": "adapted",
+  "official_docs": [
+    "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-circuit-breaker.html",
+    "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-alarm-failure.html",
+    "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-failure-detection.html",
+    "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_service_deployment_events.html"
+  ],
+  "security_notes": "Live ECS rollout actions require exact service targeting, health evidence, rollback posture, and explicit approval. Never treat force-new-deployment as a harmless default.",
+  "last_verified": "2026-04-29",
+  "path": "agents/aws/techtide-aws-live-ecs-rollout-guard-agent",
+  "author": "github: TechTide",
+  "version": "0.2.0",
+  "harness_variants": {
+    "codex": "agents/aws/techtide-aws-live-ecs-rollout-guard-agent/harnesses/codex.toml",
+    "claude-code": "agents/aws/techtide-aws-live-ecs-rollout-guard-agent/harnesses/claude-code.agent.md",
+    "copilot": "agents/aws/techtide-aws-live-ecs-rollout-guard-agent/harnesses/copilot.agent.md",
+    "cursor": "agents/aws/techtide-aws-live-ecs-rollout-guard-agent/harnesses/cursor.agent.md",
+    "gemini": "agents/aws/techtide-aws-live-ecs-rollout-guard-agent/harnesses/gemini.agent.md",
+    "kiro-ide": "agents/aws/techtide-aws-live-ecs-rollout-guard-agent/harnesses/kiro-ide.agent.md",
+    "kiro-cli": "agents/aws/techtide-aws-live-ecs-rollout-guard-agent/harnesses/kiro-cli.agent.json"
+  }
+}

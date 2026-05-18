@@ -1,0 +1,30 @@
+{
+  "id": "techtide-context-packaging-onboarding",
+  "name": "TechTide Context Packaging Onboarding",
+  "type": "skill",
+  "provider": "techtide",
+  "harnesses": [
+    "codex",
+    "claude-code",
+    "copilot",
+    "gemini",
+    "cursor",
+    "kiro",
+    "other"
+  ],
+  "summary": "Package a project for agent harnesses by preparing concise context files, command maps, architecture summaries, guardrails, and local override boundaries.",
+  "source_type": "original",
+  "official_docs": [
+    "https://docs.anthropic.com/en/docs/claude-code/overview",
+    "https://developers.openai.com/codex/",
+    "https://docs.cursor.com/context/rules"
+  ],
+  "security_notes": "Do not write machine-specific secrets, personal tokens, or private endpoint credentials into shared context files.",
+  "last_verified": "2026-05-17",
+  "path": "skills/techtide/techtide-context-packaging-onboarding",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/techtide-skill-ingestion.mjs",
+  "version": "0.1.0",
+  "lifecycle": "stable"
+}

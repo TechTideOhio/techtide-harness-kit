@@ -1,0 +1,6 @@
+{
+  "route": [
+    "techtide-kubernetes-live-velero-restore-guard-agent"
+  ],
+  "mode": "live-guard-gate"
+}

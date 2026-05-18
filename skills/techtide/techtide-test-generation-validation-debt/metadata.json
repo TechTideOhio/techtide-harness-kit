@@ -1,0 +1,29 @@
+{
+  "id": "techtide-test-generation-validation-debt",
+  "name": "TechTide Test Generation Validation Debt",
+  "type": "skill",
+  "provider": "techtide",
+  "harnesses": [
+    "codex",
+    "claude-code",
+    "copilot",
+    "gemini",
+    "cursor",
+    "kiro",
+    "other"
+  ],
+  "summary": "Turn implementation work into durable test coverage by mapping claims to unit, integration, smoke, visual, and residual-risk checks.",
+  "source_type": "original",
+  "official_docs": [
+    "https://docs.anthropic.com/en/docs/claude-code/overview",
+    "https://developers.openai.com/codex/"
+  ],
+  "security_notes": "Do not mark security, billing, or data-loss behaviors as verified without a direct test or explicit manual proof.",
+  "last_verified": "2026-05-17",
+  "path": "skills/techtide/techtide-test-generation-validation-debt",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/techtide-skill-ingestion.mjs",
+  "version": "0.1.0",
+  "lifecycle": "stable"
+}

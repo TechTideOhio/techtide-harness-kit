@@ -1,0 +1,6 @@
+{
+  "route": [
+    "techtide-aws-observability-incident-responder-agent"
+  ],
+  "mode": "single"
+}

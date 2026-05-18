@@ -1,0 +1,6 @@
+{
+  "route": [
+    "techtide-azure-live-arm-deployment-stack-guard-agent"
+  ],
+  "mode": "live-guard-gate"
+}

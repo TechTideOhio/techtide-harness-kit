@@ -1,0 +1,29 @@
+{
+  "id": "techtide-agent-autopsy-report",
+  "name": "TechTide Agent Autopsy Report",
+  "type": "skill",
+  "provider": "techtide",
+  "harnesses": [
+    "codex",
+    "claude-code",
+    "copilot",
+    "gemini",
+    "cursor",
+    "kiro",
+    "other"
+  ],
+  "summary": "Perform post-run analysis of failed or risky agent work by reconstructing goal, context, tool calls, failure mode, missing guardrails, and preventive skill updates.",
+  "source_type": "original",
+  "official_docs": [
+    "https://docs.anthropic.com/en/docs/claude-code/overview",
+    "https://developers.openai.com/codex/"
+  ],
+  "security_notes": "Redact secrets, PII, tokens, and private customer details from logs before including them in an autopsy artifact.",
+  "last_verified": "2026-05-17",
+  "path": "skills/techtide/techtide-agent-autopsy-report",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/techtide-skill-ingestion.mjs",
+  "version": "0.1.0",
+  "lifecycle": "stable"
+}

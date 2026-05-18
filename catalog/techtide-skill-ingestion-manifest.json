@@ -1,0 +1,836 @@
+{
+  "manifest_version": 1,
+  "generated_by": "scripts/techtide-skill-ingestion.mjs",
+  "generated_at": "2026-05-17",
+  "owner": "Alex Cinovoj / TechTide",
+  "source_policy": {
+    "mode": "local-only-curated",
+    "curated_roots": [
+      "$TECHTIDE_ROOT/Claude/skills",
+      "$TECHTIDE_ROOT/Claude/*.md",
+      "$TECHTIDE_ROOT/Docs",
+      "$TECHTIDE_ROOT/Apps/TechTideAI",
+      "$TECHTIDE_ROOT/Apps/Lovable2",
+      "$TECHTIDE_ROOT/Apps/TheLovables",
+      "$TECHTIDE_ROOT/Apps/*/{AGENTS.md,CLAUDE.md,README.md,docs,runbooks}"
+    ],
+    "excluded_source_classes": [
+      ".git",
+      "node_modules",
+      "dist",
+      "build",
+      ".next",
+      ".cache",
+      ".env",
+      "*.csv",
+      "*.log",
+      "raw lead lists",
+      "customer/prospect exports",
+      "tokens, keys, DSNs, JWTs, and service-role secrets"
+    ],
+    "absolute_paths_are_sanitized": true,
+    "raw_source_text_copied": false
+  },
+  "rubric": {
+    "accepted": [
+      "reusable workflow",
+      "specific validation surface",
+      "clear security/privacy guardrails",
+      "compatible native skill or companion adapter target",
+      "no secrets or private data"
+    ],
+    "rejected": [
+      "raw PII or credentials",
+      "private lead/customer exports",
+      "low-confidence generic advice",
+      "tool surface without guardrails",
+      "old provenance or unrelated contributor markers"
+    ]
+  },
+  "entries": [
+    {
+      "id": "techtide-ai-tool-decision-router",
+      "source_paths": [
+        "$TECHTIDE_ROOT/Docs/Planning/TechTide_AI_Monetization_Atlas_V3.1_Final.md",
+        "$TECHTIDE_ROOT/Docs/STACK.md",
+        "$TECHTIDE_ROOT/Claude/skills/cost/SKILL.md"
+      ],
+      "source_type": "sanitized-local-pattern",
+      "extracted_pattern_summary": "Route development work to Cursor, Claude Code, Codex, Lovable, v0, Replit, or a human approval lane based on scope, blast radius, context size, and verification needs.",
+      "intended_harnesses": [
+        "codex",
+        "claude-code",
+        "copilot",
+        "gemini",
+        "cursor",
+        "kiro",
+        "other"
+      ],
+      "companion_adapters": [
+        "cursor",
+        "kiro",
+        "lovable",
+        "v0",
+        "replit"
+      ],
+      "security_risk": "medium",
+      "privacy_risk": "low",
+      "reproducibility": "strong",
+      "required_human_approval_gates": [
+        "target-specific approval"
+      ],
+      "validation_status": "cataloged",
+      "reason_for_inclusion": "Reusable Alex/TechTide workflow with explicit guardrails and cross-harness adapter policy."
+    },
+    {
+      "id": "techtide-lovable-build-loop-operator",
+      "source_paths": [
+        "$TECHTIDE_ROOT/Claude/BUILD-LOOP.md",
+        "$TECHTIDE_ROOT/Claude/LOVABLE-PATTERNS.md",
+        "$TECHTIDE_ROOT/Claude/LESSONS.md"
+      ],
+      "source_type": "sanitized-local-pattern",
+      "extracted_pattern_summary": "Operate the Lovable build loop from prompt setup through scaffold, iteration, preview verification, export, and repo handoff while keeping app output inspectable.",
+      "intended_harnesses": [
+        "codex",
+        "claude-code",
+        "copilot",
+        "gemini",
+        "cursor",
+        "kiro",
+        "other"
+      ],
+      "companion_adapters": [
+        "cursor",
+        "kiro",
+        "lovable",
+        "v0",
+        "replit"
+      ],
+      "security_risk": "low",
+      "privacy_risk": "low",
+      "reproducibility": "strong",
+      "required_human_approval_gates": [],
+      "validation_status": "cataloged",
+      "reason_for_inclusion": "Reusable Alex/TechTide workflow with explicit guardrails and cross-harness adapter policy."
+    },
+    {
+      "id": "techtide-lovable-self-heal-debugger",
+      "source_paths": [
+        "$TECHTIDE_ROOT/Claude/SELF-HEAL.md",
+        "$TECHTIDE_ROOT/Claude/LESSONS.md",
+        "$TECHTIDE_ROOT/Claude/LOVABLE-PATTERNS.md"
+      ],
+      "source_type": "sanitized-local-pattern",
+      "extracted_pattern_summary": "Diagnose Lovable app failures with a repeatable wait, inspect, isolate, prompt, and verify loop for dependency, iframe, auth, routing, and preview-cache issues.",
+      "intended_harnesses": [
+        "codex",
+        "claude-code",
+        "copilot",
+        "gemini",
+        "cursor",
+        "kiro",
+        "other"
+      ],
+      "companion_adapters": [
+        "cursor",
+        "kiro",
+        "lovable",
+        "v0",
+        "replit"
+      ],
+      "security_risk": "medium",
+      "privacy_risk": "low",
+      "reproducibility": "strong",
+      "required_human_approval_gates": [
+        "target-specific approval"
+      ],
+      "validation_status": "cataloged",
+      "reason_for_inclusion": "Reusable Alex/TechTide workflow with explicit guardrails and cross-harness adapter policy."
+    },
+    {
+      "id": "techtide-lovable-production-handoff",
+      "source_paths": [
+        "$TECHTIDE_ROOT/Claude/BUILD-LOOP.md",
+        "$TECHTIDE_ROOT/Claude/Lovable_Comprehensive_Analysis.md",
+        "$TECHTIDE_ROOT/Docs/TESTING.md"
+      ],
+      "source_type": "sanitized-local-pattern",
+      "extracted_pattern_summary": "Convert a Lovable prototype into a repo-owned production candidate by extracting code, documenting assumptions, replacing mocks, and adding tests and deployment gates.",
+      "intended_harnesses": [
+        "codex",
+        "claude-code",
+        "copilot",
+        "gemini",
+        "cursor",
+        "kiro",
+        "other"
+      ],
+      "companion_adapters": [
+        "cursor",
+        "kiro",
+        "lovable",
+        "v0",
+        "replit"
+      ],
+      "security_risk": "low",
+      "privacy_risk": "low",
+      "reproducibility": "strong",
+      "required_human_approval_gates": [],
+      "validation_status": "cataloged",
+      "reason_for_inclusion": "Reusable Alex/TechTide workflow with explicit guardrails and cross-harness adapter policy."
+    },
+    {
+      "id": "techtide-v0-ui-prompt-hardener",
+      "source_paths": [
+        "$TECHTIDE_ROOT/Claude/PATHSENSE-DESIGN-UPGRADE.md",
+        "$TECHTIDE_ROOT/Claude/AUTOBROKER-DESIGN-UPGRADE.md",
+        "$TECHTIDE_ROOT/Claude/skills/design/persyn-design-stack-research.md"
+      ],
+      "source_type": "sanitized-local-pattern",
+      "extracted_pattern_summary": "Shape v0 UI prompts into implementable, accessible, responsive interface specifications with explicit data states, constraints, and handoff checks.",
+      "intended_harnesses": [
+        "codex",
+        "claude-code",
+        "copilot",
+        "gemini",
+        "cursor",
+        "kiro",
+        "other"
+      ],
+      "companion_adapters": [
+        "cursor",
+        "kiro",
+        "lovable",
+        "v0",
+        "replit"
+      ],
+      "security_risk": "medium",
+      "privacy_risk": "low",
+      "reproducibility": "strong",
+      "required_human_approval_gates": [
+        "target-specific approval"
+      ],
+      "validation_status": "cataloged",
+      "reason_for_inclusion": "Reusable Alex/TechTide workflow with explicit guardrails and cross-harness adapter policy."
+    },
+    {
+      "id": "techtide-replit-fullstack-bootstrap",
+      "source_paths": [
+        "$TECHTIDE_ROOT/Docs/Planning/TechTide_AI_Monetization_Atlas_V3.1_Final.md",
+        "$TECHTIDE_ROOT/Docs/TESTING.md",
+        "$TECHTIDE_ROOT/Claude/skills/init/SKILL.md"
+      ],
+      "source_type": "sanitized-local-pattern",
+      "extracted_pattern_summary": "Bootstrap Replit projects with a clear app contract, environment variable model, test loop, deployment boundary, and migration path back into a durable repository.",
+      "intended_harnesses": [
+        "codex",
+        "claude-code",
+        "copilot",
+        "gemini",
+        "cursor",
+        "kiro",
+        "other"
+      ],
+      "companion_adapters": [
+        "cursor",
+        "kiro",
+        "lovable",
+        "v0",
+        "replit"
+      ],
+      "security_risk": "medium",
+      "privacy_risk": "low",
+      "reproducibility": "strong",
+      "required_human_approval_gates": [
+        "target-specific approval"
+      ],
+      "validation_status": "cataloged",
+      "reason_for_inclusion": "Reusable Alex/TechTide workflow with explicit guardrails and cross-harness adapter policy."
+    },
+    {
+      "id": "techtide-cursor-claude-codex-workflow-router",
+      "source_paths": [
+        "$TECHTIDE_ROOT/Docs/Planning/TechTide_AI_Monetization_Atlas_V3.1_Final.md",
+        "$TECHTIDE_ROOT/Apps/TechTideAI/AGENTS.md",
+        "$TECHTIDE_ROOT/Claude/skills/init/SKILL.md"
+      ],
+      "source_type": "sanitized-local-pattern",
+      "extracted_pattern_summary": "Coordinate Cursor, Claude Code, and Codex across a coding task so inline edits, repo reasoning, tests, and final review happen in the right lane.",
+      "intended_harnesses": [
+        "codex",
+        "claude-code",
+        "copilot",
+        "gemini",
+        "cursor",
+        "kiro",
+        "other"
+      ],
+      "companion_adapters": [
+        "cursor",
+        "kiro",
+        "lovable",
+        "v0",
+        "replit"
+      ],
+      "security_risk": "low",
+      "privacy_risk": "low",
+      "reproducibility": "strong",
+      "required_human_approval_gates": [],
+      "validation_status": "cataloged",
+      "reason_for_inclusion": "Reusable Alex/TechTide workflow with explicit guardrails and cross-harness adapter policy."
+    },
+    {
+      "id": "techtide-agent-autopsy-report",
+      "source_paths": [
+        "$TECHTIDE_ROOT/Docs/Planning/TechTide_AI_Monetization_Atlas_V3.1_Final.md",
+        "$TECHTIDE_ROOT/Claude/skills/hooks-config/SKILL.md",
+        "$TECHTIDE_ROOT/Claude/skills/resume/SKILL.md"
+      ],
+      "source_type": "sanitized-local-pattern",
+      "extracted_pattern_summary": "Perform post-run analysis of failed or risky agent work by reconstructing goal, context, tool calls, failure mode, missing guardrails, and preventive skill updates.",
+      "intended_harnesses": [
+        "codex",
+        "claude-code",
+        "copilot",
+        "gemini",
+        "cursor",
+        "kiro",
+        "other"
+      ],
+      "companion_adapters": [
+        "cursor",
+        "kiro",
+        "lovable",
+        "v0",
+        "replit"
+      ],
+      "security_risk": "low",
+      "privacy_risk": "low",
+      "reproducibility": "strong",
+      "required_human_approval_gates": [],
+      "validation_status": "cataloged",
+      "reason_for_inclusion": "Reusable Alex/TechTide workflow with explicit guardrails and cross-harness adapter policy."
+    },
+    {
+      "id": "techtide-production-readiness-audit",
+      "source_paths": [
+        "$TECHTIDE_ROOT/Docs/CONCERNS.md",
+        "$TECHTIDE_ROOT/Docs/TESTING.md",
+        "$TECHTIDE_ROOT/Apps/TechTideAI/DEPLOYMENT.md"
+      ],
+      "source_type": "sanitized-local-pattern",
+      "extracted_pattern_summary": "Audit rapidly built applications for production readiness across auth, secrets, data, tests, observability, rollback, deployment, and operational ownership.",
+      "intended_harnesses": [
+        "codex",
+        "claude-code",
+        "copilot",
+        "gemini",
+        "cursor",
+        "kiro",
+        "other"
+      ],
+      "companion_adapters": [
+        "cursor",
+        "kiro",
+        "lovable",
+        "v0",
+        "replit"
+      ],
+      "security_risk": "low",
+      "privacy_risk": "low",
+      "reproducibility": "strong",
+      "required_human_approval_gates": [],
+      "validation_status": "cataloged",
+      "reason_for_inclusion": "Reusable Alex/TechTide workflow with explicit guardrails and cross-harness adapter policy."
+    },
+    {
+      "id": "techtide-ai-generated-code-security-hardener",
+      "source_paths": [
+        "$TECHTIDE_ROOT/Claude/skills/design/SECURITY-AUDIT.md",
+        "$TECHTIDE_ROOT/Docs/CONVENTIONS.md",
+        "$TECHTIDE_ROOT/Docs/CONCERNS.md"
+      ],
+      "source_type": "sanitized-local-pattern",
+      "extracted_pattern_summary": "Harden untrusted code by reviewing authentication, authorization, injection surfaces, dependency risk, secret exposure, unsafe defaults, and data handling.",
+      "intended_harnesses": [
+        "codex",
+        "claude-code",
+        "copilot",
+        "gemini",
+        "cursor",
+        "kiro",
+        "other"
+      ],
+      "companion_adapters": [
+        "cursor",
+        "kiro",
+        "lovable",
+        "v0",
+        "replit"
+      ],
+      "security_risk": "medium",
+      "privacy_risk": "low",
+      "reproducibility": "strong",
+      "required_human_approval_gates": [],
+      "validation_status": "cataloged",
+      "reason_for_inclusion": "Reusable Alex/TechTide workflow with explicit guardrails and cross-harness adapter policy."
+    },
+    {
+      "id": "techtide-mcp-tool-trust-review",
+      "source_paths": [
+        "$TECHTIDE_ROOT/Docs/STACK.md",
+        "$TECHTIDE_ROOT/Claude/skills/hooks-config/SKILL.md",
+        "$TECHTIDE_ROOT/Docs/CONVENTIONS.md"
+      ],
+      "source_type": "sanitized-local-pattern",
+      "extracted_pattern_summary": "Review MCP servers, tool connectors, and agent tool surfaces for trust boundaries, credential scope, network egress, mutation risk, logging, and approval gates.",
+      "intended_harnesses": [
+        "codex",
+        "claude-code",
+        "copilot",
+        "gemini",
+        "cursor",
+        "kiro",
+        "other"
+      ],
+      "companion_adapters": [
+        "cursor",
+        "kiro",
+        "lovable",
+        "v0",
+        "replit"
+      ],
+      "security_risk": "medium",
+      "privacy_risk": "low",
+      "reproducibility": "strong",
+      "required_human_approval_gates": [],
+      "validation_status": "cataloged",
+      "reason_for_inclusion": "Reusable Alex/TechTide workflow with explicit guardrails and cross-harness adapter policy."
+    },
+    {
+      "id": "techtide-context-packaging-onboarding",
+      "source_paths": [
+        "$TECHTIDE_ROOT/Claude/skills/init/SKILL.md",
+        "$TECHTIDE_ROOT/Apps/TechTideAI/CLAUDE.md",
+        "$TECHTIDE_ROOT/Docs/STRUCTURE.md"
+      ],
+      "source_type": "sanitized-local-pattern",
+      "extracted_pattern_summary": "Package a project for agent harnesses by preparing concise context files, command maps, architecture summaries, guardrails, and local override boundaries.",
+      "intended_harnesses": [
+        "codex",
+        "claude-code",
+        "copilot",
+        "gemini",
+        "cursor",
+        "kiro",
+        "other"
+      ],
+      "companion_adapters": [
+        "cursor",
+        "kiro",
+        "lovable",
+        "v0",
+        "replit"
+      ],
+      "security_risk": "low",
+      "privacy_risk": "low",
+      "reproducibility": "strong",
+      "required_human_approval_gates": [],
+      "validation_status": "cataloged",
+      "reason_for_inclusion": "Reusable Alex/TechTide workflow with explicit guardrails and cross-harness adapter policy."
+    },
+    {
+      "id": "techtide-multi-agent-worktree-dispatch",
+      "source_paths": [
+        "$TECHTIDE_ROOT/Claude/skills/agent-dispatch/SKILL.md",
+        "$TECHTIDE_ROOT/Apps/TechTideAI/agents/README.md",
+        "$TECHTIDE_ROOT/Apps/TechTideAI/CONTRIBUTING.md"
+      ],
+      "source_type": "sanitized-local-pattern",
+      "extracted_pattern_summary": "Split substantial engineering work across agents or worktrees with disjoint ownership, clear contracts, validation checkpoints, and integration review.",
+      "intended_harnesses": [
+        "codex",
+        "claude-code",
+        "copilot",
+        "gemini",
+        "cursor",
+        "kiro",
+        "other"
+      ],
+      "companion_adapters": [
+        "cursor",
+        "kiro",
+        "lovable",
+        "v0",
+        "replit"
+      ],
+      "security_risk": "medium",
+      "privacy_risk": "low",
+      "reproducibility": "strong",
+      "required_human_approval_gates": [
+        "target-specific approval"
+      ],
+      "validation_status": "cataloged",
+      "reason_for_inclusion": "Reusable Alex/TechTide workflow with explicit guardrails and cross-harness adapter policy."
+    },
+    {
+      "id": "techtide-test-generation-validation-debt",
+      "source_paths": [
+        "$TECHTIDE_ROOT/Docs/TESTING.md",
+        "$TECHTIDE_ROOT/Apps/TechTideAI/docs/DEV_SETUP.md",
+        "$TECHTIDE_ROOT/Claude/VALIDATION.md"
+      ],
+      "source_type": "sanitized-local-pattern",
+      "extracted_pattern_summary": "Turn implementation work into durable test coverage by mapping claims to unit, integration, smoke, visual, and residual-risk checks.",
+      "intended_harnesses": [
+        "codex",
+        "claude-code",
+        "copilot",
+        "gemini",
+        "cursor",
+        "kiro",
+        "other"
+      ],
+      "companion_adapters": [
+        "cursor",
+        "kiro",
+        "lovable",
+        "v0",
+        "replit"
+      ],
+      "security_risk": "low",
+      "privacy_risk": "low",
+      "reproducibility": "strong",
+      "required_human_approval_gates": [],
+      "validation_status": "cataloged",
+      "reason_for_inclusion": "Reusable Alex/TechTide workflow with explicit guardrails and cross-harness adapter policy."
+    },
+    {
+      "id": "techtide-cost-aware-model-routing",
+      "source_paths": [
+        "$TECHTIDE_ROOT/Claude/skills/cost/SKILL.md",
+        "$TECHTIDE_ROOT/Docs/STACK.md",
+        "$TECHTIDE_ROOT/Docs/CONCERNS.md"
+      ],
+      "source_type": "sanitized-local-pattern",
+      "extracted_pattern_summary": "Choose models and coding tools with cost, latency, quota, context size, and task risk in mind while preserving verification and quality requirements.",
+      "intended_harnesses": [
+        "codex",
+        "claude-code",
+        "copilot",
+        "gemini",
+        "cursor",
+        "kiro",
+        "other"
+      ],
+      "companion_adapters": [
+        "cursor",
+        "kiro",
+        "lovable",
+        "v0",
+        "replit"
+      ],
+      "security_risk": "low",
+      "privacy_risk": "low",
+      "reproducibility": "strong",
+      "required_human_approval_gates": [],
+      "validation_status": "cataloged",
+      "reason_for_inclusion": "Reusable Alex/TechTide workflow with explicit guardrails and cross-harness adapter policy."
+    },
+    {
+      "id": "techtide-prompt-to-architecture-extractor",
+      "source_paths": [
+        "$TECHTIDE_ROOT/Claude/BUILD-LOOP.md",
+        "$TECHTIDE_ROOT/Docs/STRUCTURE.md",
+        "$TECHTIDE_ROOT/Apps/TechTideAI/docs/ARCHITECTURE.md"
+      ],
+      "source_type": "sanitized-local-pattern",
+      "extracted_pattern_summary": "Convert rough prompts, transcripts, and prototype notes into architecture decisions, constraints, interfaces, data flows, and implementation-ready work packages.",
+      "intended_harnesses": [
+        "codex",
+        "claude-code",
+        "copilot",
+        "gemini",
+        "cursor",
+        "kiro",
+        "other"
+      ],
+      "companion_adapters": [
+        "cursor",
+        "kiro",
+        "lovable",
+        "v0",
+        "replit"
+      ],
+      "security_risk": "low",
+      "privacy_risk": "low",
+      "reproducibility": "strong",
+      "required_human_approval_gates": [],
+      "validation_status": "cataloged",
+      "reason_for_inclusion": "Reusable Alex/TechTide workflow with explicit guardrails and cross-harness adapter policy."
+    },
+    {
+      "id": "techtide-design-stack-research-synthesizer",
+      "source_paths": [
+        "$TECHTIDE_ROOT/Claude/skills/design/persyn-design-stack-research.md",
+        "$TECHTIDE_ROOT/Claude/PATHSENSE-DESIGN-UPGRADE.md",
+        "$TECHTIDE_ROOT/Claude/AUTOBROKER-DESIGN-UPGRADE.md"
+      ],
+      "source_type": "sanitized-local-pattern",
+      "extracted_pattern_summary": "Synthesize design-tool research into practical app-building guidance across Stitch, Figma, Claude Code, v0, Lovable, and repo-native frontend implementation.",
+      "intended_harnesses": [
+        "codex",
+        "claude-code",
+        "copilot",
+        "gemini",
+        "cursor",
+        "kiro",
+        "other"
+      ],
+      "companion_adapters": [
+        "cursor",
+        "kiro",
+        "lovable",
+        "v0",
+        "replit"
+      ],
+      "security_risk": "low",
+      "privacy_risk": "low",
+      "reproducibility": "strong",
+      "required_human_approval_gates": [
+        "target-specific approval"
+      ],
+      "validation_status": "cataloged",
+      "reason_for_inclusion": "Reusable Alex/TechTide workflow with explicit guardrails and cross-harness adapter policy."
+    },
+    {
+      "id": "techtide-marketing-automation-skill-distiller",
+      "source_paths": [
+        "$TECHTIDE_ROOT/Claude/skills/marketing",
+        "$TECHTIDE_ROOT/Docs/Planning/TechTide_AI_Monetization_Atlas_V3.1_Final.md",
+        "$TECHTIDE_ROOT/Apps/TechTideAI/agents/skills/worker-research.md"
+      ],
+      "source_type": "sanitized-local-pattern",
+      "extracted_pattern_summary": "Extract reusable marketing automation and site-governance workflows into guarded skills without importing private lead lists, campaign exports, or customer data.",
+      "intended_harnesses": [
+        "codex",
+        "claude-code",
+        "copilot",
+        "gemini",
+        "cursor",
+        "kiro",
+        "other"
+      ],
+      "companion_adapters": [
+        "cursor",
+        "kiro",
+        "lovable",
+        "v0",
+        "replit"
+      ],
+      "security_risk": "low",
+      "privacy_risk": "low",
+      "reproducibility": "strong",
+      "required_human_approval_gates": [],
+      "validation_status": "cataloged",
+      "reason_for_inclusion": "Reusable Alex/TechTide workflow with explicit guardrails and cross-harness adapter policy."
+    },
+    {
+      "id": "techtide-knowledge-ingestion-guardrail-review",
+      "source_paths": [
+        "$TECHTIDE_ROOT/Apps/TechTideAI/backend/src/services/knowledge-service.ts",
+        "$TECHTIDE_ROOT/Apps/TechTideAI/docs/API_REFERENCE.md",
+        "$TECHTIDE_ROOT/Apps/TechTideAI/agents/tools/knowledge-base.md"
+      ],
+      "source_type": "sanitized-local-pattern",
+      "extracted_pattern_summary": "Review knowledge ingestion pipelines for source provenance, chunking, embedding, search behavior, redaction, access control, and evidence traceability.",
+      "intended_harnesses": [
+        "codex",
+        "claude-code",
+        "copilot",
+        "gemini",
+        "cursor",
+        "kiro",
+        "other"
+      ],
+      "companion_adapters": [
+        "cursor",
+        "kiro",
+        "lovable",
+        "v0",
+        "replit"
+      ],
+      "security_risk": "low",
+      "privacy_risk": "low",
+      "reproducibility": "strong",
+      "required_human_approval_gates": [],
+      "validation_status": "cataloged",
+      "reason_for_inclusion": "Reusable Alex/TechTide workflow with explicit guardrails and cross-harness adapter policy."
+    },
+    {
+      "id": "techtide-windows-local-automation-guard",
+      "source_paths": [
+        "$TECHTIDE_ROOT/Claude/skills/sandbox-config/SKILL.md",
+        "$TECHTIDE_ROOT/Docs/runbooks/startup.md",
+        "$TECHTIDE_ROOT/Docs/runbooks/9router-troubleshoot.md"
+      ],
+      "source_type": "sanitized-local-pattern",
+      "extracted_pattern_summary": "Run local Windows automation safely by checking resolved paths, shell boundaries, destructive command risk, background process visibility, and approval needs.",
+      "intended_harnesses": [
+        "codex",
+        "claude-code",
+        "copilot",
+        "gemini",
+        "cursor",
+        "kiro",
+        "other"
+      ],
+      "companion_adapters": [
+        "cursor",
+        "kiro",
+        "lovable",
+        "v0",
+        "replit"
+      ],
+      "security_risk": "medium",
+      "privacy_risk": "low",
+      "reproducibility": "strong",
+      "required_human_approval_gates": [],
+      "validation_status": "cataloged",
+      "reason_for_inclusion": "Reusable Alex/TechTide workflow with explicit guardrails and cross-harness adapter policy."
+    },
+    {
+      "id": "techtide-human-approval-gate-designer",
+      "source_paths": [
+        "$TECHTIDE_ROOT/Docs/CONCERNS.md",
+        "$TECHTIDE_ROOT/Claude/skills/hooks-config/SKILL.md",
+        "$TECHTIDE_ROOT/Apps/TechTideAI/README.md"
+      ],
+      "source_type": "sanitized-local-pattern",
+      "extracted_pattern_summary": "Design explicit human approval gates for agent workflows that can mutate production, spend money, contact external recipients, delete data, or change security posture.",
+      "intended_harnesses": [
+        "codex",
+        "claude-code",
+        "copilot",
+        "gemini",
+        "cursor",
+        "kiro",
+        "other"
+      ],
+      "companion_adapters": [
+        "cursor",
+        "kiro",
+        "lovable",
+        "v0",
+        "replit"
+      ],
+      "security_risk": "low",
+      "privacy_risk": "low",
+      "reproducibility": "strong",
+      "required_human_approval_gates": [
+        "target-specific approval"
+      ],
+      "validation_status": "cataloged",
+      "reason_for_inclusion": "Reusable Alex/TechTide workflow with explicit guardrails and cross-harness adapter policy."
+    },
+    {
+      "id": "techtide-cross-harness-export-hygiene",
+      "source_paths": [
+        "$TECHTIDE_ROOT/Apps/techtide-harness-kit/docs/cross-harness-skills.md",
+        "$TECHTIDE_ROOT/Apps/techtide-harness-kit/docs/marketplace-model.md",
+        "$TECHTIDE_ROOT/Claude/skills/init/SKILL.md"
+      ],
+      "source_type": "sanitized-local-pattern",
+      "extracted_pattern_summary": "Prepare skills and agents for cross-harness export by separating canonical SKILL.md assets from Cursor rules, Kiro steering, and prompt-kit adapters.",
+      "intended_harnesses": [
+        "codex",
+        "claude-code",
+        "copilot",
+        "gemini",
+        "cursor",
+        "kiro",
+        "other"
+      ],
+      "companion_adapters": [
+        "cursor",
+        "kiro",
+        "lovable",
+        "v0",
+        "replit"
+      ],
+      "security_risk": "low",
+      "privacy_risk": "low",
+      "reproducibility": "strong",
+      "required_human_approval_gates": [],
+      "validation_status": "cataloged",
+      "reason_for_inclusion": "Reusable Alex/TechTide workflow with explicit guardrails and cross-harness adapter policy."
+    },
+    {
+      "id": "techtide-skill-extraction-promotion",
+      "source_paths": [
+        "$TECHTIDE_ROOT/Claude/skills",
+        "$TECHTIDE_ROOT/Docs/STRUCTURE.md",
+        "$TECHTIDE_ROOT/Apps/TechTideAI/docs/API_REFERENCE.md"
+      ],
+      "source_type": "sanitized-local-pattern",
+      "extracted_pattern_summary": "Extract new TechTide skills from local work safely by inventorying curated sources, scoring privacy and quality risk, generating candidates, and promoting only validated assets.",
+      "intended_harnesses": [
+        "codex",
+        "claude-code",
+        "copilot",
+        "gemini",
+        "cursor",
+        "kiro",
+        "other"
+      ],
+      "companion_adapters": [
+        "cursor",
+        "kiro",
+        "lovable",
+        "v0",
+        "replit"
+      ],
+      "security_risk": "low",
+      "privacy_risk": "low",
+      "reproducibility": "strong",
+      "required_human_approval_gates": [],
+      "validation_status": "cataloged",
+      "reason_for_inclusion": "Reusable Alex/TechTide workflow with explicit guardrails and cross-harness adapter policy."
+    },
+    {
+      "id": "techtide-live-coding-session-retro",
+      "source_paths": [
+        "$TECHTIDE_ROOT/Claude/LESSONS.md",
+        "$TECHTIDE_ROOT/Claude/skills/resume/SKILL.md",
+        "$TECHTIDE_ROOT/Docs/Planning/TechTide_AI_Monetization_Atlas_V3.1_Final.md"
+      ],
+      "source_type": "sanitized-local-pattern",
+      "extracted_pattern_summary": "Turn a live coding session into reusable engineering memory by extracting decisions, failed paths, tool choices, verification evidence, and skill candidates.",
+      "intended_harnesses": [
+        "codex",
+        "claude-code",
+        "copilot",
+        "gemini",
+        "cursor",
+        "kiro",
+        "other"
+      ],
+      "companion_adapters": [
+        "cursor",
+        "kiro",
+        "lovable",
+        "v0",
+        "replit"
+      ],
+      "security_risk": "medium",
+      "privacy_risk": "low",
+      "reproducibility": "strong",
+      "required_human_approval_gates": [
+        "target-specific approval"
+      ],
+      "validation_status": "cataloged",
+      "reason_for_inclusion": "Reusable Alex/TechTide workflow with explicit guardrails and cross-harness adapter policy."
+    }
+  ]
+}

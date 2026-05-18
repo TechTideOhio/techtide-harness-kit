@@ -1,0 +1,6 @@
+{
+  "route": [
+    "techtide-hetzner-live-firewall-rule-guard-agent"
+  ],
+  "mode": "live-guard-gate"
+}

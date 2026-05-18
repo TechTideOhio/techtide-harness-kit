@@ -1,0 +1,6 @@
+{
+  "route": [
+    "techtide-aws-cost-anomaly-watch-coordinator-agent"
+  ],
+  "mode": "single"
+}

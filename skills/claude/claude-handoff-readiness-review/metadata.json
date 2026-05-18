@@ -1,0 +1,37 @@
+{
+  "id": "claude-handoff-readiness-review",
+  "name": "Claude Code Handoff Readiness Review",
+  "type": "skill",
+  "provider": "claude",
+  "harnesses": [
+    "claude-code"
+  ],
+  "summary": "Review Claude Code session output before it enters the durable TechTide repo by checking provenance, tests, security, deployment boundaries, and rollback expectations.",
+  "source_type": "reference-only",
+  "official_docs": [
+    "https://code.claude.com/docs/en/skills"
+  ],
+  "security_notes": "Review source, license, code changes, secrets, and provider-specific activation semantics before installation, export, or production use.",
+  "last_verified": "2026-05-17",
+  "path": "skills/claude/claude-handoff-readiness-review",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/external-skill-research.mjs",
+  "version": "0.1.0",
+  "lifecycle": "beta",
+  "source_urls": [
+    "https://code.claude.com/docs/en/skills",
+    "https://github.com/alirezarezvani/claude-skills",
+    "https://github.com/gsd-build/get-shit-done"
+  ],
+  "source_repo": "https://code.claude.com/docs/en/skills",
+  "source_path": "synthesized/capabilities/handoff-readiness-review.md",
+  "source_license": "documentation-reference-only",
+  "source_commit": "2026-05-17",
+  "upstream_author": "TechTide synthesis from verified sources",
+  "import_mode": "techtide-synthesis",
+  "verification_status": "candidate-valid",
+  "duplicate_hash": "9f705b33f5bf283f1e48f3566608ad410a2c88e6e9ba4786632339e1e01f452f",
+  "native_skill_surface": "SKILL.md skill packages",
+  "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
+}

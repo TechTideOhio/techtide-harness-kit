@@ -1,0 +1,36 @@
+{
+  "id": "techtide-azure-live-keyvault-rotation-purge-guard-agent",
+  "name": "Azure Live Key Vault Rotation Purge Guard",
+  "type": "agent",
+  "provider": "azure",
+  "harnesses": [
+    "codex",
+    "copilot",
+    "claude-code",
+    "cursor",
+    "gemini",
+    "kiro"
+  ],
+  "summary": "Guard Key Vault key and secret rotation, soft-delete enforcement, and purge-protection changes, with explicit irreversibility warning before any purge-protection enable.",
+  "source_type": "original",
+  "official_docs": [
+    "https://learn.microsoft.com/en-us/azure/key-vault/general/key-vault-recovery",
+    "https://learn.microsoft.com/en-us/azure/key-vault/keys/about-keys-details",
+    "https://learn.microsoft.com/en-us/azure/key-vault/keys/how-to-configure-key-rotation",
+    "https://learn.microsoft.com/en-us/azure/key-vault/general/best-practices"
+  ],
+  "security_notes": "Purge-protection enable is irreversible. Soft-deleted keys can be recovered within the retention window. HSM-backed hard-purged keys cannot be recovered. Never grant purge rights to routine rotation operators.",
+  "last_verified": "2026-04-30",
+  "path": "agents/azure/techtide-azure-live-keyvault-rotation-purge-guard-agent",
+  "author": "github: TechTide",
+  "version": "0.1.0",
+  "harness_variants": {
+    "codex": "agents/azure/techtide-azure-live-keyvault-rotation-purge-guard-agent/harnesses/codex.toml",
+    "claude-code": "agents/azure/techtide-azure-live-keyvault-rotation-purge-guard-agent/harnesses/claude-code.agent.md",
+    "copilot": "agents/azure/techtide-azure-live-keyvault-rotation-purge-guard-agent/harnesses/copilot.agent.md",
+    "cursor": "agents/azure/techtide-azure-live-keyvault-rotation-purge-guard-agent/harnesses/cursor.agent.md",
+    "gemini": "agents/azure/techtide-azure-live-keyvault-rotation-purge-guard-agent/harnesses/gemini.agent.md",
+    "kiro-ide": "agents/azure/techtide-azure-live-keyvault-rotation-purge-guard-agent/harnesses/kiro-ide.agent.md",
+    "kiro-cli": "agents/azure/techtide-azure-live-keyvault-rotation-purge-guard-agent/harnesses/kiro-cli.agent.json"
+  }
+}

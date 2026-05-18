@@ -1,0 +1,29 @@
+{
+  "id": "techtide-replit-fullstack-bootstrap",
+  "name": "TechTide Replit Full-Stack Bootstrap",
+  "type": "skill",
+  "provider": "techtide",
+  "harnesses": [
+    "codex",
+    "claude-code",
+    "copilot",
+    "gemini",
+    "cursor",
+    "kiro",
+    "other"
+  ],
+  "summary": "Bootstrap Replit projects with a clear app contract, environment variable model, test loop, deployment boundary, and migration path back into a durable repository.",
+  "source_type": "original",
+  "official_docs": [
+    "https://docs.replit.com/core-concepts/agent/skills",
+    "https://docs.npmjs.com/"
+  ],
+  "security_notes": "Do not store production secrets in files. Treat public repls as public code and data surfaces.",
+  "last_verified": "2026-05-17",
+  "path": "skills/techtide/techtide-replit-fullstack-bootstrap",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/techtide-skill-ingestion.mjs",
+  "version": "0.1.0",
+  "lifecycle": "beta"
+}

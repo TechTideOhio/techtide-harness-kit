@@ -1,0 +1,37 @@
+{
+  "id": "cursor-multi-agent-orchestration",
+  "name": "Cursor Multi-Agent Orchestration",
+  "type": "skill",
+  "provider": "cursor",
+  "harnesses": [
+    "cursor"
+  ],
+  "summary": "Coordinate Cursor with other agents by splitting work into bounded scopes, clear contracts, integration checks, and review gates.",
+  "source_type": "reference-only",
+  "official_docs": [
+    "https://docs.cursor.com/context/rules"
+  ],
+  "security_notes": "Review source, license, code changes, secrets, and provider-specific activation semantics before installation, export, or production use.",
+  "last_verified": "2026-05-17",
+  "path": "skills/cursor/cursor-multi-agent-orchestration",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/external-skill-research.mjs",
+  "version": "0.1.0",
+  "lifecycle": "beta",
+  "source_urls": [
+    "https://github.com/gsd-build/get-shit-done",
+    "https://github.com/alirezarezvani/claude-skills",
+    "https://docs.cursor.com/context/rules"
+  ],
+  "source_repo": "https://github.com/gsd-build/get-shit-done",
+  "source_path": "synthesized/capabilities/multi-agent-orchestration.md",
+  "source_license": "documentation-reference-only",
+  "source_commit": "2026-05-17T18:53:56Z",
+  "upstream_author": "TechTide synthesis from verified sources",
+  "import_mode": "techtide-synthesis",
+  "verification_status": "candidate-valid",
+  "duplicate_hash": "f9ff71a6842039fa6c42f8dcb924b0be87239b5920d08187c1e67a6fa612cfb1",
+  "native_skill_surface": "Cursor project rules in .cursor/rules, not native SKILL.md",
+  "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
+}

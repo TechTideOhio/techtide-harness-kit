@@ -1,0 +1,36 @@
+{
+  "id": "kiro-source-trust-gate",
+  "name": "Kiro Source Trust Gate",
+  "type": "skill",
+  "provider": "kiro",
+  "harnesses": [
+    "kiro"
+  ],
+  "summary": "Verify Kiro skill, rule, and agent sources before installation or reuse by checking primary docs, repository identity, license, native surface, and privacy risk.",
+  "source_type": "reference-only",
+  "official_docs": [
+    "https://kiro.dev/docs/skills/",
+    "https://kiro.dev/docs/steering/"
+  ],
+  "security_notes": "Review source, license, code changes, secrets, and provider-specific activation semantics before installation, export, or production use.",
+  "last_verified": "2026-05-17",
+  "path": "skills/kiro/kiro-source-trust-gate",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/external-skill-research.mjs",
+  "version": "0.1.0",
+  "lifecycle": "stable",
+  "source_urls": [
+    "https://kiro.dev/docs/skills/"
+  ],
+  "source_repo": "https://kiro.dev/docs/skills/",
+  "source_path": "synthesized/capabilities/source-trust-gate.md",
+  "source_license": "documentation-reference-only",
+  "source_commit": "2026-05-17",
+  "upstream_author": "TechTide synthesis from verified sources",
+  "import_mode": "techtide-synthesis",
+  "verification_status": "candidate-valid",
+  "duplicate_hash": "2864a594e3e2a6f5ea56a88a1d27534834a0bcc8162829cc7990e012371460c0",
+  "native_skill_surface": ".kiro/skills workspace skills plus Kiro steering when appropriate",
+  "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
+}

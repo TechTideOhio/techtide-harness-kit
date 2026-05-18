@@ -1,0 +1,37 @@
+name: Provider lane request
+description: Request or update support for a coding harness, provider, or skill surface.
+title: "[provider-lane]: "
+labels: ["provider-lane", "needs-research"]
+body:
+  - type: input
+    id: provider
+    attributes:
+      label: Provider or harness
+      placeholder: Lovable, Replit, v0, Kiro, Cursor
+    validations:
+      required: true
+  - type: input
+    id: primary_docs
+    attributes:
+      label: Primary docs URL
+      placeholder: https://docs.example.com/skills
+    validations:
+      required: true
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Claimed native surface
+      options:
+        - Native SKILL.md or equivalent
+        - Rules or steering only
+        - Prompt kit or adapter
+        - Unknown and needs research
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Evidence and constraints
+      description: Include license, import path, and compatibility notes if known.
+    validations:
+      required: true

@@ -1,0 +1,28 @@
+{
+  "id": "techtide-lovable-self-heal-debugger",
+  "name": "TechTide Lovable Self-Heal Debugger",
+  "type": "skill",
+  "provider": "techtide",
+  "harnesses": [
+    "codex",
+    "claude-code",
+    "copilot",
+    "gemini",
+    "cursor",
+    "kiro",
+    "other"
+  ],
+  "summary": "Diagnose Lovable app failures with a repeatable wait, inspect, isolate, prompt, and verify loop for dependency, iframe, auth, routing, and preview-cache issues.",
+  "source_type": "original",
+  "official_docs": [
+    "https://docs.lovable.dev/features/skills"
+  ],
+  "security_notes": "Do not disable authentication, authorization, or validation in production code. Temporary mock bypasses must be labeled as prototype-only.",
+  "last_verified": "2026-05-17",
+  "path": "skills/techtide/techtide-lovable-self-heal-debugger",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/techtide-skill-ingestion.mjs",
+  "version": "0.1.0",
+  "lifecycle": "stable"
+}

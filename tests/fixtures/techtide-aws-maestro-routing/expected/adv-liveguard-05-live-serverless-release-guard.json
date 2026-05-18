@@ -1,0 +1,6 @@
+{
+  "route": [
+    "techtide-aws-live-serverless-release-guard-agent"
+  ],
+  "mode": "live-guard-gate"
+}

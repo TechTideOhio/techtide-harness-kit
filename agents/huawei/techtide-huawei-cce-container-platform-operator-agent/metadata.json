@@ -1,0 +1,35 @@
+{
+  "id": "techtide-huawei-cce-container-platform-operator-agent",
+  "name": "Huawei CCE Container Platform Operator",
+  "type": "agent",
+  "provider": "huawei",
+  "harnesses": [
+    "codex",
+    "copilot",
+    "claude-code",
+    "cursor",
+    "gemini",
+    "kiro"
+  ],
+  "summary": "Operate CCE clusters, SWR image lifecycle, ASM traffic policies, and IEF edge node integration for Huawei Cloud container workloads.",
+  "source_type": "original",
+  "companion_skills": ["techtide-huawei-cce-container-platform-operator"],
+  "official_docs": [
+    "https://support.huaweicloud.com/intl/en-us/cce/index.html",
+    "https://support.huaweicloud.com/intl/en-us/swr/index.html"
+  ],
+  "security_notes": "CCE cluster version downgrade is not supported. Node pool scale-down evicts workloads. Production namespace mutations require explicit confirmation.",
+  "last_verified": "2026-05-08",
+  "path": "agents/huawei/techtide-huawei-cce-container-platform-operator-agent",
+  "harness_variants": {
+    "codex": "agents/huawei/techtide-huawei-cce-container-platform-operator-agent/harnesses/codex.toml",
+    "copilot": "agents/huawei/techtide-huawei-cce-container-platform-operator-agent/harnesses/copilot.agent.md",
+    "claude-code": "agents/huawei/techtide-huawei-cce-container-platform-operator-agent/harnesses/claude-code.agent.md",
+    "cursor": "agents/huawei/techtide-huawei-cce-container-platform-operator-agent/harnesses/cursor.agent.md",
+    "gemini": "agents/huawei/techtide-huawei-cce-container-platform-operator-agent/harnesses/gemini.agent.md",
+    "kiro-ide": "agents/huawei/techtide-huawei-cce-container-platform-operator-agent/harnesses/kiro-ide.agent.md",
+    "kiro-cli": "agents/huawei/techtide-huawei-cce-container-platform-operator-agent/harnesses/kiro-cli.agent.json"
+  },
+  "author": "github: TechTide",
+  "version": "0.1.0"
+}

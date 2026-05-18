@@ -1,0 +1,38 @@
+{
+  "id": "codex-repo-reconnaissance",
+  "name": "OpenAI Codex Repo Reconnaissance",
+  "type": "skill",
+  "provider": "codex",
+  "harnesses": [
+    "codex"
+  ],
+  "summary": "Use OpenAI Codex to map an unfamiliar repository before implementation by finding entrypoints, commands, ownership boundaries, risks, and tests.",
+  "source_type": "reference-only",
+  "official_docs": [
+    "https://developers.openai.com/codex/"
+  ],
+  "security_notes": "Review source, license, code changes, secrets, and provider-specific activation semantics before installation, export, or production use.",
+  "last_verified": "2026-05-17",
+  "path": "skills/codex/codex-repo-reconnaissance",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/external-skill-research.mjs",
+  "version": "0.1.0",
+  "lifecycle": "beta",
+  "source_urls": [
+    "https://github.com/gsd-build/get-shit-done",
+    "https://github.com/sickn33/antigravity-awesome-skills",
+    "https://developers.openai.com/codex/",
+    "https://github.com/ComposioHQ/awesome-codex-skills"
+  ],
+  "source_repo": "https://github.com/gsd-build/get-shit-done",
+  "source_path": "synthesized/capabilities/repo-reconnaissance.md",
+  "source_license": "documentation-reference-only",
+  "source_commit": "2026-05-17T18:53:56Z",
+  "upstream_author": "TechTide synthesis from verified sources",
+  "import_mode": "techtide-synthesis",
+  "verification_status": "candidate-valid",
+  "duplicate_hash": "556b65de9458ab2c672eaaecbffd8c591209ff5f3c7ca93e00d53df294a60057",
+  "native_skill_surface": "Codex-compatible SKILL.md packages",
+  "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
+}

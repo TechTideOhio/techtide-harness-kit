@@ -1,0 +1,4 @@
+{
+  "route": ["techtide-finops-cloud-price-advisor-agent", "techtide-finops-kubernetes-rightsizer-agent"],
+  "mode": "parallel (2)"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "techtide-v0-ui-prompt-hardener",
+  "name": "TechTide v0 UI Prompt Hardener",
+  "type": "skill",
+  "provider": "techtide",
+  "harnesses": [
+    "codex",
+    "claude-code",
+    "copilot",
+    "gemini",
+    "cursor",
+    "kiro",
+    "other"
+  ],
+  "summary": "Shape v0 UI prompts into implementable, accessible, responsive interface specifications with explicit data states, constraints, and handoff checks.",
+  "source_type": "original",
+  "official_docs": [
+    "https://vercel.com/docs/agent-resources/skills"
+  ],
+  "security_notes": "Do not request real customer data, private brand exports, or production credentials in UI prompts. Replace secrets with placeholders.",
+  "last_verified": "2026-05-17",
+  "path": "skills/techtide/techtide-v0-ui-prompt-hardener",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/techtide-skill-ingestion.mjs",
+  "version": "0.1.0",
+  "lifecycle": "beta"
+}

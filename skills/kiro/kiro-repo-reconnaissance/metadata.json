@@ -1,0 +1,38 @@
+{
+  "id": "kiro-repo-reconnaissance",
+  "name": "Kiro Repo Reconnaissance",
+  "type": "skill",
+  "provider": "kiro",
+  "harnesses": [
+    "kiro"
+  ],
+  "summary": "Use Kiro to map an unfamiliar repository before implementation by finding entrypoints, commands, ownership boundaries, risks, and tests.",
+  "source_type": "reference-only",
+  "official_docs": [
+    "https://kiro.dev/docs/skills/",
+    "https://kiro.dev/docs/steering/"
+  ],
+  "security_notes": "Review source, license, code changes, secrets, and provider-specific activation semantics before installation, export, or production use.",
+  "last_verified": "2026-05-17",
+  "path": "skills/kiro/kiro-repo-reconnaissance",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/external-skill-research.mjs",
+  "version": "0.1.0",
+  "lifecycle": "beta",
+  "source_urls": [
+    "https://github.com/gsd-build/get-shit-done",
+    "https://github.com/sickn33/antigravity-awesome-skills",
+    "https://kiro.dev/docs/skills/"
+  ],
+  "source_repo": "https://github.com/gsd-build/get-shit-done",
+  "source_path": "synthesized/capabilities/repo-reconnaissance.md",
+  "source_license": "documentation-reference-only",
+  "source_commit": "2026-05-17T18:53:56Z",
+  "upstream_author": "TechTide synthesis from verified sources",
+  "import_mode": "techtide-synthesis",
+  "verification_status": "candidate-valid",
+  "duplicate_hash": "3b2a1928d329f1bda2ee3211d7e4e7fb78c560926192bd5e9869f48e47f4e41f",
+  "native_skill_surface": ".kiro/skills workspace skills plus Kiro steering when appropriate",
+  "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
+}

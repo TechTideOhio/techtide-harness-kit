@@ -1,0 +1,30 @@
+{
+  "id": "techtide-design-stack-research-synthesizer",
+  "name": "TechTide Design Stack Research Synthesizer",
+  "type": "skill",
+  "provider": "techtide",
+  "harnesses": [
+    "codex",
+    "claude-code",
+    "copilot",
+    "gemini",
+    "cursor",
+    "kiro",
+    "other"
+  ],
+  "summary": "Synthesize design-tool research into practical app-building guidance across Stitch, Figma, Claude Code, v0, Lovable, and repo-native frontend implementation.",
+  "source_type": "original",
+  "official_docs": [
+    "https://vercel.com/docs/agent-resources/skills",
+    "https://docs.lovable.dev/features/skills",
+    "https://docs.anthropic.com/en/docs/claude-code/overview"
+  ],
+  "security_notes": "Do not upload proprietary brand assets, private user screenshots, or customer data to external design tools without approval.",
+  "last_verified": "2026-05-17",
+  "path": "skills/techtide/techtide-design-stack-research-synthesizer",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/techtide-skill-ingestion.mjs",
+  "version": "0.1.0",
+  "lifecycle": "beta"
+}

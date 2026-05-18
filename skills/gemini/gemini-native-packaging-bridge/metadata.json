@@ -1,0 +1,37 @@
+{
+  "id": "gemini-native-packaging-bridge",
+  "name": "Gemini CLI Native Packaging Bridge",
+  "type": "skill",
+  "provider": "gemini",
+  "harnesses": [
+    "gemini"
+  ],
+  "summary": "Translate TechTide-authored workflows into the documented Gemini CLI packaging surface without pretending every agent uses the same activation model.",
+  "source_type": "reference-only",
+  "official_docs": [
+    "https://github.com/google-gemini/gemini-skills",
+    "https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/cli-reference.md"
+  ],
+  "security_notes": "Review source, license, code changes, secrets, and provider-specific activation semantics before installation, export, or production use.",
+  "last_verified": "2026-05-17",
+  "path": "skills/gemini/gemini-native-packaging-bridge",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/external-skill-research.mjs",
+  "version": "0.1.0",
+  "lifecycle": "stable",
+  "source_urls": [
+    "https://github.com/google-gemini/gemini-skills",
+    "https://github.com/sickn33/antigravity-awesome-skills"
+  ],
+  "source_repo": "https://github.com/google-gemini/gemini-skills",
+  "source_path": "synthesized/capabilities/native-packaging-bridge.md",
+  "source_license": "documentation-reference-only",
+  "source_commit": "2026-05-16T21:56:16Z",
+  "upstream_author": "TechTide synthesis from verified sources",
+  "import_mode": "techtide-synthesis",
+  "verification_status": "candidate-valid",
+  "duplicate_hash": "c5e4d2518db06e8c7d32cd690da4025a6b91a07348fe6dc96adaad3ffe05451b",
+  "native_skill_surface": "Gemini CLI SKILL.md packages",
+  "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
+}

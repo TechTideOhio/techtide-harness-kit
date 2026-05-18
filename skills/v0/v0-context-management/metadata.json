@@ -1,0 +1,39 @@
+{
+  "id": "v0-context-management",
+  "name": "v0 Context Management",
+  "type": "skill",
+  "provider": "v0",
+  "harnesses": [
+    "other"
+  ],
+  "summary": "Keep v0 sessions from drifting by packaging concise project context, current state, decisions, and verification results.",
+  "source_type": "reference-only",
+  "official_docs": [
+    "https://vercel.com/docs/v0",
+    "https://vercel.com/docs/agent-resources/skills"
+  ],
+  "security_notes": "Review source, license, code changes, secrets, and provider-specific activation semantics before installation, export, or production use.",
+  "last_verified": "2026-05-17",
+  "path": "skills/v0/v0-context-management",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/external-skill-research.mjs",
+  "version": "0.1.0",
+  "lifecycle": "beta",
+  "source_urls": [
+    "https://github.com/gsd-build/get-shit-done",
+    "https://github.com/alirezarezvani/claude-skills",
+    "https://vercel.com/docs/v0",
+    "https://vercel.com/docs/agent-resources/skills"
+  ],
+  "source_repo": "https://github.com/gsd-build/get-shit-done",
+  "source_path": "synthesized/capabilities/context-management.md",
+  "source_license": "documentation-reference-only",
+  "source_commit": "2026-05-17T18:53:56Z",
+  "upstream_author": "TechTide synthesis from verified sources",
+  "import_mode": "techtide-synthesis",
+  "verification_status": "candidate-valid",
+  "duplicate_hash": "b2c4e52c216217b68c58b0b0f5c40b837f045c570bfeb27d5170d2ca24eebb60",
+  "native_skill_surface": "v0 and Vercel skill-compatible UI generation workflows",
+  "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
+}

@@ -1,0 +1,8 @@
+{
+  "route": [
+    "techtide-nvidia-ai-infrastructure-operations-agent",
+    "techtide-nvidia-ai-networking-fabric-review-agent",
+    "techtide-nvidia-gpu-operator-kubernetes-hardening-agent"
+  ],
+  "mode": "parallel (3)"
+}

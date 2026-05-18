@@ -1,0 +1,152 @@
+# ☸️ Kubernetes Agents
+
+<p align="center">
+  <span style="font-size:3.5em">☸️</span>
+</p>
+
+Kubernetes agent catalog for this marketplace.
+
+## 🧱 Agent tiers
+
+| Tier | Purpose | Default access | Live cluster mutation |
+|---|---|---|---|
+| Review agents | Audit RBAC, admission, PSA, workload identity, mesh, networking | read-only | not allowed by default |
+| Guarded live operators | Work in repos or shells connected to live clusters via kubectl / argocd CLI | workspace-write | approval-gated and target-confirmed only |
+
+---
+
+## 🧭 Maestro router
+
+| Agent | Primary use | Default live posture |
+|---|---|---|
+| `techtide-kubernetes-maestro-agent` | Classify task → select narrowest specialist(s) → dispatch in parallel; never auto-dispatch live-guard agents | read-only |
+
+Install the maestro if you want a single entry point that routes to the right specialist automatically.
+
+---
+
+## 🔐 RBAC agents
+
+| Agent | Primary use | Default live posture | Must refuse when |
+|---|---|---|---|
+| `techtide-kubernetes-rbac-review-agent` | Review Roles, ClusterRoles, RoleBindings, ClusterRoleBindings | read-only | - |
+| `techtide-kubernetes-live-rbac-mutation-guard-agent` | Guard live kubectl apply/create/delete on RBAC objects | current-state capture + escalation check + approval required | `escalate`, `bind`, or `impersonate` verbs present; wildcard verb/resource grants; cluster-admin binding without platform-team sign-off |
+
+---
+
+## 🛡️ Pod security agents
+
+| Agent | Primary use | Default live posture | Must refuse when |
+|---|---|---|---|
+| `techtide-kubernetes-psa-review-agent` | Review Pod Security Admission namespace labels - enforce/audit/warn mode, version pinning, PSP migration posture | read-only | - |
+| `techtide-kubernetes-pod-spec-review-agent` | Review individual Pod/Deployment/StatefulSet specs - securityContext, capabilities, privileged, readOnlyRootFilesystem, host network/PID/IPC, image tag pinning | read-only | - |
+
+---
+
+## 🔑 Secrets and PKI agents
+
+| Agent | Primary use | Default live posture | Must refuse when |
+|---|---|---|---|
+| `techtide-external-secrets-operator-review-agent` | Review ESO SecretStore, ClusterSecretStore, ExternalSecret, PushSecret for scope creep, auth anti-patterns, refresh interval, dataFrom blast radius | read-only | - |
+
+---
+
+## 💰 Cost attribution agents
+
+| Agent | Primary use | Default live posture | Must refuse when |
+|---|---|---|---|
+| `techtide-kubecost-chargeback-allocation-review-agent` | Review Kubecost label taxonomy, shared cost model, idle allocation policy, namespace budget alerts, API auth | read-only | - |
+
+---
+
+## 🆔 Workload identity agents
+
+| Agent | Primary use | Default live posture | Must refuse when |
+|---|---|---|---|
+| `techtide-kubernetes-workload-identity-review-agent` | Review IRSA, Azure Workload Identity, GKE Workload Identity Federation, projected token config, `automountServiceAccountToken`, OIDC trust policy scope | read-only | - |
+
+---
+
+## 🛡️ Admission policy agents
+
+| Agent | Primary use | Default live posture | Must refuse when |
+|---|---|---|---|
+| `techtide-kubernetes-live-admission-policy-guard-agent` | Guard live kubectl apply/delete on Kyverno ClusterPolicy, Policy, PolicyException, ValidatingAdmissionPolicy, MutatingAdmissionPolicy | current-state capture + blast-radius assessment + explicit platform-team sign-off required | `failureAction: Enforce` on untested policy; PolicyException without expiry or scope evidence; wildcard subject |
+
+---
+
+## 🔄 GitOps / sync agents
+
+| Agent | Primary use | Default live posture | Must refuse when |
+|---|---|---|---|
+| `techtide-kubernetes-live-argocd-sync-guard-agent` | Guard live argocd sync, argocd app set, AppProject mutations, sync-window changes | current-state capture + rollback plan + explicit platform-team sign-off required | Sync impersonation without identity review; AppProject with cluster-admin clusterResourceWhitelist; sync-window deletion without downstream impact assessment |
+
+---
+
+## 🕸️ Mesh policy agents
+
+| Agent | Primary use | Default live posture | Must refuse when |
+|---|---|---|---|
+| `techtide-kubernetes-live-mesh-policy-guard-agent` | Guard live kubectl apply/delete on Istio AuthorizationPolicy, PeerAuthentication, RequestAuthentication, Gateway, VirtualService resources | current-state capture + traffic impact assessment + explicit platform-team sign-off required | Policy with `action: DENY` on wide selector without traffic analysis; removing `STRICT` PeerAuthentication without mTLS migration plan; L7 AuthorizationPolicy in ambient mode with no waypoint enrolled |
+
+---
+
+## 🌐 Network architecture agents
+
+| Agent | Primary use | Default live posture | Must refuse when |
+|---|---|---|---|
+| `techtide-kubernetes-network-architecture-review-agent` | Review CNI and dataplane, kube-proxy mode, IPAM and CIDR sizing, MTU, dual-stack, Service surface, Ingress to Gateway API migration, CoreDNS and NodeLocal DNSCache, multi-cluster topology, and connectivity observability | read-only | - |
+| `techtide-kubernetes-live-network-architecture-mutation-guard-agent` | Guard live `kubectl apply/patch/create` on Service spec patches (`internalTrafficPolicy`, `externalTrafficPolicy`, `topology-mode`, `trafficDistribution`), CoreDNS Corefile, NodeLocal DNSCache install, Gateway API resources, and Cilium ClusterMesh peer Secrets | least-privilege ServiceAccount + pre-flight `kubectl auth can-i` matrix per [`docs/least-privilege-rbac.md`](../../docs/least-privilege-rbac.md) | One-way doors HARD REFUSED: CNI replacement, kube-proxy mode swap, MTU change, Pod / Service CIDR resize, namespace deletion, kube-system DaemonSet/Deployment writes, CRD operations, broad Secret access, any operation when operator is `cluster-admin` or in `system:masters` |
+
+---
+
+## 🐝 Network policy agents
+
+| Agent | Primary use | Default live posture | Must refuse when |
+|---|---|---|---|
+| `techtide-kubernetes-live-network-policy-guard-agent` | Guard live kubectl apply/delete on CiliumNetworkPolicy, CiliumClusterwideNetworkPolicy, standard NetworkPolicy | current-state capture + connectivity impact assessment + explicit platform-team sign-off required | Policy permitting egress to 169.254.169.254 (metadata service) without explicit justification; clusterwide policy deletion without replacement |
+
+---
+
+## 💾 Backup and restore agents
+
+| Agent | Primary use | Default live posture | Must refuse when |
+|---|---|---|---|
+| `techtide-kubernetes-live-velero-restore-guard-agent` | Guard live velero restore create, backup schedule deletion, and backup lifecycle operations | current-state capture + pre-restore checklist + explicit platform-team sign-off required | Cluster-wide restore without ticket reference; restore from `PartiallyFailed` backup without explicit acknowledgment; `existingResourcePolicy: update` without approver review of overwrite scope |
+
+---
+
+## 🛡️ Operating notes
+
+- Review agents stay read-only - they never write to the cluster
+- Live-guard agents require **explicit platform-team sign-off** with cluster context and current state before every mutation
+- All live-guard agents capture `kubectl get ... -o yaml` before any write - this is the rollback artifact
+- RBAC has no built-in rollback - cached service account tokens remain valid after binding deletion until they expire (up to 1 hour)
+- Admission policy changes with `failureAction: Enforce` can block workload admission cluster-wide - treat them as breaking changes
+- All live-guard agents produce a structured verdict response - see [`docs/evidence-output-spec.md`](../../docs/evidence-output-spec.md)
+
+---
+
+## 📦 Install
+
+```bash
+# 🧭 Install the maestro router (routes to all specialists)
+npx thk-export-agents --platform claude-code --agents techtide-kubernetes-maestro-agent --repo .
+
+# 🔐 RBAC specialist
+npx thk-export-agents --platform claude-code --agents techtide-kubernetes-rbac-review-agent --repo .
+
+# 🆔 Workload identity specialist
+npx thk-export-agents --platform claude-code --agents techtide-kubernetes-workload-identity-review-agent --repo .
+
+# 📦 Install by role (recommended - installs the right curated set)
+npx thk-export-agents --platform claude-code --role kubernetes-admission-security-engineer --repo .
+npx thk-export-agents --platform claude-code --role kubernetes-network-engineer --repo .
+npx thk-export-agents --platform claude-code --role kubernetes-application-platform-engineer --repo .
+npx thk-export-agents --platform claude-code --role kubernetes-runtime-security-engineer --repo .
+npx thk-export-agents --platform claude-code --role kubernetes-pki-engineer --repo .
+npx thk-export-agents --platform claude-code --role kubernetes-observability-engineer --repo .
+npx thk-export-agents --platform claude-code --role kubernetes-supply-chain-security-engineer --repo .
+npx thk-export-agents --platform claude-code --role kubernetes-developer-platform-engineer --repo .
+npx thk-export-agents --platform claude-code --role kubernetes-disaster-recovery-engineer --repo .
+```

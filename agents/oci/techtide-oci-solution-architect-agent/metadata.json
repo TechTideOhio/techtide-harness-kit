@@ -1,0 +1,34 @@
+{
+  "id": "techtide-oci-solution-architect-agent",
+  "name": "OCI Solution Architect",
+  "type": "agent",
+  "provider": "oci",
+  "harnesses": [
+    "codex",
+    "copilot",
+    "claude-code",
+    "cursor",
+    "gemini",
+    "kiro"
+  ],
+  "summary": "Agent for techtide-oci-solution-architect. Design, review, and stress-test Oracle Cloud Infrastructure solution architectures across identity, compartments, networking, compute, database, storage, observability, security, reliability, cost, and operations.",
+  "source_type": "adapted",
+  "official_docs": [
+    "https://docs.oracle.com/en-us/iaas/Content/home.htm",
+    "https://www.oracle.com/cloud/"
+  ],
+  "security_notes": "OCI agents can inspect or guide changes to cloud resources. Use least-privilege access, read-only discovery first, and explicit approval for mutations.",
+  "last_verified": "2026-04-27",
+  "path": "agents/oci/techtide-oci-solution-architect-agent",
+  "harness_variants": {
+    "codex": "agents/oci/techtide-oci-solution-architect-agent/harnesses/codex.toml",
+    "copilot": "agents/oci/techtide-oci-solution-architect-agent/harnesses/copilot.agent.md",
+    "claude-code": "agents/oci/techtide-oci-solution-architect-agent/harnesses/claude-code.agent.md",
+    "cursor": "agents/oci/techtide-oci-solution-architect-agent/harnesses/cursor.agent.md",
+    "gemini": "agents/oci/techtide-oci-solution-architect-agent/harnesses/gemini.agent.md",
+    "kiro-ide": "agents/oci/techtide-oci-solution-architect-agent/harnesses/kiro-ide.agent.md",
+    "kiro-cli": "agents/oci/techtide-oci-solution-architect-agent/harnesses/kiro-cli.agent.json"
+  },
+  "author": "github: TechTide",
+  "version": "0.2.0"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "techtide-skill-extraction-promotion",
+  "name": "TechTide Skill Extraction Promotion",
+  "type": "skill",
+  "provider": "techtide",
+  "harnesses": [
+    "codex",
+    "claude-code",
+    "copilot",
+    "gemini",
+    "cursor",
+    "kiro",
+    "other"
+  ],
+  "summary": "Extract new TechTide skills from local work safely by inventorying curated sources, scoring privacy and quality risk, generating candidates, and promoting only validated assets.",
+  "source_type": "original",
+  "official_docs": [
+    "https://docs.anthropic.com/en/docs/claude-code/overview",
+    "https://developers.openai.com/codex/"
+  ],
+  "security_notes": "Reject candidates containing raw PII, credentials, private customer data, local machine secrets, or old provenance markers.",
+  "last_verified": "2026-05-17",
+  "path": "skills/techtide/techtide-skill-extraction-promotion",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/techtide-skill-ingestion.mjs",
+  "version": "0.1.0",
+  "lifecycle": "stable"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "techtide-oci-live-oke-rollout-guard-agent",
+  "name": "OCI Live OKE Rollout Guard",
+  "type": "agent",
+  "provider": "oci",
+  "harnesses": [
+    "codex",
+    "copilot",
+    "claude-code",
+    "cursor",
+    "gemini",
+    "kiro"
+  ],
+  "summary": "Guard OKE deployment rollouts through DevOps Service pipeline approval stages with blue-green and canary evidence, and kubectl rollout pause or undo gate.",
+  "source_type": "original",
+  "official_docs": [
+    "https://docs.oracle.com/en-us/iaas/Content/devops/using/deploy_oke.htm",
+    "https://docs.oracle.com/en-us/iaas/Content/devops/using/bgoke_deploy.htm",
+    "https://docs.oracle.com/en-us/iaas/Content/devops/using/canaryoke_deploy.htm",
+    "https://docs.oracle.com/en-us/iaas/Content/ContEng/Concepts/contengoverview.htm"
+  ],
+  "security_notes": "Never advance an OKE rollout past an approval stage without rollout status and PDB health evidence. kubectl rollout undo is irreversible in the sense that the prior version may not be identical to the deployed artifact - confirm target revision before undo.",
+  "last_verified": "2026-04-30",
+  "path": "agents/oci/techtide-oci-live-oke-rollout-guard-agent",
+  "author": "github: TechTide",
+  "version": "0.1.0",
+  "harness_variants": {
+    "codex": "agents/oci/techtide-oci-live-oke-rollout-guard-agent/harnesses/codex.toml",
+    "claude-code": "agents/oci/techtide-oci-live-oke-rollout-guard-agent/harnesses/claude-code.agent.md",
+    "copilot": "agents/oci/techtide-oci-live-oke-rollout-guard-agent/harnesses/copilot.agent.md",
+    "cursor": "agents/oci/techtide-oci-live-oke-rollout-guard-agent/harnesses/cursor.agent.md",
+    "gemini": "agents/oci/techtide-oci-live-oke-rollout-guard-agent/harnesses/gemini.agent.md",
+    "kiro-ide": "agents/oci/techtide-oci-live-oke-rollout-guard-agent/harnesses/kiro-ide.agent.md",
+    "kiro-cli": "agents/oci/techtide-oci-live-oke-rollout-guard-agent/harnesses/kiro-cli.agent.json"
+  }
+}

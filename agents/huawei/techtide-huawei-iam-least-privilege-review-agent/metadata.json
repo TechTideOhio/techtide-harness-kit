@@ -1,0 +1,34 @@
+{
+  "id": "techtide-huawei-iam-least-privilege-review-agent",
+  "name": "Huawei IAM Least Privilege Reviewer",
+  "type": "agent",
+  "provider": "huawei",
+  "harnesses": [
+    "codex",
+    "copilot",
+    "claude-code",
+    "cursor",
+    "gemini",
+    "kiro"
+  ],
+  "summary": "Audit IAM fine-grained policies, SCP statements at Organizations level, agency trust relationships, and enterprise project permission boundaries for Huawei Cloud.",
+  "source_type": "original",
+  "companion_skills": ["techtide-huawei-iam-least-privilege-review"],
+  "official_docs": [
+    "https://support.huaweicloud.com/intl/en-us/iam/index.html"
+  ],
+  "security_notes": "SCP deny statements cascade to all member accounts. Never request credentials or access tokens. IAM policy with full admin access (*:*) is a critical finding.",
+  "last_verified": "2026-05-08",
+  "path": "agents/huawei/techtide-huawei-iam-least-privilege-review-agent",
+  "harness_variants": {
+    "codex": "agents/huawei/techtide-huawei-iam-least-privilege-review-agent/harnesses/codex.toml",
+    "copilot": "agents/huawei/techtide-huawei-iam-least-privilege-review-agent/harnesses/copilot.agent.md",
+    "claude-code": "agents/huawei/techtide-huawei-iam-least-privilege-review-agent/harnesses/claude-code.agent.md",
+    "cursor": "agents/huawei/techtide-huawei-iam-least-privilege-review-agent/harnesses/cursor.agent.md",
+    "gemini": "agents/huawei/techtide-huawei-iam-least-privilege-review-agent/harnesses/gemini.agent.md",
+    "kiro-ide": "agents/huawei/techtide-huawei-iam-least-privilege-review-agent/harnesses/kiro-ide.agent.md",
+    "kiro-cli": "agents/huawei/techtide-huawei-iam-least-privilege-review-agent/harnesses/kiro-cli.agent.json"
+  },
+  "author": "github: TechTide",
+  "version": "0.1.0"
+}

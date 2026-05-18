@@ -1,0 +1,28 @@
+{
+  "id": "techtide-knowledge-ingestion-guardrail-review",
+  "name": "TechTide Knowledge Ingestion Guardrail Review",
+  "type": "skill",
+  "provider": "techtide",
+  "harnesses": [
+    "codex",
+    "claude-code",
+    "copilot",
+    "gemini",
+    "cursor",
+    "kiro",
+    "other"
+  ],
+  "summary": "Review knowledge ingestion pipelines for source provenance, chunking, embedding, search behavior, redaction, access control, and evidence traceability.",
+  "source_type": "original",
+  "official_docs": [
+    "https://developers.openai.com/codex/"
+  ],
+  "security_notes": "Do not index secrets, raw PII, privileged customer documents, or service-role keys. Store redacted presence/classification only when auditing sensitive sources.",
+  "last_verified": "2026-05-17",
+  "path": "skills/techtide/techtide-knowledge-ingestion-guardrail-review",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/techtide-skill-ingestion.mjs",
+  "version": "0.1.0",
+  "lifecycle": "stable"
+}

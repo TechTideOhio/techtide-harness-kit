@@ -1,0 +1,32 @@
+{
+  "id": "techtide-cross-harness-export-hygiene",
+  "name": "TechTide Cross Harness Export Hygiene",
+  "type": "skill",
+  "provider": "techtide",
+  "harnesses": [
+    "codex",
+    "claude-code",
+    "copilot",
+    "gemini",
+    "cursor",
+    "kiro",
+    "other"
+  ],
+  "summary": "Prepare skills and agents for cross-harness export by separating canonical SKILL.md assets from Cursor rules, Kiro steering, and prompt-kit adapters.",
+  "source_type": "original",
+  "official_docs": [
+    "https://code.visualstudio.com/docs/copilot/customization/agent-skills",
+    "https://ai.google.dev/gemini-api/docs",
+    "https://developers.openai.com/codex/",
+    "https://docs.cursor.com/context/rules",
+    "https://kiro.dev/docs/skills/"
+  ],
+  "security_notes": "Do not claim feature parity where a harness lacks a native primitive. Avoid exporting resource-heavy skills into always-on rule files.",
+  "last_verified": "2026-05-17",
+  "path": "skills/techtide/techtide-cross-harness-export-hygiene",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/techtide-skill-ingestion.mjs",
+  "version": "0.1.0",
+  "lifecycle": "stable"
+}

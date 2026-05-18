@@ -1,0 +1,29 @@
+{
+  "id": "techtide-marketing-automation-skill-distiller",
+  "name": "TechTide Marketing Automation Skill Distiller",
+  "type": "skill",
+  "provider": "techtide",
+  "harnesses": [
+    "codex",
+    "claude-code",
+    "copilot",
+    "gemini",
+    "cursor",
+    "kiro",
+    "other"
+  ],
+  "summary": "Extract reusable marketing automation and site-governance workflows into guarded skills without importing private lead lists, campaign exports, or customer data.",
+  "source_type": "original",
+  "official_docs": [
+    "https://docs.anthropic.com/en/docs/claude-code/overview",
+    "https://developers.openai.com/codex/"
+  ],
+  "security_notes": "Reject raw CRM exports, email lists, subscriber logs, and ad-platform credentials. Work from sanitized examples only.",
+  "last_verified": "2026-05-17",
+  "path": "skills/techtide/techtide-marketing-automation-skill-distiller",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/techtide-skill-ingestion.mjs",
+  "version": "0.1.0",
+  "lifecycle": "experimental"
+}

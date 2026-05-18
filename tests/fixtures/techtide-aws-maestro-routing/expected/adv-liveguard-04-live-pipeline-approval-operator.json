@@ -1,0 +1,6 @@
+{
+  "route": [
+    "techtide-aws-live-pipeline-approval-operator-agent"
+  ],
+  "mode": "live-guard-gate"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "006-happy-techtide-email-sender-authentication-review",
+  "task": "Review our marketing sender authentication Review DNS configuration.",
+  "tags": [
+    "happy-path"
+  ]
+}

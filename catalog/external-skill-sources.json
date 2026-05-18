@@ -1,0 +1,276 @@
+{
+  "manifest_version": 2,
+  "generated_by": "scripts/external-skill-research.mjs",
+  "generated_at": "2026-05-17",
+  "owner": "Alex Cinovoj / TechTide",
+  "policy": {
+    "mode": "verified-plus-curated",
+    "promote_without_primary_source": false,
+    "copy_third_party_skill_bodies_without_license": false,
+    "trust_star_counts_for_promotion": false,
+    "quarantine_first": true,
+    "fixed_provider_cap_removed": true,
+    "candidate_level_promotion": true
+  },
+  "repository_inventories": [
+    {
+      "source_id": "alirezarezvani-claude-skills",
+      "repo": "alirezarezvani/claude-skills",
+      "provider": "claude",
+      "license": "MIT",
+      "import_mode_default": "techtide-synthesis",
+      "scanned_paths": 680,
+      "promoted_policy": "promote representative high-signal engineering workflows; dedupe against existing TechTide skills",
+      "sample_paths": [
+        ".gemini/skills/a11y-audit/SKILL.md",
+        ".gemini/skills/adversarial-reviewer/SKILL.md",
+        ".gemini/skills/agent-workflow-designer/SKILL.md",
+        ".gemini/skills/ai-security/SKILL.md",
+        ".gemini/skills/api-design-reviewer/SKILL.md",
+        ".gemini/skills/api-test-suite-builder/SKILL.md"
+      ]
+    },
+    {
+      "source_id": "gsd-build-get-shit-done",
+      "repo": "gsd-build/get-shit-done",
+      "provider": "claude",
+      "license": "MIT",
+      "import_mode_default": "techtide-synthesis",
+      "scanned_paths": 5,
+      "promoted_policy": "promote spec-driven orchestration patterns, not project-specific command bodies",
+      "sample_paths": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "source_id": "sickn33-antigravity-awesome-skills",
+      "repo": "sickn33/antigravity-awesome-skills",
+      "provider": "gemini",
+      "license": "MIT",
+      "import_mode_default": "techtide-synthesis",
+      "scanned_paths": 4552,
+      "promoted_policy": "promote only deduped engineering patterns from large collection; no bulk import",
+      "sample_paths": [
+        "plugins/antigravity-awesome-skills-claude/skills/acceptance-orchestrator/SKILL.md",
+        "plugins/antigravity-awesome-skills-claude/skills/agent-evaluation/SKILL.md",
+        "plugins/antigravity-awesome-skills-claude/skills/advanced-evaluation/SKILL.md",
+        "plugins/antigravity-awesome-skills-claude/skills/address-github-comments/SKILL.md"
+      ]
+    },
+    {
+      "source_id": "google-gemini-skills-repo",
+      "repo": "google-gemini/gemini-skills",
+      "provider": "gemini",
+      "license": "Apache-2.0",
+      "import_mode_default": "direct-import-normalized",
+      "scanned_paths": 3,
+      "promoted_policy": "direct-normalize official Google Gemini skill topics with attribution and source evidence",
+      "sample_paths": [
+        "skills/gemini-api-dev/SKILL.md",
+        "skills/gemini-interactions-api/SKILL.md",
+        "skills/gemini-live-api-dev/SKILL.md"
+      ]
+    },
+    {
+      "source_id": "vercel-labs-agent-skills",
+      "repo": "vercel-labs/agent-skills",
+      "provider": "vercel",
+      "license": null,
+      "import_mode_default": "quarantine",
+      "scanned_paths": 7,
+      "promoted_policy": "keep as reference until license is present or legal reuse is approved",
+      "sample_paths": [
+        "skills/react-best-practices/SKILL.md",
+        "skills/deploy-to-vercel/SKILL.md",
+        "skills/web-design-guidelines/SKILL.md"
+      ]
+    },
+    {
+      "source_id": "composiohq-awesome-codex-skills",
+      "repo": "ComposioHQ/awesome-codex-skills",
+      "provider": "codex",
+      "license": null,
+      "import_mode_default": "quarantine",
+      "scanned_paths": 880,
+      "promoted_policy": "keep as reference until license is present or legal reuse is approved",
+      "sample_paths": [
+        "codebase-migrate/SKILL.md",
+        "changelog-generator/SKILL.md",
+        "agent-deep-links/SKILL.md"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "anthropic-claude-code-skills-docs",
+      "provider": "claude",
+      "source_type": "official-docs",
+      "url": "https://code.claude.com/docs/en/skills",
+      "verification_status": "verified-primary-source",
+      "native_skill_surface": "SKILL.md skill packages",
+      "license_status": "documentation-reference-only",
+      "confidence": "high"
+    },
+    {
+      "id": "openai-codex-docs",
+      "provider": "codex",
+      "source_type": "official-docs",
+      "url": "https://developers.openai.com/codex/",
+      "verification_status": "verified-primary-source",
+      "native_skill_surface": "Codex-compatible SKILL.md packages",
+      "license_status": "documentation-reference-only",
+      "confidence": "high"
+    },
+    {
+      "id": "cursor-rules-docs",
+      "provider": "cursor",
+      "source_type": "official-docs",
+      "url": "https://docs.cursor.com/context/rules",
+      "verification_status": "verified-primary-source",
+      "native_skill_surface": "Cursor project rules in .cursor/rules, not native SKILL.md",
+      "license_status": "documentation-reference-only",
+      "confidence": "high"
+    },
+    {
+      "id": "kiro-skills-docs",
+      "provider": "kiro",
+      "source_type": "official-docs",
+      "url": "https://kiro.dev/docs/skills/",
+      "verification_status": "verified-primary-source",
+      "native_skill_surface": ".kiro/skills workspace skills plus Kiro steering when appropriate",
+      "license_status": "documentation-reference-only",
+      "confidence": "high"
+    },
+    {
+      "id": "lovable-skills-docs",
+      "provider": "lovable",
+      "source_type": "official-docs",
+      "url": "https://docs.lovable.dev/features/skills",
+      "verification_status": "verified-primary-source",
+      "native_skill_surface": "Lovable workspace skills imported from chat, GitHub, or ZIP",
+      "license_status": "documentation-reference-only",
+      "confidence": "high"
+    },
+    {
+      "id": "replit-agent-skills-docs",
+      "provider": "replit",
+      "source_type": "official-docs",
+      "url": "https://docs.replit.com/core-concepts/agent/skills",
+      "verification_status": "verified-primary-source",
+      "native_skill_surface": "Replit Agent skills under /.agents/skills",
+      "license_status": "documentation-reference-only",
+      "confidence": "high"
+    },
+    {
+      "id": "vercel-agent-skills-docs",
+      "provider": "vercel",
+      "source_type": "official-docs",
+      "url": "https://vercel.com/docs/agent-resources/skills",
+      "verification_status": "verified-primary-source",
+      "native_skill_surface": "Vercel-published Agent Skills installed with the skills CLI",
+      "license_status": "documentation-reference-only",
+      "confidence": "high"
+    },
+    {
+      "id": "vercel-v0-docs",
+      "provider": "v0",
+      "source_type": "official-docs",
+      "url": "https://vercel.com/docs/v0",
+      "verification_status": "verified-primary-source",
+      "native_skill_surface": "v0 and Vercel skill-compatible UI generation workflows",
+      "license_status": "documentation-reference-only",
+      "confidence": "high"
+    },
+    {
+      "id": "google-gemini-skills-repo",
+      "provider": "gemini",
+      "source_type": "official-repository",
+      "url": "https://github.com/google-gemini/gemini-skills",
+      "verification_status": "verified-github-api",
+      "native_skill_surface": "Gemini CLI SKILL.md packages",
+      "license_status": "Apache-2.0",
+      "confidence": "high",
+      "default_branch": "main",
+      "pushed_at": "2026-05-16T21:56:16Z",
+      "skill_md_count": 3
+    },
+    {
+      "id": "alirezarezvani-claude-skills",
+      "provider": "claude",
+      "source_type": "community-repository",
+      "url": "https://github.com/alirezarezvani/claude-skills",
+      "verification_status": "verified-github-api",
+      "native_skill_surface": "SKILL.md collection",
+      "license_status": "MIT",
+      "confidence": "high",
+      "default_branch": "main",
+      "pushed_at": "2026-05-17T08:01:49Z",
+      "skill_md_count": 680
+    },
+    {
+      "id": "gsd-build-get-shit-done",
+      "provider": "claude",
+      "source_type": "community-repository",
+      "url": "https://github.com/gsd-build/get-shit-done",
+      "verification_status": "verified-github-api",
+      "native_skill_surface": "AGENTS.md and spec-driven workflow framework",
+      "license_status": "MIT",
+      "confidence": "high",
+      "default_branch": "main",
+      "pushed_at": "2026-05-17T18:53:56Z",
+      "skill_md_count": 0
+    },
+    {
+      "id": "sickn33-antigravity-awesome-skills",
+      "provider": "gemini",
+      "source_type": "community-repository",
+      "url": "https://github.com/sickn33/antigravity-awesome-skills",
+      "verification_status": "verified-github-api",
+      "native_skill_surface": "large community SKILL.md collection",
+      "license_status": "MIT",
+      "confidence": "high",
+      "default_branch": "main",
+      "pushed_at": "2026-05-17T06:59:52Z",
+      "skill_md_count": 4552
+    },
+    {
+      "id": "vercel-labs-agent-skills",
+      "provider": "vercel",
+      "source_type": "community-repository",
+      "url": "https://github.com/vercel-labs/agent-skills",
+      "verification_status": "verified-github-api",
+      "native_skill_surface": "Vercel Agent Skills collection",
+      "license_status": "missing-from-github-api",
+      "confidence": "medium",
+      "default_branch": "main",
+      "pushed_at": "2026-05-16T01:18:31Z",
+      "skill_md_count": 7,
+      "promotion_status": "quarantined-missing-license"
+    },
+    {
+      "id": "composiohq-awesome-codex-skills",
+      "provider": "codex",
+      "source_type": "community-repository",
+      "url": "https://github.com/ComposioHQ/awesome-codex-skills",
+      "verification_status": "verified-github-api",
+      "native_skill_surface": "curated SKILL.md collection",
+      "license_status": "missing-from-github-api",
+      "confidence": "medium",
+      "default_branch": "master",
+      "pushed_at": "2026-05-15T06:24:47Z",
+      "skill_md_count": 880,
+      "promotion_status": "quarantined-missing-license"
+    },
+    {
+      "id": "fake-unverified-agent-skill-repo",
+      "provider": "other",
+      "source_type": "unverified-claim",
+      "url": "https://github.com/example/not-a-real-agent-skill-pack",
+      "verification_status": "rejected-source-unreachable",
+      "native_skill_surface": "unknown",
+      "license_status": "unknown",
+      "confidence": "none",
+      "promotion_status": "rejected"
+    }
+  ]
+}

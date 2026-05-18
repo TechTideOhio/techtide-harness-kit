@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/TechTideOhio/techtide-harness-kit/schemas/skill.frontmatter.schema.json",
+  "title": "SKILL.md Frontmatter",
+  "description": "JSON Schema for the YAML frontmatter block in every SKILL.md file.",
+  "type": "object",
+  "required": [
+    "name",
+    "description",
+    "allowed-tools",
+    "metadata"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Kebab-case identifier for the skill. Must start with a lowercase letter or digit.",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "description": {
+      "type": "string",
+      "description": "Human-readable purpose statement. 50-1500 characters.",
+      "minLength": 50,
+      "maxLength": 1500
+    },
+    "allowed-tools": {
+      "description": "Explicit pre-approval list of tools this skill may invoke. May be a space-separated string or a YAML sequence of strings.",
+      "oneOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      ]
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Authorship and versioning block.",
+      "required": [
+        "author",
+        "version"
+      ],
+      "properties": {
+        "author": {
+          "type": "string",
+          "description": "Author identifier (e.g. 'github: handle').",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "description": "Semantic version of the skill.",
+          "pattern": "^\\d+\\.\\d+\\.\\d+(-[\\w.-]+)?$"
+        },
+        "updated": {
+          "type": "string",
+          "description": "ISO 8601 date (YYYY-MM-DD) of the last meaningful change to the skill. Optional but validated when present.",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "category": {
+          "type": "string",
+          "description": "Coarse marketplace taxonomy bucket. See docs/taxonomy.md for definitions.",
+          "enum": [
+            "security",
+            "platform",
+            "data",
+            "finops",
+            "ai",
+            "delivery",
+            "observability",
+            "compliance",
+            "resilience",
+            "networking",
+            "storage",
+            "database",
+            "compute",
+            "architecture",
+            "messaging",
+            "serverless",
+            "cost-management"
+          ]
+        },
+        "lifecycle": {
+          "type": "string",
+          "description": "Stability stage. Optional; defaults to 'stable' when absent.",
+          "enum": ["experimental", "beta", "stable", "deprecated"]
+        }
+      },
+      "additionalProperties": true
+    },
+    "disable-model-invocation": {
+      "type": "boolean",
+      "description": "Optional. When true, the skill suppresses direct model invocation and relies entirely on tool calls."
+    }
+  },
+  "$defs": {
+    "liveAgentFields": {
+      "type": "object",
+      "description": "Optional fields for live-execution skills (e.g. read-only-runtime gates). Declared at the metadata block level. See docs/live-agents/ for the full contract.",
+      "properties": {
+        "execution_tier": {
+          "enum": ["static-review", "read-only-runtime", "mutating-runtime"],
+          "description": "Trust posture: static-review (no execution), read-only-runtime (allowlisted Bash, no mutation), mutating-runtime (changes external state)."
+        },
+        "required_egress": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "description": "Named hostnames the skill may contact in runtime mode. Empty array means no egress."
+        },
+        "requires_credentials": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "description": "Environment variable names the skill may read. Values are never collected, never echoed."
+        },
+        "output_attestation": {
+          "type": "object",
+          "properties": {
+            "schema": { "type": "string", "minLength": 1 },
+            "signed_with": { "enum": ["cosign-blob", "in-toto", "none"] }
+          },
+          "additionalProperties": false
+        },
+        "eval_fixtures": {
+          "type": "string",
+          "description": "Repo-relative path to the golden fixture directory."
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,36 @@
+{
+  "id": "codex-handoff-readiness-review",
+  "name": "OpenAI Codex Handoff Readiness Review",
+  "type": "skill",
+  "provider": "codex",
+  "harnesses": [
+    "codex"
+  ],
+  "summary": "Review OpenAI Codex session output before it enters the durable TechTide repo by checking provenance, tests, security, deployment boundaries, and rollback expectations.",
+  "source_type": "reference-only",
+  "official_docs": [
+    "https://developers.openai.com/codex/"
+  ],
+  "security_notes": "Review source, license, code changes, secrets, and provider-specific activation semantics before installation, export, or production use.",
+  "last_verified": "2026-05-17",
+  "path": "skills/codex/codex-handoff-readiness-review",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/external-skill-research.mjs",
+  "version": "0.1.0",
+  "lifecycle": "beta",
+  "source_urls": [
+    "https://developers.openai.com/codex/",
+    "https://github.com/ComposioHQ/awesome-codex-skills"
+  ],
+  "source_repo": "https://developers.openai.com/codex/",
+  "source_path": "synthesized/capabilities/handoff-readiness-review.md",
+  "source_license": "documentation-reference-only",
+  "source_commit": "2026-05-17",
+  "upstream_author": "TechTide synthesis from verified sources",
+  "import_mode": "techtide-synthesis",
+  "verification_status": "candidate-valid",
+  "duplicate_hash": "f3d3f7c6f8e12ba464f6347d63f1827793eecb9b82d8c68c32fd1abcc81632c7",
+  "native_skill_surface": "Codex-compatible SKILL.md packages",
+  "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
+}

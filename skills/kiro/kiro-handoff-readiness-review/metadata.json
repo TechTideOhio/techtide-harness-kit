@@ -1,0 +1,36 @@
+{
+  "id": "kiro-handoff-readiness-review",
+  "name": "Kiro Handoff Readiness Review",
+  "type": "skill",
+  "provider": "kiro",
+  "harnesses": [
+    "kiro"
+  ],
+  "summary": "Review Kiro session output before it enters the durable TechTide repo by checking provenance, tests, security, deployment boundaries, and rollback expectations.",
+  "source_type": "reference-only",
+  "official_docs": [
+    "https://kiro.dev/docs/skills/",
+    "https://kiro.dev/docs/steering/"
+  ],
+  "security_notes": "Review source, license, code changes, secrets, and provider-specific activation semantics before installation, export, or production use.",
+  "last_verified": "2026-05-17",
+  "path": "skills/kiro/kiro-handoff-readiness-review",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/external-skill-research.mjs",
+  "version": "0.1.0",
+  "lifecycle": "beta",
+  "source_urls": [
+    "https://kiro.dev/docs/skills/"
+  ],
+  "source_repo": "https://kiro.dev/docs/skills/",
+  "source_path": "synthesized/capabilities/handoff-readiness-review.md",
+  "source_license": "documentation-reference-only",
+  "source_commit": "2026-05-17",
+  "upstream_author": "TechTide synthesis from verified sources",
+  "import_mode": "techtide-synthesis",
+  "verification_status": "candidate-valid",
+  "duplicate_hash": "2c81c73ed2ec1c20b89e86116b15ffc3a8283cf6b0e78e8d6d48cc10a65d70b1",
+  "native_skill_surface": ".kiro/skills workspace skills plus Kiro steering when appropriate",
+  "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
+}

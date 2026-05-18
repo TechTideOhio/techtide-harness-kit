@@ -1,0 +1,31 @@
+{
+  "id": "techtide-ai-tool-decision-router",
+  "name": "TechTide Tool Decision Router",
+  "type": "skill",
+  "provider": "techtide",
+  "harnesses": [
+    "codex",
+    "claude-code",
+    "copilot",
+    "gemini",
+    "cursor",
+    "kiro",
+    "other"
+  ],
+  "summary": "Route development work to Cursor, Claude Code, Codex, Lovable, v0, Replit, or a human approval lane based on scope, blast radius, context size, and verification needs.",
+  "source_type": "original",
+  "official_docs": [
+    "https://docs.anthropic.com/en/docs/claude-code/overview",
+    "https://developers.openai.com/codex/",
+    "https://docs.cursor.com/context/rules",
+    "https://docs.replit.com/core-concepts/agent/skills"
+  ],
+  "security_notes": "Never route secret handling, live credentials, production mutation, or customer data through a prototype tool. Require explicit approval before external network or deploy actions.",
+  "last_verified": "2026-05-17",
+  "path": "skills/techtide/techtide-ai-tool-decision-router",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/techtide-skill-ingestion.mjs",
+  "version": "0.1.0",
+  "lifecycle": "stable"
+}

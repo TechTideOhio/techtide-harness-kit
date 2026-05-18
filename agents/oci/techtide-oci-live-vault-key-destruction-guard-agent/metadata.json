@@ -1,0 +1,36 @@
+{
+  "id": "techtide-oci-live-vault-key-destruction-guard-agent",
+  "name": "OCI Live Vault Key Destruction Guard",
+  "type": "agent",
+  "provider": "oci",
+  "harnesses": [
+    "codex",
+    "copilot",
+    "claude-code",
+    "cursor",
+    "gemini",
+    "kiro"
+  ],
+  "summary": "Guard OCI Vault master encryption key scheduled-deletion and HSM key rotation, refusing deletion without reviewing data associations and confirming the destruction window.",
+  "source_type": "original",
+  "official_docs": [
+    "https://docs.oracle.com/en-us/iaas/Content/KeyManagement/Tasks/deletingkeys.htm",
+    "https://docs.oracle.com/en-us/iaas/Content/KeyManagement/Tasks/rotatingkeys.htm",
+    "https://docs.oracle.com/en-us/iaas/Content/KeyManagement/Concepts/keyoverview.htm",
+    "https://docs.oracle.com/en-us/iaas/Content/KeyManagement/Tasks/managingkeys.htm"
+  ],
+  "security_notes": "After the scheduled deletion window expires, HSM-backed keys are cryptographically wiped. All data encrypted exclusively by that key version is permanently unrecoverable. Recovery SLA from OCI Support: NONE. Always use a 30-day window and audit data associations before scheduling.",
+  "last_verified": "2026-04-30",
+  "path": "agents/oci/techtide-oci-live-vault-key-destruction-guard-agent",
+  "author": "github: TechTide",
+  "version": "0.1.0",
+  "harness_variants": {
+    "codex": "agents/oci/techtide-oci-live-vault-key-destruction-guard-agent/harnesses/codex.toml",
+    "claude-code": "agents/oci/techtide-oci-live-vault-key-destruction-guard-agent/harnesses/claude-code.agent.md",
+    "copilot": "agents/oci/techtide-oci-live-vault-key-destruction-guard-agent/harnesses/copilot.agent.md",
+    "cursor": "agents/oci/techtide-oci-live-vault-key-destruction-guard-agent/harnesses/cursor.agent.md",
+    "gemini": "agents/oci/techtide-oci-live-vault-key-destruction-guard-agent/harnesses/gemini.agent.md",
+    "kiro-ide": "agents/oci/techtide-oci-live-vault-key-destruction-guard-agent/harnesses/kiro-ide.agent.md",
+    "kiro-cli": "agents/oci/techtide-oci-live-vault-key-destruction-guard-agent/harnesses/kiro-cli.agent.json"
+  }
+}

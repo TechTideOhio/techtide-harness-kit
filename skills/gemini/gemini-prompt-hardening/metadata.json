@@ -1,0 +1,38 @@
+{
+  "id": "gemini-prompt-hardening",
+  "name": "Gemini CLI Prompt Hardening",
+  "type": "skill",
+  "provider": "gemini",
+  "harnesses": [
+    "gemini"
+  ],
+  "summary": "Harden Gemini CLI prompts so the work has explicit scope, constraints, data states, guardrails, and validation evidence.",
+  "source_type": "reference-only",
+  "official_docs": [
+    "https://github.com/google-gemini/gemini-skills",
+    "https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/cli-reference.md"
+  ],
+  "security_notes": "Review source, license, code changes, secrets, and provider-specific activation semantics before installation, export, or production use.",
+  "last_verified": "2026-05-17",
+  "path": "skills/gemini/gemini-prompt-hardening",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/external-skill-research.mjs",
+  "version": "0.1.0",
+  "lifecycle": "beta",
+  "source_urls": [
+    "https://github.com/alirezarezvani/claude-skills",
+    "https://github.com/sickn33/antigravity-awesome-skills",
+    "https://github.com/google-gemini/gemini-skills"
+  ],
+  "source_repo": "https://github.com/alirezarezvani/claude-skills",
+  "source_path": "synthesized/capabilities/prompt-hardening.md",
+  "source_license": "documentation-reference-only",
+  "source_commit": "2026-05-17T08:01:49Z",
+  "upstream_author": "TechTide synthesis from verified sources",
+  "import_mode": "techtide-synthesis",
+  "verification_status": "candidate-valid",
+  "duplicate_hash": "8cd57b7e65ce94fa3356f0b3d8e3302b3277b699563df86846dfed165e419f56",
+  "native_skill_surface": "Gemini CLI SKILL.md packages",
+  "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
+}

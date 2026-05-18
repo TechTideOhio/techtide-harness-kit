@@ -1,0 +1,62 @@
+<svg width="1280" height="420" viewBox="0 0 1280 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">TechTide Harness Kit coverage map</title>
+  <desc id="desc">A coverage map showing cloud, Kubernetes, data, security, compliance, FinOps, and harness provider lanes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071522"/>
+      <stop offset="1" stop-color="#102C26"/>
+    </linearGradient>
+    <style>
+      .sans { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .head { font-size: 28px; font-weight: 850; fill: #FFFFFF; }
+      .cell { font-size: 18px; font-weight: 720; fill: #F6FBFF; }
+      .sub { font-size: 14px; fill: #AFC4D3; }
+    </style>
+  </defs>
+  <rect width="1280" height="420" rx="30" fill="url(#bg)"/>
+  <text x="68" y="70" class="head sans">Coverage built for real implementation work</text>
+  <text x="68" y="106" class="sub sans">Provider lanes, trust posture, export adapters, and validation live together.</text>
+  <g transform="translate(68 145)">
+    <g>
+      <rect width="168" height="82" rx="16" fill="#0E2438" stroke="#315A73"/>
+      <text x="22" y="38" class="cell sans">Cloud</text>
+      <text x="22" y="62" class="sub sans">AWS, Azure, GCP, OCI</text>
+    </g>
+    <g transform="translate(188 0)">
+      <rect width="168" height="82" rx="16" fill="#0E2438" stroke="#315A73"/>
+      <text x="22" y="38" class="cell sans">Kubernetes</text>
+      <text x="22" y="62" class="sub sans">CNCF and platform ops</text>
+    </g>
+    <g transform="translate(376 0)">
+      <rect width="168" height="82" rx="16" fill="#0E2438" stroke="#315A73"/>
+      <text x="22" y="38" class="cell sans">Security</text>
+      <text x="22" y="62" class="sub sans">IAM, runtime, supply chain</text>
+    </g>
+    <g transform="translate(564 0)">
+      <rect width="168" height="82" rx="16" fill="#0E2438" stroke="#315A73"/>
+      <text x="22" y="38" class="cell sans">Compliance</text>
+      <text x="22" y="62" class="sub sans">Evidence and controls</text>
+    </g>
+    <g transform="translate(752 0)">
+      <rect width="168" height="82" rx="16" fill="#0E2438" stroke="#315A73"/>
+      <text x="22" y="38" class="cell sans">FinOps</text>
+      <text x="22" y="62" class="sub sans">Cost, budget, allocation</text>
+    </g>
+    <g transform="translate(940 0)">
+      <rect width="168" height="82" rx="16" fill="#0E2438" stroke="#315A73"/>
+      <text x="22" y="38" class="cell sans">Harnesses</text>
+      <text x="22" y="62" class="sub sans">Codex, Claude, Cursor</text>
+    </g>
+  </g>
+  <g transform="translate(68 262)">
+    <rect width="1110" height="72" rx="18" fill="#0B1C2C" stroke="#294B61"/>
+    <text x="28" y="44" class="cell sans">487 skills</text>
+    <text x="190" y="44" class="cell sans">348 agents</text>
+    <text x="355" y="44" class="cell sans">114 promoted research candidates</text>
+    <text x="685" y="44" class="cell sans">5 enterprise missions</text>
+    <text x="925" y="44" class="cell sans">27 providers</text>
+  </g>
+  <circle cx="1166" cy="72" r="8" fill="#5DF2A8">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/>
+  </circle>
+</svg>

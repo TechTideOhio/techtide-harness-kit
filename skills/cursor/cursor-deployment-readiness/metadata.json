@@ -1,0 +1,37 @@
+{
+  "id": "cursor-deployment-readiness",
+  "name": "Cursor Deployment Readiness",
+  "type": "skill",
+  "provider": "cursor",
+  "harnesses": [
+    "cursor"
+  ],
+  "summary": "Use Cursor to decide whether an app, feature, or prototype is ready for deployment, rollback, and operational ownership.",
+  "source_type": "reference-only",
+  "official_docs": [
+    "https://docs.cursor.com/context/rules"
+  ],
+  "security_notes": "Review source, license, code changes, secrets, and provider-specific activation semantics before installation, export, or production use.",
+  "last_verified": "2026-05-17",
+  "path": "skills/cursor/cursor-deployment-readiness",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/external-skill-research.mjs",
+  "version": "0.1.0",
+  "lifecycle": "beta",
+  "source_urls": [
+    "https://github.com/gsd-build/get-shit-done",
+    "https://github.com/sickn33/antigravity-awesome-skills",
+    "https://docs.cursor.com/context/rules"
+  ],
+  "source_repo": "https://github.com/gsd-build/get-shit-done",
+  "source_path": "synthesized/capabilities/deployment-readiness.md",
+  "source_license": "documentation-reference-only",
+  "source_commit": "2026-05-17T18:53:56Z",
+  "upstream_author": "TechTide synthesis from verified sources",
+  "import_mode": "techtide-synthesis",
+  "verification_status": "candidate-valid",
+  "duplicate_hash": "25a9f28cee769c05f271f22cd71272b6930f107f09817d6f22a9c2a057d0b76b",
+  "native_skill_surface": "Cursor project rules in .cursor/rules, not native SKILL.md",
+  "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
+}

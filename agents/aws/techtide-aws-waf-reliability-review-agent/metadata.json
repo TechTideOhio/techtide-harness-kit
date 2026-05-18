@@ -1,0 +1,35 @@
+{
+  "id": "techtide-aws-waf-reliability-review-agent",
+  "name": "AWS WAF Reliability Pillar Review",
+  "type": "agent",
+  "provider": "aws",
+  "harnesses": [
+    "codex",
+    "copilot",
+    "claude-code",
+    "cursor",
+    "gemini",
+    "kiro"
+  ],
+  "summary": "Agent for techtide-aws-waf-reliability-review. Review AWS workload reliability posture against the Well-Architected Framework Reliability Pillar: service quotas, workload architecture, change management, backup and DR strategy, and failure isolation.",
+  "companion_skills": ["techtide-aws-waf-reliability-review"],
+  "source_type": "original",
+  "official_docs": [
+    "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html",
+    "https://aws.amazon.com/architecture/well-architected/"
+  ],
+  "security_notes": "Read-only advisory. Do not modify Auto Scaling policies, backup schedules, or DR configurations without explicit approval.",
+  "last_verified": "2026-05-09",
+  "path": "agents/aws/techtide-aws-waf-reliability-review-agent",
+  "harness_variants": {
+    "codex": "agents/aws/techtide-aws-waf-reliability-review-agent/harnesses/codex.toml",
+    "copilot": "agents/aws/techtide-aws-waf-reliability-review-agent/harnesses/copilot.agent.md",
+    "claude-code": "agents/aws/techtide-aws-waf-reliability-review-agent/harnesses/claude-code.agent.md",
+    "cursor": "agents/aws/techtide-aws-waf-reliability-review-agent/harnesses/cursor.agent.md",
+    "gemini": "agents/aws/techtide-aws-waf-reliability-review-agent/harnesses/gemini.agent.md",
+    "kiro-ide": "agents/aws/techtide-aws-waf-reliability-review-agent/harnesses/kiro-ide.agent.md",
+    "kiro-cli": "agents/aws/techtide-aws-waf-reliability-review-agent/harnesses/kiro-cli.agent.json"
+  },
+  "author": "github: TechTide",
+  "version": "0.1.0"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cursor-mcp-tool-safety",
+  "name": "Cursor MCP Tool Safety",
+  "type": "skill",
+  "provider": "cursor",
+  "harnesses": [
+    "cursor"
+  ],
+  "summary": "Review Cursor tool and MCP usage for credential scope, network egress, mutation risk, logging, and human approval gates.",
+  "source_type": "reference-only",
+  "official_docs": [
+    "https://docs.cursor.com/context/rules"
+  ],
+  "security_notes": "Review source, license, code changes, secrets, and provider-specific activation semantics before installation, export, or production use.",
+  "last_verified": "2026-05-17",
+  "path": "skills/cursor/cursor-mcp-tool-safety",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/external-skill-research.mjs",
+  "version": "0.1.0",
+  "lifecycle": "beta",
+  "source_urls": [
+    "https://github.com/alirezarezvani/claude-skills",
+    "https://github.com/sickn33/antigravity-awesome-skills",
+    "https://docs.cursor.com/context/rules"
+  ],
+  "source_repo": "https://github.com/alirezarezvani/claude-skills",
+  "source_path": "synthesized/capabilities/mcp-tool-safety.md",
+  "source_license": "documentation-reference-only",
+  "source_commit": "2026-05-17T08:01:49Z",
+  "upstream_author": "TechTide synthesis from verified sources",
+  "import_mode": "techtide-synthesis",
+  "verification_status": "candidate-valid",
+  "duplicate_hash": "09f4018cf322e337c16692c90c2bb5f788d50cf84c40cf9dc241e5ef184604f8",
+  "native_skill_surface": "Cursor project rules in .cursor/rules, not native SKILL.md",
+  "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
+}

@@ -1,0 +1,35 @@
+{
+  "id": "lovable-native-packaging-bridge",
+  "name": "Lovable Native Packaging Bridge",
+  "type": "skill",
+  "provider": "lovable",
+  "harnesses": [
+    "other"
+  ],
+  "summary": "Translate TechTide-authored workflows into the documented Lovable packaging surface without pretending every agent uses the same activation model.",
+  "source_type": "reference-only",
+  "official_docs": [
+    "https://docs.lovable.dev/features/skills"
+  ],
+  "security_notes": "Review source, license, code changes, secrets, and provider-specific activation semantics before installation, export, or production use.",
+  "last_verified": "2026-05-17",
+  "path": "skills/lovable/lovable-native-packaging-bridge",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/external-skill-research.mjs",
+  "version": "0.1.0",
+  "lifecycle": "stable",
+  "source_urls": [
+    "https://docs.lovable.dev/features/skills"
+  ],
+  "source_repo": "https://docs.lovable.dev/features/skills",
+  "source_path": "synthesized/capabilities/native-packaging-bridge.md",
+  "source_license": "documentation-reference-only",
+  "source_commit": "2026-05-17",
+  "upstream_author": "TechTide synthesis from verified sources",
+  "import_mode": "techtide-synthesis",
+  "verification_status": "candidate-valid",
+  "duplicate_hash": "b91faf0828d057ecb67674ef68ab6bc70c1245c8cd978b9b873136b82e93ad33",
+  "native_skill_surface": "Lovable workspace skills imported from chat, GitHub, or ZIP",
+  "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
+}
