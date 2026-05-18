@@ -2,8 +2,9 @@
 """Generate or validate the skill integrity manifest.
 
 The manifest is deterministic: it records every file under each cataloged skill
-directory, plus an aggregate SHA-256 per skill. Use --write when skill content
-changes intentionally. Use default check mode in CI.
+directory, plus an aggregate SHA-256 per skill. Text files are hashed with
+canonical LF line endings so Windows and Linux checkouts agree. Use --write
+when skill content changes intentionally. Use default check mode in CI.
 """
 
 from __future__ import annotations
@@ -23,6 +24,17 @@ def sha256_bytes(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
+def canonical_bytes(path: Path) -> bytes:
+    data = path.read_bytes()
+    if b"\0" in data:
+        return data
+    try:
+        data.decode("utf-8")
+    except UnicodeDecodeError:
+        return data
+    return data.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+
+
 def load_json(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
@@ -31,7 +43,7 @@ def skill_files(skill_path: Path) -> list[dict]:
     files: list[dict] = []
     for path in sorted(p for p in skill_path.rglob("*") if p.is_file()):
         rel = path.relative_to(ROOT).as_posix()
-        data = path.read_bytes()
+        data = canonical_bytes(path)
         files.append({
             "path": rel,
             "sha256": sha256_bytes(data),

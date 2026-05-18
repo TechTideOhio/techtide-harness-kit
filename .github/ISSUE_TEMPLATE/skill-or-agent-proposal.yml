@@ -8,7 +8,7 @@ body:
       value: |
         Use this form to propose a new skill, agent, rule, or MCP reference.
         Before submitting, search [existing issues](https://github.com/TechTideOhio/techtide-harness-kit/issues) and `catalog/skills.json` / `catalog/agents.json` to confirm the asset does not already exist under a different name.
-        Read [CONTRIBUTING.md](https://github.com/TechTideOhio/techtide-harness-kit/blob/main/CONTRIBUTING.md) before writing any code.
+        Read [CONTRIBUTING.md](https://github.com/TechTideOhio/techtide-harness-kit/blob/master/CONTRIBUTING.md) before writing any code.
 
   - type: dropdown
     id: asset-type

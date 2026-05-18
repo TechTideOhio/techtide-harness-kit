@@ -31,9 +31,8 @@ Dependabot alert dismissed" or "why does workflow X need write scope Y".
    context. The release pipeline (`semantic-release`, `npm publish`,
    `gh release upload`) does not render IP-address strings to HTML.
 3. **No reachable attacker-controlled input.** The release workflow
-   runs only on `push` to `master` (a trusted ref protected by the
-   ruleset) and only operates on commit metadata, not on
-   user-controlled IP strings.
+   runs only by maintainer dispatch and only operates on commit
+   metadata, not on user-controlled IP strings.
 4. **Bundled-dep override is unsafe.** `npm` ships `ip-address` as a
    bundled dependency inside its own tarball; an `overrides` block in
    our `package.json` cannot cleanly replace a bundled module without
@@ -82,7 +81,7 @@ produced.
 
 Mitigations that keep this safe:
 
-- The `Release` job runs only on `push` to `master` (trusted ref).
+- The `Release` job runs only by maintainer dispatch.
 - The branch ruleset blocks force-pushes and deletions on `master`,
   so a leaked token cannot rewrite history.
 - All third-party actions are pinned to full commit SHAs, so a

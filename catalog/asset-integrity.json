@@ -16417,7 +16417,7 @@
     },
     {
       "tree": "catalog",
-      "aggregate_sha256": "1f09a4d45b8b2a42d78cf9dbd663086f00dfe1d47772c7640dfca55a55c74823",
+      "aggregate_sha256": "f0702f84f745061a795e69af155f8689a81951c6673b95e0a72c42934930ec43",
       "files": [
         {
           "path": "catalog/agents.json",
@@ -16461,8 +16461,8 @@
         },
         {
           "path": "catalog/skill-manifest.json",
-          "sha256": "a1bf523835e8556bc1376e736367b48a84a2c6d46e9a52f0c140eb42575c3f34",
-          "bytes": 577049
+          "sha256": "c5bfe471a3510c914a0184004f6057c242f3f4aefadfb49f9749167db179cbe7",
+          "bytes": 563903
         },
         {
           "path": "catalog/skill-research-quarantine.json",
@@ -16488,7 +16488,7 @@
     },
     {
       "tree": "scripts",
-      "aggregate_sha256": "b3d03420ce1e73cead4b1f73b5acf2ac22cb42629d9a215957d0cce424122c41",
+      "aggregate_sha256": "1c58d0b9023105a50d73d7ac1a831f1afb6adce0d274e4555a5b39aac44cb594",
       "files": [
         {
           "path": "scripts/apply-skill-allowed-tools.py",
@@ -16537,8 +16537,8 @@
         },
         {
           "path": "scripts/generate-kiro-powers.mjs",
-          "sha256": "2de18f9a6cfe972b205e9c7974e415cc13676546859d809089b71869b13b6063",
-          "bytes": 19346
+          "sha256": "6f81ceb43270d1a0c3e0b91007a4ef6a0281c58cafbfc62746565228b01503e2",
+          "bytes": 19345
         },
         {
           "path": "scripts/generate-plugin-manifest.mjs",
@@ -16740,7 +16740,7 @@
     },
     {
       "tree": "tests",
-      "aggregate_sha256": "34558a88c54fc62514b72c826221e4cf4869ef0633e8fd5623f8d91af26669c5",
+      "aggregate_sha256": "c627c5efd72f3124778772f3951b388dec7e6bc6f24a7c2a598ab8989e294e68",
       "files": [
         {
           "path": "tests/_generate_maestro_routing_fixtures.py",
@@ -21059,8 +21059,8 @@
         },
         {
           "path": "tests/validate-asset-integrity.py",
-          "sha256": "7ec4e263e51d17eb7f0cc9c4c340a95dbf135d7f313786c8e37ddacda35b1467",
-          "bytes": 7548
+          "sha256": "ecd7b4b4ef211fd776645d06b8e948b64dc077dfcd28da7fe2bb4d41bf569173",
+          "bytes": 7866
         },
         {
           "path": "tests/validate-aws-progressive-disclosure.py",
@@ -21144,8 +21144,8 @@
         },
         {
           "path": "tests/validate-skill-manifest.py",
-          "sha256": "963e8499da6e991cf84a5d6602a79d625c4f861b9c927f11a45782b7a23878cc",
-          "bytes": 3543
+          "sha256": "db25ba24907fea742088d3768a0a565e4579040780895dde8cb4934b67ab3712",
+          "bytes": 3904
         }
       ]
     }
@@ -21193,8 +21193,8 @@
     },
     {
       "path": "package.json",
-      "sha256": "ee7aab0a0424069f9ecb53380a77f93779dd7c449e0d11c76ab0b05a4a70a041",
-      "bytes": 6590
+      "sha256": "ef2a6019172e03a13de2564960e35c00daa68159627f31ed89c0c8d521b9750e",
+      "bytes": 6553
     },
     {
       "path": ".releaserc.js",
@@ -21202,5 +21202,5 @@
       "bytes": 3961
     }
   ],
-  "aggregate_sha256": "920ef53b1ccab019d3377edfcfa5598aa92a5314c2fd48c733f970b4393ef9ad"
+  "aggregate_sha256": "b72938c01a4ba63967e9e67d95306860a8cd8e944612e84e301be812de7e9016"
 }

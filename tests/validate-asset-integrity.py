@@ -5,8 +5,9 @@ The skill-manifest covers SKILL.md trees only. This manifest covers every
 asset surface a downstream consumer trusts at runtime: agents/, rules/,
 mcp/, catalog/, schemas/, plus root-level governance files
 (README, SECURITY, LICENSE, CONTRIBUTING, CODE_OF_CONDUCT, CLAUDE,
-AGENTS, GEMINI). Each file is hashed individually (sha256) and rolled
-into a per-tree aggregate hash, plus a single top-level aggregate.
+AGENTS, GEMINI). Each file is hashed individually (sha256) with
+canonical LF line endings for text files, then rolled into a per-tree
+aggregate hash, plus a single top-level aggregate.
 
 The manifest itself is the artifact attested at release time
 (see .github/workflows/release.yml). A consumer who trusts the
@@ -88,8 +89,19 @@ def sha256_bytes(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
-def file_record(path: Path) -> dict:
+def canonical_bytes(path: Path) -> bytes:
     data = path.read_bytes()
+    if b"\0" in data:
+        return data
+    try:
+        data.decode("utf-8")
+    except UnicodeDecodeError:
+        return data
+    return data.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+
+
+def file_record(path: Path) -> dict:
+    data = canonical_bytes(path)
     return {
         "path": path.relative_to(ROOT).as_posix(),
         "sha256": sha256_bytes(data),
