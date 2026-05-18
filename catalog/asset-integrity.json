@@ -16488,7 +16488,7 @@
     },
     {
       "tree": "scripts",
-      "aggregate_sha256": "1c58d0b9023105a50d73d7ac1a831f1afb6adce0d274e4555a5b39aac44cb594",
+      "aggregate_sha256": "d60b4cefba37605bec9fd301e0b7df25d7f0871aff3b13a219f221fb94b56ae5",
       "files": [
         {
           "path": "scripts/apply-skill-allowed-tools.py",
@@ -16539,6 +16539,11 @@
           "path": "scripts/generate-kiro-powers.mjs",
           "sha256": "6f81ceb43270d1a0c3e0b91007a4ef6a0281c58cafbfc62746565228b01503e2",
           "bytes": 19345
+        },
+        {
+          "path": "scripts/generate-lovable-skills.mjs",
+          "sha256": "93db531e7da734bf32b4be9fab434249aaf1e77eea73b9dd216bf8a06d510cdf",
+          "bytes": 16550
         },
         {
           "path": "scripts/generate-plugin-manifest.mjs",
@@ -16655,7 +16660,7 @@
     },
     {
       "tree": "plugins",
-      "aggregate_sha256": "2437487202b4bf25a10f992da8fc50ffead66ca0613734bea490c61914e0670a",
+      "aggregate_sha256": "521e374a3208c8bcc770fba375400c62ea78dc44797bd05a1b5f73e210e9dd15",
       "files": [
         {
           "path": "plugins/techtide-cross-platform-agent-template/.codex-plugin/plugin.json",
@@ -16664,14 +16669,14 @@
         },
         {
           "path": "plugins/techtide-harness-kit/.codex-plugin/plugin.json",
-          "sha256": "3b3f139a3e419d9fe3dfba8addc3d99542f93f79bfbb1ad53aabfa11879d2735",
+          "sha256": "6b122eaaa889a0dcbedcf33f09721431d1afa3028d1befa2d949705f525c81b1",
           "bytes": 1937
         }
       ]
     },
     {
       "tree": ".claude-plugin",
-      "aggregate_sha256": "feed37e2c238672ffb6baafee03795b2edd983f602149da11ed2fa3c5136c887",
+      "aggregate_sha256": "b6137aa113a09e581fc79972c1393747f6d2bde569182702c7f52ed1936ff311",
       "files": [
         {
           "path": ".claude-plugin/marketplace.json",
@@ -16680,7 +16685,7 @@
         },
         {
           "path": ".claude-plugin/plugin.json",
-          "sha256": "3446034460091b060375b484fe221c33668610805e9a41e4d42480bbca62a1fb",
+          "sha256": "c9869bd919ae7b3967b9e922c994ac70ce49e4eef15b6dd22fe16232ef8678c0",
           "bytes": 35635
         },
         {
@@ -16692,11 +16697,11 @@
     },
     {
       "tree": ".cursor-plugin",
-      "aggregate_sha256": "a03ab2eba624e778afbf0c5e8f7133a3017088c40495da94741282a05adf0f7b",
+      "aggregate_sha256": "61a7b02f82c23adc0b6f5d263c0b8644d40a23f25a886b62dd5d0682805e5d35",
       "files": [
         {
           "path": ".cursor-plugin/plugin.json",
-          "sha256": "037b01ea76df419a2df2baf7097058d00d785811bb679274f4b091b802af06ee",
+          "sha256": "5a339c6375bcd4701582cb5e5fedcb41a9945372a381b6aecf497163d28cce4c",
           "bytes": 33871
         },
         {
@@ -16708,11 +16713,11 @@
     },
     {
       "tree": ".github/plugin",
-      "aggregate_sha256": "b3d8a51a006661252b38f837b84afe3d4b169741de2e64b2be1205b4e3018ab6",
+      "aggregate_sha256": "ad22068412e439cca4b155870908506a4519e4aeb0d077904f485aeb26d33848",
       "files": [
         {
           "path": ".github/plugin/marketplace.json",
-          "sha256": "1c01508c85c8537c959e6bc12d5641bb9394cb17dd1cefe58d6f4ff141c0cf69",
+          "sha256": "df0ed758d690b25c0fafcd7c4fd38b0d7517fee568635711a020039afe1592ae",
           "bytes": 835
         },
         {
@@ -16740,7 +16745,7 @@
     },
     {
       "tree": "tests",
-      "aggregate_sha256": "49a905071c1f50fe96b6c32e097f1eb3fdd17b2a9ebbbb93a2c4c06c8e511d85",
+      "aggregate_sha256": "6adae114945f08725ff362c72ea141db493e3b3facd7996d52b3b3d49da350c9",
       "files": [
         {
           "path": "tests/_generate_maestro_routing_fixtures.py",
@@ -21033,6 +21038,11 @@
           "bytes": 3000
         },
         {
+          "path": "tests/test-lovable-skill-packaging.test.mjs",
+          "sha256": "8198efb1f85452aff2b727e71bced30b2766096dbfeff5535a250ea58b12c80b",
+          "bytes": 2980
+        },
+        {
           "path": "tests/test-marketplace-validators.py",
           "sha256": "02c90e7e9628449b1d042deb68003df32c731d434e43e01f27cc2dbde60ad509",
           "bytes": 22402
@@ -21153,12 +21163,12 @@
   "root_files": [
     {
       "path": "README.md",
-      "sha256": "4385b75a4caa45abb087b294c1d25f7469561f4b644265cb956bfb86c3838594",
-      "bytes": 8065
+      "sha256": "c2bb436735878db736fa4a9a42b473778607289c4a33753deac0de5cde2c7182",
+      "bytes": 8274
     },
     {
       "path": "SECURITY.md",
-      "sha256": "24e589a442133da9d922b2f77967dc582d48c10453631f4b0011ec6f3ae8b182",
+      "sha256": "41db275f409e5b87b7324cf33cd0e672a812c88cac8b1d4c7cf59452cfaf304e",
       "bytes": 7016
     },
     {
@@ -21193,8 +21203,8 @@
     },
     {
       "path": "package.json",
-      "sha256": "7285f42e20391c991fa636cac6a8d676becddbbf07f6272daf33fa835f8e997d",
-      "bytes": 6553
+      "sha256": "5687d8d5f951f0e3e70c3d6c7da17504f9c166e456bc4a01a0bb46c743898f07",
+      "bytes": 6827
     },
     {
       "path": ".releaserc.js",
@@ -21202,5 +21212,5 @@
       "bytes": 3961
     }
   ],
-  "aggregate_sha256": "eb2b66a19f493746496d71880594428087aa7b2788bbe735c1279b9818d17a2b"
+  "aggregate_sha256": "923b9ace9f4fb48666f7615499ff5880acfc7e1ff0844dff1e92f37f9236e24b"
 }

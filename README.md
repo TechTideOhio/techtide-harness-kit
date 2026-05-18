@@ -114,6 +114,7 @@ governance, FinOps, and coding harness lanes.
 | Cursor | Clone repo and add it as a plugin directory | Manifest lives at `.cursor-plugin/plugin.json`; rules stay rules-first. |
 | Gemini CLI / Antigravity | `npx thk-export-agents --platform gemini --all --repo .` | Exports workspace skills and agent adapters. |
 | Kiro | Add selected `powers/techtide-*` directories | Kiro Powers plus optional exported agent adapters. |
+| Lovable | `npm run lovable:write` | Builds one ZIP per Lovable-compatible skill for workspace import. |
 
 For full install instructions, see
 [docs/integrations/installation-guide.md](docs/integrations/installation-guide.md).
@@ -170,6 +171,7 @@ npm run asset-integrity:write
 | Harness compatibility | [docs/compatibility.md](docs/compatibility.md) |
 | Cross-harness skills | [docs/cross-harness-skills.md](docs/cross-harness-skills.md) |
 | Marketplace model | [docs/marketplace-model.md](docs/marketplace-model.md) |
+| Lovable skill imports | [docs/integrations/lovable-skills.md](docs/integrations/lovable-skills.md) |
 | Quality bar | [docs/quality-bar.md](docs/quality-bar.md) |
 | Taxonomy | [docs/taxonomy.md](docs/taxonomy.md) |
 | External skill research | [docs/external-skill-research.md](docs/external-skill-research.md) |

@@ -1,6 +1,6 @@
 {
   "name": "@techtide/harness-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Portable, eval-backed marketplace for enterprise agent skills, specialist agents, rules, MCP references, and trust evidence.",
   "author": {
     "name": "Alex Cinovoj / TechTide",
@@ -54,6 +54,8 @@
     "proof-layer:check": "node scripts/proof-layer.mjs --check",
     "hygiene:check": "node scripts/hygiene-check.mjs",
     "demo:enterprise-mission": "node scripts/enterprise-mission-demo.mjs",
+    "lovable:write": "node scripts/generate-lovable-skills.mjs --write",
+    "lovable:check": "node scripts/generate-lovable-skills.mjs --check",
     "manifest:write": "python3 tests/validate-skill-manifest.py --write",
     "manifest:check": "python3 tests/validate-skill-manifest.py",
     "validate:aws": "python3 tests/validate-aws-skill-quality.py && python3 tests/validate-aws-progressive-disclosure.py",
@@ -84,9 +86,10 @@
     "test:cursor-kiro-notices": "node tests/export-cursor-kiro-skill-notice.test.mjs",
     "test:techtide-skill-ingestion": "node tests/test-techtide-skill-ingestion.test.mjs",
     "test:external-skill-research": "node tests/test-external-skill-research.test.mjs",
+    "test:lovable-skill-packaging": "node tests/test-lovable-skill-packaging.test.mjs",
     "test:proof-layer": "node tests/test-proof-layer.test.mjs",
     "test:fuzz": "node tests/fuzz-properties.test.mjs",
-    "validate": "npm run techtide-skills:check && npm run external-skills:check && npm run proof-layer:check && npm run hygiene:check && npm run test:techtide-skill-ingestion && npm run test:external-skill-research && npm run test:proof-layer && npm run validate:catalog && npm run validate:aws && npm run manifest:check && npm run validate:allowed-tools && npm run validate:skill-schema && npm run validate:agent-schema && npm run validate:links && npm run validate:asset-integrity && npm run validate:mcp-trust-matrix && npm run validate:no-lifecycle-scripts && npm run validate:promotion-gatekeeper && npm run validate:install-coverage && npm run validate:maestro-routing && npm run validate:plugin-manifest && npm run validate:kiro-powers && npm run validate:multi-harness-marketplace && npm run validate:codex-marketplace && npm run validate:finops-fixtures",
+    "validate": "npm run techtide-skills:check && npm run external-skills:check && npm run proof-layer:check && npm run hygiene:check && npm run test:techtide-skill-ingestion && npm run test:external-skill-research && npm run test:lovable-skill-packaging && npm run test:proof-layer && npm run validate:catalog && npm run validate:aws && npm run manifest:check && npm run validate:allowed-tools && npm run validate:skill-schema && npm run validate:agent-schema && npm run validate:links && npm run validate:asset-integrity && npm run validate:mcp-trust-matrix && npm run validate:no-lifecycle-scripts && npm run validate:promotion-gatekeeper && npm run validate:install-coverage && npm run validate:maestro-routing && npm run validate:plugin-manifest && npm run validate:kiro-powers && npm run validate:multi-harness-marketplace && npm run validate:codex-marketplace && npm run validate:finops-fixtures",
     "release:sbom": "command -v syft >/dev/null 2>&1 && syft scan dir:. -o spdx-json=sbom.spdx.json || echo 'syft not installed; SBOM is built in CI by anchore/sbom-action'",
     "lint:md": "npx --yes markdownlint-cli2 \"**/*.md\" \"#node_modules\" \"#.git\" \"#.code-review-graph\" \"#CHANGELOG.md\"",
     "lint:spell": "codespell",

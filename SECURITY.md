@@ -3,7 +3,7 @@
 ## Supported Versions
 
 The table below shows which versions of `@techtide/harness-kit`
-(current published version: **1.0.0**) receive security fixes.
+(current published version: **1.0.1**) receive security fixes.
 
 | Version range | Supported          |
 | ------------- | ------------------ |
