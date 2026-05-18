@@ -74,7 +74,7 @@ The validator checks that every generated package has `SKILL.md`, stays within L
 For public distribution, generate the packages with a release tag:
 
 ```bash
-node scripts/generate-lovable-skills.mjs --write --release-tag v1.0.1
+node scripts/generate-lovable-skills.mjs --write --release-tag v1.0.2
 ```
 
 Then upload the files in `exports/lovable/archives/` to the matching GitHub release. The generated manifest includes release asset URLs for each archive.
