@@ -55,7 +55,7 @@
   <g>
     <rect x="348" y="110" width="204" height="96" rx="18" fill="#0D2035" stroke="#244B67"/>
     <text x="374" y="149" class="label sans">Skills</text>
-    <text x="374" y="187" class="metric sans">487</text>
+    <text x="374" y="187" class="metric sans">391</text>
 
     <rect x="574" y="110" width="204" height="96" rx="18" fill="#0D2035" stroke="#244B67"/>
     <text x="600" y="149" class="label sans">Agents</text>
@@ -77,14 +77,16 @@
   </g>
 
   <g>
-    <rect x="1042" y="120" width="120" height="54" rx="14" fill="#0D2035" stroke="#39677D"/>
-    <text x="1062" y="153" class="caption sans">Codex</text>
-    <rect x="1042" y="192" width="120" height="54" rx="14" fill="#0D2035" stroke="#39677D"/>
-    <text x="1062" y="225" class="caption sans">Claude</text>
-    <rect x="1042" y="264" width="120" height="54" rx="14" fill="#0D2035" stroke="#39677D"/>
-    <text x="1062" y="297" class="caption sans">Cursor</text>
-    <rect x="1042" y="336" width="120" height="54" rx="14" fill="#0D2035" stroke="#39677D"/>
-    <text x="1062" y="369" class="caption sans">Kiro</text>
+    <rect x="1042" y="110" width="128" height="48" rx="14" fill="#0D2035" stroke="#D97706"/>
+    <text x="1062" y="140" class="caption sans" fill="#FFD166">Claude Code</text>
+    <rect x="1042" y="172" width="128" height="48" rx="14" fill="#0D2035" stroke="#00B4D8"/>
+    <text x="1062" y="202" class="caption sans" fill="#5DF2FF">Cursor</text>
+    <rect x="1042" y="234" width="128" height="48" rx="14" fill="#0D2035" stroke="#10A37F"/>
+    <text x="1062" y="264" class="caption sans" fill="#5DF2A8">Codex</text>
+    <rect x="1042" y="296" width="128" height="48" rx="14" fill="#0D2035" stroke="#FF3366"/>
+    <text x="1062" y="326" class="caption sans" fill="#FF6B8A">Lovable</text>
+    <rect x="1042" y="358" width="128" height="48" rx="14" fill="#0D2035" stroke="#315C73"/>
+    <text x="1062" y="388" class="caption sans">+3 more</text>
   </g>
 
   <circle cx="82" cy="392" r="5" fill="#37D4FF">
