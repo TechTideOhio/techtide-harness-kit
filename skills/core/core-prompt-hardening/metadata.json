@@ -1,0 +1,38 @@
+﻿{
+  "id": "core-prompt-hardening",
+  "name": "Core Prompt Hardening",
+  "type": "skill",
+  "provider": "core",
+  "harnesses": [
+    "core"
+  ],
+  "summary": "Harden prompts so the work has explicit scope, constraints, data states, guardrails, and validation evidence.",
+  "source_type": "reference-only",
+  "official_docs": [
+    "https://code.claude.com/docs/en/skills"
+  ],
+  "security_notes": "Review source, license, code changes, secrets, and provider-specific activation semantics before installation, export, or production use.",
+  "last_verified": "2026-05-17",
+  "path": "skills/core/core-prompt-hardening",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/external-skill-research.mjs",
+  "version": "0.1.0",
+  "lifecycle": "beta",
+  "source_urls": [
+    "https://github.com/alirezarezvani/claude-skills",
+    "https://github.com/sickn33/antigravity-awesome-skills",
+    "https://code.claude.com/docs/en/skills",
+    "https://github.com/gsd-build/get-shit-done"
+  ],
+  "source_repo": "https://github.com/alirezarezvani/claude-skills",
+  "source_path": "synthesized/capabilities/prompt-hardening.md",
+  "source_license": "documentation-reference-only",
+  "source_commit": "2026-05-17T08:01:49Z",
+  "upstream_author": "TechTide synthesis from verified sources",
+  "import_mode": "techtide-synthesis",
+  "verification_status": "candidate-valid",
+  "duplicate_hash": "608571d541ac28dce231c2707a8f86f8adfa6629fc7a3d4da5bcd3241f32693b",
+  "native_skill_surface": "SKILL.md skill packages",
+  "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
+}

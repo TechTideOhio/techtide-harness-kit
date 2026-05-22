@@ -1,0 +1,38 @@
+﻿{
+  "id": "core-debugging-strategy",
+  "name": "Core Debugging Strategy",
+  "type": "skill",
+  "provider": "core",
+  "harnesses": [
+    "core"
+  ],
+  "summary": "Run a disciplined debugging loop that captures symptoms, isolates reproduction, tests hypotheses, patches narrowly, and verifies the fix.",
+  "source_type": "reference-only",
+  "official_docs": [
+    "https://code.claude.com/docs/en/skills"
+  ],
+  "security_notes": "Review source, license, code changes, secrets, and provider-specific activation semantics before installation, export, or production use.",
+  "last_verified": "2026-05-17",
+  "path": "skills/core/core-debugging-strategy",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/external-skill-research.mjs",
+  "version": "0.1.0",
+  "lifecycle": "beta",
+  "source_urls": [
+    "https://github.com/alirezarezvani/claude-skills",
+    "https://github.com/sickn33/antigravity-awesome-skills",
+    "https://code.claude.com/docs/en/skills",
+    "https://github.com/gsd-build/get-shit-done"
+  ],
+  "source_repo": "https://github.com/alirezarezvani/claude-skills",
+  "source_path": "synthesized/capabilities/debugging-strategy.md",
+  "source_license": "documentation-reference-only",
+  "source_commit": "2026-05-17T08:01:49Z",
+  "upstream_author": "TechTide synthesis from verified sources",
+  "import_mode": "techtide-synthesis",
+  "verification_status": "candidate-valid",
+  "duplicate_hash": "de204faeb27de250359e4261a17ed88f9f55467aef6bcac0deabe998ed86c079",
+  "native_skill_surface": "SKILL.md skill packages",
+  "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
+}

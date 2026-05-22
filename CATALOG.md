@@ -4,7 +4,7 @@
 
 Generated: 2026-05-17
 
-TechTide Harness Kit ships **487 skills**, **348 agents**, **114 promoted external research candidates**, and **17 install roles**.
+TechTide Harness Kit ships **391 skills**, **348 agents**, **114 promoted external research candidates**, and **17 install roles**.
 
 The best way to read the catalog is not as a giant list. It is a set of portable, eval-backed implementation assets for cloud, security, compliance, and agent engineering work.
 
@@ -29,28 +29,23 @@ The best way to read the catalog is not as a giant list. It is a set of portable
 | oci | 41 |
 | azure | 36 |
 | techtide | 24 |
-| gemini | 15 |
-| vercel | 15 |
 | marketing | 14 |
-| claude | 13 |
-| codex | 12 |
-| cursor | 12 |
-| kiro | 12 |
-| kubernetes | 12 |
-| lovable | 12 |
+| core | 12 |
 | nvidia | 12 |
-| replit | 12 |
-| v0 | 12 |
+| kubernetes | 10 |
+| finops | 7 |
 | contabo | 6 |
 | hetzner | 6 |
 | ionos | 6 |
 | ovhcloud | 6 |
 | scaleway | 6 |
-| multi-cloud | 5 |
+| gemini | 3 |
+| vercel | 3 |
 | argocd | 2 |
 | backstage | 1 |
 | cert-manager | 1 |
 | cilium | 1 |
+| claude | 1 |
 | falco | 1 |
 | fluxcd | 1 |
 | istio | 1 |
@@ -97,15 +92,8 @@ The best way to read the catalog is not as a giant list. It is a set of portable
 
 | Provider lane | Promoted candidates |
 | --- | ---: |
-| gemini | 15 |
-| vercel | 15 |
-| claude | 12 |
-| codex | 12 |
-| cursor | 12 |
-| kiro | 12 |
-| lovable | 12 |
-| replit | 12 |
-| v0 | 12 |
+| gemini | 3 |
+| vercel | 3 |
 
 ## Role-Based Entry Points
 

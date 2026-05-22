@@ -1,0 +1,38 @@
+﻿{
+  "id": "core-mcp-tool-safety",
+  "name": "Core MCP Tool Safety",
+  "type": "skill",
+  "provider": "core",
+  "harnesses": [
+    "core"
+  ],
+  "summary": "Review tool and MCP usage for credential scope, network egress, mutation risk, logging, and human approval gates.",
+  "source_type": "reference-only",
+  "official_docs": [
+    "https://code.claude.com/docs/en/skills"
+  ],
+  "security_notes": "Review source, license, code changes, secrets, and provider-specific activation semantics before installation, export, or production use.",
+  "last_verified": "2026-05-17",
+  "path": "skills/core/core-mcp-tool-safety",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/external-skill-research.mjs",
+  "version": "0.1.0",
+  "lifecycle": "beta",
+  "source_urls": [
+    "https://github.com/alirezarezvani/claude-skills",
+    "https://github.com/sickn33/antigravity-awesome-skills",
+    "https://code.claude.com/docs/en/skills",
+    "https://github.com/gsd-build/get-shit-done"
+  ],
+  "source_repo": "https://github.com/alirezarezvani/claude-skills",
+  "source_path": "synthesized/capabilities/mcp-tool-safety.md",
+  "source_license": "documentation-reference-only",
+  "source_commit": "2026-05-17T08:01:49Z",
+  "upstream_author": "TechTide synthesis from verified sources",
+  "import_mode": "techtide-synthesis",
+  "verification_status": "candidate-valid",
+  "duplicate_hash": "09af79d77657182def1908b190f50e50181e848c9b0f735ecf653384e9584842",
+  "native_skill_surface": "SKILL.md skill packages",
+  "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
+}

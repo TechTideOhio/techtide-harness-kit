@@ -3,7 +3,7 @@
 <div align="center">
   <img src="assets/logos/techtide-harness-kit-logo.png" alt="TechTide Harness Kit" width="180" />
 
-  <h3>Production skills, specialist agents, trust metadata, and installable harness adapters.</h3>
+  <h3>391 enterprise-grade agent skills. 348 specialist agents. 6 cloud providers.<br/>One repo. Every harness.</h3>
 
   <p>
     <a href="https://www.npmjs.com/package/@techtide/harness-kit"><img alt="npm version" src="https://img.shields.io/npm/v/@techtide/harness-kit.svg?logo=npm" /></a>
@@ -15,190 +15,231 @@
   </p>
 
   <p>
-    <a href="#lovable-skills-ready">Lovable Skills</a> |
-    <a href="#try-in-10-minutes">Try in 10 minutes</a> |
-    <a href="#what-this-is">What this is</a> |
-    <a href="#catalog">Catalog</a> |
-    <a href="#supported-harnesses">Harnesses</a> |
-    <a href="#trust-and-validation">Trust</a> |
-    <a href="#official-links">Official links</a>
+    <a href="#quick-start">Quick Start</a> &bull;
+    <a href="#skill-catalog">Skill Catalog</a> &bull;
+    <a href="#cloud-provider-coverage">Cloud Coverage</a> &bull;
+    <a href="#supported-harnesses">Harnesses</a> &bull;
+    <a href="#enterprise-trust">Enterprise Trust</a> &bull;
+    <a href="#vs-alternatives">vs Alternatives</a> &bull;
+    <a href="#contributing">Contributing</a>
   </p>
 
   <img src="assets/readme/showcase-hero.svg" alt="TechTide Harness Kit product overview" width="100%" />
 </div>
 
-## Lovable Skills Ready
+---
 
-Lovable Skills launched on May 18, 2026. TechTide Harness Kit ships a
-Lovable-compatible export path today: **71 focused skill ZIPs**, one skill per
-archive, each shaped with `SKILL.md` in the package root or one wrapping folder.
+## Why This Exists
 
-Do not import the full repo or the `skills/lovable` folder into Lovable. Lovable
-currently imports one skill per public repository or ZIP archive, so large repo
-URLs can fail with a file-count error.
+Most agent skill repos are curated link lists or single-harness collections with no governance. TechTide Harness Kit is the opposite: **391 production-tested skills with schema-validated metadata, trust tiers, safety checklists, and approval gates** -- built for teams that ship to regulated environments.
 
-Use Lovable's GitHub tab with one of these public one-skill repository URLs.
-Each block is separate so it can be copied on its own.
+Every skill includes:
+- **Assessment question banks** with provider-specific validation checklists
+- **Safety checklists** with blast-radius checks and rollback paths
+- **Official doc references** grounded in vendor documentation, not training data
+- **Trust metadata** with tool scopes, data classes, network posture, and audit events
+- **9 JSON Schema contracts** enforcing skill shape, frontmatter, and trust fields
 
-```text
-https://github.com/TechTideOhio/lovable-native-packaging-bridge
-```
+This is not an awesome-list. This is an enterprise skill platform.
 
-```text
-https://github.com/TechTideOhio/techtide-lovable-build-loop-operator
-```
-
-```text
-https://github.com/TechTideOhio/techtide-lovable-production-handoff
-```
-
-```text
-https://github.com/TechTideOhio/techtide-v0-ui-prompt-hardener
-```
-
-```text
-https://github.com/TechTideOhio/techtide-replit-fullstack-bootstrap
-```
-
-For Lovable's Archive tab, download one ZIP from the
-[v1.0.3 release](https://github.com/TechTideOhio/techtide-harness-kit/releases/tag/v1.0.3)
-instead. Full instructions and all generated packages are in
-[docs/integrations/lovable-skills.md](docs/integrations/lovable-skills.md) and
-the release assets.
-
-## What This Is
-
-TechTide Harness Kit is the public showcase repo for one year of agentic
-engineering work by Alex Cinovoj and the TechTide team. It packages the field
-patterns, review gates, provider workflows, and harness adapters TechTide has
-built while working across Columbus, Ohio, San Francisco, San Diego, and Miami.
-
-The repo is designed for teams that need repeatable cloud, Kubernetes,
-Terraform, security, compliance, FinOps, marketing governance, and delivery
-workflows across modern coding harnesses.
-
-Every public asset is meant to be inspected. Source notes, schema-backed
-metadata, approval gates, permission posture, validation commands, and
-integrity hashes live beside the work.
-
-## Official Links
-
-| Surface | Link |
-| --- | --- |
-| TechTide AI | [techtideai.io](https://techtideai.io/) |
-| Alex Cinovoj | [linkedin.com/in/alexcinovoj](https://www.linkedin.com/in/alexcinovoj) |
-
-## Catalog
-
-| Asset | Count |
-| --- | ---: |
-| Skills | 487 |
-| Agents | 348 |
-| Promoted external research candidates | 114 |
-| Enterprise missions | 5 |
-| Provider lanes | 27 |
-
-Current catalog: **487 skills**, **348 agents**, **114 promoted external
-research candidates**, and **5 enterprise missions**.
-
-Start with [CATALOG.md](CATALOG.md), [EVALS.md](EVALS.md), and
-[TRUST.md](TRUST.md).
-
-<img src="assets/readme/coverage-map.svg" alt="TechTide Harness Kit coverage map" width="100%" />
-
-## Try In 10 Minutes
+## Quick Start
 
 ```bash
-npm install
-npm run validate
-npx thk-export-agents --help
-```
+# Install and validate
+npm install @techtide/harness-kit
+npm run validate    # 25+ validation gates, no secrets required
 
-Export a focused pack:
-
-```bash
+# Export skills to your harness
 npx thk-export-agents --platform claude-code --provider aws --repo .
 npx thk-export-agents --platform codex --role cloud-security-engineer --repo .
 npx thk-export-agents --platform gemini --all --repo .
 ```
 
-The validation suite checks catalog shape, schemas, links, asset integrity,
-marketplace manifests, provider routing, trust metadata, and install coverage.
-It does not require secrets or customer data.
+Install directly in your harness:
+
+| Harness | One-liner |
+| --- | --- |
+| **Claude Code** | `/plugin marketplace add TechTideOhio/techtide-harness-kit` |
+| **OpenAI Codex** | `codex plugin marketplace add TechTideOhio/techtide-harness-kit` |
+| **GitHub Copilot** | `copilot plugin marketplace add TechTideOhio/techtide-harness-kit` |
+| **Cursor** | Clone repo, add as plugin directory |
+| **Gemini CLI** | `npx thk-export-agents --platform gemini --all --repo .` |
+| **Kiro** | Add `powers/techtide-*` directories |
+| **Lovable** | `npm run lovable:write` (builds one ZIP per skill) |
+
+Full install guide: [docs/integrations/installation-guide.md](docs/integrations/installation-guide.md)
+
+## Skill Catalog
+
+| Asset | Count |
+| --- | ---: |
+| Production skills | **391** |
+| Specialist agents | **348** |
+| Cloud provider lanes | **6** (AWS, Azure, GCP, Alibaba, Huawei, OCI) |
+| Infrastructure lanes | **4** (Kubernetes, Terraform, CNCF, NVIDIA) |
+| Governance lanes | **3** (marketing, FinOps, compliance) |
+| Harness adapters | **7** (Claude Code, Codex, Copilot, Cursor, Gemini, Kiro, Lovable) |
+| JSON Schema contracts | **9** |
+| Validation gates | **25+** |
+
+Browse the full catalog: [CATALOG.md](CATALOG.md)
+
+## Cloud Provider Coverage
+
+Every major cloud has deep, provider-specific skills -- not generic templates with names swapped.
+
+| Provider | Skills | Highlights |
+| --- | ---: | --- |
+| **AWS** | 47 | WAF pillars, Bedrock agent security, Cost Explorer, ECS/EKS ops, IAM least-privilege |
+| **GCP** | 51 | AlloyDB AI, Anthos multi-cloud, Cloud Run, GKE platform ops, WAF pillars with 50+ assessment questions |
+| **Azure** | 36 | AI Foundry ops, AKS platform, App Service readiness, Entra ID, WAF pillars |
+| **Alibaba Cloud** | 43 | ACK containers, AnalyticDB, China compliance, ActionTrail audit, Function Compute |
+| **Huawei Cloud** | 43 | GaussDB HA, CCE containers, Cloud Eye monitoring, CBR backup, ELB |
+| **Oracle Cloud (OCI)** | 41 | Autonomous Database, Cloud Guard, Full Stack DR, Fault Domain topology |
+
+### Infrastructure and Governance
+
+| Lane | Skills | Highlights |
+| --- | ---: | --- |
+| **Kubernetes** | 10 | External Secrets Operator, RBAC review, admission control |
+| **NVIDIA** | 12 | CUDA kernel performance, TensorRT-LLM deployment, Triton inference, GPU operator hardening |
+| **FinOps** | 7 | Cross-cloud cost governance, commitment optimization, showback |
+| **Marketing** | 14 | Ad targeting fairness (FHA/ECOA/EU AI Act), analytics data minimization, sender authentication |
+| **TechTide Core** | 24 | Production readiness audit, agent autopsy, cross-harness export, MCP trust review |
+| **Core Skills** | 12 | Context management, security review, prompt hardening, deployment readiness |
+| **European Cloud** | 30 | Hetzner, Contabo, IONOS, OVHcloud, Scaleway (6 each) |
+| **CNCF** | 11 | ArgoCD, Cert-Manager, Cilium, Falco, FluxCD, Istio, Kyverno, Prometheus, Sigstore, Velero |
+
+## Skill Anatomy
+
+Every skill follows a consistent, agent-optimized structure:
+
+```
+skills/<provider>/<skill-id>/
+  SKILL.md          # YAML frontmatter + workflow + assessment questions + validation checklist
+  metadata.json     # Schema-validated: id, version, harnesses, official_docs, security_notes
+  references/       # Safety checklists, official sources, extended guidance
+    safety-checklist.md
+    official-sources.md
+    workflow-and-output.md
+```
+
+### What makes a TechTide skill different
+
+```yaml
+# SKILL.md frontmatter -- every skill declares its tool scope
+---
+name: techtide-aws-waf-reliability-review
+description: "Review AWS workload reliability posture against the WAF Reliability Pillar..."
+allowed-tools: Read Grep Glob    # Least-privilege: no Write, no Bash, no network
+metadata:
+  author: "github: TechTide"
+  version: "0.1.0"
+  category: resilience
+---
+```
+
+**Inline assessment questions** (not hidden in reference files):
+```markdown
+## Assessment Question Bank
+### SLO/SLI Definition and Error Budgets
+1. Are SLIs defined based on user-observable outcomes?
+2. Is an SLO set for each user-facing service with an error budget?
+3. Is the error budget actively tracked and used to gate feature velocity?
+
+## Validation Checklist
+- [ ] SLIs defined for all user-facing services
+- [ ] Autoscaling configured for all stateless compute
+- [ ] Backup restore tested within the last 30 days
+- [ ] Circuit breakers implemented for all external calls
+```
 
 ## What Ships
 
 | Surface | Purpose |
 | --- | --- |
-| `skills/` | Portable task workflows with frontmatter, references, and guardrails. |
-| `agents/` | Specialist roles with adapters for supported coding harnesses. |
-| `rules/` | Harness-specific operating guidance. |
-| `mcp/` | Trusted notes for official MCP server integrations. |
-| `catalog/` | Machine-readable indexes, trust metadata, roles, and integrity hashes. |
-| `powers/` | Kiro Power packages built from the provider catalog. |
-| `plugins/` | Codex plugin packages and templates. |
-
-Provider coverage includes AWS, Azure, OCI, GCP, Alibaba Cloud, Huawei Cloud,
-Kubernetes, Terraform, CNCF tools, NVIDIA, European cloud providers, marketing
-governance, FinOps, and coding harness lanes.
+| `skills/` | Portable task workflows with frontmatter, assessment questions, and guardrails |
+| `agents/` | Specialist roles with harness-specific adapters (Claude Code, Codex, Copilot, Cursor, Gemini, Kiro) |
+| `rules/` | Harness-specific operating guidance |
+| `mcp/` | Trusted MCP server integration references |
+| `catalog/` | Machine-readable indexes, trust metadata, roles, and integrity hashes |
+| `schemas/` | 9 JSON Schema contracts enforcing skill and agent shape |
+| `powers/` | Kiro Power packages |
+| `plugins/` | Codex and Claude Code plugin packages |
 
 <img src="assets/readme/harness-flow.svg" alt="TechTide Harness Kit workflow" width="100%" />
 
 ## Supported Harnesses
 
-| Harness | Primary path | Notes |
+| Harness | Format | Install path |
 | --- | --- | --- |
-| Claude Code | `/plugin marketplace add TechTideOhio/techtide-harness-kit` | Plugin marketplace plus `thk-export-agents` for repo-local adapters. |
-| OpenAI Codex | `codex plugin marketplace add TechTideOhio/techtide-harness-kit` | Marketplace lives at `.agents/plugins/marketplace.json`. |
-| GitHub Copilot | `copilot plugin marketplace add TechTideOhio/techtide-harness-kit` | Marketplace lives at `.github/plugin/marketplace.json`. |
-| Cursor | Clone repo and add it as a plugin directory | Manifest lives at `.cursor-plugin/plugin.json`; rules stay rules-first. |
-| Gemini CLI / Antigravity | `npx thk-export-agents --platform gemini --all --repo .` | Exports workspace skills and agent adapters. |
-| Kiro | Add selected `powers/techtide-*` directories | Kiro Powers plus optional exported agent adapters. |
-| Lovable | `npm run lovable:write` | Builds one ZIP per Lovable-compatible skill for workspace import. |
+| **Claude Code** | SKILL.md + plugin manifest | `/plugin marketplace add TechTideOhio/techtide-harness-kit` |
+| **OpenAI Codex** | .agents/plugins/ | `codex plugin marketplace add TechTideOhio/techtide-harness-kit` |
+| **GitHub Copilot** | .github/plugin/ | `copilot plugin marketplace add TechTideOhio/techtide-harness-kit` |
+| **Cursor** | .cursor-plugin/ | Clone repo and add as plugin directory |
+| **Gemini CLI** | Workspace skills | `npx thk-export-agents --platform gemini --all --repo .` |
+| **Kiro** | Powers packages | Add `powers/techtide-*` directories |
+| **Lovable** | ZIP archives | `npm run lovable:write` (one ZIP per skill) |
 
-For full install instructions, see
-[docs/integrations/installation-guide.md](docs/integrations/installation-guide.md).
+For Lovable imports, see [docs/integrations/lovable-skills.md](docs/integrations/lovable-skills.md).
 
-## Trust And Validation
+## Enterprise Trust
 
-The repo is built for reviewable, source-grounded work:
+This repo is built for teams that answer to auditors, not just developers.
 
-- Risky operations are read-first, approval-gated, and target-confirmed.
-- Skills carry tool scopes, data classes, network posture, approval gates, and
-  audit metadata in [catalog/skill-trust.json](catalog/skill-trust.json).
-- External skills are quarantine-first and promoted only when source, license,
-  provider mapping, privacy, and duplication checks pass.
-- Compliance mappings are engineering aids, not legal or audit attestations.
-
-| Need | File |
+| Layer | What it does |
 | --- | --- |
-| Catalog overview | [CATALOG.md](CATALOG.md) |
-| Validation summary | [EVALS.md](EVALS.md) |
-| Trust posture | [TRUST.md](TRUST.md) |
-| Data handling | [DATA-HANDLING.md](DATA-HANDLING.md) |
-| Prompt-injection defenses | [PROMPT-INJECTION.md](PROMPT-INJECTION.md) |
-| Control mapping | [CONTROL-MAPPING.md](CONTROL-MAPPING.md) |
-| Security reporting | [SECURITY.md](SECURITY.md) |
+| **Schema validation** | 9 JSON Schemas enforce skill shape, frontmatter, trust fields, and agent contracts |
+| **Tool scoping** | Every skill declares `allowed-tools` in frontmatter -- least-privilege by default |
+| **Safety checklists** | Pre-action checks for blast radius, rollback paths, and data impact |
+| **Approval gates** | Risky operations are read-first, approval-gated, and target-confirmed |
+| **Trust metadata** | Tool scopes, data classes, network posture, audit events per skill |
+| **Provenance** | npm provenance + SHA-verified asset integrity hashes |
+| **CodeQL** | Automated security scanning on every push |
+| **OpenSSF Scorecard** | Supply chain security posture |
+
+| Trust document | Purpose |
+| --- | --- |
+| [TRUST.md](TRUST.md) | Trust posture and verification model |
+| [DATA-HANDLING.md](DATA-HANDLING.md) | Data handling and privacy practices |
+| [PROMPT-INJECTION.md](PROMPT-INJECTION.md) | Prompt injection defenses |
+| [CONTROL-MAPPING.md](CONTROL-MAPPING.md) | Compliance control mapping |
+| [SECURITY.md](SECURITY.md) | Vulnerability reporting |
+| [EVALS.md](EVALS.md) | Evaluation and validation summary |
+
+## vs Alternatives
+
+| Feature | TechTide Harness Kit | Awesome lists | Toolkit repos |
+| --- | --- | --- | --- |
+| **Skill count** | 391 production skills | Links only | 35-184 skills |
+| **Cloud providers** | 6 (AWS, Azure, GCP, Alibaba, Huawei, OCI) | None | 1-2 |
+| **Schema validation** | 9 JSON Schemas, 25+ gates | None | None |
+| **Trust metadata** | Tool scopes, data classes, approval gates | None | None |
+| **Safety checklists** | Per-skill blast radius + rollback | None | None |
+| **Multi-harness** | 7 harness adapters | Single harness | 1-2 harnesses |
+| **Assessment questions** | Provider-specific question banks | None | None |
+| **Enterprise governance** | OpenSSF, CodeQL, provenance, control mapping | None | None |
+| **European cloud** | Hetzner, Contabo, IONOS, OVHcloud, Scaleway | None | None |
+| **NVIDIA / GPU** | CUDA, TensorRT-LLM, Triton, NGC | None | None |
 
 ## Common Commands
 
 ```bash
+# Validate everything (25+ gates)
 npm run validate
-npm run proof-layer:check
-npm run external-skills:check
+
+# Check trust metadata and proof layer
 npm run trust:check
-npm run agents:export -- --list
-npm run agents:export -- --list-providers
-npm run agents:export -- --platform claude-code --all --repo .
-```
+npm run proof-layer:check
 
-Regenerate derived artifacts after intentional catalog changes:
+# Export agents for your harness
+npm run agents:export -- --list                                        # List available agents
+npm run agents:export -- --platform claude-code --provider aws --repo . # AWS agents for Claude Code
+npm run agents:export -- --platform codex --all --repo .               # All agents for Codex
 
-```bash
+# Regenerate derived artifacts
 npm run proof-layer:write
 npm run plugin-manifest:write
-npm run cursor-plugin:write
-npm run kiro-powers:write
 npm run manifest:write
 npm run asset-integrity:write
 ```
@@ -207,21 +248,34 @@ npm run asset-integrity:write
 
 | Topic | Link |
 | --- | --- |
-| Installation | [docs/integrations/installation-guide.md](docs/integrations/installation-guide.md) |
+| Installation guide | [docs/integrations/installation-guide.md](docs/integrations/installation-guide.md) |
 | Harness compatibility | [docs/compatibility.md](docs/compatibility.md) |
 | Cross-harness skills | [docs/cross-harness-skills.md](docs/cross-harness-skills.md) |
 | Marketplace model | [docs/marketplace-model.md](docs/marketplace-model.md) |
-| Lovable skill imports | [docs/integrations/lovable-skills.md](docs/integrations/lovable-skills.md) |
 | Quality bar | [docs/quality-bar.md](docs/quality-bar.md) |
 | Taxonomy | [docs/taxonomy.md](docs/taxonomy.md) |
 | External skill research | [docs/external-skill-research.md](docs/external-skill-research.md) |
+| Lovable skill imports | [docs/integrations/lovable-skills.md](docs/integrations/lovable-skills.md) |
 
 ## Contributing
 
 Contributions should be evidence-backed, source-grounded, and safe by default.
-Start with [CONTRIBUTING.md](CONTRIBUTING.md), then run `npm run validate`
-before opening a PR.
 
-Report vulnerabilities through [SECURITY.md](SECURITY.md). Do not open public
-issues containing exploit details, real credentials, customer data, or internal
-system identifiers.
+1. Read [CONTRIBUTING.md](CONTRIBUTING.md)
+2. Run `npm run validate` before opening a PR
+3. Every skill needs: SKILL.md with frontmatter, metadata.json matching schema, and official doc references
+
+Report vulnerabilities through [SECURITY.md](SECURITY.md). Do not open public issues containing exploit details, real credentials, customer data, or internal system identifiers.
+
+---
+
+<div align="center">
+  <p>
+    <strong>Built by <a href="https://techtideai.io/">TechTide AI</a></strong> &bull;
+    <a href="https://www.linkedin.com/in/alexcinovoj">Alex Cinovoj</a> &bull;
+    Columbus, Ohio
+  </p>
+  <p>
+    <a href="https://github.com/TechTideOhio/techtide-harness-kit/stargazers">Star us on GitHub</a> if this helps your team ship safer agent workflows.
+  </p>
+</div>

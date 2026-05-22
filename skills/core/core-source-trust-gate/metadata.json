@@ -1,0 +1,37 @@
+﻿{
+  "id": "core-source-trust-gate",
+  "name": "Core Source Trust Gate",
+  "type": "skill",
+  "provider": "core",
+  "harnesses": [
+    "core"
+  ],
+  "summary": "Verify skill, rule, and agent sources before installation or reuse by checking primary docs, repository identity, license, native surface, and privacy risk.",
+  "source_type": "reference-only",
+  "official_docs": [
+    "https://code.claude.com/docs/en/skills"
+  ],
+  "security_notes": "Review source, license, code changes, secrets, and provider-specific activation semantics before installation, export, or production use.",
+  "last_verified": "2026-05-17",
+  "path": "skills/core/core-source-trust-gate",
+  "author": "github: TechTide",
+  "owner": "Alex Cinovoj / TechTide",
+  "generated_by": "scripts/external-skill-research.mjs",
+  "version": "0.1.0",
+  "lifecycle": "stable",
+  "source_urls": [
+    "https://code.claude.com/docs/en/skills",
+    "https://github.com/alirezarezvani/claude-skills",
+    "https://github.com/gsd-build/get-shit-done"
+  ],
+  "source_repo": "https://code.claude.com/docs/en/skills",
+  "source_path": "synthesized/capabilities/source-trust-gate.md",
+  "source_license": "documentation-reference-only",
+  "source_commit": "2026-05-17",
+  "upstream_author": "TechTide synthesis from verified sources",
+  "import_mode": "techtide-synthesis",
+  "verification_status": "candidate-valid",
+  "duplicate_hash": "32db28650d88f2d9610d676d7e4516d8fc66c96507f28456bd8c04a699aca9d9",
+  "native_skill_surface": "SKILL.md skill packages",
+  "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
+}
