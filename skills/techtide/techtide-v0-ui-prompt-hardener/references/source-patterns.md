@@ -6,7 +6,7 @@ This reference records sanitized anchors used to distill `techtide-v0-ui-prompt-
 
 - $TECHTIDE_ROOT/Claude/PATHSENSE-DESIGN-UPGRADE.md
 - $TECHTIDE_ROOT/Claude/AUTOBROKER-DESIGN-UPGRADE.md
-- $TECHTIDE_ROOT/Claude/skills/design/persyn-design-stack-research.md
+- $TECHTIDE_ROOT/Claude/skills/design/internal-design-research.md
 
 ## Extracted Pattern
 

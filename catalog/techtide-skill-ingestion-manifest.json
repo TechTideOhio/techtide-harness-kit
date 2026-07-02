@@ -185,7 +185,7 @@
       "source_paths": [
         "$TECHTIDE_ROOT/Claude/PATHSENSE-DESIGN-UPGRADE.md",
         "$TECHTIDE_ROOT/Claude/AUTOBROKER-DESIGN-UPGRADE.md",
-        "$TECHTIDE_ROOT/Claude/skills/design/persyn-design-stack-research.md"
+        "$TECHTIDE_ROOT/Claude/skills/design/internal-design-research.md"
       ],
       "source_type": "sanitized-local-pattern",
       "extracted_pattern_summary": "Shape v0 UI prompts into implementable, accessible, responsive interface specifications with explicit data states, constraints, and handoff checks.",
@@ -573,7 +573,7 @@
     {
       "id": "techtide-design-stack-research-synthesizer",
       "source_paths": [
-        "$TECHTIDE_ROOT/Claude/skills/design/persyn-design-stack-research.md",
+        "$TECHTIDE_ROOT/Claude/skills/design/internal-design-research.md",
         "$TECHTIDE_ROOT/Claude/PATHSENSE-DESIGN-UPGRADE.md",
         "$TECHTIDE_ROOT/Claude/AUTOBROKER-DESIGN-UPGRADE.md"
       ],

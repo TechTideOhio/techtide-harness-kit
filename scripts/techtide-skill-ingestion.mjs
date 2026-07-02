@@ -166,7 +166,7 @@ const skillDefinitions = [
     sourceAnchors: [
       "$TECHTIDE_ROOT/Claude/PATHSENSE-DESIGN-UPGRADE.md",
       "$TECHTIDE_ROOT/Claude/AUTOBROKER-DESIGN-UPGRADE.md",
-      "$TECHTIDE_ROOT/Claude/skills/design/persyn-design-stack-research.md",
+      "$TECHTIDE_ROOT/Claude/skills/design/internal-design-research.md",
     ],
     workflow: [
       "Translate vague UI intent into screen, component, state, interaction, and responsive requirements.",
@@ -428,7 +428,7 @@ const skillDefinitions = [
     lifecycle: "beta",
     summary: "Synthesize design-tool research into practical app-building guidance across Stitch, Figma, Claude Code, v0, Lovable, and repo-native frontend implementation.",
     sourceAnchors: [
-      "$TECHTIDE_ROOT/Claude/skills/design/persyn-design-stack-research.md",
+      "$TECHTIDE_ROOT/Claude/skills/design/internal-design-research.md",
       "$TECHTIDE_ROOT/Claude/PATHSENSE-DESIGN-UPGRADE.md",
       "$TECHTIDE_ROOT/Claude/AUTOBROKER-DESIGN-UPGRADE.md",
     ],
