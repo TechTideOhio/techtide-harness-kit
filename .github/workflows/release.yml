@@ -39,7 +39,7 @@ jobs:
       # silently no-ops and no tag/release is produced, which previously
       # blocked v1.4.0. This workflow runs by maintainer dispatch only, so
       # token persistence is acceptable.
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           fetch-depth: 0
           persist-credentials: true
@@ -48,7 +48,7 @@ jobs:
         with:
           node-version: "22"
 
-      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
         with:
           python-version: "3.x"
 
@@ -148,14 +148,14 @@ jobs:
 
       - name: Attest npm tarball provenance
         if: steps.pack.outputs.no_release != 'true'
-        uses: actions/attest-build-provenance@a2bbfa25375fe432b6a289bc6b6cd05ecd0c4c32 # v4.1.0
+        uses: actions/attest-build-provenance@0f67c3f4856b2e3261c31976d6725780e5e4c373 # v4.1.1
         with:
           subject-path: ${{ steps.pack.outputs.tarball }}
 
       - name: Attest SBOM provenance
         if: steps.pack.outputs.no_release != 'true'
         id: attest-sbom
-        uses: actions/attest-build-provenance@a2bbfa25375fe432b6a289bc6b6cd05ecd0c4c32 # v4.1.0
+        uses: actions/attest-build-provenance@0f67c3f4856b2e3261c31976d6725780e5e4c373 # v4.1.1
         with:
           subject-path: sbom.spdx.json
 
@@ -175,7 +175,7 @@ jobs:
       - name: Attest asset integrity manifest
         if: steps.pack.outputs.no_release != 'true'
         id: attest-asset-integrity
-        uses: actions/attest-build-provenance@a2bbfa25375fe432b6a289bc6b6cd05ecd0c4c32 # v4.1.0
+        uses: actions/attest-build-provenance@0f67c3f4856b2e3261c31976d6725780e5e4c373 # v4.1.1
         with:
           subject-path: catalog/asset-integrity.json
 
