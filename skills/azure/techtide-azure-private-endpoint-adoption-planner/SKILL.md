@@ -3,7 +3,7 @@ name: techtide-azure-private-endpoint-adoption-planner
 description: Use this skill for Azure Private Link and private endpoint adoption planning, including hub-versus-spoke placement, private DNS zone linkage, route implications, centralized versus workload-local endpoint trade-offs, and safe rollout validation.
 allowed-tools: Read Grep Glob WebFetch
 metadata:
-  author: github: TechTide
+  author: "github: TechTide"
   version: 0.1.0
   updated: "2026-05-05"
   category: networking

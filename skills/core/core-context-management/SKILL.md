@@ -1,4 +1,4 @@
-﻿---
+---
 name: core-context-management
 description: "Keep agent sessions from drifting by packaging concise project context, current state, decisions, and verification results. Use when expanding, reviewing, or operating skills, rules, prompt kits, provider lanes, or generated-code handoffs in the TechTide skill library."
 allowed-tools: Read Grep Glob Bash Edit Write

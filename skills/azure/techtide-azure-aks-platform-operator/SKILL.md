@@ -3,7 +3,7 @@ name: techtide-azure-aks-platform-operator
 description: Operate Azure Kubernetes Service with an adversarial production posture. Use for AKS architecture sanity checks, upgrade safety, node-pool strategy, workload identity, network policy, scaling, observability, and operator-readiness reviews.
 allowed-tools: Read Grep Glob
 metadata:
-  author: github: TechTide
+  author: "github: TechTide"
   version: 0.1.0
   updated: "2026-05-05"
   category: platform

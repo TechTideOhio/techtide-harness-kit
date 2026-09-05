@@ -1,4 +1,4 @@
-﻿# Source Evidence
+# Source Evidence
 
 This reference records the verified sources for `core-handoff-readiness-review`. It is evidence for packaging and promotion decisions.
 
@@ -11,7 +11,7 @@ This reference records the verified sources for `core-handoff-readiness-review`.
 - Source path: synthesized/capabilities/handoff-readiness-review.md
 - Import mode: techtide-synthesis
 - Upstream author: TechTide synthesis from verified sources
-- Duplicate hash: 9f705b33f5bf283f1e48f3566608ad410a2c88e6e9ba4786632339e1e01f452f
+- Duplicate hash: 3c0b631ebb69de18720ef1eb469a1d1e9369ddb35aa7c492675b9145d2fda823
 
 ## Registry Entries
 

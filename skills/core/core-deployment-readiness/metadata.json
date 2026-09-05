@@ -1,4 +1,4 @@
-﻿{
+{
   "id": "core-deployment-readiness",
   "name": "Core Deployment Readiness",
   "type": "skill",
@@ -6,7 +6,7 @@
   "harnesses": [
     "core"
   ],
-  "summary": "Use to decide whether an app, feature, or prototype is ready for deployment, rollback, and operational ownership.",
+  "summary": "Use the agent to decide whether an app, feature, or prototype is ready for deployment, rollback, and operational ownership.",
   "source_type": "reference-only",
   "official_docs": [
     "https://code.claude.com/docs/en/skills"
@@ -32,7 +32,7 @@
   "upstream_author": "TechTide synthesis from verified sources",
   "import_mode": "techtide-synthesis",
   "verification_status": "candidate-valid",
-  "duplicate_hash": "2578633025d74eb82ce4dfe55635aaf739bd531a478db1e0df664b309cf66953",
+  "duplicate_hash": "94cf46028a88c578c5b58aad0e0378b58363e8f16658c9998869f883afd11e8f",
   "native_skill_surface": "SKILL.md skill packages",
   "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
 }

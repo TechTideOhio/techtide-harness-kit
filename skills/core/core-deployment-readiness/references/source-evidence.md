@@ -1,4 +1,4 @@
-﻿# Source Evidence
+# Source Evidence
 
 This reference records the verified sources for `core-deployment-readiness`. It is evidence for packaging and promotion decisions.
 
@@ -11,7 +11,7 @@ This reference records the verified sources for `core-deployment-readiness`. It 
 - Source path: synthesized/capabilities/deployment-readiness.md
 - Import mode: techtide-synthesis
 - Upstream author: TechTide synthesis from verified sources
-- Duplicate hash: 2578633025d74eb82ce4dfe55635aaf739bd531a478db1e0df664b309cf66953
+- Duplicate hash: 94cf46028a88c578c5b58aad0e0378b58363e8f16658c9998869f883afd11e8f
 
 ## Registry Entries
 

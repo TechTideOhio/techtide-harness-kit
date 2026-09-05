@@ -3,7 +3,7 @@ name: techtide-azure-subscription-resource-organization
 description: Use this skill for Azure management-group hierarchy, subscription placement, resource-group boundary, and platform-versus-workload ownership decisions that affect governance, operations, and landing-zone scale.
 allowed-tools: Read Grep Glob
 metadata:
-  author: github: TechTide
+  author: "github: TechTide"
   version: 0.1.0
   updated: "2026-05-05"
   category: compliance

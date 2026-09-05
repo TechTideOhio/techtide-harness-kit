@@ -5,7 +5,7 @@
 # TechTide Harness Kit
 
 **The enterprise skill platform for AI coding agents.**<br/>
-391 production skills. 348 specialist agents. 6 cloud providers. 7 harnesses. One repo.
+385 production skills. 348 specialist agents. 6 cloud providers. 7 harnesses. One repo.
 
 <br/>
 
@@ -21,7 +21,7 @@
 
 <br/>
 
-<img src="assets/readme/showcase-hero.svg" alt="391 skills, 348 agents, 27 providers flowing through the TechTide Harness Kit" width="100%" />
+<img src="assets/readme/showcase-hero.svg" alt="385 skills, 348 agents, 27 providers flowing through the TechTide Harness Kit" width="100%" />
 
 </div>
 
@@ -156,7 +156,7 @@ npx thk-export-agents --platform gemini --all --repo .
 
 | | | | |
 | :---: | :---: | :---: | :---: |
-| **391** | **348** | **6** | **33** |
+| **385** | **348** | **6** | **33** |
 | Production skills | Specialist agents | Cloud providers | Provider lanes |
 | | | | |
 | **9** | **25+** | **7** | **12** |
@@ -322,7 +322,7 @@ No `Write`. No `Bash`. No network. Least-privilege by default.
 
 | Feature | TechTide Harness Kit | Awesome lists | Toolkit repos |
 | --- | :---: | :---: | :---: |
-| **Production skills** | 391 | Links only | 35-184 |
+| **Production skills** | 385 | Links only | 35-184 |
 | **Cloud providers** | 6 | 0 | 1-2 |
 | **Schema validation** | 9 schemas, 25+ gates | None | None |
 | **Trust metadata** | Per-skill scopes + approval gates | None | None |

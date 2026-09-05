@@ -3,7 +3,7 @@ name: techtide-azure-migrate-landing-zone-cutover
 description: Plan and stress-test Azure migration cutovers across landing-zone readiness, Azure Migrate assessments, dependency sequencing, permissions, rollback, and operational ownership. Use when a migration plan needs a go/no-go verdict instead of vague optimism.
 allowed-tools: Read Grep Glob
 metadata:
-  author: github: TechTide
+  author: "github: TechTide"
   version: 0.1.0
   updated: "2026-05-05"
   category: compliance

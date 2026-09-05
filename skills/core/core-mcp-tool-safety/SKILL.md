@@ -1,4 +1,4 @@
-﻿---
+---
 name: core-mcp-tool-safety
 description: "Review agent tool and MCP usage for credential scope, network egress, mutation risk, logging, and human approval gates. Use when expanding, reviewing, or operating skills, rules, prompt kits, provider lanes, or generated-code handoffs in the TechTide skill library."
 allowed-tools: Read Grep Glob Bash Edit Write

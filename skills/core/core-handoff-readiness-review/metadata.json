@@ -1,4 +1,4 @@
-﻿{
+{
   "id": "core-handoff-readiness-review",
   "name": "Core Handoff Readiness Review",
   "type": "skill",
@@ -6,7 +6,7 @@
   "harnesses": [
     "core"
   ],
-  "summary": "Review session output before it enters the durable TechTide repo by checking provenance, tests, security, deployment boundaries, and rollback expectations.",
+  "summary": "Review agent session output before it enters the durable TechTide repo by checking provenance, tests, security, deployment boundaries, and rollback expectations.",
   "source_type": "reference-only",
   "official_docs": [
     "https://code.claude.com/docs/en/skills"
@@ -31,7 +31,7 @@
   "upstream_author": "TechTide synthesis from verified sources",
   "import_mode": "techtide-synthesis",
   "verification_status": "candidate-valid",
-  "duplicate_hash": "9f705b33f5bf283f1e48f3566608ad410a2c88e6e9ba4786632339e1e01f452f",
+  "duplicate_hash": "3c0b631ebb69de18720ef1eb469a1d1e9369ddb35aa7c492675b9145d2fda823",
   "native_skill_surface": "SKILL.md skill packages",
   "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
 }

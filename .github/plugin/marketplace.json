@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/github/copilot-cli/main/schemas/marketplace.schema.json",
   "name": "techtide-harness-kit",
-  "description": "Portable, eval-backed skills for enterprise agents. 348 agents, 487 skills, enterprise missions, and rules across AWS, Azure, OCI, GCP, Alibaba Cloud, Huawei Cloud, Kubernetes, Terraform, and coding harness lanes.",
+  "description": "Portable, eval-backed skills for enterprise agents. 348 agents, 385 skills, enterprise missions, and rules across AWS, Azure, OCI, GCP, Alibaba Cloud, Huawei Cloud, Kubernetes, Terraform, and coding harness lanes.",
   "version": "1.0.3",
   "owner": {
     "name": "TechTide",

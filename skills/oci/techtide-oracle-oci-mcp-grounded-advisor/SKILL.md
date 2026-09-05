@@ -3,7 +3,7 @@ name: techtide-oracle-oci-mcp-grounded-advisor
 description: Use this skill when the user asks about Oracle MCP servers, SQLcl MCP, OCI MCP, Oracle Database agent access, OCI automation, or cloud/database advice that must be grounded in official Oracle sources.
 allowed-tools: Read Grep Glob WebFetch
 metadata:
-  author: github: TechTide
+  author: "github: TechTide"
   version: 0.1.0
   updated: "2026-05-05"
   category: ai

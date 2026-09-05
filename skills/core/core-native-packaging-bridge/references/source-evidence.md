@@ -1,4 +1,4 @@
-﻿# Source Evidence
+# Source Evidence
 
 This reference records the verified sources for `core-native-packaging-bridge`. It is evidence for packaging and promotion decisions.
 
@@ -11,7 +11,7 @@ This reference records the verified sources for `core-native-packaging-bridge`. 
 - Source path: synthesized/capabilities/native-packaging-bridge.md
 - Import mode: techtide-synthesis
 - Upstream author: TechTide synthesis from verified sources
-- Duplicate hash: f7c3b61ad82ae5dcd063cd9962dad3436cc2d8550c0f684728b25b949519687c
+- Duplicate hash: cb036ad018bcea58c9de9d1eb116f975165e948ac8066d3f25525a487fb20991
 
 ## Registry Entries
 

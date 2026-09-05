@@ -1,4 +1,4 @@
-﻿# Source Evidence
+# Source Evidence
 
 This reference records the verified sources for `core-prompt-hardening`. It is evidence for packaging and promotion decisions.
 
@@ -11,7 +11,7 @@ This reference records the verified sources for `core-prompt-hardening`. It is e
 - Source path: synthesized/capabilities/prompt-hardening.md
 - Import mode: techtide-synthesis
 - Upstream author: TechTide synthesis from verified sources
-- Duplicate hash: 608571d541ac28dce231c2707a8f86f8adfa6629fc7a3d4da5bcd3241f32693b
+- Duplicate hash: 50937e7caaceedc7ea5b8592af8090fd00bc1684913fb01e6b6a85cf60885291
 
 ## Registry Entries
 

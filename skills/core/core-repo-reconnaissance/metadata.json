@@ -1,4 +1,4 @@
-﻿{
+{
   "id": "core-repo-reconnaissance",
   "name": "Core Repo Reconnaissance",
   "type": "skill",
@@ -6,7 +6,7 @@
   "harnesses": [
     "core"
   ],
-  "summary": "Use to map an unfamiliar repository before implementation by finding entrypoints, commands, ownership boundaries, risks, and tests.",
+  "summary": "Use the agent to map an unfamiliar repository before implementation by finding entrypoints, commands, ownership boundaries, risks, and tests.",
   "source_type": "reference-only",
   "official_docs": [
     "https://code.claude.com/docs/en/skills"
@@ -32,7 +32,7 @@
   "upstream_author": "TechTide synthesis from verified sources",
   "import_mode": "techtide-synthesis",
   "verification_status": "candidate-valid",
-  "duplicate_hash": "0136df3f0576ca0f24e56465d387abb597d6a4fa6cbf81358dc2b153e817b90e",
+  "duplicate_hash": "1874ffe696b11ca5e83368c843863723b01c2584b6c62d965af3179569f98de2",
   "native_skill_surface": "SKILL.md skill packages",
   "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
 }

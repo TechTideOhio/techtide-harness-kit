@@ -1,4 +1,4 @@
-﻿# Source Evidence
+# Source Evidence
 
 This reference records the verified sources for `core-context-management`. It is evidence for packaging and promotion decisions.
 
@@ -11,7 +11,7 @@ This reference records the verified sources for `core-context-management`. It is
 - Source path: synthesized/capabilities/context-management.md
 - Import mode: techtide-synthesis
 - Upstream author: TechTide synthesis from verified sources
-- Duplicate hash: 6dc4e84ac540c424aa3638dc3170b297d6c186916eaae6af6d54c8fda9002c26
+- Duplicate hash: e8ad5fc088d46f5873acdaa5c423a1cff217bd09ea06f8563107dee6a5fea08e
 
 ## Registry Entries
 

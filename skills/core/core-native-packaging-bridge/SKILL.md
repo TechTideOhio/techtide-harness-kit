@@ -1,4 +1,4 @@
-﻿---
+---
 name: core-native-packaging-bridge
 description: "Translate TechTide-authored workflows into the documented packaging surface without pretending every agent uses the same activation model. Use when expanding, reviewing, or operating skills, rules, prompt kits, provider lanes, or generated-code handoffs in the TechTide skill library."
 allowed-tools: Read Grep Glob Bash Edit Write

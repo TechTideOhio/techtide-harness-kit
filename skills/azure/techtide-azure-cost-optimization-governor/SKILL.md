@@ -3,7 +3,7 @@ name: techtide-azure-cost-optimization-governor
 description: Review Azure spend governance, budgets, alerts, cost analysis visibility, reservation and savings-plan awareness, tagging for cost allocation, exports, and FinOps ownership with official Microsoft documentation and Azure MCP evidence where available.
 allowed-tools: Read Grep Glob
 metadata:
-  author: github: TechTide
+  author: "github: TechTide"
   version: 0.1.0
   updated: "2026-05-05"
   category: finops

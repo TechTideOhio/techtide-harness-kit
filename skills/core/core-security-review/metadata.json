@@ -1,4 +1,4 @@
-﻿{
+{
   "id": "core-security-review",
   "name": "Core Security Review",
   "type": "skill",
@@ -6,7 +6,7 @@
   "harnesses": [
     "core"
   ],
-  "summary": "Review code changes for auth, authorization, injection, secrets, dependency risk, and unsafe defaults.",
+  "summary": "Review agent code changes for auth, authorization, injection, secrets, dependency risk, and unsafe defaults.",
   "source_type": "reference-only",
   "official_docs": [
     "https://code.claude.com/docs/en/skills"
@@ -32,7 +32,7 @@
   "upstream_author": "TechTide synthesis from verified sources",
   "import_mode": "techtide-synthesis",
   "verification_status": "candidate-valid",
-  "duplicate_hash": "dedce9cbe8d1ad620f22aa8b8e1c9c2d0fe2442fa0eb210392dac98c855ccc18",
+  "duplicate_hash": "178b025ed32389a90ae78e6e38ad78f7e9e330e2437cca96709614577cc39cba",
   "native_skill_surface": "SKILL.md skill packages",
   "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
 }

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "techtide-harness-kit",
+  "version": "1.0.3",
+  "description": "Portable, eval-backed marketplace for enterprise agent skills, specialist agents, rules, MCP references, and trust evidence.",
+  "author": {
+    "name": "Alex Cinovoj / TechTide",
+    "url": "https://techtideai.io/"
+  },
+  "homepage": "https://github.com/TechTideOhio/techtide-harness-kit",
+  "repository": "https://github.com/TechTideOhio/techtide-harness-kit",
+  "license": "Apache-2.0",
+  "keywords": [
+    "agentic",
+    "agents",
+    "marketplace",
+    "cloud",
+    "aws",
+    "azure",
+    "gcp",
+    "oci",
+    "alibaba",
+    "huawei",
+    "kubernetes",
+    "terraform",
+    "zero-trust",
+    "compliance"
+  ],
+  "extensions": {
+    "io.techtide.marketplace": {
+      "skills": 385,
+      "agents": 348,
+      "trustEvidence": "./catalog/skill-trust.json",
+      "installRoles": "./catalog/install-roles.json"
+    }
+  }
+}

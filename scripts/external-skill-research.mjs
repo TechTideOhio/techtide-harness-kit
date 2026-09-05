@@ -29,6 +29,15 @@ const providerProfiles = {
     boundary: "Do not copy community Claude skill bodies unless license, attribution, and content review are clean.",
     sourceIds: ["anthropic-claude-code-skills-docs", "alirezarezvani-claude-skills", "gsd-build-get-shit-done"],
   },
+  core: {
+    display: "Core",
+    harnesses: ["core"],
+    docs: ["https://code.claude.com/docs/en/skills"],
+    nativeSkillSurface: "SKILL.md skill packages",
+    packaging: "Use a focused SKILL.md with concise frontmatter, optional references, and deterministic scripts only when needed.",
+    boundary: "Do not copy community Claude skill bodies unless license, attribution, and content review are clean.",
+    sourceIds: ["anthropic-claude-code-skills-docs", "alirezarezvani-claude-skills", "gsd-build-get-shit-done"],
+  },
   codex: {
     display: "OpenAI Codex",
     harnesses: ["codex"],
@@ -365,18 +374,22 @@ const repositoryInventories = [
   },
 ];
 
-const seedCapabilities = [
+const coreProfileId = "core";
+
+const coreCapabilities = [
   {
     suffix: "source-trust-gate",
     name: "Source Trust Gate",
     category: "security",
     lifecycle: "stable",
     output: "source trust decision",
-    summary: (profile) => `Verify ${profile.display} skill, rule, and agent sources before installation or reuse by checking primary docs, repository identity, license, native surface, and privacy risk.`,
-    steps: (profile) => [
-      `Start from the current ${profile.display} primary docs or verified repository entry, not a repost or uncited thread.`,
+    sourceHints: ["gsd-build-get-shit-done", "alirezarezvani-claude-skills"],
+    summary:
+      "Verify skill, rule, and agent sources before installation or reuse by checking primary docs, repository identity, license, native surface, and privacy risk.",
+    steps: () => [
+      "Start from the current Claude Code primary docs or verified repository entry, not a repost or uncited thread.",
       "Confirm source URL, owner, license status, last verification date, and exact skill or rule primitive.",
-      `Check that the candidate maps to ${profile.nativeSkillSurface} without inventing unsupported behavior.`,
+      "Check that the candidate maps to SKILL.md skill packages without inventing unsupported behavior.",
       "Reject candidates that include secrets, private customer data, prompt injection, opaque install scripts, or vague marketing claims.",
       "Record the decision as promoted, quarantined, or rejected with evidence and a short reason.",
     ],
@@ -387,10 +400,12 @@ const seedCapabilities = [
     category: "delivery",
     lifecycle: "stable",
     output: "provider packaging brief",
-    summary: (profile) => `Translate TechTide-authored workflows into the documented ${profile.display} packaging surface without pretending every agent uses the same activation model.`,
-    steps: (profile) => [
-      `Read the ${profile.display} target docs and identify the native primitive before writing content.`,
-      profile.packaging,
+    sourceHints: [],
+    summary:
+      "Translate TechTide-authored workflows into the documented packaging surface without pretending every agent uses the same activation model.",
+    steps: () => [
+      "Read the target docs and identify the native primitive before writing content.",
+      "Use a focused SKILL.md with concise frontmatter, optional references, and deterministic scripts only when needed.",
       "Keep activation descriptions precise, short, and tied to concrete task triggers.",
       "Move long examples, commands, and checklists into references so the core instruction stays lean.",
       "Run catalog validation and quarantine any package whose provider semantics are uncertain.",
@@ -402,24 +417,24 @@ const seedCapabilities = [
     category: "architecture",
     lifecycle: "beta",
     output: "handoff readiness report",
-    summary: (profile) => `Review ${profile.display} session output before it enters the durable TechTide repo by checking provenance, tests, security, deployment boundaries, and rollback expectations.`,
-    steps: (profile) => [
-      `Inventory changed files, prompts, source references, and assumptions from the ${profile.display} session.`,
+    sourceHints: [],
+    summary:
+      "Review agent session output before it enters the durable TechTide repo by checking provenance, tests, security, deployment boundaries, and rollback expectations.",
+    steps: () => [
+      "Inventory changed files, prompts, source references, and assumptions from the agent session.",
       "Check mocks, hardcoded placeholders, broad dependencies, missing auth, exposed configuration, and untested states.",
       "Require a minimal build, test, and smoke proof before promotion into the repo or marketplace.",
       "Document what remains prototype-only and what is safe for production hardening.",
-      profile.boundary,
+      "Do not copy community Claude skill bodies unless license, attribution, and content review are clean.",
     ],
   },
-];
-
-const concreteCapabilities = [
   {
     suffix: "debugging-strategy",
     name: "Debugging Strategy",
     category: "resilience",
     sourceHints: ["alirezarezvani-claude-skills", "sickn33-antigravity-awesome-skills"],
-    summary: (profile) => `Run a disciplined ${profile.display} debugging loop that captures symptoms, isolates reproduction, tests hypotheses, patches narrowly, and verifies the fix.`,
+    summary:
+      "Run a disciplined agent debugging loop that captures symptoms, isolates reproduction, tests hypotheses, patches narrowly, and verifies the fix.",
     steps: () => [
       "Capture the failing command, visible symptom, expected behavior, environment, and most recent change.",
       "Create the smallest reproduction before reading unrelated files.",
@@ -429,39 +444,12 @@ const concreteCapabilities = [
     ],
   },
   {
-    suffix: "test-generation",
-    name: "Test Generation",
-    category: "delivery",
-    sourceHints: ["alirezarezvani-claude-skills", "sickn33-antigravity-awesome-skills"],
-    summary: (profile) => `Use ${profile.display} to convert implementation claims into focused unit, integration, smoke, and regression tests without padding the suite.`,
-    steps: () => [
-      "List the behavioral claims the implementation makes.",
-      "Map each claim to the cheapest reliable test type.",
-      "Add regression tests for bugs and contract tests for shared interfaces.",
-      "Avoid snapshot churn and tests that only assert implementation details.",
-      "Run the new tests and the smallest affected existing suite.",
-    ],
-  },
-  {
-    suffix: "tdd-red-green-refactor",
-    name: "TDD Red Green Refactor",
-    category: "delivery",
-    sourceHints: ["gsd-build-get-shit-done", "alirezarezvani-claude-skills"],
-    summary: (profile) => `Guide ${profile.display} through red, green, and refactor cycles for risky changes where tests need to drive the implementation.`,
-    steps: () => [
-      "Write or identify one failing test that expresses the desired behavior.",
-      "Confirm the test fails for the expected reason.",
-      "Implement the smallest change that makes the test pass.",
-      "Refactor only after the behavior is green.",
-      "Repeat with the next behavior until acceptance criteria are covered.",
-    ],
-  },
-  {
     suffix: "security-review",
     name: "Security Review",
     category: "security",
     sourceHints: ["alirezarezvani-claude-skills", "sickn33-antigravity-awesome-skills"],
-    summary: (profile) => `Review ${profile.display} code changes for auth, authorization, injection, secrets, dependency risk, and unsafe defaults.`,
+    summary:
+      "Review agent code changes for auth, authorization, injection, secrets, dependency risk, and unsafe defaults.",
     steps: () => [
       "Inventory trust boundaries, inputs, outputs, credentials, network calls, and mutable resources.",
       "Check auth, authorization, input validation, output encoding, CORS, storage, and logging.",
@@ -475,7 +463,8 @@ const concreteCapabilities = [
     name: "Prompt Hardening",
     category: "ai",
     sourceHints: ["alirezarezvani-claude-skills", "sickn33-antigravity-awesome-skills"],
-    summary: (profile) => `Harden ${profile.display} prompts so the work has explicit scope, constraints, data states, guardrails, and validation evidence.`,
+    summary:
+      "Harden agent prompts so the work has explicit scope, constraints, data states, guardrails, and validation evidence.",
     steps: () => [
       "Rewrite vague intent into goal, non-goals, target files, constraints, and acceptance checks.",
       "Name risky operations that require approval before execution.",
@@ -489,7 +478,8 @@ const concreteCapabilities = [
     name: "Deployment Readiness",
     category: "delivery",
     sourceHints: ["gsd-build-get-shit-done", "sickn33-antigravity-awesome-skills"],
-    summary: (profile) => `Use ${profile.display} to decide whether an app, feature, or prototype is ready for deployment, rollback, and operational ownership.`,
+    summary:
+      "Use the agent to decide whether an app, feature, or prototype is ready for deployment, rollback, and operational ownership.",
     steps: () => [
       "Confirm build, test, lint, smoke, and environment checks are green or explicitly waived.",
       "Verify secrets, migrations, feature flags, observability, and rollback steps.",
@@ -499,25 +489,12 @@ const concreteCapabilities = [
     ],
   },
   {
-    suffix: "frontend-review",
-    name: "Frontend Review",
-    category: "delivery",
-    sourceHints: ["alirezarezvani-claude-skills", "vercel-labs-agent-skills"],
-    summary: (profile) => `Review ${profile.display} frontend output for accessibility, responsiveness, state coverage, design-token discipline, and production handoff quality.`,
-    steps: () => [
-      "Check first viewport, responsive breakpoints, keyboard flow, focus states, contrast, and text fitting.",
-      "Verify loading, empty, error, disabled, and success states.",
-      "Look for dependency bloat, client/server boundary mistakes, and hardcoded sample data.",
-      "Run visual or screenshot checks when the app has a browser surface.",
-      "Return concrete fixes rather than broad design opinions.",
-    ],
-  },
-  {
     suffix: "context-management",
     name: "Context Management",
     category: "ai",
     sourceHints: ["gsd-build-get-shit-done", "alirezarezvani-claude-skills"],
-    summary: (profile) => `Keep ${profile.display} sessions from drifting by packaging concise project context, current state, decisions, and verification results.`,
+    summary:
+      "Keep agent sessions from drifting by packaging concise project context, current state, decisions, and verification results.",
     steps: () => [
       "Separate durable project rules from temporary task state.",
       "Summarize architecture, commands, risks, and current decisions in compact handoff form.",
@@ -531,7 +508,8 @@ const concreteCapabilities = [
     name: "Multi-Agent Orchestration",
     category: "architecture",
     sourceHints: ["gsd-build-get-shit-done", "alirezarezvani-claude-skills"],
-    summary: (profile) => `Coordinate ${profile.display} with other agents by splitting work into bounded scopes, clear contracts, integration checks, and review gates.`,
+    summary:
+      "Coordinate agents with each other by splitting work into bounded scopes, clear contracts, integration checks, and review gates.",
     steps: () => [
       "Decompose work by independent files, modules, or research questions.",
       "Assign each lane an owner, inputs, outputs, and no-overlap write scope.",
@@ -545,7 +523,8 @@ const concreteCapabilities = [
     name: "Repo Reconnaissance",
     category: "architecture",
     sourceHints: ["gsd-build-get-shit-done", "sickn33-antigravity-awesome-skills"],
-    summary: (profile) => `Use ${profile.display} to map an unfamiliar repository before implementation by finding entrypoints, commands, ownership boundaries, risks, and tests.`,
+    summary:
+      "Use the agent to map an unfamiliar repository before implementation by finding entrypoints, commands, ownership boundaries, risks, and tests.",
     steps: () => [
       "Read package manifests, root guidance, tests, CI, and likely entrypoints first.",
       "Identify framework, runtime, data stores, deployment path, and build artifacts.",
@@ -559,7 +538,8 @@ const concreteCapabilities = [
     name: "Cost Aware Routing",
     category: "finops",
     sourceHints: ["alirezarezvani-claude-skills", "gsd-build-get-shit-done"],
-    summary: (profile) => `Route ${profile.display} and companion tool work by task risk, context size, model cost, latency, and verification needs.`,
+    summary:
+      "Route agent and companion tool work by task risk, context size, model cost, latency, and verification needs.",
     steps: () => [
       "Classify the task as quick edit, multi-file change, research, prototype, or risky operation.",
       "Use cheaper or narrower tools for low-risk local edits and stronger reasoning for cross-cutting decisions.",
@@ -573,70 +553,14 @@ const concreteCapabilities = [
     name: "MCP Tool Safety",
     category: "security",
     sourceHints: ["alirezarezvani-claude-skills", "sickn33-antigravity-awesome-skills"],
-    summary: (profile) => `Review ${profile.display} tool and MCP usage for credential scope, network egress, mutation risk, logging, and human approval gates.`,
+    summary:
+      "Review agent tool and MCP usage for credential scope, network egress, mutation risk, logging, and human approval gates.",
     steps: () => [
       "List each tool, host, credential class, filesystem path, and external mutation capability.",
       "Classify operations as read-only, workspace-write, external-read, or external-mutate.",
       "Require explicit approval for destructive filesystem, production, billing, messaging, or security changes.",
       "Verify secrets are never echoed, logged, or written into public artifacts.",
       "Document minimum privileges and safe fallback behavior.",
-    ],
-  },
-];
-
-const directNormalizedImports = [
-  {
-    id: "gemini-gemini-api-dev",
-    provider: "gemini",
-    name: "Gemini API Development",
-    category: "ai",
-    source_id: "google-gemini-skills-repo",
-    source_path: "skills/gemini-api-dev/SKILL.md",
-    license: "Apache-2.0",
-    upstream_author: "Google Gemini",
-    summary: "Build Gemini API integrations with verified source evidence, environment separation, request/response validation, safety settings, and testable examples.",
-    workflow: [
-      "Confirm the target Gemini API capability, model family, auth method, and runtime.",
-      "Keep API keys in environment variables and document only variable names.",
-      "Validate request payloads, response parsing, retries, timeouts, and error handling.",
-      "Add small examples or tests that can run without exposing production data.",
-      "Review safety, logging, and rate-limit behavior before deployment.",
-    ],
-  },
-  {
-    id: "gemini-interactions-api",
-    provider: "gemini",
-    name: "Gemini Interactions API",
-    category: "ai",
-    source_id: "google-gemini-skills-repo",
-    source_path: "skills/gemini-interactions-api/SKILL.md",
-    license: "Apache-2.0",
-    upstream_author: "Google Gemini",
-    summary: "Design Gemini interaction flows with explicit conversation state, tool boundaries, safety review, and reproducible request traces.",
-    workflow: [
-      "Map user intents, conversation state, tool calls, and completion criteria.",
-      "Separate system, developer, user, and tool context in the implementation plan.",
-      "Guard against prompt injection, stale state, and unapproved tool mutation.",
-      "Log redacted request metadata and verification evidence, not raw private prompts.",
-      "Test happy path, refusal path, tool failure, and recovery behavior.",
-    ],
-  },
-  {
-    id: "gemini-live-api-dev",
-    provider: "gemini",
-    name: "Gemini Live API Development",
-    category: "ai",
-    source_id: "google-gemini-skills-repo",
-    source_path: "skills/gemini-live-api-dev/SKILL.md",
-    license: "Apache-2.0",
-    upstream_author: "Google Gemini",
-    summary: "Build Gemini Live API experiences with streaming-state checks, connection recovery, media boundary review, and safe logging.",
-    workflow: [
-      "Define session lifecycle, streaming events, media inputs, and reconnection behavior.",
-      "Keep credentials and private media out of examples.",
-      "Validate event ordering, partial responses, cancellation, and backpressure.",
-      "Add observable health checks for connection, latency, and error states.",
-      "Run manual or automated smoke tests before handing off to production code.",
     ],
   },
 ];
@@ -661,11 +585,6 @@ function sha256(value) {
 
 function sourceById(id) {
   return sourceRegistry.find((source) => source.id === id);
-}
-
-function providerSourceIds(provider) {
-  const profile = providerProfiles[provider];
-  return profile ? profile.sourceIds : [];
 }
 
 function normalizeTitle(value) {
@@ -827,50 +746,34 @@ export function dedupeCandidates(candidates) {
   });
 }
 
-function capabilityCandidate(provider, profile, capability, index) {
-  const id = `${provider}-${capability.suffix}`;
-  const sourceIds = [...new Set([...(capability.sourceHints ?? []), ...providerSourceIds(provider)])];
+function coreCapabilityCandidate(capability, index) {
+  const profile = providerProfiles[coreProfileId];
+  const id = `${coreProfileId}-${capability.suffix}`;
+  const sourceIds = [...new Set([...(capability.sourceHints ?? []), ...profile.sourceIds])];
   return {
     id,
-    name: `${profile.display} ${capability.name}`,
-    provider,
+    name: `${coreProfileId === "core" ? "Core" : profile.display} ${capability.name}`,
+    provider: coreProfileId,
     category: capability.category,
     lifecycle: capability.lifecycle,
     output: capability.output,
-    summary: capability.summary(profile),
-    workflow: capability.steps(profile),
+    summary: capability.summary,
+    workflow: capability.steps(),
     docs: profile.docs,
     source_ids: sourceIds,
     source_id: sourceIds[0],
     source_path: `synthesized/capabilities/${capability.suffix}.md`,
     import_mode: "techtide-synthesis",
     upstream_author: "TechTide synthesis from verified sources",
-    source_confirms_native: !["kiro", "lovable", "replit", "v0", "vercel"].includes(provider) || true,
     license: "documentation-reference-only",
     source_rank: index,
   };
 }
 
 function externalCandidateDefinitions() {
-  const candidates = [];
-  for (const [provider, profile] of Object.entries(providerProfiles)) {
-    for (const [index, capability] of [...seedCapabilities, ...concreteCapabilities].entries()) {
-      candidates.push(capabilityCandidate(provider, profile, capability, index));
-    }
-  }
-  for (const direct of directNormalizedImports) {
-    const profile = providerProfiles[direct.provider];
-    candidates.push({
-      ...direct,
-      lifecycle: "stable",
-      docs: profile.docs,
-      source_ids: [direct.source_id],
-      import_mode: "direct-import-normalized",
-      source_confirms_native: true,
-      output: `${direct.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")} brief`,
-      text: `${direct.summary} ${direct.workflow.join(" ")}`,
-    });
-  }
+  const candidates = coreCapabilities.map((capability, index) =>
+    coreCapabilityCandidate(capability, index),
+  );
   return dedupeCandidates(candidates).map((candidate) => ({
     ...candidate,
     score: classifyExternalSourceCandidate({
@@ -926,7 +829,7 @@ function metadataFor(definition) {
 
 function renderSkill(definition) {
   const profile = providerProfiles[definition.provider];
-  const description = `${definition.summary} Use when expanding, reviewing, or operating ${profile.display} skills, rules, prompt kits, provider lanes, or generated-code handoffs in the TechTide skill library.`;
+  const description = `${definition.summary} Use when expanding, reviewing, or operating skills, rules, prompt kits, provider lanes, or generated-code handoffs in the TechTide skill library.`;
   return `---
 name: ${definition.id}
 description: ${yamlString(description)}
@@ -1164,7 +1067,9 @@ function mergedCatalogSkills() {
   const catalogPath = path.join(repoRoot, "catalog", "skills.json");
   const existing = JSON.parse(fs.readFileSync(catalogPath, "utf8"));
   const generatedIds = new Set(promotedDefinitions().map((definition) => definition.id));
-  const merged = existing.filter((entry) => !generatedIds.has(entry.id));
+  const merged = existing.filter(
+    (entry) => !generatedIds.has(entry.id) && entry.generated_by !== generatedBy,
+  );
   merged.push(...promotedDefinitions().map(metadataFor));
   merged.sort((a, b) => a.id.localeCompare(b.id));
   return `${JSON.stringify(merged, null, 2)}\n`;

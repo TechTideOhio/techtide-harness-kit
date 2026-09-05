@@ -3,7 +3,7 @@ name: techtide-azure-observability-investigator
 description: Use this skill for Azure Monitor, Log Analytics, Application Insights, alerting, KQL triage, telemetry-gap analysis, workbooks, or operator-grade incident and posture investigations.
 allowed-tools: Read Grep Glob WebFetch
 metadata:
-  author: github: TechTide
+  author: "github: TechTide"
   version: 0.1.0
   updated: "2026-05-05"
   category: observability

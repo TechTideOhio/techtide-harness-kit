@@ -1,4 +1,4 @@
-﻿---
+---
 name: core-security-review
 description: "Review agent code changes for auth, authorization, injection, secrets, dependency risk, and unsafe defaults. Use when expanding, reviewing, or operating skills, rules, prompt kits, provider lanes, or generated-code handoffs in the TechTide skill library."
 allowed-tools: Read Grep Glob Bash Edit Write

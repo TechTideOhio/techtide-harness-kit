@@ -3,7 +3,7 @@ name: techtide-oci-registry-artifact-governor
 description: Govern OCI Registry repositories, container images, artifact access, retention, promotion, and deployment safety. Use for OCIR repository reviews, image lifecycle, DevOps/OKE integration, and least-privilege push/pull access.
 allowed-tools: Read Grep Glob
 metadata:
-  author: github: TechTide
+  author: "github: TechTide"
   version: 0.1.0
   updated: "2026-05-05"
   category: delivery

@@ -4,1916 +4,266 @@
   "root": "skills",
   "entries": [
     {
-      "id": "claude-context-management",
-      "path": "skills/claude/claude-context-management",
-      "aggregate_sha256": "27d5d87befce43d9ad2accff4601e6b7522c489a1b678db8bd319cda0cdfb513",
+      "id": "core-context-management",
+      "path": "skills/core/core-context-management",
+      "aggregate_sha256": "0e6b2e7bd7f232d69b3a60dcd2cd0ad7cfef056191d369063f143ee6af3657c8",
       "files": [
         {
-          "path": "skills/claude/claude-context-management/metadata.json",
-          "sha256": "1d42064e7b43c8ec2fa4756ba60bb929d77d1122b723f0bdaa5459804c8af14b",
-          "bytes": 1641
+          "path": "skills/core/core-context-management/metadata.json",
+          "sha256": "768c32b07de70331edbfe5f5935040c7d5d2c3bfdf976e37471d71a4fdb53c88",
+          "bytes": 1613
         },
         {
-          "path": "skills/claude/claude-context-management/references/source-evidence.md",
-          "sha256": "2dd386fe8ab07016e3c2479345f4a58d2d852f048cc417f2c96fbad5447d2b88",
-          "bytes": 1125
-        },
-        {
-          "path": "skills/claude/claude-context-management/SKILL.md",
-          "sha256": "51aa822cc40df817f6b1b3c055293751f076f842b6120893e4f29920e4b46082",
-          "bytes": 2159
-        }
-      ]
-    },
-    {
-      "id": "claude-cost-aware-routing",
-      "path": "skills/claude/claude-cost-aware-routing",
-      "aggregate_sha256": "64f0dc7ed8e610da4b8160bda842c77d283d215df8a5e531e324cbb370cb011a",
-      "files": [
-        {
-          "path": "skills/claude/claude-cost-aware-routing/metadata.json",
-          "sha256": "0b52d60d25cb70efdcc29f275e62cc39341287a35698a8c57c005b87bf8b670a",
-          "bytes": 1631
-        },
-        {
-          "path": "skills/claude/claude-cost-aware-routing/references/source-evidence.md",
-          "sha256": "53bbdae9ea2e261d44bf72c2a94809719da97c21bc614091df6b8308e435900e",
-          "bytes": 1125
-        },
-        {
-          "path": "skills/claude/claude-cost-aware-routing/SKILL.md",
-          "sha256": "15436bad21af5bc00c36f928973282b8cbd9c2aa45301c90a606a7d162c96237",
-          "bytes": 2200
-        }
-      ]
-    },
-    {
-      "id": "claude-debugging-strategy",
-      "path": "skills/claude/claude-debugging-strategy",
-      "aggregate_sha256": "78ad45791c83a4863136aa68ac5cc7a30b0cb548c5ab5b2c207eca7297841982",
-      "files": [
-        {
-          "path": "skills/claude/claude-debugging-strategy/metadata.json",
-          "sha256": "704897f00752c418e4809da48a8120535ddc01b0f7e7926292a75396085331de",
-          "bytes": 1727
-        },
-        {
-          "path": "skills/claude/claude-debugging-strategy/references/source-evidence.md",
-          "sha256": "8482e63d1f643ec9a087a661c3cf85222569891162fa231d4bacbf27ee84ca6d",
-          "bytes": 1244
-        },
-        {
-          "path": "skills/claude/claude-debugging-strategy/SKILL.md",
-          "sha256": "e8084e96c8b590fa1f3db964b25ea9cb172ca75fa0963d41a1e176ed58afc7cb",
-          "bytes": 2257
-        }
-      ]
-    },
-    {
-      "id": "claude-deployment-readiness",
-      "path": "skills/claude/claude-deployment-readiness",
-      "aggregate_sha256": "aac00aafd2b79da5881e3d98cb0efe0b8d46ab7ceb11e8eb6dda305d051d1c07",
-      "files": [
-        {
-          "path": "skills/claude/claude-deployment-readiness/metadata.json",
-          "sha256": "2294a5f40f280463958a28b1b938b593a96c44fe12cdda9dd06793e25c8815ea",
-          "bytes": 1706
-        },
-        {
-          "path": "skills/claude/claude-deployment-readiness/references/source-evidence.md",
-          "sha256": "d6425cee73289f0cad0a779ca855f0781f0bb5b29151ee5b4417cc6a11074587",
-          "bytes": 1248
-        },
-        {
-          "path": "skills/claude/claude-deployment-readiness/SKILL.md",
-          "sha256": "3c4be87cc17c3feb8c423765c76248cf28a54f9ff38dd6dc741f6af897cfcd9c",
-          "bytes": 2245
-        }
-      ]
-    },
-    {
-      "id": "claude-handoff-readiness-review",
-      "path": "skills/claude/claude-handoff-readiness-review",
-      "aggregate_sha256": "27f9582a3028b55e328f46a739cf49736c23f3e8afa09ea30e300d64261fe376",
-      "files": [
-        {
-          "path": "skills/claude/claude-handoff-readiness-review/metadata.json",
-          "sha256": "ced26eaa6d79dc80b8b18d1c8f47d731c7736b0eadc381f3b3c7c44fd46b3e40",
-          "bytes": 1689
-        },
-        {
-          "path": "skills/claude/claude-handoff-readiness-review/references/source-evidence.md",
-          "sha256": "94b9d17190788a1f9d692414714f1e41db87eb459dbc58e91e6ad4ff4fc32991",
-          "bytes": 1137
-        },
-        {
-          "path": "skills/claude/claude-handoff-readiness-review/SKILL.md",
-          "sha256": "6757b5fb04f42828144d150deaf2f4251604a5e5639970be57e2dc1110da0f75",
-          "bytes": 2440
-        }
-      ]
-    },
-    {
-      "id": "claude-mcp-tool-safety",
-      "path": "skills/claude/claude-mcp-tool-safety",
-      "aggregate_sha256": "636147b8be4a70dbad1b4d8acbbe9afd697e42eac412797e7d7199faefb7f6a4",
-      "files": [
-        {
-          "path": "skills/claude/claude-mcp-tool-safety/metadata.json",
-          "sha256": "892d0c854ba574e6c820f2cf4af6c4dc13137a2ae8d86931118c29ba13cdaf7b",
-          "bytes": 1691
-        },
-        {
-          "path": "skills/claude/claude-mcp-tool-safety/references/source-evidence.md",
-          "sha256": "9cd9ad17e5984495e74bedc92e9b60f5012852a5100dde2c3fd915564666961b",
-          "bytes": 1238
-        },
-        {
-          "path": "skills/claude/claude-mcp-tool-safety/SKILL.md",
-          "sha256": "e0b839016bc8a9ec3335d227c338ab48b843009ef9cdaacd7ba755c7b6053d8a",
-          "bytes": 2245
-        }
-      ]
-    },
-    {
-      "id": "claude-multi-agent-orchestration",
-      "path": "skills/claude/claude-multi-agent-orchestration",
-      "aggregate_sha256": "b25b6f454385f42cedc1b2ec59731637cbd1f4355d566f5f603c67196f2aa354",
-      "files": [
-        {
-          "path": "skills/claude/claude-multi-agent-orchestration/metadata.json",
-          "sha256": "8cfd4ee22a77a1cd3a061d5a71ebe50c0140584cb28cb008f4a56c5a1df73567",
-          "bytes": 1674
-        },
-        {
-          "path": "skills/claude/claude-multi-agent-orchestration/references/source-evidence.md",
-          "sha256": "fefd7024ca136e459ea49a5fd595801df4d4ca0fcfb1b2e84c0895d6c69ea3cb",
-          "bytes": 1139
-        },
-        {
-          "path": "skills/claude/claude-multi-agent-orchestration/SKILL.md",
-          "sha256": "ee76b9de0fcaedb0e571dc4462e6f54aee01c9d971535e40726abea81b9a370d",
-          "bytes": 2227
-        }
-      ]
-    },
-    {
-      "id": "claude-native-packaging-bridge",
-      "path": "skills/claude/claude-native-packaging-bridge",
-      "aggregate_sha256": "089f53db7962459d1ffd84e914b5c782093779399b386679fb08662e6df173f3",
-      "files": [
-        {
-          "path": "skills/claude/claude-native-packaging-bridge/metadata.json",
-          "sha256": "335f6988901ce2e710f453a7a6ef645ec7bf7d0b4623029f92fc019858189ede",
-          "bytes": 1670
-        },
-        {
-          "path": "skills/claude/claude-native-packaging-bridge/references/source-evidence.md",
-          "sha256": "94583a4277e3b7b2fd19e50fb41dfd900bea31155a933a1cfbae1b5d285fdff0",
-          "bytes": 1135
-        },
-        {
-          "path": "skills/claude/claude-native-packaging-bridge/SKILL.md",
-          "sha256": "ecf9bfa5369ccc1aa103cd993eb046ff9f431e6c72382c561357d224efe24450",
-          "bytes": 2386
-        }
-      ]
-    },
-    {
-      "id": "claude-prompt-hardening",
-      "path": "skills/claude/claude-prompt-hardening",
-      "aggregate_sha256": "ddb86a4df192c018871bfdeee720a83f2d747fe437287aef7fac9986b9ac1487",
-      "files": [
-        {
-          "path": "skills/claude/claude-prompt-hardening/metadata.json",
-          "sha256": "a74314512e9e97e3d166fefb0eeee313271cd82cbb7af9be8729af01a87f0264",
-          "bytes": 1691
-        },
-        {
-          "path": "skills/claude/claude-prompt-hardening/references/source-evidence.md",
-          "sha256": "47831d80993f5800469e0908c9908d5f25aa6046c0e88f184ff0ded397853858",
-          "bytes": 1240
-        },
-        {
-          "path": "skills/claude/claude-prompt-hardening/SKILL.md",
-          "sha256": "c5891b1097ae995590094e82d3bc598c4bce35862cfec322cb8a32e8a583dd6c",
-          "bytes": 2206
-        }
-      ]
-    },
-    {
-      "id": "claude-repo-reconnaissance",
-      "path": "skills/claude/claude-repo-reconnaissance",
-      "aggregate_sha256": "171ec7da458620509129579a7d8ed24926d56e4ebc2860e6d3f039c5c27b3777",
-      "files": [
-        {
-          "path": "skills/claude/claude-repo-reconnaissance/metadata.json",
-          "sha256": "38a220cbc7c506e3351b0f1b2f4baaf3d64fba97425364b38e060f55392532de",
-          "bytes": 1720
-        },
-        {
-          "path": "skills/claude/claude-repo-reconnaissance/references/source-evidence.md",
-          "sha256": "f7a47dc2cafa6535534a6fe9eb4fc78a07f02c1925b29e8095868df128d888a6",
-          "bytes": 1246
-        },
-        {
-          "path": "skills/claude/claude-repo-reconnaissance/SKILL.md",
-          "sha256": "ee9458dfdf1da2476ab56b1c4357690591166d344e571a9865c05fcc7938ca89",
-          "bytes": 2219
-        }
-      ]
-    },
-    {
-      "id": "claude-security-review",
-      "path": "skills/claude/claude-security-review",
-      "aggregate_sha256": "a5d4bbd3f8963cf59a44d225d2bcc539fa3a85dd75ed3580fa1e31fb5a6b6b37",
-      "files": [
-        {
-          "path": "skills/claude/claude-security-review/metadata.json",
-          "sha256": "75bd51f1f6e7fad278305bb21b66b29bfebc840e99316f45f7510a6d538d9189",
-          "bytes": 1680
-        },
-        {
-          "path": "skills/claude/claude-security-review/references/source-evidence.md",
-          "sha256": "d915fd06396d77446959babfdeddc4adedd106c0cf0a228d611903199982f66b",
-          "bytes": 1238
-        },
-        {
-          "path": "skills/claude/claude-security-review/SKILL.md",
-          "sha256": "6317a5033065c0587cabff94331d693fbd73ddb5de32cfc3839e242367ab9b5b",
-          "bytes": 2177
-        }
-      ]
-    },
-    {
-      "id": "claude-source-trust-gate",
-      "path": "skills/claude/claude-source-trust-gate",
-      "aggregate_sha256": "debf469025bea9f8f7131dd0f330b5bf1bf52b1b05982de88fd8668f15066136",
-      "files": [
-        {
-          "path": "skills/claude/claude-source-trust-gate/metadata.json",
-          "sha256": "e3187a3f69cbca63360fbddb0f984bd07b1bc3e5be982ae0e9e0e699a1acbb15",
-          "bytes": 1664
-        },
-        {
-          "path": "skills/claude/claude-source-trust-gate/references/source-evidence.md",
-          "sha256": "ed8cc9b3d7f639c5d2423b9e4a3224dfa11f2c0da938a14e9598ccbd2bfc4963",
+          "path": "skills/core/core-context-management/references/source-evidence.md",
+          "sha256": "2ba6901e5f6bdca3a1eeca12adda582baa40171c4791b2a96ea84ac108966f3a",
           "bytes": 1123
         },
         {
-          "path": "skills/claude/claude-source-trust-gate/SKILL.md",
-          "sha256": "8a90cebdaf254aab6b68bce292c9f9ce33924644296022222037e976fd9034cd",
-          "bytes": 2467
+          "path": "skills/core/core-context-management/SKILL.md",
+          "sha256": "a3d1e7b96be5d5f831c62014650a57ff10ba44e5157a048b93e59643664c629a",
+          "bytes": 2117
         }
       ]
     },
     {
-      "id": "codex-context-management",
-      "path": "skills/codex/codex-context-management",
-      "aggregate_sha256": "e41c1a075880a4737526d260c0ed9a41d56f920eb746fe03f3b64a9f3189ed6f",
+      "id": "core-cost-aware-routing",
+      "path": "skills/core/core-cost-aware-routing",
+      "aggregate_sha256": "caf015ef3bb2d83eed9ec6121a93e6a32af0ac7b3fa89b1f098dbed5c63793e2",
       "files": [
         {
-          "path": "skills/codex/codex-context-management/metadata.json",
-          "sha256": "55f10115c84c8c993ece2d4ba8c21fe56be9bd90b860c8b59008592595509319",
-          "bytes": 1698
+          "path": "skills/core/core-cost-aware-routing/metadata.json",
+          "sha256": "12a396521e9c48b845d93aed301a6b4bd4929623fd8452b234edbb68e738c66f",
+          "bytes": 1603
         },
         {
-          "path": "skills/codex/codex-context-management/references/source-evidence.md",
-          "sha256": "023b80f5db8d4116f8687549e6b34928d8b1b407e788404ea51e0fb331470d0c",
-          "bytes": 1233
+          "path": "skills/core/core-cost-aware-routing/references/source-evidence.md",
+          "sha256": "e0520535e15346f109f0d7f425b5f7e56027459192fdf56e9e25ce485e4c7769",
+          "bytes": 1123
         },
         {
-          "path": "skills/codex/codex-context-management/SKILL.md",
-          "sha256": "88bc65d29c38b850517872dc6e8c92878589d509368da34ccc7157537088b375",
-          "bytes": 2166
+          "path": "skills/core/core-cost-aware-routing/SKILL.md",
+          "sha256": "6fbb80b74d97a339b30a5630d4aea3c1c69cb025484596aab805a14a67cd010e",
+          "bytes": 2158
         }
       ]
     },
     {
-      "id": "codex-cost-aware-routing",
-      "path": "skills/codex/codex-cost-aware-routing",
-      "aggregate_sha256": "13b30329228f5207fbb2c4b4e2a7011a154d03e130371f4f4cd40ba4de19e7eb",
+      "id": "core-debugging-strategy",
+      "path": "skills/core/core-debugging-strategy",
+      "aggregate_sha256": "ce2e3e308943d86eb02adc6adeacaaf215a63b68ccebc1ee361ec9872265e9b1",
       "files": [
         {
-          "path": "skills/codex/codex-cost-aware-routing/metadata.json",
-          "sha256": "bbd7575b15367ccaa57a5fcef55293c31497bf79c684a07ae920096d1806d5b4",
-          "bytes": 1688
+          "path": "skills/core/core-debugging-strategy/metadata.json",
+          "sha256": "c7865589293aa1da97c67c37df981c0d7fa157cb6f3b2415f991d92b86dc5ab2",
+          "bytes": 1699
         },
         {
-          "path": "skills/codex/codex-cost-aware-routing/references/source-evidence.md",
-          "sha256": "d486abe153fad1acedee8cdb0b6311c58bfd0d550324cf3a9f8d41ca42c9f750",
-          "bytes": 1233
+          "path": "skills/core/core-debugging-strategy/references/source-evidence.md",
+          "sha256": "96d707ac01d7c885e8def5daa8ff3696fb8ff647c5085325c0e5f2523130c4c4",
+          "bytes": 1242
         },
         {
-          "path": "skills/codex/codex-cost-aware-routing/SKILL.md",
-          "sha256": "ccece62d12ddbbcf8054108653e6d76e0f82085bbd786cd1baeebd7d84d29460",
-          "bytes": 2207
-        }
-      ]
-    },
-    {
-      "id": "codex-debugging-strategy",
-      "path": "skills/codex/codex-debugging-strategy",
-      "aggregate_sha256": "1e34d5ad9577362fcc93cf36cb34f1382e19b4f75fdef3ab95047f8bc63b7c3e",
-      "files": [
-        {
-          "path": "skills/codex/codex-debugging-strategy/metadata.json",
-          "sha256": "df2829b9ab914c742991933de1b59d547d49b2968bbc8e94df7d9e3ecd3d941f",
-          "bytes": 1734
-        },
-        {
-          "path": "skills/codex/codex-debugging-strategy/references/source-evidence.md",
-          "sha256": "ab8a36debd6248ed515977c9218c5af7d28ef8adccd92356501670c027768431",
-          "bytes": 1255
-        },
-        {
-          "path": "skills/codex/codex-debugging-strategy/SKILL.md",
-          "sha256": "af399db434f1a1116621d70dfae5c1838b091a3a936901ade6590a40342234ab",
-          "bytes": 2264
-        }
-      ]
-    },
-    {
-      "id": "codex-deployment-readiness",
-      "path": "skills/codex/codex-deployment-readiness",
-      "aggregate_sha256": "29ff1246e1db44112e6a2effe8a37b5109b49de862882f6260b673fadcfd7ebf",
-      "files": [
-        {
-          "path": "skills/codex/codex-deployment-readiness/metadata.json",
-          "sha256": "2858c4176208a4123a9ee3ea5b525a773fe335832c5cbe851609678877492057",
-          "bytes": 1708
-        },
-        {
-          "path": "skills/codex/codex-deployment-readiness/references/source-evidence.md",
-          "sha256": "2d2b9785c0abc8a9a1a5227d993804028d93d651bd046a4b2ddace06d8fa8650",
-          "bytes": 1249
-        },
-        {
-          "path": "skills/codex/codex-deployment-readiness/SKILL.md",
-          "sha256": "7741e1c581c8d418da9e20e4324cbe0aafb9aad14dbe82efab0b416d9b7bfbe3",
-          "bytes": 2252
-        }
-      ]
-    },
-    {
-      "id": "codex-handoff-readiness-review",
-      "path": "skills/codex/codex-handoff-readiness-review",
-      "aggregate_sha256": "9d3a1cecb91b44a00358461096ffe088269b7e9922250bbb60aac6384526037b",
-      "files": [
-        {
-          "path": "skills/codex/codex-handoff-readiness-review/metadata.json",
-          "sha256": "86aaa7678f54b4d36c465ba79a70f415beaa6adee592ceec695440f30d60e4db",
-          "bytes": 1639
-        },
-        {
-          "path": "skills/codex/codex-handoff-readiness-review/references/source-evidence.md",
-          "sha256": "3295b9de6066997ce93c31e5707b01fe9141c63530db94fe68f86d1b289c9ebf",
-          "bytes": 1041
-        },
-        {
-          "path": "skills/codex/codex-handoff-readiness-review/SKILL.md",
-          "sha256": "0a7e897b6fa962f608e444742818794471ee0e94c40bb463d7dc8a11ad7c13b4",
-          "bytes": 2455
-        }
-      ]
-    },
-    {
-      "id": "codex-mcp-tool-safety",
-      "path": "skills/codex/codex-mcp-tool-safety",
-      "aggregate_sha256": "41819f9ea961d571c1fd609e829387fa080cbc5d4a5a456224608bb893147288",
-      "files": [
-        {
-          "path": "skills/codex/codex-mcp-tool-safety/metadata.json",
-          "sha256": "be0e57ac599eb73dbb0ce45b34694d6ed74ed79a76360dd6e994e8e642b8c34d",
-          "bytes": 1698
-        },
-        {
-          "path": "skills/codex/codex-mcp-tool-safety/references/source-evidence.md",
-          "sha256": "d383d3c377e227d9a9a057dbf97d373319ec1121ed3b2573c89599d335ae7870",
-          "bytes": 1249
-        },
-        {
-          "path": "skills/codex/codex-mcp-tool-safety/SKILL.md",
-          "sha256": "f0a4ad16578869ab9f35dbae44844dd895e78bedd6960bd778b1a6e87bdf98da",
-          "bytes": 2252
-        }
-      ]
-    },
-    {
-      "id": "codex-multi-agent-orchestration",
-      "path": "skills/codex/codex-multi-agent-orchestration",
-      "aggregate_sha256": "2e0dec54966894968f8ca9027638b53735afe347bd85b35e93b47c9ba6e37bd6",
-      "files": [
-        {
-          "path": "skills/codex/codex-multi-agent-orchestration/metadata.json",
-          "sha256": "116701c0154d292d42c5b9f10c6f0ee2c4152c3699ca9c15e7bf5ffffc8878f2",
-          "bytes": 1731
-        },
-        {
-          "path": "skills/codex/codex-multi-agent-orchestration/references/source-evidence.md",
-          "sha256": "40f38b4c0373ef17249e79bc2e91f858f46d9285511706ae111c9f095a35fba1",
-          "bytes": 1247
-        },
-        {
-          "path": "skills/codex/codex-multi-agent-orchestration/SKILL.md",
-          "sha256": "35daf8ba9fa626f105302ec6bbed4055377201bd0ec56a601b06aa87aec8722a",
-          "bytes": 2234
-        }
-      ]
-    },
-    {
-      "id": "codex-native-packaging-bridge",
-      "path": "skills/codex/codex-native-packaging-bridge",
-      "aggregate_sha256": "33509b2a8ca71ae764f1c8f7c324ebdc55bc71211c8b7c1e0e58e9f27311e60d",
-      "files": [
-        {
-          "path": "skills/codex/codex-native-packaging-bridge/metadata.json",
-          "sha256": "e3151916a57b4350806a912eafb7a784c16e4e89623844302fa3ded03e503ce1",
-          "bytes": 1620
-        },
-        {
-          "path": "skills/codex/codex-native-packaging-bridge/references/source-evidence.md",
-          "sha256": "9b4911abd22ad71f3154748ec59f350313acc0512ec2336fa854094f5a62f7c3",
-          "bytes": 1039
-        },
-        {
-          "path": "skills/codex/codex-native-packaging-bridge/SKILL.md",
-          "sha256": "c2633c705f4da4f9eee883ae2b7b8e3ceb1edb70717da3da226a4ad12b6a150d",
-          "bytes": 2372
-        }
-      ]
-    },
-    {
-      "id": "codex-prompt-hardening",
-      "path": "skills/codex/codex-prompt-hardening",
-      "aggregate_sha256": "d5cc7c5c54873a8e27c79d3ea3e8e33069afe89c07e16733d7e034e6ba942f15",
-      "files": [
-        {
-          "path": "skills/codex/codex-prompt-hardening/metadata.json",
-          "sha256": "2259f5aa29899a870fcd80727c90067fb7e8cad9e2502c772a7659a7f0c0d548",
-          "bytes": 1698
-        },
-        {
-          "path": "skills/codex/codex-prompt-hardening/references/source-evidence.md",
-          "sha256": "dcf3072226f10a52649763e7185b99056339044955b13adbeb02b1eb81e089c6",
-          "bytes": 1251
-        },
-        {
-          "path": "skills/codex/codex-prompt-hardening/SKILL.md",
-          "sha256": "b999571c9bb40b4a816405758d813095dd458d9dd22e289edc66f341efec2d7c",
-          "bytes": 2213
-        }
-      ]
-    },
-    {
-      "id": "codex-repo-reconnaissance",
-      "path": "skills/codex/codex-repo-reconnaissance",
-      "aggregate_sha256": "1f3255a48fc5964f8c54167049d4945e6a49548a49d15ae3f9ab3028fcf34394",
-      "files": [
-        {
-          "path": "skills/codex/codex-repo-reconnaissance/metadata.json",
-          "sha256": "df543d17bb2309f29a3f1943713ef4696edd2a05dfb1058b9795d371640205cc",
-          "bytes": 1722
-        },
-        {
-          "path": "skills/codex/codex-repo-reconnaissance/references/source-evidence.md",
-          "sha256": "8b880ee8dd3b335aed9b6e672eab9adc05ef3b51127401316952aa887674b51e",
-          "bytes": 1247
-        },
-        {
-          "path": "skills/codex/codex-repo-reconnaissance/SKILL.md",
-          "sha256": "cace99582ab8e2a18602dde6a3acb21026445cef053def2162f86c2d81f9816e",
-          "bytes": 2226
-        }
-      ]
-    },
-    {
-      "id": "codex-security-review",
-      "path": "skills/codex/codex-security-review",
-      "aggregate_sha256": "2f9a0d169fc2b8d97c1a475c102373e545b0034131ce505c11cabe129ed35924",
-      "files": [
-        {
-          "path": "skills/codex/codex-security-review/metadata.json",
-          "sha256": "03d6f08935eb1efa3a9c8b70073a99e73502ce679760d49f69abff4e223654ed",
-          "bytes": 1687
-        },
-        {
-          "path": "skills/codex/codex-security-review/references/source-evidence.md",
-          "sha256": "059b87c844e1741dc7d3aa59da269085cea9283f9b58d426cd8d43f089da1d27",
-          "bytes": 1249
-        },
-        {
-          "path": "skills/codex/codex-security-review/SKILL.md",
-          "sha256": "963c4b0ed13cc4228ae36610c4ec9a90dd229fbc65ebce53e57ff8dffb2da6d3",
-          "bytes": 2184
-        }
-      ]
-    },
-    {
-      "id": "codex-source-trust-gate",
-      "path": "skills/codex/codex-source-trust-gate",
-      "aggregate_sha256": "a81fb820052ab377015fd2a19e66566378d1fc498e657b7fcaa7741067fbd9bb",
-      "files": [
-        {
-          "path": "skills/codex/codex-source-trust-gate/metadata.json",
-          "sha256": "c6fc520c71598009e24861618afc1e1e7fac37bbed46eb85e895151e71b00b98",
-          "bytes": 1614
-        },
-        {
-          "path": "skills/codex/codex-source-trust-gate/references/source-evidence.md",
-          "sha256": "a00e18a8e645f35adf02ff95f49d9e0adf7797455c7817d09875f7276fd18acc",
-          "bytes": 1027
-        },
-        {
-          "path": "skills/codex/codex-source-trust-gate/SKILL.md",
-          "sha256": "e4ca6aac62796aad578da268efa603e84689b0a4bd83e4a2cb9b4cd7644cdd14",
-          "bytes": 2486
-        }
-      ]
-    },
-    {
-      "id": "cursor-context-management",
-      "path": "skills/cursor/cursor-context-management",
-      "aggregate_sha256": "9a5ae43302842ac6703aee6c5c508176fb2ac59d271376e213796cc8226ec3e9",
-      "files": [
-        {
-          "path": "skills/cursor/cursor-context-management/metadata.json",
-          "sha256": "620e02c35bc5b42836616cb69679719e228d74cbfb78603cb07fad6db63c0378",
-          "bytes": 1659
-        },
-        {
-          "path": "skills/cursor/cursor-context-management/references/source-evidence.md",
-          "sha256": "4b9e036030b594f69be989699e768f1efd370afa0b688e2c1211935d0d941954",
-          "bytes": 1137
-        },
-        {
-          "path": "skills/cursor/cursor-context-management/SKILL.md",
-          "sha256": "7bb30eaa5896b6a8c1ee6907fb7c85be3ff5cf42bd0d4a698c827b8f0032a043",
-          "bytes": 2169
-        }
-      ]
-    },
-    {
-      "id": "cursor-cost-aware-routing",
-      "path": "skills/cursor/cursor-cost-aware-routing",
-      "aggregate_sha256": "3dc4e3757e7410c407abe4bcfbd880cd44eeae2a125c5dc8d9460696c386328f",
-      "files": [
-        {
-          "path": "skills/cursor/cursor-cost-aware-routing/metadata.json",
-          "sha256": "d82b581009f681ec304d0aa0fa48c9789e27e0602c4dee9e6641d4cccf79f7e8",
-          "bytes": 1649
-        },
-        {
-          "path": "skills/cursor/cursor-cost-aware-routing/references/source-evidence.md",
-          "sha256": "74aa9f7964352450605fbcded87fc7fc9964991657f2ec0552531ca448802791",
-          "bytes": 1137
-        },
-        {
-          "path": "skills/cursor/cursor-cost-aware-routing/SKILL.md",
-          "sha256": "c21ed96caab5f0e6d068348c80bbdceb62d636abc9b3db6241b284b959755654",
-          "bytes": 2210
-        }
-      ]
-    },
-    {
-      "id": "cursor-debugging-strategy",
-      "path": "skills/cursor/cursor-debugging-strategy",
-      "aggregate_sha256": "01d7010d5914b2dfe90b6176e1fbca6c27602f0e70f2e470c72d9c8b544befc1",
-      "files": [
-        {
-          "path": "skills/cursor/cursor-debugging-strategy/metadata.json",
-          "sha256": "5285e4d045dc7ee7c3ff58155bc916dd8b300e0f3ca377924160e349b1457fa6",
-          "bytes": 1695
-        },
-        {
-          "path": "skills/cursor/cursor-debugging-strategy/references/source-evidence.md",
-          "sha256": "c435169c44c7d8b046888eca21ddf3e95e81e91fab9b9ed35090210a93fc32ef",
-          "bytes": 1159
-        },
-        {
-          "path": "skills/cursor/cursor-debugging-strategy/SKILL.md",
-          "sha256": "6ac05913f06758d111fe9b665f64aa2d18c5a186cfd64a4b478453859014f985",
-          "bytes": 2267
-        }
-      ]
-    },
-    {
-      "id": "cursor-deployment-readiness",
-      "path": "skills/cursor/cursor-deployment-readiness",
-      "aggregate_sha256": "e62c147a8dadc83907876aade5f4d25de6c1459599cbb3600fee812ef628aece",
-      "files": [
-        {
-          "path": "skills/cursor/cursor-deployment-readiness/metadata.json",
-          "sha256": "de809bdad39526cebe43ec9cbb987ebb0973576853465a36a60f8ec87f6f21a1",
-          "bytes": 1669
-        },
-        {
-          "path": "skills/cursor/cursor-deployment-readiness/references/source-evidence.md",
-          "sha256": "3858be47d08e670ad428e9d20d28b07675aa20377f36aea7bb08b64b1d26159c",
-          "bytes": 1153
-        },
-        {
-          "path": "skills/cursor/cursor-deployment-readiness/SKILL.md",
-          "sha256": "6a7614941c422f80b935f5320e7aef2625c7f46e6def06381e6b3a33ba9e37bd",
-          "bytes": 2255
-        }
-      ]
-    },
-    {
-      "id": "cursor-handoff-readiness-review",
-      "path": "skills/cursor/cursor-handoff-readiness-review",
-      "aggregate_sha256": "7d76f0ba04ce04d060e108e1a745928bd8580867b424437fe96ff269bc863c91",
-      "files": [
-        {
-          "path": "skills/cursor/cursor-handoff-readiness-review/metadata.json",
-          "sha256": "1b84523bb2ab7f3578811b15627041efd8dc86e00e5dc83d7a73cb32b00fb4f0",
-          "bytes": 1601
-        },
-        {
-          "path": "skills/cursor/cursor-handoff-readiness-review/references/source-evidence.md",
-          "sha256": "e65f7d01468c43f8efcaeef184f2400787056e537e5f6ef7c1518fc147e711b9",
-          "bytes": 945
-        },
-        {
-          "path": "skills/cursor/cursor-handoff-readiness-review/SKILL.md",
-          "sha256": "8d6cc6277b3a878167f57cd5127dadb9506c1f825fc30d66333c1b89c36757e4",
-          "bytes": 2438
-        }
-      ]
-    },
-    {
-      "id": "cursor-mcp-tool-safety",
-      "path": "skills/cursor/cursor-mcp-tool-safety",
-      "aggregate_sha256": "9586b81337fa4a7741dcda064bbbaf6830c3e449263440d7b546158b3abeda10",
-      "files": [
-        {
-          "path": "skills/cursor/cursor-mcp-tool-safety/metadata.json",
-          "sha256": "177ac6778b1b941ae5123fc93d331628c9d868f6fef0679fa2f9815eb7b7db90",
-          "bytes": 1659
-        },
-        {
-          "path": "skills/cursor/cursor-mcp-tool-safety/references/source-evidence.md",
-          "sha256": "b9e2307a022c27541d20aec77eefdbf8769f7a3eac43f8b7ba61b352460d368a",
-          "bytes": 1153
-        },
-        {
-          "path": "skills/cursor/cursor-mcp-tool-safety/SKILL.md",
-          "sha256": "a4cc159d07f3468d41a578061eec93fafe536860236cdaff1c570d8163e1d47e",
-          "bytes": 2255
-        }
-      ]
-    },
-    {
-      "id": "cursor-multi-agent-orchestration",
-      "path": "skills/cursor/cursor-multi-agent-orchestration",
-      "aggregate_sha256": "fabacb11fa0b9e00ab8d3f1479fea57bfa7be835d09c3517170cc9fb1b180b81",
-      "files": [
-        {
-          "path": "skills/cursor/cursor-multi-agent-orchestration/metadata.json",
-          "sha256": "56830754116039470a72191e362359f80a9e312888aa1e84c2b97c571bd3c53c",
-          "bytes": 1692
-        },
-        {
-          "path": "skills/cursor/cursor-multi-agent-orchestration/references/source-evidence.md",
-          "sha256": "97b5f4f5ceca8fe64ef544df6ffb3187c4a8a3ca171133c740f05998ed183808",
-          "bytes": 1151
-        },
-        {
-          "path": "skills/cursor/cursor-multi-agent-orchestration/SKILL.md",
-          "sha256": "4df6edceaf7aa3ef77cc1248b606afbf581eb2f92e6d38ea32843e7c82fbd58e",
-          "bytes": 2237
-        }
-      ]
-    },
-    {
-      "id": "cursor-native-packaging-bridge",
-      "path": "skills/cursor/cursor-native-packaging-bridge",
-      "aggregate_sha256": "68f9cf8a581a276891fa129a037d2a3f84515f2fd05d1d31f4c8422e4410be8c",
-      "files": [
-        {
-          "path": "skills/cursor/cursor-native-packaging-bridge/metadata.json",
-          "sha256": "aba670c475cbd85f5008f10e2a56fe24e3f679ddf3b05f2dae365e3fbd510864",
-          "bytes": 1582
-        },
-        {
-          "path": "skills/cursor/cursor-native-packaging-bridge/references/source-evidence.md",
-          "sha256": "ecc4f8c597a0ea43455becdbcfca275eac5f1213e08676af7af725ae85c61895",
-          "bytes": 943
-        },
-        {
-          "path": "skills/cursor/cursor-native-packaging-bridge/SKILL.md",
-          "sha256": "f43451a46892cf958a21a17745d141e9fbdfaefef4af95f25cc44227decb0068",
-          "bytes": 2393
-        }
-      ]
-    },
-    {
-      "id": "cursor-prompt-hardening",
-      "path": "skills/cursor/cursor-prompt-hardening",
-      "aggregate_sha256": "aa228b4f773fb2da802f93445eceb4a461374e16252d5d09da12e40d1157d748",
-      "files": [
-        {
-          "path": "skills/cursor/cursor-prompt-hardening/metadata.json",
-          "sha256": "8061b963116b296fe0fdb4848d3c289724a8e74efdc3d41a283b7058e29249fe",
-          "bytes": 1659
-        },
-        {
-          "path": "skills/cursor/cursor-prompt-hardening/references/source-evidence.md",
-          "sha256": "2c08063b8af7cc46c40a3f175fe6d2c894d34c501fee6f07b98f03fa52b029a1",
-          "bytes": 1155
-        },
-        {
-          "path": "skills/cursor/cursor-prompt-hardening/SKILL.md",
-          "sha256": "79e65a45818b35c9f44b8a93d1c1d6786fbf16536f2e3f1a3eca1db1f27a2740",
-          "bytes": 2216
-        }
-      ]
-    },
-    {
-      "id": "cursor-repo-reconnaissance",
-      "path": "skills/cursor/cursor-repo-reconnaissance",
-      "aggregate_sha256": "c8e8bd65f531b2dcec1d325326bc9033452add7f8bc78f4c0c397311587ddb6d",
-      "files": [
-        {
-          "path": "skills/cursor/cursor-repo-reconnaissance/metadata.json",
-          "sha256": "52f63ee93f5134d5be08b91ea4c3eecc1934ec138836e1eab4da3b6991c6420c",
-          "bytes": 1683
-        },
-        {
-          "path": "skills/cursor/cursor-repo-reconnaissance/references/source-evidence.md",
-          "sha256": "4c82f351a61854480513ba4e80567a1bc33cf6d1294c2f21b76a21d5f331769b",
-          "bytes": 1151
-        },
-        {
-          "path": "skills/cursor/cursor-repo-reconnaissance/SKILL.md",
-          "sha256": "269754b805c41608b5215e011c14302b53df0b8517ffe319b1311ac731db200a",
-          "bytes": 2229
-        }
-      ]
-    },
-    {
-      "id": "cursor-security-review",
-      "path": "skills/cursor/cursor-security-review",
-      "aggregate_sha256": "a4d4fc5839da4d9c4dac6f11ed81d3afac28f8d8845871f96b96b4af4c2be69b",
-      "files": [
-        {
-          "path": "skills/cursor/cursor-security-review/metadata.json",
-          "sha256": "4dcd52e8f1d7d35c6b54901df614a25f18d0864ec9893ef062c2642f266bd9f2",
-          "bytes": 1648
-        },
-        {
-          "path": "skills/cursor/cursor-security-review/references/source-evidence.md",
-          "sha256": "5e7a0520928f079fc2e54a8af7522f1c4598fd859c9ce0baf4aba15a932179e5",
-          "bytes": 1153
-        },
-        {
-          "path": "skills/cursor/cursor-security-review/SKILL.md",
-          "sha256": "967ea910401f11dd25c7ab30c4c9140f10ae9ba1e567eae5378dd512839ed1ea",
-          "bytes": 2187
-        }
-      ]
-    },
-    {
-      "id": "cursor-source-trust-gate",
-      "path": "skills/cursor/cursor-source-trust-gate",
-      "aggregate_sha256": "d2b9dc4965254727b287e4b19b9f83aa6fd785d8ab9885827c689df628c0f4ca",
-      "files": [
-        {
-          "path": "skills/cursor/cursor-source-trust-gate/metadata.json",
-          "sha256": "29232c280b9078ba80c866b32b2b875321be3bd47e42f4d88de89bcfefe62c18",
-          "bytes": 1576
-        },
-        {
-          "path": "skills/cursor/cursor-source-trust-gate/references/source-evidence.md",
-          "sha256": "a586b2e4d394756ec744c2e62d9fbb6d33f820f1aecd13bb8d1c31f6a2b9283b",
-          "bytes": 931
-        },
-        {
-          "path": "skills/cursor/cursor-source-trust-gate/SKILL.md",
-          "sha256": "c2c7bcadd54badf2fe1a7c727ef1b4ea6ad5f7f1616936bfcb1ccd967a326376",
-          "bytes": 2507
-        }
-      ]
-    },
-    {
-      "id": "gemini-context-management",
-      "path": "skills/gemini/gemini-context-management",
-      "aggregate_sha256": "0ed01836b1ee1b265ecc53cc7d431f6ee772714b37ad1af1e2966ae5591a3144",
-      "files": [
-        {
-          "path": "skills/gemini/gemini-context-management/metadata.json",
-          "sha256": "27a0a777ece0eb00cc5d015111220763d0db7654600af3998319cf19f0c225cd",
-          "bytes": 1803
-        },
-        {
-          "path": "skills/gemini/gemini-context-management/references/source-evidence.md",
-          "sha256": "0a07a3877484ab8b5d587b983c13a0a9bc089a4982d6c50064eae49423d25bd6",
-          "bytes": 1266
-        },
-        {
-          "path": "skills/gemini/gemini-context-management/SKILL.md",
-          "sha256": "e8ca0dfb31dec5629549bf40c4124f8378fc9f66a0abd16e71a7deb118ebac59",
-          "bytes": 2155
-        }
-      ]
-    },
-    {
-      "id": "gemini-cost-aware-routing",
-      "path": "skills/gemini/gemini-cost-aware-routing",
-      "aggregate_sha256": "8d1d47b20c96723f3c593b547ca010ecfff1171435dd40716d3c419bcb018bc4",
-      "files": [
-        {
-          "path": "skills/gemini/gemini-cost-aware-routing/metadata.json",
-          "sha256": "3f40086c7ab5a39333a0801ea71113fddad1c7cf44fd85d2fbd9e89eb179c426",
-          "bytes": 1793
-        },
-        {
-          "path": "skills/gemini/gemini-cost-aware-routing/references/source-evidence.md",
-          "sha256": "45f34610c689eefd0da301a3a42e6ff0f2fa12b141fa8a39f40dc5577d873769",
-          "bytes": 1266
-        },
-        {
-          "path": "skills/gemini/gemini-cost-aware-routing/SKILL.md",
-          "sha256": "e3b40b08385dbc4adc9a5484c7e9238e043c952dd8e3f655f64218a823f51c5a",
-          "bytes": 2196
-        }
-      ]
-    },
-    {
-      "id": "gemini-debugging-strategy",
-      "path": "skills/gemini/gemini-debugging-strategy",
-      "aggregate_sha256": "44e8d0c54a309187053f98504451e2eb194fd549a4aa09652861e492559268bf",
-      "files": [
-        {
-          "path": "skills/gemini/gemini-debugging-strategy/metadata.json",
-          "sha256": "cc6800b8bb83890267b4d903c13f92719a663b00f6fefb7266cb03c89b4caba1",
-          "bytes": 1778
-        },
-        {
-          "path": "skills/gemini/gemini-debugging-strategy/references/source-evidence.md",
-          "sha256": "108864881d20c63e7be9980a7621769afa081ad846c82e0b8d4674c3272875fb",
-          "bytes": 1169
-        },
-        {
-          "path": "skills/gemini/gemini-debugging-strategy/SKILL.md",
-          "sha256": "19b35099568f0f4b52230a2a9874dc10a41b438d0fdfee32864b1d4fa7d22ab9",
-          "bytes": 2253
-        }
-      ]
-    },
-    {
-      "id": "gemini-deployment-readiness",
-      "path": "skills/gemini/gemini-deployment-readiness",
-      "aggregate_sha256": "05b104a222c1a2a7f6e87d61800c01176673d801b5e0182e8f3c7718d1fb9cca",
-      "files": [
-        {
-          "path": "skills/gemini/gemini-deployment-readiness/metadata.json",
-          "sha256": "655c415d2bcf1270f4f028730cdbfa6414728021f3f4851d1eac53d53f1bda02",
-          "bytes": 1752
-        },
-        {
-          "path": "skills/gemini/gemini-deployment-readiness/references/source-evidence.md",
-          "sha256": "04b956231a32d1cd703b7c00d7b75fab033b01dc080ed46fdf2780be097ae919",
-          "bytes": 1163
-        },
-        {
-          "path": "skills/gemini/gemini-deployment-readiness/SKILL.md",
-          "sha256": "c7b0d52b26960779dcf4170391f6092fb266e2b256062c866b6013aa8e16d5bb",
-          "bytes": 2241
-        }
-      ]
-    },
-    {
-      "id": "gemini-gemini-api-dev",
-      "path": "skills/gemini/gemini-gemini-api-dev",
-      "aggregate_sha256": "5a57e5b5e14dd531858b01751bc118b20207433a29021f53fdfb41d80587b111",
-      "files": [
-        {
-          "path": "skills/gemini/gemini-gemini-api-dev/metadata.json",
-          "sha256": "bad8986805dcc992f4884bdd1001227fec872a6e2200c41e281e01abad94609f",
-          "bytes": 1606
-        },
-        {
-          "path": "skills/gemini/gemini-gemini-api-dev/references/source-evidence.md",
-          "sha256": "7d84c2324d7f2ebfd83ea20bd83730ef14807e73033ca739f1715b70e2f077cb",
-          "bytes": 902
-        },
-        {
-          "path": "skills/gemini/gemini-gemini-api-dev/SKILL.md",
-          "sha256": "560728dd1e5319a4a4e4504d16d58f3cac522ad3cc68f57696b05d3a77a40a6f",
-          "bytes": 2281
-        }
-      ]
-    },
-    {
-      "id": "gemini-handoff-readiness-review",
-      "path": "skills/gemini/gemini-handoff-readiness-review",
-      "aggregate_sha256": "41ee0e3ee2135068ebb2211ae52db6801615bede2f75792d536c73140fc10f09",
-      "files": [
-        {
-          "path": "skills/gemini/gemini-handoff-readiness-review/metadata.json",
-          "sha256": "065cd63310d1b6d0550abf0c18efb1441dc25589b2cb97f813fd5699b16779e5",
-          "bytes": 1764
-        },
-        {
-          "path": "skills/gemini/gemini-handoff-readiness-review/references/source-evidence.md",
-          "sha256": "05ec8f36e4fb5d61a4ea60cfd90610fa96797373605e8c116a6165a3bbe52353",
-          "bytes": 1074
-        },
-        {
-          "path": "skills/gemini/gemini-handoff-readiness-review/SKILL.md",
-          "sha256": "292d6141d3a636afb10d010cdd3b0d34ec082190f604bd22f3b0b90b7443aadd",
-          "bytes": 2411
-        }
-      ]
-    },
-    {
-      "id": "gemini-interactions-api",
-      "path": "skills/gemini/gemini-interactions-api",
-      "aggregate_sha256": "f1d2a773ef31f47c595648d9807a9fd09e4c24cc0da0304b9a0c4eeb74be9de1",
-      "files": [
-        {
-          "path": "skills/gemini/gemini-interactions-api/metadata.json",
-          "sha256": "5440afbf4224bb4392ec9f1dfb4c9d38bda25a5fa2ad0fc0ff8d60c627ccd4fc",
-          "bytes": 1597
-        },
-        {
-          "path": "skills/gemini/gemini-interactions-api/references/source-evidence.md",
-          "sha256": "0cf7d49fcae49efe2670e1d924d6ba91bcba369bcd1a7a931b4285ebe9fa5264",
-          "bytes": 913
-        },
-        {
-          "path": "skills/gemini/gemini-interactions-api/SKILL.md",
-          "sha256": "3a3b3f04c16dfdeba468ce9988cf845b341d13b4b407708ee4f405e69c7f8843",
-          "bytes": 2237
-        }
-      ]
-    },
-    {
-      "id": "gemini-live-api-dev",
-      "path": "skills/gemini/gemini-live-api-dev",
-      "aggregate_sha256": "85dc955fa840f1039f1ffed498b1c11327aa7e192bb4a8b32f8b26b5f16384e1",
-      "files": [
-        {
-          "path": "skills/gemini/gemini-live-api-dev/metadata.json",
-          "sha256": "f5d2fd876a9c78b245f943387546afffc064177b87e703a50caab90ff84eff7a",
-          "bytes": 1583
-        },
-        {
-          "path": "skills/gemini/gemini-live-api-dev/references/source-evidence.md",
-          "sha256": "a2268db96baa0403d7211ac7e3a769da4887b61149743acfbaf36ff1a4ee2dd2",
-          "bytes": 905
-        },
-        {
-          "path": "skills/gemini/gemini-live-api-dev/SKILL.md",
-          "sha256": "ac0bdb19864c9f7e46062495bce4b8e3afe27fc3c7c47a7c18afc8dca2c6613b",
-          "bytes": 2210
-        }
-      ]
-    },
-    {
-      "id": "gemini-mcp-tool-safety",
-      "path": "skills/gemini/gemini-mcp-tool-safety",
-      "aggregate_sha256": "bc5113c3d0f3ebad44625cd88a049246beaa636ff24009770a109ec2f772f440",
-      "files": [
-        {
-          "path": "skills/gemini/gemini-mcp-tool-safety/metadata.json",
-          "sha256": "8341a88f1060aa03fa568591314fe4c5dd4cb93b89b764bb9d3b7f75b416c9e6",
-          "bytes": 1742
-        },
-        {
-          "path": "skills/gemini/gemini-mcp-tool-safety/references/source-evidence.md",
-          "sha256": "956213752c39f8d3edfe755642a58691fa35036afce0fb11fc2ba86083c7157a",
-          "bytes": 1163
-        },
-        {
-          "path": "skills/gemini/gemini-mcp-tool-safety/SKILL.md",
-          "sha256": "2f0d6b5d1e5a9c58065238e6ec04f1256761e474ea58e2dafcab51e30b9f0907",
-          "bytes": 2241
-        }
-      ]
-    },
-    {
-      "id": "gemini-multi-agent-orchestration",
-      "path": "skills/gemini/gemini-multi-agent-orchestration",
-      "aggregate_sha256": "4db0c6732c9b1bf11c2f16c7841032690710ca5faa0822eadf1936a1d0b45aa1",
-      "files": [
-        {
-          "path": "skills/gemini/gemini-multi-agent-orchestration/metadata.json",
-          "sha256": "478a5c5d653750e18c40ffe2184899eed1aa323dc19ac5c3940b5a9184cdb995",
-          "bytes": 1836
-        },
-        {
-          "path": "skills/gemini/gemini-multi-agent-orchestration/references/source-evidence.md",
-          "sha256": "b2e1e8f5818cfe9cd897118c9915546e3bf1835d7265e965f750bac5e3603f5f",
-          "bytes": 1280
-        },
-        {
-          "path": "skills/gemini/gemini-multi-agent-orchestration/SKILL.md",
-          "sha256": "0f106b2fa0b022655aaa505d4b2e5f4159610b19ffa335772eec1aee1047a780",
-          "bytes": 2223
-        }
-      ]
-    },
-    {
-      "id": "gemini-native-packaging-bridge",
-      "path": "skills/gemini/gemini-native-packaging-bridge",
-      "aggregate_sha256": "cd9bb6d789ee5a35d5587d434cc92a4ed9256ce18a9a8e3927f14fc21c7a78da",
-      "files": [
-        {
-          "path": "skills/gemini/gemini-native-packaging-bridge/metadata.json",
-          "sha256": "24c518f678b4dc8114648c2e6ad4b1b3e82a3f6903ac8eb3888cd0424b3bbaab",
-          "bytes": 1745
-        },
-        {
-          "path": "skills/gemini/gemini-native-packaging-bridge/references/source-evidence.md",
-          "sha256": "f7448a8b6814f7281d5e779a9e8eca47a7252b7b1f52b232fe7c3ceb8a94c508",
-          "bytes": 1072
-        },
-        {
-          "path": "skills/gemini/gemini-native-packaging-bridge/SKILL.md",
-          "sha256": "325643f1cbaeb1164500715015be3e496e41860d9bfdb0e82763c80946057f64",
-          "bytes": 2354
-        }
-      ]
-    },
-    {
-      "id": "gemini-prompt-hardening",
-      "path": "skills/gemini/gemini-prompt-hardening",
-      "aggregate_sha256": "1b0493b47539d73a1a436a00cbb02a0258e6578123d7efd27de5932679a6bb46",
-      "files": [
-        {
-          "path": "skills/gemini/gemini-prompt-hardening/metadata.json",
-          "sha256": "2891cdbfb3a546924ff6f18adf890a2d3e92c67a882195cf5aaf4f0b03c842ab",
-          "bytes": 1742
-        },
-        {
-          "path": "skills/gemini/gemini-prompt-hardening/references/source-evidence.md",
-          "sha256": "d5860b45d0777bf638ca9559dbede2ebe77fc79d9e515e09d4620428af316441",
-          "bytes": 1165
-        },
-        {
-          "path": "skills/gemini/gemini-prompt-hardening/SKILL.md",
-          "sha256": "3764ba229444590b3aa2c971ba9e4b4b9adff6dfe4691a6abb8f0333c28cdd3d",
-          "bytes": 2202
-        }
-      ]
-    },
-    {
-      "id": "gemini-repo-reconnaissance",
-      "path": "skills/gemini/gemini-repo-reconnaissance",
-      "aggregate_sha256": "d45dcb0ff6fb7ed2c2e353f459e07f54240eeb5d8ef87a6360ae2b68a6016d1c",
-      "files": [
-        {
-          "path": "skills/gemini/gemini-repo-reconnaissance/metadata.json",
-          "sha256": "f8749e245a0d375bd5106381b1cc267b5b38f790f6bfb67138d67ffcbb90dbbf",
-          "bytes": 1766
-        },
-        {
-          "path": "skills/gemini/gemini-repo-reconnaissance/references/source-evidence.md",
-          "sha256": "992564037781ce52347123067184010183bbb361e3f04334d26aaf88c5af4363",
-          "bytes": 1161
-        },
-        {
-          "path": "skills/gemini/gemini-repo-reconnaissance/SKILL.md",
-          "sha256": "97eabea1f04516b3f3ab7ffbc879a0c97ca76434e79d0898d04a15090bd1607d",
+          "path": "skills/core/core-debugging-strategy/SKILL.md",
+          "sha256": "431687724f009897a1539864c1b99a0534463dbe2b1c714f653cb493b8e6ff95",
           "bytes": 2215
         }
       ]
     },
     {
-      "id": "gemini-security-review",
-      "path": "skills/gemini/gemini-security-review",
-      "aggregate_sha256": "1b02bb8c3c25e21729830a300217a66d609892432b1c45e3925e21e4785b2863",
+      "id": "core-deployment-readiness",
+      "path": "skills/core/core-deployment-readiness",
+      "aggregate_sha256": "893308cd6f3cc3d9c26af7be7468c13ff358dce001601cc54e61cae537477a84",
       "files": [
         {
-          "path": "skills/gemini/gemini-security-review/metadata.json",
-          "sha256": "29cc2644f6ad32393ecf1263e0aaa3530647d071d99da7a97fcacf64f1a21db5",
-          "bytes": 1731
+          "path": "skills/core/core-deployment-readiness/metadata.json",
+          "sha256": "a65898de9913acd826c4d07f494ebc9454debf3ad689ccf603eb147c21885651",
+          "bytes": 1682
         },
         {
-          "path": "skills/gemini/gemini-security-review/references/source-evidence.md",
-          "sha256": "0d0182a55740388f4fd7c5b61614114601e0f28d3468db0724572c8b55e9be7c",
-          "bytes": 1163
+          "path": "skills/core/core-deployment-readiness/references/source-evidence.md",
+          "sha256": "bda71e911841bc7fb39e83ab99deda50f014e8e384f0c4df65df3b4f8956a1a9",
+          "bytes": 1246
         },
         {
-          "path": "skills/gemini/gemini-security-review/SKILL.md",
-          "sha256": "9f717dfc16610c9bf4bd51a8220370338578bb9b95d9580662aaff624adb3a87",
-          "bytes": 2173
+          "path": "skills/core/core-deployment-readiness/SKILL.md",
+          "sha256": "a7d406e2e9d62c655188ba3da100dcd47bdcd1e6ba7841d000fe9105773b845f",
+          "bytes": 2211
         }
       ]
     },
     {
-      "id": "gemini-source-trust-gate",
-      "path": "skills/gemini/gemini-source-trust-gate",
-      "aggregate_sha256": "8445787fa1474dda199de40cc77ca869526ad004f503bd7aaad2a7c018d985a2",
+      "id": "core-handoff-readiness-review",
+      "path": "skills/core/core-handoff-readiness-review",
+      "aggregate_sha256": "d7cac09adfdbbea088b164b2f74b756a30b7c565fd11ee628e0e0e260c60dbc3",
       "files": [
         {
-          "path": "skills/gemini/gemini-source-trust-gate/metadata.json",
-          "sha256": "463f866e68548097bf0ef21fa3b13330df940a714f75ec8fe511d527046557a8",
-          "bytes": 1739
+          "path": "skills/core/core-handoff-readiness-review/metadata.json",
+          "sha256": "891dc7073bde6af64c2548706184767350071bd330b05557f121f0e4df07f2b4",
+          "bytes": 1661
         },
         {
-          "path": "skills/gemini/gemini-source-trust-gate/references/source-evidence.md",
-          "sha256": "a8ac71bd4cf664a2be25d6d97523a32fbc82e6d40fcdea9fae67a26f289f17dd",
-          "bytes": 1060
+          "path": "skills/core/core-handoff-readiness-review/references/source-evidence.md",
+          "sha256": "8f3746faeccd49956fb9d58fa10c38d68c3cd15e6a67c5693d83cae8bec8db7c",
+          "bytes": 1135
         },
         {
-          "path": "skills/gemini/gemini-source-trust-gate/SKILL.md",
-          "sha256": "5e9f0f13dfcab26aba67ee385193a264b28d95843499e54167cd7c27a17f4328",
-          "bytes": 2467
+          "path": "skills/core/core-handoff-readiness-review/SKILL.md",
+          "sha256": "8494b29587cc50c40c3788332378597886099d400f545a481da896a9aa6ab2d1",
+          "bytes": 2392
         }
       ]
     },
     {
-      "id": "kiro-context-management",
-      "path": "skills/kiro/kiro-context-management",
-      "aggregate_sha256": "4944b5523d117c8342de58272077c5679f883d01370fbbce2641aec2db8d280b",
+      "id": "core-mcp-tool-safety",
+      "path": "skills/core/core-mcp-tool-safety",
+      "aggregate_sha256": "b53ea58f5ccde925b3725f7b9deb171b20692a7c6c573b367d8a5816e91b249c",
       "files": [
         {
-          "path": "skills/kiro/kiro-context-management/metadata.json",
-          "sha256": "bb915cecacd5155adad51ae2e32781d1aae42ae194e806f975fc15c9758fb198",
-          "bytes": 1675
+          "path": "skills/core/core-mcp-tool-safety/metadata.json",
+          "sha256": "78d945de7326052b090d553c7b94e4633bdb76ebb3b50e7e22fb5a7749834d39",
+          "bytes": 1663
         },
         {
-          "path": "skills/kiro/kiro-context-management/references/source-evidence.md",
-          "sha256": "bcf8f80481a3e2cbbc09d5e3eb6c250a7f4ea87db29d1dfb0b609d94d8a2b633",
-          "bytes": 1150
+          "path": "skills/core/core-mcp-tool-safety/references/source-evidence.md",
+          "sha256": "dcadffcd74aa383bf2d76a64a3ce1b4e4b84d457318bd5bdd0036cf38cdc5280",
+          "bytes": 1236
         },
         {
-          "path": "skills/kiro/kiro-context-management/SKILL.md",
-          "sha256": "ff180829f713a98725cf068337ceae8674642192b1fa400cd49d1ecfd3b7985a",
-          "bytes": 2162
-        }
-      ]
-    },
-    {
-      "id": "kiro-cost-aware-routing",
-      "path": "skills/kiro/kiro-cost-aware-routing",
-      "aggregate_sha256": "0c2eb738d981015fd91d6486ec16dbad930578a738e38524c4ae73a22785a417",
-      "files": [
-        {
-          "path": "skills/kiro/kiro-cost-aware-routing/metadata.json",
-          "sha256": "2d31fb25ba5f31298afc5116479dbcd77c4939ecc626143c156528cfaeee3ed5",
-          "bytes": 1665
-        },
-        {
-          "path": "skills/kiro/kiro-cost-aware-routing/references/source-evidence.md",
-          "sha256": "71b4257c20c64a12357226749a14e9d6ca71171a03f429663ca9c9e232a7655c",
-          "bytes": 1150
-        },
-        {
-          "path": "skills/kiro/kiro-cost-aware-routing/SKILL.md",
-          "sha256": "a1e9a4b0ed9e9c42e388544e0024e4b1bcea347e4872459cb27f275882b07d8b",
+          "path": "skills/core/core-mcp-tool-safety/SKILL.md",
+          "sha256": "3478120be36e51f53e89acf9025b98f060df9466832b00e85ecc8936ddbd624c",
           "bytes": 2203
         }
       ]
     },
     {
-      "id": "kiro-debugging-strategy",
-      "path": "skills/kiro/kiro-debugging-strategy",
-      "aggregate_sha256": "3549ef2d92dfcb8da3b6798ec4b88c49dc2bcd8ebbd23f9a74c803d577dd0df9",
+      "id": "core-multi-agent-orchestration",
+      "path": "skills/core/core-multi-agent-orchestration",
+      "aggregate_sha256": "aa08f645aca1f7c9ae59fc88ea307c57ba23cd41cb881d133b6b44f708fcd84d",
       "files": [
         {
-          "path": "skills/kiro/kiro-debugging-strategy/metadata.json",
-          "sha256": "bce5b5a3b5a372e7a0fa18d201d9dd9d0965dab9f0ddd19331f61ac4eabd3047",
-          "bytes": 1711
+          "path": "skills/core/core-multi-agent-orchestration/metadata.json",
+          "sha256": "9b47b6b5e6c336512aceff440cd59f281fb5cfa3c6dcd9182d50eb25a823897c",
+          "bytes": 1645
         },
         {
-          "path": "skills/kiro/kiro-debugging-strategy/references/source-evidence.md",
-          "sha256": "50970eb267319016d9993f00c0ce3474171092e9493520efd1f549a8d9dc36e3",
-          "bytes": 1172
+          "path": "skills/core/core-multi-agent-orchestration/references/source-evidence.md",
+          "sha256": "6b7c296cceba4af33fed3eca8212ae7f9370ebb55a31c72c67149e3ae32ba33e",
+          "bytes": 1137
         },
         {
-          "path": "skills/kiro/kiro-debugging-strategy/SKILL.md",
-          "sha256": "f610edacedd4743a5d45d8fb71436269a6e50acfd6c1c3815ff07c94a6ffac36",
-          "bytes": 2260
+          "path": "skills/core/core-multi-agent-orchestration/SKILL.md",
+          "sha256": "96c8ed34537415b72cdf0826a24597fbe724449e6e621c976bb0d699c257a059",
+          "bytes": 2183
         }
       ]
     },
     {
-      "id": "kiro-deployment-readiness",
-      "path": "skills/kiro/kiro-deployment-readiness",
-      "aggregate_sha256": "8efc28d8cde6b0784a73d3512ee755d9d8212af2c1e0544005baa4c082ee3819",
+      "id": "core-native-packaging-bridge",
+      "path": "skills/core/core-native-packaging-bridge",
+      "aggregate_sha256": "b6f51893674faa08247d511559577a3ec13e52153d8637988a83e0e6178886ca",
       "files": [
         {
-          "path": "skills/kiro/kiro-deployment-readiness/metadata.json",
-          "sha256": "66d10ea79ab1234404da57668d8cef47707ac7a59cff9391c2ebb13623603466",
-          "bytes": 1685
+          "path": "skills/core/core-native-packaging-bridge/metadata.json",
+          "sha256": "34c4f967066c4a4ec51d1253559c0f2cdb1410eb2018ef1fd7e5149a31f026c7",
+          "bytes": 1636
         },
         {
-          "path": "skills/kiro/kiro-deployment-readiness/references/source-evidence.md",
-          "sha256": "805fb3160cc3c9740cbfb53f14e7ace11855a7fb8d6177d472b029e6658df149",
-          "bytes": 1166
+          "path": "skills/core/core-native-packaging-bridge/references/source-evidence.md",
+          "sha256": "cd6f55425c733b06d5890435c3ccf2e848d3c208d8ae3c0b7ad9539229f7bccf",
+          "bytes": 1133
         },
         {
-          "path": "skills/kiro/kiro-deployment-readiness/SKILL.md",
-          "sha256": "aceafa71168579b45ff655d0b56ebe665648491161ab5225403c1c314acba5b7",
-          "bytes": 2248
+          "path": "skills/core/core-native-packaging-bridge/SKILL.md",
+          "sha256": "48b76fb457f80a6fa16c7ebae066f92d0ea80fef36ef659103b0e7b0542c8560",
+          "bytes": 2320
         }
       ]
     },
     {
-      "id": "kiro-handoff-readiness-review",
-      "path": "skills/kiro/kiro-handoff-readiness-review",
-      "aggregate_sha256": "c0e05dea368b377ba1b0dce6cc3e4f576c99264091772b628dc9d17a0d12e817",
+      "id": "core-prompt-hardening",
+      "path": "skills/core/core-prompt-hardening",
+      "aggregate_sha256": "b1352923725089434c3cbb58c4d3e10c96fc8afd584dd8160c98898c3304e175",
       "files": [
         {
-          "path": "skills/kiro/kiro-handoff-readiness-review/metadata.json",
-          "sha256": "09bdbbe9ad28cc234dbb0f679b245fae4b0e3ed4ed629dece87ff6062db85714",
-          "bytes": 1609
+          "path": "skills/core/core-prompt-hardening/metadata.json",
+          "sha256": "47bd73f52e66e016e45dc0289e6076955e54a16368d88a3716900b8ee555393a",
+          "bytes": 1663
         },
         {
-          "path": "skills/kiro/kiro-handoff-readiness-review/references/source-evidence.md",
-          "sha256": "d79d8f068b9784fa366d84859e7f51700e9ce0576c1cadfc84153e7854b5edf7",
-          "bytes": 958
+          "path": "skills/core/core-prompt-hardening/references/source-evidence.md",
+          "sha256": "a95f0a9bd85297b4d9ae54efbca88dc436602e76fc611efb691a9fb6d352a14a",
+          "bytes": 1238
         },
         {
-          "path": "skills/kiro/kiro-handoff-readiness-review/SKILL.md",
-          "sha256": "7d7dbe6d3e2e9676c040a09d71ba3938ff9772ea8692746905c30742fb45cf54",
-          "bytes": 2449
+          "path": "skills/core/core-prompt-hardening/SKILL.md",
+          "sha256": "e502a3d4670bf6df7f83d132d8e034e6cc0f4f0ba8f5b679f4becfef77d074b1",
+          "bytes": 2164
         }
       ]
     },
     {
-      "id": "kiro-mcp-tool-safety",
-      "path": "skills/kiro/kiro-mcp-tool-safety",
-      "aggregate_sha256": "c1f95c2de0003973fc6d5cb0cdb5a062b53502887a0c06f614c04e637a045819",
+      "id": "core-repo-reconnaissance",
+      "path": "skills/core/core-repo-reconnaissance",
+      "aggregate_sha256": "fe1ebf190a78747f5fc364786ca0d118f30953f265b26dc4ee899eaf5ec59673",
       "files": [
         {
-          "path": "skills/kiro/kiro-mcp-tool-safety/metadata.json",
-          "sha256": "b9ab3d56491ea0b774073dd4a1ae5ab8d0ff60b426ccc6abd95f293000af469a",
-          "bytes": 1675
+          "path": "skills/core/core-repo-reconnaissance/metadata.json",
+          "sha256": "93833b055759a2336c366a151fa2b11eb2f0b52fa9b21d2f969d9b06fe990076",
+          "bytes": 1696
         },
         {
-          "path": "skills/kiro/kiro-mcp-tool-safety/references/source-evidence.md",
-          "sha256": "8323157ff92c3d6acd330970786693f5a3bec7a5ad9ba1940218155505e42ba1",
-          "bytes": 1166
+          "path": "skills/core/core-repo-reconnaissance/references/source-evidence.md",
+          "sha256": "372f8f4e9f8f2c11212823ee34eaf4693e0c703fa6078318abaaa40ed225d7ba",
+          "bytes": 1244
         },
         {
-          "path": "skills/kiro/kiro-mcp-tool-safety/SKILL.md",
-          "sha256": "26167775aebe1527fd86cb217febab578cc556d097212967856e85e2127450bd",
-          "bytes": 2248
+          "path": "skills/core/core-repo-reconnaissance/SKILL.md",
+          "sha256": "5de0ce1586df827ec206dd0ab1011125e12f78742fc63abe729f1dcfd630a0aa",
+          "bytes": 2185
         }
       ]
     },
     {
-      "id": "kiro-multi-agent-orchestration",
-      "path": "skills/kiro/kiro-multi-agent-orchestration",
-      "aggregate_sha256": "81ea8ab0f0ec9fd8545265463d8bf7cfe7a22e5649e6d1e7f45efb21462125a8",
+      "id": "core-security-review",
+      "path": "skills/core/core-security-review",
+      "aggregate_sha256": "a0270dc599e02a782ce2e47d75eb18837b38643c8266eb8001bff8821df2c6e6",
       "files": [
         {
-          "path": "skills/kiro/kiro-multi-agent-orchestration/metadata.json",
-          "sha256": "d3606948aba51c1e974d532fd6b6d8341ec219412dbc431f9d1dcac87cf1ac2b",
-          "bytes": 1708
+          "path": "skills/core/core-security-review/metadata.json",
+          "sha256": "405c3857d3d3e5298e972bb55619bd94577dc932e02cdf2108a69a12b583b8b2",
+          "bytes": 1652
         },
         {
-          "path": "skills/kiro/kiro-multi-agent-orchestration/references/source-evidence.md",
-          "sha256": "a2776fd8d631419b2421719a81af41f55bf5cec707492661800c4695284731bf",
-          "bytes": 1164
+          "path": "skills/core/core-security-review/references/source-evidence.md",
+          "sha256": "957b3f36cd8a4f95b0003680713a5c9fb65399aab5f433a8b9c1e6a6f94ec50a",
+          "bytes": 1236
         },
         {
-          "path": "skills/kiro/kiro-multi-agent-orchestration/SKILL.md",
-          "sha256": "6d8d05e73b5af09dfbe71d078eefeae34775e413e3d7e563448ff398bcd3ab73",
-          "bytes": 2230
+          "path": "skills/core/core-security-review/SKILL.md",
+          "sha256": "0fa462658f3437d435e644f609550474a7c220766586a829ee2ea0716af46fea",
+          "bytes": 2135
         }
       ]
     },
     {
-      "id": "kiro-native-packaging-bridge",
-      "path": "skills/kiro/kiro-native-packaging-bridge",
-      "aggregate_sha256": "4c3fef89054f0afdc85d358b0c561f133c922202dfabd6154bcc927641f4c524",
+      "id": "core-source-trust-gate",
+      "path": "skills/core/core-source-trust-gate",
+      "aggregate_sha256": "430da6c5e27909b3d081c1cff4945ee84f46e65a8780f1f98e15adb1eb1c5b60",
       "files": [
         {
-          "path": "skills/kiro/kiro-native-packaging-bridge/metadata.json",
-          "sha256": "2bb1e425b7446a5c4f04c3a6b28ed43cf89aa37cd9f17a19082fd3801fc11ae3",
-          "bytes": 1590
+          "path": "skills/core/core-source-trust-gate/metadata.json",
+          "sha256": "669badfee61f6e76cf951fe5f177bff933da9bbc6ad3984cf609efaf04ea74ef",
+          "bytes": 1644
         },
         {
-          "path": "skills/kiro/kiro-native-packaging-bridge/references/source-evidence.md",
-          "sha256": "c16ae17401bbeb5afa27e19197bc529a39844e657a1d2d384a96f707221765fe",
-          "bytes": 956
+          "path": "skills/core/core-source-trust-gate/references/source-evidence.md",
+          "sha256": "d668284054deb5935b730e0649e2cde6b4f72bda6fb9a552242a66f473858f92",
+          "bytes": 1121
         },
         {
-          "path": "skills/kiro/kiro-native-packaging-bridge/SKILL.md",
-          "sha256": "61600ffd5ed66980f837831305fa0067a51765dfa770cf6f5402893381d66115",
-          "bytes": 2355
-        }
-      ]
-    },
-    {
-      "id": "kiro-prompt-hardening",
-      "path": "skills/kiro/kiro-prompt-hardening",
-      "aggregate_sha256": "2a6dcc46b0b9dc22ab65aca53eebc529a4b0682d76b75c2aa23e08b3d58606f1",
-      "files": [
-        {
-          "path": "skills/kiro/kiro-prompt-hardening/metadata.json",
-          "sha256": "90764ca4846d6adf139b77d7139d935f22359726432033db40c1bc3def572659",
-          "bytes": 1675
-        },
-        {
-          "path": "skills/kiro/kiro-prompt-hardening/references/source-evidence.md",
-          "sha256": "1e3c38561d8ad9214ad892e28c506b09c5b0c1a4e14070a1011e56513bd3b40d",
-          "bytes": 1168
-        },
-        {
-          "path": "skills/kiro/kiro-prompt-hardening/SKILL.md",
-          "sha256": "dc4b28909806f77dac7f10f1024e80ab29185d1818c6706a5eb9f6579690263f",
-          "bytes": 2209
-        }
-      ]
-    },
-    {
-      "id": "kiro-repo-reconnaissance",
-      "path": "skills/kiro/kiro-repo-reconnaissance",
-      "aggregate_sha256": "9e78addd50305b7be00283b1a58bfa692448ad66675ae6775229915e85286c0a",
-      "files": [
-        {
-          "path": "skills/kiro/kiro-repo-reconnaissance/metadata.json",
-          "sha256": "71c8b35bb1611e689e6522fc1ba393c0a47c95f6325d4882257bdb0f7abd3702",
-          "bytes": 1699
-        },
-        {
-          "path": "skills/kiro/kiro-repo-reconnaissance/references/source-evidence.md",
-          "sha256": "2c1956fdbb4cf6c7fa95607b50dd01b38cd1c949e505f3fe9a22680fb4ed90f1",
-          "bytes": 1164
-        },
-        {
-          "path": "skills/kiro/kiro-repo-reconnaissance/SKILL.md",
-          "sha256": "e8ccde1c8cfc33f46004ebf56104374e90eb95b84f52a5e31938357ace909129",
-          "bytes": 2222
-        }
-      ]
-    },
-    {
-      "id": "kiro-security-review",
-      "path": "skills/kiro/kiro-security-review",
-      "aggregate_sha256": "b77c080bc3f546d3f9585346bd27ee527af51c406ccfeffb048f9e03f410db3d",
-      "files": [
-        {
-          "path": "skills/kiro/kiro-security-review/metadata.json",
-          "sha256": "932fad0619b4a2280d5bd77fe242c2b75ff7d181848eb22a11fd28093fe5ff1d",
-          "bytes": 1664
-        },
-        {
-          "path": "skills/kiro/kiro-security-review/references/source-evidence.md",
-          "sha256": "ee6d3e3123cb4b656edbc9c85188004b9c70a22b5d711f3d2d7cc10f6e00a821",
-          "bytes": 1166
-        },
-        {
-          "path": "skills/kiro/kiro-security-review/SKILL.md",
-          "sha256": "b3ded67461ef235229c3d2dbe24dec10ee50b46331de635f6d2db1fe0201b249",
-          "bytes": 2180
-        }
-      ]
-    },
-    {
-      "id": "kiro-source-trust-gate",
-      "path": "skills/kiro/kiro-source-trust-gate",
-      "aggregate_sha256": "5bb74a4704227ddea96a9a2034ee8149a47be9bf29eb0c103b553d6e65da99c3",
-      "files": [
-        {
-          "path": "skills/kiro/kiro-source-trust-gate/metadata.json",
-          "sha256": "247746c534c895f19c984bbb6870600996d8eae12bf0998b57c2ae53cdbfd225",
-          "bytes": 1584
-        },
-        {
-          "path": "skills/kiro/kiro-source-trust-gate/references/source-evidence.md",
-          "sha256": "b17f61df490ae860ee46e9bd4543326f33b62778c08086e7b4d33f95f25561fd",
-          "bytes": 944
-        },
-        {
-          "path": "skills/kiro/kiro-source-trust-gate/SKILL.md",
-          "sha256": "9437fff281ceb20b27396621d90e371222a96da2df304bb4e53190a2b7fd59af",
-          "bytes": 2505
-        }
-      ]
-    },
-    {
-      "id": "lovable-context-management",
-      "path": "skills/lovable/lovable-context-management",
-      "aggregate_sha256": "36f62c35d596135d3397c309259e206ec5a0760a677ee2457c56d69058e39c91",
-      "files": [
-        {
-          "path": "skills/lovable/lovable-context-management/metadata.json",
-          "sha256": "4cf77405ac127b91c17ffacf6a5b0e60f9ee031d07c18498f549ba3ee80cf6d4",
-          "bytes": 1671
-        },
-        {
-          "path": "skills/lovable/lovable-context-management/references/source-evidence.md",
-          "sha256": "ce855ca279f038f89907de8c5086f7a747b483ef879906556ef3883a182e8968",
-          "bytes": 1151
-        },
-        {
-          "path": "skills/lovable/lovable-context-management/SKILL.md",
-          "sha256": "b4add179cfd79826ec3893d36d28d65720f8bf6df7093ed9a2bbc2261434496f",
-          "bytes": 2175
-        }
-      ]
-    },
-    {
-      "id": "lovable-cost-aware-routing",
-      "path": "skills/lovable/lovable-cost-aware-routing",
-      "aggregate_sha256": "7fea4df906483a64abe4b628b12ce02d2303870ab352512ff5587a915eadd0e4",
-      "files": [
-        {
-          "path": "skills/lovable/lovable-cost-aware-routing/metadata.json",
-          "sha256": "1d9f9ee29c881f47b99f3b2edaa8bdb618664dc3c3bf47d4c8c5ac3d625c087e",
-          "bytes": 1661
-        },
-        {
-          "path": "skills/lovable/lovable-cost-aware-routing/references/source-evidence.md",
-          "sha256": "c749db505a8df4a70d2a42c017c89beb856a0d7c083f4645753a85dbd9387a4f",
-          "bytes": 1151
-        },
-        {
-          "path": "skills/lovable/lovable-cost-aware-routing/SKILL.md",
-          "sha256": "e0bbd320a2e71171cb55169f80e097dfd522bccf85b71e92b7ca537a8481ea95",
-          "bytes": 2216
-        }
-      ]
-    },
-    {
-      "id": "lovable-debugging-strategy",
-      "path": "skills/lovable/lovable-debugging-strategy",
-      "aggregate_sha256": "b73e12ec0a70a62f95da874cacef5c5bb917b4ac277278ae548ee4735ae7b960",
-      "files": [
-        {
-          "path": "skills/lovable/lovable-debugging-strategy/metadata.json",
-          "sha256": "8256129079b643a781697c34078975f338ea8a6ea54aa66a8a867b1916922f0e",
-          "bytes": 1707
-        },
-        {
-          "path": "skills/lovable/lovable-debugging-strategy/references/source-evidence.md",
-          "sha256": "c40f358679fc62991b1ce6bf9b9d3b7490a01a725259dca3bf330cadedd8cec3",
-          "bytes": 1173
-        },
-        {
-          "path": "skills/lovable/lovable-debugging-strategy/SKILL.md",
-          "sha256": "63a50acf3e600d88df74b3cc52ba0373e83e49c45d3a11028e990a74959743f5",
-          "bytes": 2273
-        }
-      ]
-    },
-    {
-      "id": "lovable-deployment-readiness",
-      "path": "skills/lovable/lovable-deployment-readiness",
-      "aggregate_sha256": "ec79ff5b40c2fd4b61389282338a1c72c9e5ad6c7902bb752094caecdd8e4d5d",
-      "files": [
-        {
-          "path": "skills/lovable/lovable-deployment-readiness/metadata.json",
-          "sha256": "6b1a83dad71de18bcc1b69e5061a69ed6f862a15904661283a506ac44fca8bd0",
-          "bytes": 1681
-        },
-        {
-          "path": "skills/lovable/lovable-deployment-readiness/references/source-evidence.md",
-          "sha256": "19ad137ba344fd201be6e7a2af57ca1860f3fb90c3c59153496bc19e37fafe1a",
-          "bytes": 1167
-        },
-        {
-          "path": "skills/lovable/lovable-deployment-readiness/SKILL.md",
-          "sha256": "e3ed1a7726210ce40ce1108582a6979b4a343e7b52359339f98e69e0e98aa917",
-          "bytes": 2261
-        }
-      ]
-    },
-    {
-      "id": "lovable-handoff-readiness-review",
-      "path": "skills/lovable/lovable-handoff-readiness-review",
-      "aggregate_sha256": "4fcf4afe1703e0e6945af0744d0c85ce8aaf594e296d96e8934adbdc9244d1ec",
-      "files": [
-        {
-          "path": "skills/lovable/lovable-handoff-readiness-review/metadata.json",
-          "sha256": "147bfb0d8cac8670fc3ea57c0d456343d63ed66cedb248a054e6191be21f24ea",
-          "bytes": 1616
-        },
-        {
-          "path": "skills/lovable/lovable-handoff-readiness-review/references/source-evidence.md",
-          "sha256": "9a6a3957fd2563a6693d4fb2fa1e46c1188bffb97f0def5e3d0b732d939f87f1",
-          "bytes": 959
-        },
-        {
-          "path": "skills/lovable/lovable-handoff-readiness-review/SKILL.md",
-          "sha256": "aa40e935a1bda1c6dfe328b5f51b3d5a2d8ee6617011b3be95628fb89fb61907",
-          "bytes": 2444
-        }
-      ]
-    },
-    {
-      "id": "lovable-mcp-tool-safety",
-      "path": "skills/lovable/lovable-mcp-tool-safety",
-      "aggregate_sha256": "7775c8893e629a4d5f4ebdfb176257f1e0e95677627d7546c71bf7dcb93ea3c5",
-      "files": [
-        {
-          "path": "skills/lovable/lovable-mcp-tool-safety/metadata.json",
-          "sha256": "e77af19dc6da42308372d40169cc4fead1f3908d27a481ea170d7d0cff1d60e6",
-          "bytes": 1671
-        },
-        {
-          "path": "skills/lovable/lovable-mcp-tool-safety/references/source-evidence.md",
-          "sha256": "5eb941986104e6eaddf319ca09a22f048e1cbb68c232e9fa0ba05b4c33f1b119",
-          "bytes": 1167
-        },
-        {
-          "path": "skills/lovable/lovable-mcp-tool-safety/SKILL.md",
-          "sha256": "ecd828dc0bbd193ea73c223b086c2d71ec09395907e0e7d1744293cc454451f0",
-          "bytes": 2261
-        }
-      ]
-    },
-    {
-      "id": "lovable-multi-agent-orchestration",
-      "path": "skills/lovable/lovable-multi-agent-orchestration",
-      "aggregate_sha256": "1592848fb2258536251e966b7318fe5c6fe81cd75d6c2987391ec6dfa5fdfa61",
-      "files": [
-        {
-          "path": "skills/lovable/lovable-multi-agent-orchestration/metadata.json",
-          "sha256": "1b28f6a204b5a9434bda079d820253e7605c45fde21d015cc0f37cfd4bdfe35c",
-          "bytes": 1704
-        },
-        {
-          "path": "skills/lovable/lovable-multi-agent-orchestration/references/source-evidence.md",
-          "sha256": "eac59a502265fab934d0fcc45f05a38b9813364471ca30f59f5fd91f8157856c",
-          "bytes": 1165
-        },
-        {
-          "path": "skills/lovable/lovable-multi-agent-orchestration/SKILL.md",
-          "sha256": "dda12ae871cfa7ba67209401fb6f6b1aea0f4b6a3f213857c37bd4a68893b74c",
-          "bytes": 2243
-        }
-      ]
-    },
-    {
-      "id": "lovable-native-packaging-bridge",
-      "path": "skills/lovable/lovable-native-packaging-bridge",
-      "aggregate_sha256": "a19a7bc790a1079b25cf787261114f8d4834dc0b74bfbbec063cc549e2b77abf",
-      "files": [
-        {
-          "path": "skills/lovable/lovable-native-packaging-bridge/metadata.json",
-          "sha256": "09fa94c6b60554485461414060ec31de607687353162b7b30c8006f1e643cfbd",
-          "bytes": 1597
-        },
-        {
-          "path": "skills/lovable/lovable-native-packaging-bridge/references/source-evidence.md",
-          "sha256": "6cd2491e9e13c74ddbec927d5f52ed00cf1a81d8544935034a7c4678d2dd1fe9",
-          "bytes": 957
-        },
-        {
-          "path": "skills/lovable/lovable-native-packaging-bridge/SKILL.md",
-          "sha256": "5c80dc222c8fecd718f0c0627195309edf80ab3228b3610a0155926f4d4d1677",
-          "bytes": 2405
-        }
-      ]
-    },
-    {
-      "id": "lovable-prompt-hardening",
-      "path": "skills/lovable/lovable-prompt-hardening",
-      "aggregate_sha256": "6fda3b6ed5dc7a719b8ec8d75094faf5bab5a09fea1e720c79f5bfc8b5d5a93b",
-      "files": [
-        {
-          "path": "skills/lovable/lovable-prompt-hardening/metadata.json",
-          "sha256": "ef7d5761aebaf1bdce7f9c08c68058987cf836ec2dcad60568461c078d227891",
-          "bytes": 1671
-        },
-        {
-          "path": "skills/lovable/lovable-prompt-hardening/references/source-evidence.md",
-          "sha256": "6fb1fefef51b750a32a7187179ada04ca375631164e9b6dced225118d9d7385b",
-          "bytes": 1169
-        },
-        {
-          "path": "skills/lovable/lovable-prompt-hardening/SKILL.md",
-          "sha256": "0280fa4bb81cd8792b176d2ab5c9d2f9b0af74c798ee98269d2df393098c9030",
-          "bytes": 2222
-        }
-      ]
-    },
-    {
-      "id": "lovable-repo-reconnaissance",
-      "path": "skills/lovable/lovable-repo-reconnaissance",
-      "aggregate_sha256": "6ae183272a487072b0c283da4961e5c7356fa91d2798846cb167917084e1fd2c",
-      "files": [
-        {
-          "path": "skills/lovable/lovable-repo-reconnaissance/metadata.json",
-          "sha256": "3b1278c73aec0ec75d944f9de5fa444bf39733bc008b1a754316050e8c4b7713",
-          "bytes": 1695
-        },
-        {
-          "path": "skills/lovable/lovable-repo-reconnaissance/references/source-evidence.md",
-          "sha256": "1e44ea975ee09f189dec3b799678c41a4f4666ba48a7cdc408e64645b96bc8ac",
-          "bytes": 1165
-        },
-        {
-          "path": "skills/lovable/lovable-repo-reconnaissance/SKILL.md",
-          "sha256": "da0492e463e00d26d923e0ed752622d925fc8d4757aebfff913a8adec5ab5aa2",
-          "bytes": 2235
-        }
-      ]
-    },
-    {
-      "id": "lovable-security-review",
-      "path": "skills/lovable/lovable-security-review",
-      "aggregate_sha256": "243f63b1b705b858126321f43a89cef6394d303e6ecb2f6f73b0a8fbd87f6969",
-      "files": [
-        {
-          "path": "skills/lovable/lovable-security-review/metadata.json",
-          "sha256": "32deed1d16c127703a6237185143934d68c0701ab679cada2f9ab8d101ca1ee4",
-          "bytes": 1660
-        },
-        {
-          "path": "skills/lovable/lovable-security-review/references/source-evidence.md",
-          "sha256": "63d0435c852793c676bb01ea69ea491d874d5446581aeebccb56397af0cecfe5",
-          "bytes": 1167
-        },
-        {
-          "path": "skills/lovable/lovable-security-review/SKILL.md",
-          "sha256": "cba32753cd6eeebc46061b57cce4bcb4cab260e8b52b96da5ef1cdbf5d11edc2",
-          "bytes": 2193
-        }
-      ]
-    },
-    {
-      "id": "lovable-source-trust-gate",
-      "path": "skills/lovable/lovable-source-trust-gate",
-      "aggregate_sha256": "4f675032fa248b6a1c21276a547db335e5e868d5039a70f58f72c5fda7456fbe",
-      "files": [
-        {
-          "path": "skills/lovable/lovable-source-trust-gate/metadata.json",
-          "sha256": "9ccfdfef1a3b5830a020d62764423f07730fe1c00760952fc9206a4d05b30158",
-          "bytes": 1591
-        },
-        {
-          "path": "skills/lovable/lovable-source-trust-gate/references/source-evidence.md",
-          "sha256": "b1b400cd4d7ef21c24b581a3c3be82669b7d3108e1c3022452c416c7a26ba2f1",
-          "bytes": 945
-        },
-        {
-          "path": "skills/lovable/lovable-source-trust-gate/SKILL.md",
-          "sha256": "e03714acee194375e03c030e8f48fb51385850cff5be631e90845011404b236d",
-          "bytes": 2515
-        }
-      ]
-    },
-    {
-      "id": "replit-context-management",
-      "path": "skills/replit/replit-context-management",
-      "aggregate_sha256": "3414f07a9a96896ee093d247a6ab6cdafc0f61561e025594945fd885600a4db9",
-      "files": [
-        {
-          "path": "skills/replit/replit-context-management/metadata.json",
-          "sha256": "a8ae48a3dc6c76f9bb96d55534fff5f4728e9a7e7e7ceea05528ee5c43d8f7b2",
-          "bytes": 1679
-        },
-        {
-          "path": "skills/replit/replit-context-management/references/source-evidence.md",
-          "sha256": "4011658c1933aa449d451cf1f64da3b625fdbd95b82f2b92d82a0d019278d85d",
-          "bytes": 1136
-        },
-        {
-          "path": "skills/replit/replit-context-management/SKILL.md",
-          "sha256": "6f90097995f907a02091c93a3d86741b52deb7c181f7a3ff4d8ec1969c6a6daf",
-          "bytes": 2175
-        }
-      ]
-    },
-    {
-      "id": "replit-cost-aware-routing",
-      "path": "skills/replit/replit-cost-aware-routing",
-      "aggregate_sha256": "a5486edf5bda6ac1b84e1e2e72cde24984fc9a286415d7b37cc176974decb98e",
-      "files": [
-        {
-          "path": "skills/replit/replit-cost-aware-routing/metadata.json",
-          "sha256": "ea55c31474c97f08dd9d2aaa7673bb2f6b5e55500003ae197d432fe93c7342ab",
-          "bytes": 1669
-        },
-        {
-          "path": "skills/replit/replit-cost-aware-routing/references/source-evidence.md",
-          "sha256": "f7a73a1cfef6962adda4071e9f8b17eadebdeedbb48e5f9bb514bb60076aace3",
-          "bytes": 1136
-        },
-        {
-          "path": "skills/replit/replit-cost-aware-routing/SKILL.md",
-          "sha256": "3831e72a39f8ea94e06d2af5dea93073276289f75ca18d180d05152f96ba4db6",
-          "bytes": 2216
-        }
-      ]
-    },
-    {
-      "id": "replit-debugging-strategy",
-      "path": "skills/replit/replit-debugging-strategy",
-      "aggregate_sha256": "1ac2606b2272e6cb9118b0ee9e6ca7cd15e4fe859801ee1957d5c415642c2394",
-      "files": [
-        {
-          "path": "skills/replit/replit-debugging-strategy/metadata.json",
-          "sha256": "de823876063ac1cde335af46ddea159990efcee371472cccb508edab70511e89",
-          "bytes": 1715
-        },
-        {
-          "path": "skills/replit/replit-debugging-strategy/references/source-evidence.md",
-          "sha256": "9baa24bdd40d37ff6b9442d7420f9fcbb85717304a260bd67d951809b4ba2c55",
-          "bytes": 1158
-        },
-        {
-          "path": "skills/replit/replit-debugging-strategy/SKILL.md",
-          "sha256": "db5951f3d3cd32cc756653cbfa3b4d8d37c1ae3b4c3097feefef6c4e081d4ccc",
-          "bytes": 2273
-        }
-      ]
-    },
-    {
-      "id": "replit-deployment-readiness",
-      "path": "skills/replit/replit-deployment-readiness",
-      "aggregate_sha256": "e5a75cabad3c7a130b94a1d0c67b0c9302fa92ebf92fc5115a8ac1df203e385b",
-      "files": [
-        {
-          "path": "skills/replit/replit-deployment-readiness/metadata.json",
-          "sha256": "6f242613ba286376d322799078352ed367984e6a83d3081f208db5e9669f3a3b",
-          "bytes": 1689
-        },
-        {
-          "path": "skills/replit/replit-deployment-readiness/references/source-evidence.md",
-          "sha256": "076d57fbd4a0a38ad23f299074bd477199e9a0409d34d9abef6b01194ae692f9",
-          "bytes": 1152
-        },
-        {
-          "path": "skills/replit/replit-deployment-readiness/SKILL.md",
-          "sha256": "f7bd92d701e6e37da67ac3f1054cc2460e1c9a25344bf288f6ea413a33a069c0",
-          "bytes": 2261
-        }
-      ]
-    },
-    {
-      "id": "replit-handoff-readiness-review",
-      "path": "skills/replit/replit-handoff-readiness-review",
-      "aggregate_sha256": "d8879fc83f775501121bf89671507af8164a987f01d3ef87b5795dab1bb93f14",
-      "files": [
-        {
-          "path": "skills/replit/replit-handoff-readiness-review/metadata.json",
-          "sha256": "7a4dbef13ddda796b03db114283abf11d007df9cf38c04dee08ff8a50e688258",
-          "bytes": 1634
-        },
-        {
-          "path": "skills/replit/replit-handoff-readiness-review/references/source-evidence.md",
-          "sha256": "a71f0e1a33f7e12eb8e822f98bfad55975d0d85db40fe45cbafbb68085c51b98",
-          "bytes": 944
-        },
-        {
-          "path": "skills/replit/replit-handoff-readiness-review/SKILL.md",
-          "sha256": "0a0f3afad961a65b77a74903f6df69b33549289a7ff676472369783a729a20d1",
-          "bytes": 2457
-        }
-      ]
-    },
-    {
-      "id": "replit-mcp-tool-safety",
-      "path": "skills/replit/replit-mcp-tool-safety",
-      "aggregate_sha256": "0f1d8ff74f2e76c1d06601bc956fe4f37f282e6656d914e9cf07ab6d634b9ab3",
-      "files": [
-        {
-          "path": "skills/replit/replit-mcp-tool-safety/metadata.json",
-          "sha256": "47eae4db6b8b6c61e238dbfc92ec0c6099c89ada4fda1b49b4f0c0ff84ad2da0",
-          "bytes": 1679
-        },
-        {
-          "path": "skills/replit/replit-mcp-tool-safety/references/source-evidence.md",
-          "sha256": "ef18efa636511029be687e38c5cf29bd42b9b31fa0e60c84d7ed9003c2d98002",
-          "bytes": 1152
-        },
-        {
-          "path": "skills/replit/replit-mcp-tool-safety/SKILL.md",
-          "sha256": "079d4d4020ae456391c80f885224e103a58d022824c74408bbae1881159fbb0c",
-          "bytes": 2261
-        }
-      ]
-    },
-    {
-      "id": "replit-multi-agent-orchestration",
-      "path": "skills/replit/replit-multi-agent-orchestration",
-      "aggregate_sha256": "982358ac8a772b849722ec77cf7ff4b825377bfcbe320ed52f66d4a0b9ecc523",
-      "files": [
-        {
-          "path": "skills/replit/replit-multi-agent-orchestration/metadata.json",
-          "sha256": "46745ec8f72f88fa8bd40d349410ed03ea67392be7ecacbe56fa7a859f76f67d",
-          "bytes": 1712
-        },
-        {
-          "path": "skills/replit/replit-multi-agent-orchestration/references/source-evidence.md",
-          "sha256": "0c0253005172d5b0d1ef2edc599c6a503d022db59bec3da73f0bc5f9ca2cf592",
-          "bytes": 1150
-        },
-        {
-          "path": "skills/replit/replit-multi-agent-orchestration/SKILL.md",
-          "sha256": "c58a54f6bc2929e5a0b8b39a8ba00d01126a40016984ff1ccb427a36de229972",
-          "bytes": 2243
-        }
-      ]
-    },
-    {
-      "id": "replit-native-packaging-bridge",
-      "path": "skills/replit/replit-native-packaging-bridge",
-      "aggregate_sha256": "cc70347eb0d8fcb0ca220ddbc8ce09b651afe5ca6d1a140d19acd4638f0e3ba2",
-      "files": [
-        {
-          "path": "skills/replit/replit-native-packaging-bridge/metadata.json",
-          "sha256": "e15ebb82889303a1845e8a1e4da8597913e8903556cf87e849a5ef0f493a4141",
-          "bytes": 1615
-        },
-        {
-          "path": "skills/replit/replit-native-packaging-bridge/references/source-evidence.md",
-          "sha256": "db79e18af8239e48702eed4dd1ca7440104c03f284260136fa256bb92bc4fbbb",
-          "bytes": 942
-        },
-        {
-          "path": "skills/replit/replit-native-packaging-bridge/SKILL.md",
-          "sha256": "b20042d3c89806838f258133d7dcd171c1035751edc7f2300b91a09abb208914",
-          "bytes": 2381
-        }
-      ]
-    },
-    {
-      "id": "replit-prompt-hardening",
-      "path": "skills/replit/replit-prompt-hardening",
-      "aggregate_sha256": "150cb3e1f00dc95cbf7f8725382483bb34bea1cb73e7d12aed056f1be1e437b2",
-      "files": [
-        {
-          "path": "skills/replit/replit-prompt-hardening/metadata.json",
-          "sha256": "67b0d14b8fc682cb435c9f78b3fd0bfd5744983f1de35ba374b398c362a0785e",
-          "bytes": 1679
-        },
-        {
-          "path": "skills/replit/replit-prompt-hardening/references/source-evidence.md",
-          "sha256": "a214b97778a73c2dee3adeb865f9722612ad83ccbcac933d0c3695fe084fb35f",
-          "bytes": 1154
-        },
-        {
-          "path": "skills/replit/replit-prompt-hardening/SKILL.md",
-          "sha256": "9548f2dd200c88329b3b4e5bbe9141255f5de6fac81b972d73c5b56cf8bbd5b2",
-          "bytes": 2222
-        }
-      ]
-    },
-    {
-      "id": "replit-repo-reconnaissance",
-      "path": "skills/replit/replit-repo-reconnaissance",
-      "aggregate_sha256": "44272eece57b223436a0ed4999125dac345699310a5e51870b42c2cb81a3779c",
-      "files": [
-        {
-          "path": "skills/replit/replit-repo-reconnaissance/metadata.json",
-          "sha256": "cbf98fa1cc592d81366050963d342f7018c0bbe9cb4cfcc0fcd7e05b3ae6f823",
-          "bytes": 1703
-        },
-        {
-          "path": "skills/replit/replit-repo-reconnaissance/references/source-evidence.md",
-          "sha256": "24a0ebdbaf8ce565005f75dfadb9ee806d02fea66518c25ab2a807c18ba2e47d",
-          "bytes": 1150
-        },
-        {
-          "path": "skills/replit/replit-repo-reconnaissance/SKILL.md",
-          "sha256": "37ce28335ddd90105a593e66f7d241ce4f619cec74c83aa735f81ab3195b2f34",
-          "bytes": 2235
-        }
-      ]
-    },
-    {
-      "id": "replit-security-review",
-      "path": "skills/replit/replit-security-review",
-      "aggregate_sha256": "68d73db09d21b99670f3248a70373da040a689d22739f950192146ba4ba466fc",
-      "files": [
-        {
-          "path": "skills/replit/replit-security-review/metadata.json",
-          "sha256": "ca17d3c765947b571f8c9ab3cb11ed73d464300ed6e31709ba2be0ef6f802b11",
-          "bytes": 1668
-        },
-        {
-          "path": "skills/replit/replit-security-review/references/source-evidence.md",
-          "sha256": "eebe8c2d9f3313d5726cf052ace1bdd8c663997f1fa5c1beb235fbe0fbae2e4e",
-          "bytes": 1152
-        },
-        {
-          "path": "skills/replit/replit-security-review/SKILL.md",
-          "sha256": "ddb75bc4e1fce0bd4fd3c243527317af9cce92dce0d4ffe5822019f77d42680e",
-          "bytes": 2193
-        }
-      ]
-    },
-    {
-      "id": "replit-source-trust-gate",
-      "path": "skills/replit/replit-source-trust-gate",
-      "aggregate_sha256": "032917fcfe00fee0be18ca1802e5c81ab8521b32f636c46661e5e9a7e0a95241",
-      "files": [
-        {
-          "path": "skills/replit/replit-source-trust-gate/metadata.json",
-          "sha256": "da941efef5173a13e95000875c2978e13735531365792c6d608f6db25a491e5e",
-          "bytes": 1609
-        },
-        {
-          "path": "skills/replit/replit-source-trust-gate/references/source-evidence.md",
-          "sha256": "7fcdcc957554f5b00ff212407306f1c1cd23bd014052532e5dc6c5afed33a9c9",
-          "bytes": 930
-        },
-        {
-          "path": "skills/replit/replit-source-trust-gate/SKILL.md",
-          "sha256": "3c64dc72dbe51f4c77cfd41ac43771a1c407ba5bc82ee7a3e98a735fe82743de",
-          "bytes": 2502
+          "path": "skills/core/core-source-trust-gate/SKILL.md",
+          "sha256": "a6be7bc372d51aa31ad22fc6753d970e83ccc539e28598c57812573c041aa2e4",
+          "bytes": 2413
         }
       ]
     },
@@ -3171,7 +1521,7 @@
     {
       "id": "techtide-analytics-data-minimization-review",
       "path": "skills/marketing/techtide-analytics-data-minimization-review",
-      "aggregate_sha256": "aa2f2b2d80ea0d8e3bd4e8d2fe9769750ec4ca067bbadd851e987f04508b7cde",
+      "aggregate_sha256": "ee98f77b53ffef01ff7fcaf2f217f672706d36f7f9d0f2debef9179099ddca76",
       "files": [
         {
           "path": "skills/marketing/techtide-analytics-data-minimization-review/metadata.json",
@@ -3185,8 +1535,8 @@
         },
         {
           "path": "skills/marketing/techtide-analytics-data-minimization-review/SKILL.md",
-          "sha256": "eca9a42db2285c75a4962b6a0fa3e6f25962ab9bc2dc80edbc26cb0820513851",
-          "bytes": 5668
+          "sha256": "357bfc549e1568ce94b3f97bd45258f9a9bf5e77ab1d7f0fd75c97ea2005d728",
+          "bytes": 5670
         }
       ]
     },
@@ -3331,7 +1681,7 @@
     {
       "id": "techtide-aws-bedrock-agent-security-governor",
       "path": "skills/aws/techtide-aws-bedrock-agent-security-governor",
-      "aggregate_sha256": "82c7e918d7720c32cf9538127a627a8dd780f59820e6cf0c5cc22676852f9cc4",
+      "aggregate_sha256": "d567a84e906b0cf2ed3ca47a9763ac445ef7f9c0896adaf9f9d84e7f3da4b031",
       "files": [
         {
           "path": "skills/aws/techtide-aws-bedrock-agent-security-governor/metadata.json",
@@ -3342,6 +1692,11 @@
           "path": "skills/aws/techtide-aws-bedrock-agent-security-governor/references/official-sources.md",
           "sha256": "b62558516a5974faf9c9d540d66afc9134e6311de7662bffa2063b5360cadab1",
           "bytes": 837
+        },
+        {
+          "path": "skills/aws/techtide-aws-bedrock-agent-security-governor/references/review-guidance.md",
+          "sha256": "2a6fc7b00c92d348905ce0d642365eb6c1547f4433a59e118e9158eb86605857",
+          "bytes": 7540
         },
         {
           "path": "skills/aws/techtide-aws-bedrock-agent-security-governor/references/safety-checklist.md",
@@ -3355,8 +1710,8 @@
         },
         {
           "path": "skills/aws/techtide-aws-bedrock-agent-security-governor/SKILL.md",
-          "sha256": "d8ea59a28ab125fa5dedf657d8ded4e599975f9665bb3738208aca71412700e5",
-          "bytes": 2736
+          "sha256": "fbb5139735998d3084d5d60929595bc9ee893e87b8f0e6af23cd12dc95dff0dc",
+          "bytes": 3033
         }
       ]
     },
@@ -3491,7 +1846,7 @@
     {
       "id": "techtide-aws-cost-optimization-governor",
       "path": "skills/aws/techtide-aws-cost-optimization-governor",
-      "aggregate_sha256": "5b3ad4464505eba77950c4e464612fd48627e36469bd0b80726712150fc19cc9",
+      "aggregate_sha256": "54471cffca404f6bb56cb031ea385d57d3e7ca53fc542205447c80821159dfa6",
       "files": [
         {
           "path": "skills/aws/techtide-aws-cost-optimization-governor/metadata.json",
@@ -3502,6 +1857,11 @@
           "path": "skills/aws/techtide-aws-cost-optimization-governor/references/official-sources.md",
           "sha256": "e127f87d017cb1ff2d7d3a797aca490d4cbad60f8facd87b7e6d989dda63f888",
           "bytes": 887
+        },
+        {
+          "path": "skills/aws/techtide-aws-cost-optimization-governor/references/review-guidance.md",
+          "sha256": "73cca4aba5202a15d68ce51a5f75aa6b3db4431badeeb45bfc490e11a8dddc8a",
+          "bytes": 5812
         },
         {
           "path": "skills/aws/techtide-aws-cost-optimization-governor/references/safety-checklist.md",
@@ -3515,8 +1875,8 @@
         },
         {
           "path": "skills/aws/techtide-aws-cost-optimization-governor/SKILL.md",
-          "sha256": "9a362e8c48ab6041f5901a8e19dbf047dc8eff26263571c56e196e384c9dc037",
-          "bytes": 2667
+          "sha256": "1e613b85030d9c18703a6fa172c175ec8145d192090f937473f3255140b39211",
+          "bytes": 2928
         }
       ]
     },
@@ -4700,7 +3060,7 @@
     {
       "id": "techtide-aws-waf-cost-optimization-review",
       "path": "skills/aws/techtide-aws-waf-cost-optimization-review",
-      "aggregate_sha256": "018b7ae017d426553cdeb85c9574dfd5652e7aebfeb78e64f8e45ef5ed37285a",
+      "aggregate_sha256": "399c75e831a8a5bedcf4ae9857e441fe5fb7e111f0fbabe8a7c111b751298258",
       "files": [
         {
           "path": "skills/aws/techtide-aws-waf-cost-optimization-review/metadata.json",
@@ -4711,6 +3071,11 @@
           "path": "skills/aws/techtide-aws-waf-cost-optimization-review/references/official-sources.md",
           "sha256": "dab8f54c2f7f7fccf49b142df5eb4b451a636a0265089577d918869042b0ec53",
           "bytes": 1252
+        },
+        {
+          "path": "skills/aws/techtide-aws-waf-cost-optimization-review/references/review-guidance.md",
+          "sha256": "7086720f24cb56431350b3066bc952af79166236900fa1b8d786f365b93903e3",
+          "bytes": 8048
         },
         {
           "path": "skills/aws/techtide-aws-waf-cost-optimization-review/references/safety-checklist.md",
@@ -4724,15 +3089,15 @@
         },
         {
           "path": "skills/aws/techtide-aws-waf-cost-optimization-review/SKILL.md",
-          "sha256": "1cbe728726ae539fe1abba5d16e275bcd8d7b19746634b30dda11dd6aeea62a1",
-          "bytes": 2109
+          "sha256": "f736496106576db5d2d8ece1d69b7efd7b45ea3165c8f59ce394806f0ad35c97",
+          "bytes": 2513
         }
       ]
     },
     {
       "id": "techtide-aws-waf-reliability-review",
       "path": "skills/aws/techtide-aws-waf-reliability-review",
-      "aggregate_sha256": "1a744f5b3866b7ab831080a79d81fbace4c292130026244028ce7f9adba1ceb5",
+      "aggregate_sha256": "ef8aec4dd1675ccf70ffebb8283b222c4be7a81c3aae7ea55e0ced3e960648ef",
       "files": [
         {
           "path": "skills/aws/techtide-aws-waf-reliability-review/metadata.json",
@@ -4743,6 +3108,11 @@
           "path": "skills/aws/techtide-aws-waf-reliability-review/references/official-sources.md",
           "sha256": "a2bce0b98b28ac29b90e53a0926271b4a1f2f7182ccd1b54bbcf164b48718790",
           "bytes": 1165
+        },
+        {
+          "path": "skills/aws/techtide-aws-waf-reliability-review/references/review-guidance.md",
+          "sha256": "d742b76bb1eab656c4cab3e87ca4e58e2148daf3cdf7fbafd94cb367e4bc68de",
+          "bytes": 8268
         },
         {
           "path": "skills/aws/techtide-aws-waf-reliability-review/references/safety-checklist.md",
@@ -4756,15 +3126,15 @@
         },
         {
           "path": "skills/aws/techtide-aws-waf-reliability-review/SKILL.md",
-          "sha256": "3ba51c8031cf0da8d6d8ea88520e061e9c16cf2891d8447814d319822a4bbeed",
-          "bytes": 2031
+          "sha256": "0ef3da15c93dfdeccdd86ebd2a8fd13f3d7a018bcfcf4caf404484d5cd865095",
+          "bytes": 2415
         }
       ]
     },
     {
       "id": "techtide-aws-waf-security-review",
       "path": "skills/aws/techtide-aws-waf-security-review",
-      "aggregate_sha256": "e2f5b32f03e45e74f35cbd70798f16fdcf1ac8d25a28b235e83608310c9e5763",
+      "aggregate_sha256": "47b7570bbf77bc7915997def719ef98ba5cb5aadb0b034e8fe6c6b061902179b",
       "files": [
         {
           "path": "skills/aws/techtide-aws-waf-security-review/metadata.json",
@@ -4775,6 +3145,11 @@
           "path": "skills/aws/techtide-aws-waf-security-review/references/official-sources.md",
           "sha256": "f974cf13904c28f579e575c6c268bfe11681fb2e68a3476415897fba2cd1e800",
           "bytes": 1255
+        },
+        {
+          "path": "skills/aws/techtide-aws-waf-security-review/references/review-guidance.md",
+          "sha256": "4b5812da1822bc8056af22adffb1aae8265e9c07ad6f4cd7115f89d083add6e7",
+          "bytes": 8130
         },
         {
           "path": "skills/aws/techtide-aws-waf-security-review/references/safety-checklist.md",
@@ -4788,15 +3163,15 @@
         },
         {
           "path": "skills/aws/techtide-aws-waf-security-review/SKILL.md",
-          "sha256": "faf3ea85dfc281c26f491da9059ac60b97b63e9a3eb237afa6debd5505a8c5ce",
-          "bytes": 1880
+          "sha256": "205acdbef5ea8681cf6c63712c187d3b5bcbfdcbf9ade64263a57f8ba68f6600",
+          "bytes": 2275
         }
       ]
     },
     {
       "id": "techtide-azure-ai-foundry-ops-governor",
       "path": "skills/azure/techtide-azure-ai-foundry-ops-governor",
-      "aggregate_sha256": "2bf9e53e2a2ffd0f90f957d1ce3b5b448c8dd9f512e5384f0bf647f596699e93",
+      "aggregate_sha256": "794909f174f318351f966db60de1eb324836b02b4d7fe3af483747e5c0eeb2f8",
       "files": [
         {
           "path": "skills/azure/techtide-azure-ai-foundry-ops-governor/metadata.json",
@@ -4820,15 +3195,15 @@
         },
         {
           "path": "skills/azure/techtide-azure-ai-foundry-ops-governor/SKILL.md",
-          "sha256": "d1e98e9fb0a21e4e4280ef7396d3dc3f9c50630fdea2991d8d9f5c67a9fefdee",
-          "bytes": 3001
+          "sha256": "cd4851b98ccbcbce5aa21b497234d78203580ce8db2b5985c6afb8e370f52383",
+          "bytes": 3005
         }
       ]
     },
     {
       "id": "techtide-azure-aks-platform-operator",
       "path": "skills/azure/techtide-azure-aks-platform-operator",
-      "aggregate_sha256": "631c6f170802d3a74c2b02ebd6731229b8eb3372de069c951f9e8b50b08216e7",
+      "aggregate_sha256": "2a8b134f8997537d03b7941dc05825ba0b536dd2cd05dad35c6f6fba63681b0d",
       "files": [
         {
           "path": "skills/azure/techtide-azure-aks-platform-operator/metadata.json",
@@ -4852,15 +3227,15 @@
         },
         {
           "path": "skills/azure/techtide-azure-aks-platform-operator/SKILL.md",
-          "sha256": "c46f1ec45b2cb36c2feca361e1a1616079bfb0e0883ec2115adbb35156bab4bd",
-          "bytes": 3196
+          "sha256": "bc5980e0200af0224cb32c3d65798047fd32941247ee3dbf75c0c7a47d280c74",
+          "bytes": 3198
         }
       ]
     },
     {
       "id": "techtide-azure-app-service-production-readiness",
       "path": "skills/azure/techtide-azure-app-service-production-readiness",
-      "aggregate_sha256": "0f4fba914cf213089992fc44901f75604e2b1fcdb31ecbeedbee3709cd3872d4",
+      "aggregate_sha256": "056fa17443f6dafe13a35dd5879624b19a444331e00bad3ab70efffc5192c7c5",
       "files": [
         {
           "path": "skills/azure/techtide-azure-app-service-production-readiness/metadata.json",
@@ -4884,15 +3259,15 @@
         },
         {
           "path": "skills/azure/techtide-azure-app-service-production-readiness/SKILL.md",
-          "sha256": "7878649f98e1d8dd40324fc7162c4e50e538feacd004f789e2765d5320bd25ed",
-          "bytes": 4142
+          "sha256": "73409f4ac119922a8e057eb5efb0ab015affed1b62a237a595483dd6288e1075",
+          "bytes": 4144
         }
       ]
     },
     {
       "id": "techtide-azure-cosmosdb-application-developer",
       "path": "skills/azure/techtide-azure-cosmosdb-application-developer",
-      "aggregate_sha256": "903b529f0f1fb209c9b7aa292739de4f841d826326f0fdc1bf1c535413a76703",
+      "aggregate_sha256": "a2ff4da425e4f4ab42563b13308cc027c39b5b3e90492c10add3c5f2546a2e4a",
       "files": [
         {
           "path": "skills/azure/techtide-azure-cosmosdb-application-developer/metadata.json",
@@ -4916,15 +3291,15 @@
         },
         {
           "path": "skills/azure/techtide-azure-cosmosdb-application-developer/SKILL.md",
-          "sha256": "59733c959b9816a5d4a19bfd38da74e4f620da8431c4245a8f96233c3350ef4a",
-          "bytes": 2712
+          "sha256": "559da1700de3c1ba89a088a82cebfd60cec5ec17f040ed5d2da4bc55ebd06d9d",
+          "bytes": 2714
         }
       ]
     },
     {
       "id": "techtide-azure-cosmosdb-performance-investigator",
       "path": "skills/azure/techtide-azure-cosmosdb-performance-investigator",
-      "aggregate_sha256": "68526d10dcd2aeac42e2926feba2289371fb490fdcf464ffc9f6440b1a300f2a",
+      "aggregate_sha256": "9164b38558923e3863d1e427bcf432751ae49ca1190c7c4eb7596ac532187562",
       "files": [
         {
           "path": "skills/azure/techtide-azure-cosmosdb-performance-investigator/metadata.json",
@@ -4953,15 +3328,15 @@
         },
         {
           "path": "skills/azure/techtide-azure-cosmosdb-performance-investigator/SKILL.md",
-          "sha256": "fe2aee7368a22d50a8b27b12d846a7e0e51e44b345beeb3795f753334adebfec",
-          "bytes": 3159
+          "sha256": "c4fafcdff00edab88ef666347399e8b662adaf7bd3eb00e569669ca6f2caf1f0",
+          "bytes": 3161
         }
       ]
     },
     {
       "id": "techtide-azure-cosmosdb-platform-operator",
       "path": "skills/azure/techtide-azure-cosmosdb-platform-operator",
-      "aggregate_sha256": "c8dd112fbdf5cecd7cd724a6530f0f2f78dce46de02f6d422c052109ef991371",
+      "aggregate_sha256": "bfd402a2556355d1e1851b809bfb2f89f3d173176178ca567102fc78033fa364",
       "files": [
         {
           "path": "skills/azure/techtide-azure-cosmosdb-platform-operator/metadata.json",
@@ -4985,15 +3360,15 @@
         },
         {
           "path": "skills/azure/techtide-azure-cosmosdb-platform-operator/SKILL.md",
-          "sha256": "7dc9d95831bee84ef2347cbe67faa07742bfafe45857c6db4439885085c5999a",
-          "bytes": 2670
+          "sha256": "383cfcff8a5b19872f4c7755aa73c08a4bd8bb3a7a48e14027db764a11153eca",
+          "bytes": 2672
         }
       ]
     },
     {
       "id": "techtide-azure-cost-estimation-review",
       "path": "skills/azure/techtide-azure-cost-estimation-review",
-      "aggregate_sha256": "02c1ee471af1d236b2cf3e3730ef2faa47d0b3f419d81ba79067c7b19d3d93f7",
+      "aggregate_sha256": "585036e09d8643580826c0182a5c077748b49fc368a3fadaa4b93e626cf3e69e",
       "files": [
         {
           "path": "skills/azure/techtide-azure-cost-estimation-review/metadata.json",
@@ -5017,15 +3392,15 @@
         },
         {
           "path": "skills/azure/techtide-azure-cost-estimation-review/SKILL.md",
-          "sha256": "0ceeab7e597a0f263515e3d5999d9911ce5c7e8e864ee4cd67bf04a76c3e1ea9",
-          "bytes": 3045
+          "sha256": "f4c18c689fbb6bf4cce87bba27d1287dcf9e69900ca02d92cd73e8a047a8d7df",
+          "bytes": 3047
         }
       ]
     },
     {
       "id": "techtide-azure-cost-optimization-governor",
       "path": "skills/azure/techtide-azure-cost-optimization-governor",
-      "aggregate_sha256": "61537bd3387048678e673a2d82d04f3d41286facfe6a703ad1c855d7951ef018",
+      "aggregate_sha256": "cfd2aed756278cdfe29ec1584ca01e410cdc8ef92d754e70b032059f67fc60fe",
       "files": [
         {
           "path": "skills/azure/techtide-azure-cost-optimization-governor/metadata.json",
@@ -5049,15 +3424,15 @@
         },
         {
           "path": "skills/azure/techtide-azure-cost-optimization-governor/SKILL.md",
-          "sha256": "93eb2fc78de41cde66a41ad53217ed48d297c8a1b143b71f3c46394095b19f8e",
-          "bytes": 3272
+          "sha256": "148458a4779959d05bf97f53d379bcead1d1ec628a3c7cadb657988913f243b8",
+          "bytes": 3274
         }
       ]
     },
     {
       "id": "techtide-azure-entra-id-specialist",
       "path": "skills/azure/techtide-azure-entra-id-specialist",
-      "aggregate_sha256": "548c3d5054967107dd07a94b4865174aca98c34c38d4f20938bba59f74f80683",
+      "aggregate_sha256": "a0cd806466b5e7d97817bf2e808bbac1f9a0e02785512166efa826ab44ac7d56",
       "files": [
         {
           "path": "skills/azure/techtide-azure-entra-id-specialist/metadata.json",
@@ -5091,15 +3466,15 @@
         },
         {
           "path": "skills/azure/techtide-azure-entra-id-specialist/SKILL.md",
-          "sha256": "5fcba8569704b365b28327d86712e73d7fb312bc936a54408fc6ed648549cd00",
-          "bytes": 4800
+          "sha256": "c75e290c0aa321e6de38612fe2be3d43561de72db1ff1e50b716e5d1039a6d23",
+          "bytes": 4802
         }
       ]
     },
     {
       "id": "techtide-azure-governance-policy-guardrails",
       "path": "skills/azure/techtide-azure-governance-policy-guardrails",
-      "aggregate_sha256": "86b53c4289b5d993fcf7c9f4d090726f4584204b23308b2f6932e23f4e1a3302",
+      "aggregate_sha256": "3f48b119fb95080bb6377278871898fac9804c0b568e8cb9ec421a8b5fbc8f86",
       "files": [
         {
           "path": "skills/azure/techtide-azure-governance-policy-guardrails/metadata.json",
@@ -5123,15 +3498,15 @@
         },
         {
           "path": "skills/azure/techtide-azure-governance-policy-guardrails/SKILL.md",
-          "sha256": "3195bbb46aff1420dc295852c8b51103029f1a000640a704a52f3250750fcb4e",
-          "bytes": 2341
+          "sha256": "408bf9b3fa07005fcd065f660751319e89d39e71cd77f525470ea4a3a76fc76f",
+          "bytes": 2343
         }
       ]
     },
     {
       "id": "techtide-azure-identity-governance-review",
       "path": "skills/azure/techtide-azure-identity-governance-review",
-      "aggregate_sha256": "2fbad222b22b50b0a9acba25975e7a76311044d4988f1c522284b0ccbbc43ba9",
+      "aggregate_sha256": "a6c6df557f3cbadc35967543bf52dd6f995bacbabfd7eda09bec0ed150154402",
       "files": [
         {
           "path": "skills/azure/techtide-azure-identity-governance-review/metadata.json",
@@ -5155,15 +3530,15 @@
         },
         {
           "path": "skills/azure/techtide-azure-identity-governance-review/SKILL.md",
-          "sha256": "b95fd2d338f8077631e264c77e124e4973d99db6c3ba632abbc925d2deb900ec",
-          "bytes": 3269
+          "sha256": "6c1debb424dfc41affc37c43f20859aa3594877f34942d047c34360c88a8e018",
+          "bytes": 3271
         }
       ]
     },
     {
       "id": "techtide-azure-key-vault-secret-lifecycle-auditor",
       "path": "skills/azure/techtide-azure-key-vault-secret-lifecycle-auditor",
-      "aggregate_sha256": "c719ed0d29a48dca32a764b3c2e3c8baea8b072106a981fe15a1068ea08403cd",
+      "aggregate_sha256": "b100734063df4e9506ee4eaace2d96a6442cad6b09ddb6b0adaf57d93f0ffdb5",
       "files": [
         {
           "path": "skills/azure/techtide-azure-key-vault-secret-lifecycle-auditor/metadata.json",
@@ -5187,8 +3562,8 @@
         },
         {
           "path": "skills/azure/techtide-azure-key-vault-secret-lifecycle-auditor/SKILL.md",
-          "sha256": "69cc009e786e55cb1893ef1baf7a786d7dd9934c439bd90e151e3d292c38417b",
-          "bytes": 3213
+          "sha256": "9661039fcb6df3b22a5a241c6dfb0aa7bdd06322638ee19c0e0cb55c8fe4b914",
+          "bytes": 3215
         }
       ]
     },
@@ -5217,7 +3592,7 @@
     {
       "id": "techtide-azure-landing-zone-architect",
       "path": "skills/azure/techtide-azure-landing-zone-architect",
-      "aggregate_sha256": "2aa7345c79819737b04de04a781ae229cee1e9b1f58d4ab153057f1ccfc49e7a",
+      "aggregate_sha256": "d5a7f4111eb7eb9e86369bc828e5b11460040c71ff5d67e2a1fbefd06c10c505",
       "files": [
         {
           "path": "skills/azure/techtide-azure-landing-zone-architect/metadata.json",
@@ -5241,8 +3616,8 @@
         },
         {
           "path": "skills/azure/techtide-azure-landing-zone-architect/SKILL.md",
-          "sha256": "f7051384c9ddd461f530567cea6457233f3a25f98f380f6a94432f14956b7495",
-          "bytes": 2875
+          "sha256": "ef5d21082a83d0f28d554457c878457eca42220d201bd5bdb1babfd0ad61f27f",
+          "bytes": 2877
         }
       ]
     },
@@ -5508,7 +3883,7 @@
     {
       "id": "techtide-azure-maestro",
       "path": "skills/azure/techtide-azure-maestro",
-      "aggregate_sha256": "d6669e0767cfc0ebc0878ab80d8ae9ab16bbe1f34a79a30566ad9c39039e0cab",
+      "aggregate_sha256": "77604bed811156e15f996dab50ddaa5cec4517c9fd43be4b1b8dfd418d03d704",
       "files": [
         {
           "path": "skills/azure/techtide-azure-maestro/metadata.json",
@@ -5517,15 +3892,15 @@
         },
         {
           "path": "skills/azure/techtide-azure-maestro/SKILL.md",
-          "sha256": "7f8abf6b0c6563072f237a194675560882ab42035f1931527303918f1230a43e",
-          "bytes": 11889
+          "sha256": "f0249cdef6ee4decd6b4f6506008ec57a2f4c20cb93fe41dddc0db7538a38034",
+          "bytes": 11891
         }
       ]
     },
     {
       "id": "techtide-azure-migrate-landing-zone-cutover",
       "path": "skills/azure/techtide-azure-migrate-landing-zone-cutover",
-      "aggregate_sha256": "599507bfe6a33c4ffa6378a387f9db0b002a67c05567e7b4b2dd142e2c37dcac",
+      "aggregate_sha256": "349fd825026e67f527442a62b2a6107a42082b35bc8e05d3f01191151207cd7b",
       "files": [
         {
           "path": "skills/azure/techtide-azure-migrate-landing-zone-cutover/metadata.json",
@@ -5549,15 +3924,15 @@
         },
         {
           "path": "skills/azure/techtide-azure-migrate-landing-zone-cutover/SKILL.md",
-          "sha256": "f08401f4c4ee09052f25c8c07d1efc445e4ffaf239be82d1fda6a2b0f9b22d55",
-          "bytes": 3012
+          "sha256": "d30a6f8cbb703adf9e2f0c6b5eb35a37040d5430c5e7793652834da0e80cf130",
+          "bytes": 3014
         }
       ]
     },
     {
       "id": "techtide-azure-network-topology-review",
       "path": "skills/azure/techtide-azure-network-topology-review",
-      "aggregate_sha256": "4de581eb089ad79dea8a096bde3c4e015c5e0cb5a0df381a338dca0f948c5548",
+      "aggregate_sha256": "ce6220547e7d0bf09da2c2df74c3d278ad27d642381c5e3f370e6112cab27e44",
       "files": [
         {
           "path": "skills/azure/techtide-azure-network-topology-review/metadata.json",
@@ -5581,15 +3956,15 @@
         },
         {
           "path": "skills/azure/techtide-azure-network-topology-review/SKILL.md",
-          "sha256": "b6a605a2c26197f5ce305353577e85f2043c10f5ed3eb908d9c0f2234acef3c6",
-          "bytes": 3254
+          "sha256": "990ba7ad6459d14d03aecd514ac72eb427d36007768754339139b09ba705f628",
+          "bytes": 3256
         }
       ]
     },
     {
       "id": "techtide-azure-observability-investigator",
       "path": "skills/azure/techtide-azure-observability-investigator",
-      "aggregate_sha256": "c1477930752356dc0e66ba78ea616781ec534e16871defe815c9141dbb97d992",
+      "aggregate_sha256": "3bfac4eec19c50e758bf39e174bb205b2301fc1f1096eb3395109262fa30630d",
       "files": [
         {
           "path": "skills/azure/techtide-azure-observability-investigator/metadata.json",
@@ -5613,15 +3988,15 @@
         },
         {
           "path": "skills/azure/techtide-azure-observability-investigator/SKILL.md",
-          "sha256": "1e6dbb967dfc7fcffeec2ae200d81d8919a5b2f35dcebeafb129ca3d2c3c93ea",
-          "bytes": 2937
+          "sha256": "ac443b0918ed09a808a243c741fea2e3525d1922e7526f14d13ec1adf4db19a4",
+          "bytes": 2939
         }
       ]
     },
     {
       "id": "techtide-azure-platform-automation-devops",
       "path": "skills/azure/techtide-azure-platform-automation-devops",
-      "aggregate_sha256": "343f1875067e6c58e77c54d7799c4210ec17991c86ed8e5e5992c5ced8e3dc65",
+      "aggregate_sha256": "bc02ef9c1fd397144c48cc8556ee9861da50c0927310099302443f99f4883b9f",
       "files": [
         {
           "path": "skills/azure/techtide-azure-platform-automation-devops/metadata.json",
@@ -5645,15 +4020,15 @@
         },
         {
           "path": "skills/azure/techtide-azure-platform-automation-devops/SKILL.md",
-          "sha256": "aa10e7e989f8d58fe6b6c20b90fc52e0e98e521f7648862945cc7b849e6c8592",
-          "bytes": 3605
+          "sha256": "7ee0181d1aae0d280152c0cd46be660990243e9cecca1c74b5bd56c90a651c62",
+          "bytes": 3607
         }
       ]
     },
     {
       "id": "techtide-azure-private-endpoint-adoption-planner",
       "path": "skills/azure/techtide-azure-private-endpoint-adoption-planner",
-      "aggregate_sha256": "cb9f81a8507367e0d876568f7bdb00edf691b81ad79abdb9e6bf526aaced5905",
+      "aggregate_sha256": "b694711324791bd1ed6f4f70a849453d41516c4097b83dd289f89626548d8cd1",
       "files": [
         {
           "path": "skills/azure/techtide-azure-private-endpoint-adoption-planner/metadata.json",
@@ -5677,15 +4052,15 @@
         },
         {
           "path": "skills/azure/techtide-azure-private-endpoint-adoption-planner/SKILL.md",
-          "sha256": "6e3c4c547914d2332b24937449596876516921c195e880a32f3d08a7b3e0eab0",
-          "bytes": 3478
+          "sha256": "e5bb7f214ba99c864d69eaebbc28924f4e997e2fccbdada2448ed0dd33f69abd",
+          "bytes": 3480
         }
       ]
     },
     {
       "id": "techtide-azure-rbac-review",
       "path": "skills/azure/techtide-azure-rbac-review",
-      "aggregate_sha256": "06faf7702845b774e941d1e15ac7817fb4dd459965bd84cb9bcf2bff83678123",
+      "aggregate_sha256": "92d162b1e45f0d38e4047d592eb7879df6bb5808ff3fc17319973b1a1e71b673",
       "files": [
         {
           "path": "skills/azure/techtide-azure-rbac-review/metadata.json",
@@ -5709,15 +4084,15 @@
         },
         {
           "path": "skills/azure/techtide-azure-rbac-review/SKILL.md",
-          "sha256": "c87119a4cfd78aa18fffcc59f32d2c21a66801248aa5529feea1b75b6da76be5",
-          "bytes": 1742
+          "sha256": "cec9aacc8925b4d3cc86eed48458279e1f04f5594216553af6d16138b69f10f0",
+          "bytes": 1744
         }
       ]
     },
     {
       "id": "techtide-azure-resilience-bcdr-review",
       "path": "skills/azure/techtide-azure-resilience-bcdr-review",
-      "aggregate_sha256": "2a21a2c350d18094084ac1f2f81aa50fa48e63edbabc2c02eaf235c6a73afbbf",
+      "aggregate_sha256": "74ee68d5d1283a40964ccb16493ddba8cbe022f52079a6d11cf39fedd8005533",
       "files": [
         {
           "path": "skills/azure/techtide-azure-resilience-bcdr-review/metadata.json",
@@ -5741,15 +4116,15 @@
         },
         {
           "path": "skills/azure/techtide-azure-resilience-bcdr-review/SKILL.md",
-          "sha256": "c6f6be79e317bcd53dc40e61169ff4795503044ededcd49dce2fb5d50a890805",
-          "bytes": 3153
+          "sha256": "39b7c5a03509813e4b81b167ea42f7d475e2ab694ed7ef3d83c112ea0887f149",
+          "bytes": 3155
         }
       ]
     },
     {
       "id": "techtide-azure-resource-health-incident-triage",
       "path": "skills/azure/techtide-azure-resource-health-incident-triage",
-      "aggregate_sha256": "7589b9dc9f395fdeb8fe4c7145b73d20baeeb363ee4d614d22884592b71cf49c",
+      "aggregate_sha256": "42a4b17a61bcfbb670622a0ce2c16f0215dac3847cd2a6bc04a29a97d7621035",
       "files": [
         {
           "path": "skills/azure/techtide-azure-resource-health-incident-triage/metadata.json",
@@ -5773,15 +4148,15 @@
         },
         {
           "path": "skills/azure/techtide-azure-resource-health-incident-triage/SKILL.md",
-          "sha256": "86f76d913cac952a62f2da3e718faba4ea438fb635c02c690692360096650332",
-          "bytes": 3387
+          "sha256": "4664b1a1442bef27bfef304b076a9d76cedbf368f983ab04fff53045c922f51e",
+          "bytes": 3389
         }
       ]
     },
     {
       "id": "techtide-azure-role-selector",
       "path": "skills/azure/techtide-azure-role-selector",
-      "aggregate_sha256": "016f2622a90c0ec56ea452559991f1a2ed427df64a1b82e7d79f1ba38033469e",
+      "aggregate_sha256": "fc05b4af63607243861c0163f820b2140476217fbaa808fc1ff1bac82d3a8b95",
       "files": [
         {
           "path": "skills/azure/techtide-azure-role-selector/metadata.json",
@@ -5805,15 +4180,15 @@
         },
         {
           "path": "skills/azure/techtide-azure-role-selector/SKILL.md",
-          "sha256": "fd85ddfa46aeefeb60534d34ad7262586c05f5a2bf3dfdebe0c594572739c095",
-          "bytes": 2321
+          "sha256": "2ee6785f72115eb19254fd2843ab7486d42b453ebe5e3b37c882f5c7a80aebd6",
+          "bytes": 2323
         }
       ]
     },
     {
       "id": "techtide-azure-security-posture-hardening",
       "path": "skills/azure/techtide-azure-security-posture-hardening",
-      "aggregate_sha256": "1fd18dc06460cb2cfc9726fe6b244056b4e9cc57da6d1486a941388cbdcea3f8",
+      "aggregate_sha256": "0e218da6848399582ff120e8dc32355a55f11b0552ad0adaf0636712a78e596b",
       "files": [
         {
           "path": "skills/azure/techtide-azure-security-posture-hardening/metadata.json",
@@ -5837,15 +4212,15 @@
         },
         {
           "path": "skills/azure/techtide-azure-security-posture-hardening/SKILL.md",
-          "sha256": "cd6031169d8b63408efecbbb1761be079fa07eeb0ed3282c1380f0ea3315b87c",
-          "bytes": 2673
+          "sha256": "7af07e798ccd921a546fe97865b414148c70c28728efc6f2b1d50603629b8ddd",
+          "bytes": 2675
         }
       ]
     },
     {
       "id": "techtide-azure-subscription-resource-organization",
       "path": "skills/azure/techtide-azure-subscription-resource-organization",
-      "aggregate_sha256": "aed422cf208ae26c4731a29890e58141ce79f8ba1d2d36872405149aa4d10b8a",
+      "aggregate_sha256": "59ecdc74126c917f1b3aab750a4e06b9a8d72153b0c4bd79e1e893ed1f03f94d",
       "files": [
         {
           "path": "skills/azure/techtide-azure-subscription-resource-organization/metadata.json",
@@ -5869,8 +4244,8 @@
         },
         {
           "path": "skills/azure/techtide-azure-subscription-resource-organization/SKILL.md",
-          "sha256": "31e022762522afb9228e1ae17c098c3b29b2d1f90057ea663ba42f6380f006ef",
-          "bytes": 3366
+          "sha256": "0a70e34b70d0e2ed31c6907f03083611460c95df15ffb29f56d7d80d0b94b94b",
+          "bytes": 3368
         }
       ]
     },
@@ -6196,7 +4571,7 @@
     {
       "id": "techtide-contabo-security-hardening",
       "path": "skills/contabo/techtide-contabo-security-hardening",
-      "aggregate_sha256": "536889ccf5caf582b96a95af3b381cc5750e76975617303fb5e1e556d82a106e",
+      "aggregate_sha256": "cfc2d8294190d7dba09020991492c7246997d296f97633498f7c61aca72b3aaf",
       "files": [
         {
           "path": "skills/contabo/techtide-contabo-security-hardening/metadata.json",
@@ -6220,8 +4595,8 @@
         },
         {
           "path": "skills/contabo/techtide-contabo-security-hardening/SKILL.md",
-          "sha256": "46275cf70dfb23cdd3dc30ef2422c060207ae4cb29d8affd456d364fa19bcaeb",
-          "bytes": 3373
+          "sha256": "8a25085fa10b6316c91768b2871a4f2b0587d5efe91c0f970a5e64cee95829f2",
+          "bytes": 3375
         }
       ]
     },
@@ -6336,7 +4711,7 @@
     {
       "id": "techtide-design-stack-research-synthesizer",
       "path": "skills/techtide/techtide-design-stack-research-synthesizer",
-      "aggregate_sha256": "1345c7f865673b8c0319189e2fb5e01b759a076c7aab85ba4cc3424d70add1b9",
+      "aggregate_sha256": "ad27efefe0aaa2e15ba227cfd4b9bf781b32b8859929dd51f88b0b59fc3a6cb4",
       "files": [
         {
           "path": "skills/techtide/techtide-design-stack-research-synthesizer/metadata.json",
@@ -6350,8 +4725,8 @@
         },
         {
           "path": "skills/techtide/techtide-design-stack-research-synthesizer/references/source-patterns.md",
-          "sha256": "04595f4499ca147e3c848fd3845b8ec2c15f6f21d2220e6a0c9c618825e75d58",
-          "bytes": 1047
+          "sha256": "9b4bf1488299e2487644d8e6e3d5506f407b9a984a97309fc0f843c8ffbd72a8",
+          "bytes": 1043
         },
         {
           "path": "skills/techtide/techtide-design-stack-research-synthesizer/SKILL.md",
@@ -9822,7 +8197,7 @@
     {
       "id": "techtide-kubernetes-rbac-review",
       "path": "skills/kubernetes/techtide-kubernetes-rbac-review",
-      "aggregate_sha256": "d8a54be2bb43910c004ff08f4e7d1211b3691b08d2b668f536208b56d2b51177",
+      "aggregate_sha256": "15732aed19012c7ac3e910a6523d6e94828eda36fda095afcc1404d288bc8834",
       "files": [
         {
           "path": "skills/kubernetes/techtide-kubernetes-rbac-review/metadata.json",
@@ -9846,8 +8221,8 @@
         },
         {
           "path": "skills/kubernetes/techtide-kubernetes-rbac-review/SKILL.md",
-          "sha256": "778d88f23037215fde0741883261c5353f8feb8221d187c262351ccec91f5a07",
-          "bytes": 2061
+          "sha256": "24f55fe68ea0e4170dbc5d3b1d0695a909903d994d84a6bfe05c40d1df479267",
+          "bytes": 2063
         }
       ]
     },
@@ -10522,7 +8897,7 @@
     {
       "id": "techtide-oci-autonomous-database-architect",
       "path": "skills/oci/techtide-oci-autonomous-database-architect",
-      "aggregate_sha256": "ee14f51fde6a1dc278fe7f8ce51bbc51fa20b98f1a9ad0f84217a43907b9954f",
+      "aggregate_sha256": "219d1824bf9b6fbb2fca086f449b379bc69fa2fd2a1860bbf7d89865c6f915dd",
       "files": [
         {
           "path": "skills/oci/techtide-oci-autonomous-database-architect/metadata.json",
@@ -10556,8 +8931,8 @@
         },
         {
           "path": "skills/oci/techtide-oci-autonomous-database-architect/SKILL.md",
-          "sha256": "48d90f5f69f77e81f37632528bb48010c2098073dfb0b1d0c8d02a66db69ff68",
-          "bytes": 8755
+          "sha256": "6e0ea623cecd80996f3a8f85534b177d5dd5ed8a5d17949a56222f2060b4c0cb",
+          "bytes": 8757
         }
       ]
     },
@@ -10586,7 +8961,7 @@
     {
       "id": "techtide-oci-cloud-guard-responder",
       "path": "skills/oci/techtide-oci-cloud-guard-responder",
-      "aggregate_sha256": "e1f82a4a0114d9bf8c2d21d2b3fbf555384cd169f4b98e60482e390ce8b42182",
+      "aggregate_sha256": "4614dac0e6ba736f2dc917dfdef885dc347476a5abf064a370efa400a6a1c35f",
       "files": [
         {
           "path": "skills/oci/techtide-oci-cloud-guard-responder/metadata.json",
@@ -10610,15 +8985,15 @@
         },
         {
           "path": "skills/oci/techtide-oci-cloud-guard-responder/SKILL.md",
-          "sha256": "0c419c335a1f372498a85e1be63a97547bcec85db01d239d244783e90a4d5963",
-          "bytes": 5724
+          "sha256": "1749df7f8491541faf0cc5c0c2d37a94542d965c0700765f0749ec57824e99f0",
+          "bytes": 5726
         }
       ]
     },
     {
       "id": "techtide-oci-compute-instance-agent-operator",
       "path": "skills/oci/techtide-oci-compute-instance-agent-operator",
-      "aggregate_sha256": "01a195f8af864bc0a4844dec1a77d0a5e02652bbcdd3f68768736bca035efbcf",
+      "aggregate_sha256": "73a008606c65e1e7ff8ebe1154a50b77e5fd011e1d2ab532131541109d371df1",
       "files": [
         {
           "path": "skills/oci/techtide-oci-compute-instance-agent-operator/metadata.json",
@@ -10642,15 +9017,15 @@
         },
         {
           "path": "skills/oci/techtide-oci-compute-instance-agent-operator/SKILL.md",
-          "sha256": "b597653c7641734f0fb230d8f650226ac8a2365cf65f086ebb9de2d87cd426b0",
-          "bytes": 5629
+          "sha256": "935f9e6d11a8ab3f9455d4fd60b038b24a8f3eee934d35d1a9fee172dc00c3db",
+          "bytes": 5631
         }
       ]
     },
     {
       "id": "techtide-oci-compute-platform-operator",
       "path": "skills/oci/techtide-oci-compute-platform-operator",
-      "aggregate_sha256": "20ed4527430d50e89fe0b850731d03b83cab35026bcf2c8386b4d3c20d6c0615",
+      "aggregate_sha256": "29e5c44134f9424c8e2538c61808e95f3853c180e0dc002bb2d99b7b0d358dde",
       "files": [
         {
           "path": "skills/oci/techtide-oci-compute-platform-operator/metadata.json",
@@ -10674,15 +9049,15 @@
         },
         {
           "path": "skills/oci/techtide-oci-compute-platform-operator/SKILL.md",
-          "sha256": "bf2ca7f73181b52d4357d984916ef85ea141358bfccbb214db006365a720e88e",
-          "bytes": 11461
+          "sha256": "8061e142724ecb046b9dd14392e290480e4dc28e205e4790a77a834bd79be5ff",
+          "bytes": 11463
         }
       ]
     },
     {
       "id": "techtide-oci-cost-finops-analyst",
       "path": "skills/oci/techtide-oci-cost-finops-analyst",
-      "aggregate_sha256": "f9d83712c971e469af01dc9e8441e7f24558ee5b2e875bb92d23b88a748a2673",
+      "aggregate_sha256": "b0badf6e2e597c02152baf45aebb88aa4a74ba40f09254f3ef91edeb09ef8817",
       "files": [
         {
           "path": "skills/oci/techtide-oci-cost-finops-analyst/metadata.json",
@@ -10706,15 +9081,15 @@
         },
         {
           "path": "skills/oci/techtide-oci-cost-finops-analyst/SKILL.md",
-          "sha256": "0206ba5ffc1ab6aab9accc52ef66f41fb62a1d26dd7c28b52ac0abbf35f736a6",
-          "bytes": 10954
+          "sha256": "725cd5b62dfcc480acf56662ff166292c735a98bcd046368eb0e01b08c4ae032",
+          "bytes": 10956
         }
       ]
     },
     {
       "id": "techtide-oci-database-platform-dba",
       "path": "skills/oci/techtide-oci-database-platform-dba",
-      "aggregate_sha256": "ba9c6df6cc5db10bb31fd820318bf2fe1e719a54424fc5eae7452fc69c04351c",
+      "aggregate_sha256": "801bbf51f379ca08f5e32b5f63c085a0350e335b0bdc13967c2d32fef1be05c1",
       "files": [
         {
           "path": "skills/oci/techtide-oci-database-platform-dba/metadata.json",
@@ -10738,15 +9113,15 @@
         },
         {
           "path": "skills/oci/techtide-oci-database-platform-dba/SKILL.md",
-          "sha256": "439d5b1e68d7edb2f1ca254405052d9454450f2728ad556170a5e1fc31281d7a",
-          "bytes": 11768
+          "sha256": "1a0102395725fb12cb8d74f3ac2903a1956fe44a36a09b3db84eb93454a85dbf",
+          "bytes": 11770
         }
       ]
     },
     {
       "id": "techtide-oci-dbtools-sql-analyst",
       "path": "skills/oci/techtide-oci-dbtools-sql-analyst",
-      "aggregate_sha256": "074597c50d53eb01fd13c2009f54d5059f0fc6aaca1e3112d056a9e33d334949",
+      "aggregate_sha256": "5fc5f75f880274ee4f96414664efa21c50b162e8d8683ce694a290d3b7c311f6",
       "files": [
         {
           "path": "skills/oci/techtide-oci-dbtools-sql-analyst/metadata.json",
@@ -10770,15 +9145,15 @@
         },
         {
           "path": "skills/oci/techtide-oci-dbtools-sql-analyst/SKILL.md",
-          "sha256": "d9f618f88c5ca37355c201636d6d324f68c0b34affffeb1b4a7efce0b10d7585",
-          "bytes": 5768
+          "sha256": "6d73447604c8179f2b80a0f10e1bf23700b468ab9d0e0ec1bf28f768e4766e9d",
+          "bytes": 5770
         }
       ]
     },
     {
       "id": "techtide-oci-devops-container-platform-engineer",
       "path": "skills/oci/techtide-oci-devops-container-platform-engineer",
-      "aggregate_sha256": "cabd07666eb212c59b2526dedb2a62ab7e9e15e428e2e11c7a11c8921f6e95ad",
+      "aggregate_sha256": "42e01501c796eda2b1f07c475eaf41a4e673cf4dc20e0ce8d06909096c610246",
       "files": [
         {
           "path": "skills/oci/techtide-oci-devops-container-platform-engineer/metadata.json",
@@ -10802,15 +9177,15 @@
         },
         {
           "path": "skills/oci/techtide-oci-devops-container-platform-engineer/SKILL.md",
-          "sha256": "b141b6c16e2d44bcb62ff85e74a629fb5d964d7d3af9d4e2be6c46317e85f53a",
-          "bytes": 11707
+          "sha256": "a832622a43614dc3ac62ca0433d1a19fac09944d9d4abf141f0bf3f7b3a37599",
+          "bytes": 11709
         }
       ]
     },
     {
       "id": "techtide-oci-exadata-database-architect",
       "path": "skills/oci/techtide-oci-exadata-database-architect",
-      "aggregate_sha256": "ac8e73b232071879e60b7127a7e2a37929cda552e9e608bfd3f892e1dfe13248",
+      "aggregate_sha256": "5f4c7d56f7e846f11b2d06a3500275e7a0f5e27cefb557baff0d659dc6cf8d23",
       "files": [
         {
           "path": "skills/oci/techtide-oci-exadata-database-architect/metadata.json",
@@ -10819,15 +9194,15 @@
         },
         {
           "path": "skills/oci/techtide-oci-exadata-database-architect/SKILL.md",
-          "sha256": "ce744c90ac145b43cdeb26f780da3ba533cdb16325cdeedbe623416862382965",
-          "bytes": 11917
+          "sha256": "0bf4d07f6744c7e8eeae870480f109eb0fc4d7608cf7373941b36ce9996b2862",
+          "bytes": 11919
         }
       ]
     },
     {
       "id": "techtide-oci-exadata-platform-architect",
       "path": "skills/oci/techtide-oci-exadata-platform-architect",
-      "aggregate_sha256": "2cac7127c74b831c93817cac5ffdf48a04b1aa91ec0c7c4f815a4948198022ef",
+      "aggregate_sha256": "ae29d678e89a23418b5600da89459e57334bd32cb107fd2a174ee90c83749761",
       "files": [
         {
           "path": "skills/oci/techtide-oci-exadata-platform-architect/metadata.json",
@@ -10861,15 +9236,15 @@
         },
         {
           "path": "skills/oci/techtide-oci-exadata-platform-architect/SKILL.md",
-          "sha256": "2afbbde6f495e0bc567b3ffa4be841c4617895f9bc975be078df3aec7bc6679b",
-          "bytes": 8997
+          "sha256": "ff77da3e894935bcf05bd9829f9f31eaa0d01bfbff93ab508c8b733c5d9fad52",
+          "bytes": 8999
         }
       ]
     },
     {
       "id": "techtide-oci-fusion-apps-environment-operator",
       "path": "skills/oci/techtide-oci-fusion-apps-environment-operator",
-      "aggregate_sha256": "57bd9148c5863fcdc81eae2a73953a6ba4f28039ff92156a31ad028d3821d926",
+      "aggregate_sha256": "1a7ff3e60833b1963fb102cf8c68187cf2e53f25a50974c564dbfd6285643ff5",
       "files": [
         {
           "path": "skills/oci/techtide-oci-fusion-apps-environment-operator/metadata.json",
@@ -10893,15 +9268,15 @@
         },
         {
           "path": "skills/oci/techtide-oci-fusion-apps-environment-operator/SKILL.md",
-          "sha256": "1c77da060fb247793ee820a2f02fab058441155d52ec4737911cacdd7221e0be",
-          "bytes": 5638
+          "sha256": "bc537a8976633c2d8083b53f63a58e763260a425e82e4e87890462d79409273d",
+          "bytes": 5640
         }
       ]
     },
     {
       "id": "techtide-oci-goldengate-replication-operator",
       "path": "skills/oci/techtide-oci-goldengate-replication-operator",
-      "aggregate_sha256": "8b6141ddd2312261b22990236cb9954a5de6fc3e726c59ea1c84d0235314d806",
+      "aggregate_sha256": "28f9c31de9a7d9bd0d24f1714a814c281f8c21ef9d942ce049e5cc6257cf6b05",
       "files": [
         {
           "path": "skills/oci/techtide-oci-goldengate-replication-operator/metadata.json",
@@ -10925,15 +9300,15 @@
         },
         {
           "path": "skills/oci/techtide-oci-goldengate-replication-operator/SKILL.md",
-          "sha256": "92edf5542ccfee7bf38c661cfcd6c76b9e7722b2bb1b8a3e5e5d613bf77c06d1",
-          "bytes": 5732
+          "sha256": "0f9d5f0bd9275dd062bf040fd286bf62084af181deedafbfd34520ce7e11c8f2",
+          "bytes": 5734
         }
       ]
     },
     {
       "id": "techtide-oci-identity-access-governor",
       "path": "skills/oci/techtide-oci-identity-access-governor",
-      "aggregate_sha256": "70becc721c14225b80028f0cabb14fbb05aaba521fbd6fd790eb7edfb1ce4829",
+      "aggregate_sha256": "fa8d5ed16f6706d3d57837294944833b776c9fbf664ea7134aca294039549120",
       "files": [
         {
           "path": "skills/oci/techtide-oci-identity-access-governor/metadata.json",
@@ -10957,15 +9332,15 @@
         },
         {
           "path": "skills/oci/techtide-oci-identity-access-governor/SKILL.md",
-          "sha256": "f1aad48148ae90c8ff786bd7fbf24a95f00fa3341932f11eeaa7d8bbefa14590",
-          "bytes": 11219
+          "sha256": "e55d0fa8288b625b5f49d07d5004cf1d9fbf35a115579decd5a251e9549013bb",
+          "bytes": 11221
         }
       ]
     },
     {
       "id": "techtide-oci-iot-digital-twin-engineer",
       "path": "skills/oci/techtide-oci-iot-digital-twin-engineer",
-      "aggregate_sha256": "339d3e152b369094bd294bc05bf9d4bf1f5038196c0bfbc015a86c6c1bd434e0",
+      "aggregate_sha256": "cdff73153373374ce7f6c6c08a591bd714659c9b48f04e89489bcf5537d4e580",
       "files": [
         {
           "path": "skills/oci/techtide-oci-iot-digital-twin-engineer/metadata.json",
@@ -10989,15 +9364,15 @@
         },
         {
           "path": "skills/oci/techtide-oci-iot-digital-twin-engineer/SKILL.md",
-          "sha256": "b18d130668597d4dfc9042f1b7a4c2b63809820d8f76dc104f7138e57e46de79",
-          "bytes": 5651
+          "sha256": "23e50b44e460123fde884224bd5f105372446adc39db802d2c107855c7e8219f",
+          "bytes": 5653
         }
       ]
     },
     {
       "id": "techtide-oci-limits-capacity-planner",
       "path": "skills/oci/techtide-oci-limits-capacity-planner",
-      "aggregate_sha256": "03ed00809f6e84c16a9568cf08a1f3af020181ac9161c8a1e126140a99c9b197",
+      "aggregate_sha256": "70d28d565a1c93f1a09d887451436ebede06c13fd9fcc843503c8972b8422e01",
       "files": [
         {
           "path": "skills/oci/techtide-oci-limits-capacity-planner/metadata.json",
@@ -11021,8 +9396,8 @@
         },
         {
           "path": "skills/oci/techtide-oci-limits-capacity-planner/SKILL.md",
-          "sha256": "79df4a7642b75093792bc69cfb2aa086bdfa6aa9d52f08e4b5d85170e53b821c",
-          "bytes": 5692
+          "sha256": "d4b238fbbef6432f83a928325598f1eb7c05f89cf74fc9453b8fe190fc3c5c39",
+          "bytes": 5694
         }
       ]
     },
@@ -11288,7 +9663,7 @@
     {
       "id": "techtide-oci-load-balancer-traffic-engineer",
       "path": "skills/oci/techtide-oci-load-balancer-traffic-engineer",
-      "aggregate_sha256": "b9b7b93b512a64b3a90475f7dbb8c9a87302f4b9dc9a8c45c13ab5a89b06f37d",
+      "aggregate_sha256": "53522f1f8e1496ada53d9e6a7277b8289374221b6acb6c6b1d138a4a0c1488fd",
       "files": [
         {
           "path": "skills/oci/techtide-oci-load-balancer-traffic-engineer/metadata.json",
@@ -11312,15 +9687,15 @@
         },
         {
           "path": "skills/oci/techtide-oci-load-balancer-traffic-engineer/SKILL.md",
-          "sha256": "6422e179027ca64b9c7a9c4146cb368c935af45b768a6cb94d6f0354977f1995",
-          "bytes": 5826
+          "sha256": "bef82313281dc436a88056d486a6fdd39ff57caf7761f01ce1fe3996eaddfadc",
+          "bytes": 5828
         }
       ]
     },
     {
       "id": "techtide-oci-maestro",
       "path": "skills/oci/techtide-oci-maestro",
-      "aggregate_sha256": "984c0a8061d9d09b0238b1f68f6fa2ddf4456d6832e04d0b357631d89df3d8f3",
+      "aggregate_sha256": "3ceb2d474a5818fae363569cacd99a9b665884adc59a9cf0594cbae7cd945dfe",
       "files": [
         {
           "path": "skills/oci/techtide-oci-maestro/metadata.json",
@@ -11329,15 +9704,15 @@
         },
         {
           "path": "skills/oci/techtide-oci-maestro/SKILL.md",
-          "sha256": "61c31c118cd759d35011e932b05ea814eccbfcfdbde7ede07cacaea03a2d686e",
-          "bytes": 13512
+          "sha256": "3483b60f615acead43a43a05964de90a6f333f293bb9edef7851daf7f8d35a4a",
+          "bytes": 13514
         }
       ]
     },
     {
       "id": "techtide-oci-migration-cutover-architect",
       "path": "skills/oci/techtide-oci-migration-cutover-architect",
-      "aggregate_sha256": "9b9dda509312b9c0fbf93e92eef56cf2e0bfc88f501e19588e9999f5055a1c57",
+      "aggregate_sha256": "5e69863b02d7f51a6b7d3b100e0298e671f4d8efa4754723a53b657456f1092a",
       "files": [
         {
           "path": "skills/oci/techtide-oci-migration-cutover-architect/metadata.json",
@@ -11361,15 +9736,15 @@
         },
         {
           "path": "skills/oci/techtide-oci-migration-cutover-architect/SKILL.md",
-          "sha256": "54e388bb8e19ceed75c04cab52f6759aeb6730e236402a87778b9bb3d4beaa53",
-          "bytes": 5627
+          "sha256": "9b109e3fef59c591f6c490753461c12adcea18719bb6dc1bfb0cfb76d6b7f12f",
+          "bytes": 5629
         }
       ]
     },
     {
       "id": "techtide-oci-multi-cloud-architect",
       "path": "skills/oci/techtide-oci-multi-cloud-architect",
-      "aggregate_sha256": "5cd8e9e88fa7ef63ae62ec5c9a4a0af01ee26557343b321c625290616e0f54a4",
+      "aggregate_sha256": "7c6f9a867c3143ad3701c07bb4875e60e90d0d01d5e371ad6a502549e066d7cf",
       "files": [
         {
           "path": "skills/oci/techtide-oci-multi-cloud-architect/metadata.json",
@@ -11393,15 +9768,15 @@
         },
         {
           "path": "skills/oci/techtide-oci-multi-cloud-architect/SKILL.md",
-          "sha256": "5adc8f973bceba0bd3a7fcdce8819112152fbc32a186f6644f25cba830cdf852",
-          "bytes": 12070
+          "sha256": "15764123927807d7f08b626fdc055a41cb9deddf57bf7ca3c2aa4a1cdec3b2c6",
+          "bytes": 12072
         }
       ]
     },
     {
       "id": "techtide-oci-mysql-heatwave-ai-specialist",
       "path": "skills/oci/techtide-oci-mysql-heatwave-ai-specialist",
-      "aggregate_sha256": "cb3e20d6108ae501bdbce57f8a3ee4eea5c90790f4330955beab0cf7a41f961f",
+      "aggregate_sha256": "19c96c5172e419ea9cf8120585a22ecc3c69c845dac7358576761587d20934f6",
       "files": [
         {
           "path": "skills/oci/techtide-oci-mysql-heatwave-ai-specialist/metadata.json",
@@ -11425,15 +9800,15 @@
         },
         {
           "path": "skills/oci/techtide-oci-mysql-heatwave-ai-specialist/SKILL.md",
-          "sha256": "7f6c1e2dde2f967cf1240a809623e7d7e61ddcd51d4afac95d46c7b5e0db7ca7",
-          "bytes": 5668
+          "sha256": "fb0dab8705764abc5fad38fcb731beec922209277b8abe71091454b72e24f0d7",
+          "bytes": 5670
         }
       ]
     },
     {
       "id": "techtide-oci-network-architect",
       "path": "skills/oci/techtide-oci-network-architect",
-      "aggregate_sha256": "0a91023a1b6d4c6cb21a8b2f9e6b59ed361ca1326b62564aee9fe3155dc43322",
+      "aggregate_sha256": "9901aadb3fa563c5bacfa37c93a0bc44c03f5d924368d91483e4ce8ba72569b4",
       "files": [
         {
           "path": "skills/oci/techtide-oci-network-architect/metadata.json",
@@ -11457,15 +9832,15 @@
         },
         {
           "path": "skills/oci/techtide-oci-network-architect/SKILL.md",
-          "sha256": "63602c1d65dadfc95a6e3eed45213b3e097d66cdd94202cc5006d9996a305ede",
-          "bytes": 10779
+          "sha256": "a36a730998cb0b7f3cd6f4e040665104198e0d32bc5796dfa615a06e3af8c20e",
+          "bytes": 10781
         }
       ]
     },
     {
       "id": "techtide-oci-observability-incident-responder",
       "path": "skills/oci/techtide-oci-observability-incident-responder",
-      "aggregate_sha256": "3aba15dbb63af89d5b38151b8cbf4dce08683d4c280482de8b304fa21bd87d4a",
+      "aggregate_sha256": "20984777668d6eb0ac90d9d554f3ead00b469b94a7250fa5620c1aec61b7c7a6",
       "files": [
         {
           "path": "skills/oci/techtide-oci-observability-incident-responder/metadata.json",
@@ -11489,15 +9864,15 @@
         },
         {
           "path": "skills/oci/techtide-oci-observability-incident-responder/SKILL.md",
-          "sha256": "da27b02c58e235e1a80b56c43c2ab381eda5574b165affde12aac03654867abf",
-          "bytes": 11169
+          "sha256": "1b986c951503e08dd674708e19dd7150d6c8efc6016cf7d26f2e43c22fce6643",
+          "bytes": 11171
         }
       ]
     },
     {
       "id": "techtide-oci-recovery-service-operator",
       "path": "skills/oci/techtide-oci-recovery-service-operator",
-      "aggregate_sha256": "70ed88caa466d73743cd7622518f551b159111ff6f5f4d9a7469f9d47dcac586",
+      "aggregate_sha256": "22b72113e61b1a9537ac397e615b1c8aaa5e47f45c0e5bfc799dc025fda5c196",
       "files": [
         {
           "path": "skills/oci/techtide-oci-recovery-service-operator/metadata.json",
@@ -11521,15 +9896,15 @@
         },
         {
           "path": "skills/oci/techtide-oci-recovery-service-operator/SKILL.md",
-          "sha256": "8f95996b96f8f793e5ae5def61b028cda942f92244f16cd26c009664bcc4b206",
-          "bytes": 5796
+          "sha256": "c5980ecb98d14fa4d35da3b5fb908ae65ff2819cd966c4dd10bf5d1fb8c63d89",
+          "bytes": 5798
         }
       ]
     },
     {
       "id": "techtide-oci-registry-artifact-governor",
       "path": "skills/oci/techtide-oci-registry-artifact-governor",
-      "aggregate_sha256": "625e69b6148347d0fc1ab1c8ae5f9c2c97fa41ddefae5a9d299e8d67d2d43298",
+      "aggregate_sha256": "421aaf675ec5432e2ea33fecffa48ed27a6f668d36588423e30f039816556263",
       "files": [
         {
           "path": "skills/oci/techtide-oci-registry-artifact-governor/metadata.json",
@@ -11553,15 +9928,15 @@
         },
         {
           "path": "skills/oci/techtide-oci-registry-artifact-governor/SKILL.md",
-          "sha256": "6caed24d72e54246cf9bc413d58eaf46593e5cde7a17395c85dcd21c42aefb47",
-          "bytes": 5556
+          "sha256": "52cc09ec7e9ac3ff38da89d1e45529f5e509ed825d40f87bcf052c2096e70acc",
+          "bytes": 5558
         }
       ]
     },
     {
       "id": "techtide-oci-resource-search-inventory-analyst",
       "path": "skills/oci/techtide-oci-resource-search-inventory-analyst",
-      "aggregate_sha256": "45a6d9cb272298bb9e79459aa485b0585a09cf88880cac9392b32c04f71759cb",
+      "aggregate_sha256": "adb7853daf61d7b5a697506eba8948e273e8807d727dc9bc097edcfe3459a9e1",
       "files": [
         {
           "path": "skills/oci/techtide-oci-resource-search-inventory-analyst/metadata.json",
@@ -11585,15 +9960,15 @@
         },
         {
           "path": "skills/oci/techtide-oci-resource-search-inventory-analyst/SKILL.md",
-          "sha256": "bfce2c0d78101aab6fc3601c1f43bacf8666ba59bae8acf541170ef07518abed",
-          "bytes": 5704
+          "sha256": "6f8c6d79f23d96058fbb56973ea13c796d1e2f763a3003787990e6bf17a1f72c",
+          "bytes": 5706
         }
       ]
     },
     {
       "id": "techtide-oci-security-compliance-reviewer",
       "path": "skills/oci/techtide-oci-security-compliance-reviewer",
-      "aggregate_sha256": "6474030cf51dbcd918bcb7a34ab76d289238b9c7450b1022a78f62f0c42cbe58",
+      "aggregate_sha256": "b9a51630d3b90052af084f475e2dd01d69908d4ed7610a9638eead143c012d9e",
       "files": [
         {
           "path": "skills/oci/techtide-oci-security-compliance-reviewer/metadata.json",
@@ -11617,15 +9992,15 @@
         },
         {
           "path": "skills/oci/techtide-oci-security-compliance-reviewer/SKILL.md",
-          "sha256": "cc2cfaa4fd52e57a434768b10f8930cc4c0c693e009c3b60368f8ccfba89c746",
-          "bytes": 11780
+          "sha256": "49d8beab76f6db82b870d97589d98fb1963043ed536dc28ceb74f476e197fed5",
+          "bytes": 11782
         }
       ]
     },
     {
       "id": "techtide-oci-solution-architect",
       "path": "skills/oci/techtide-oci-solution-architect",
-      "aggregate_sha256": "dcd5ab1c62b32170e37bec3db9033786a623a9163fc724824fb436059ac74870",
+      "aggregate_sha256": "2e8babfabbfd88fd0e681e4e796b50f49698bde76fcbcf0b0b0e1d9ecff9fcaa",
       "files": [
         {
           "path": "skills/oci/techtide-oci-solution-architect/metadata.json",
@@ -11649,15 +10024,15 @@
         },
         {
           "path": "skills/oci/techtide-oci-solution-architect/SKILL.md",
-          "sha256": "42495c4b855f3fe90ceff3ac55fc3da5eaec2b288e6ee69761a306182b34075f",
-          "bytes": 10645
+          "sha256": "c3d4dce320157bc00abe6a58bce5f42760f4916441d54a7a3494b8edbbb7b8e9",
+          "bytes": 10647
         }
       ]
     },
     {
       "id": "techtide-oci-storage-backup-steward",
       "path": "skills/oci/techtide-oci-storage-backup-steward",
-      "aggregate_sha256": "f5a91d871d8d9e6b3c60cb44046f8220ec55eacb67d6dc282169c7f8e44dc4a4",
+      "aggregate_sha256": "2cedae81878b3cbd9793aed9a497e7cc3e518ad684d02b60498891de25663af6",
       "files": [
         {
           "path": "skills/oci/techtide-oci-storage-backup-steward/metadata.json",
@@ -11681,15 +10056,15 @@
         },
         {
           "path": "skills/oci/techtide-oci-storage-backup-steward/SKILL.md",
-          "sha256": "f5427a252022a950735ced6aa6d0087d207d21b48bb9fd7e5866cdc24dd1fc94",
-          "bytes": 11433
+          "sha256": "9acbd790cdbe5d1e48b51365add52e46c4b34375e09c848c957d940957a66efc",
+          "bytes": 11435
         }
       ]
     },
     {
       "id": "techtide-oci-support-incident-coordinator",
       "path": "skills/oci/techtide-oci-support-incident-coordinator",
-      "aggregate_sha256": "abc3ef01608643f413fe6f7284516ffa1ed273205938c7daf6f997be3b1127a5",
+      "aggregate_sha256": "fea5031d3e403a64e88664a3a6cbe6895f189a0f6497859aee10a091b429baa3",
       "files": [
         {
           "path": "skills/oci/techtide-oci-support-incident-coordinator/metadata.json",
@@ -11713,8 +10088,8 @@
         },
         {
           "path": "skills/oci/techtide-oci-support-incident-coordinator/SKILL.md",
-          "sha256": "c41f8c34511ea0c4539a54cef5d512a5a554be7e1bb1520090d4ed39a42e8b50",
-          "bytes": 5605
+          "sha256": "6fa4665381eb37f0bfddfd0b05bc4c90a1ea04f6ec06e378e6fb8a521941b47b",
+          "bytes": 5607
         }
       ]
     },
@@ -11804,7 +10179,7 @@
     {
       "id": "techtide-oracle-oci-mcp-grounded-advisor",
       "path": "skills/oci/techtide-oracle-oci-mcp-grounded-advisor",
-      "aggregate_sha256": "8be5c9b60ad316dc16b35484fc31493f1193aaf2af64b67f6209760dde062f7d",
+      "aggregate_sha256": "36ac21c9c16c9cac23c0895b44f29f9556cd7fb962362336fd708fbce719f35f",
       "files": [
         {
           "path": "skills/oci/techtide-oracle-oci-mcp-grounded-advisor/metadata.json",
@@ -11813,15 +10188,15 @@
         },
         {
           "path": "skills/oci/techtide-oracle-oci-mcp-grounded-advisor/SKILL.md",
-          "sha256": "c9749f9cce74a1f287c6ade20a0b1ea2fc6d2381f80d73a87698d9505cea5298",
-          "bytes": 1454
+          "sha256": "ba721cf6f54dfa4ae02cc57261d122532bd5d01fa32ebd0810e58b483eb52551",
+          "bytes": 1456
         }
       ]
     },
     {
       "id": "techtide-ovhcloud-cost-finops-analyst",
       "path": "skills/ovhcloud/techtide-ovhcloud-cost-finops-analyst",
-      "aggregate_sha256": "5520528e8137029fcfec93a52c61850eb7bdb388eff4ec0e28701490e7b6565c",
+      "aggregate_sha256": "aff03abc02609279f95ce40418847f6fc1a9b23c1b09b5071d1c742947cbb08e",
       "files": [
         {
           "path": "skills/ovhcloud/techtide-ovhcloud-cost-finops-analyst/metadata.json",
@@ -11845,8 +10220,8 @@
         },
         {
           "path": "skills/ovhcloud/techtide-ovhcloud-cost-finops-analyst/SKILL.md",
-          "sha256": "9bd571e7b248ad2410ffb5de065db8b6285cd950cf9dfd013eaf3fdb0933ddb1",
-          "bytes": 2626
+          "sha256": "1602027cb44c9a4062da389aad92f7b1ae82cd30fb9e74fd313d1fdc4bed2729",
+          "bytes": 2628
         }
       ]
     },
@@ -11917,7 +10292,7 @@
     {
       "id": "techtide-ovhcloud-live-kms-key-destruction-guard",
       "path": "skills/ovhcloud/techtide-ovhcloud-live-kms-key-destruction-guard",
-      "aggregate_sha256": "08fcb334b339b2ca74b6e3854fe7f8fd89ea50e3cb95e3dd99f5008447b7b3a4",
+      "aggregate_sha256": "1ec32d97ef1936f1e04c7c0d4aef7a5e1c933c3edd38b096172569c93eb9ff03",
       "files": [
         {
           "path": "skills/ovhcloud/techtide-ovhcloud-live-kms-key-destruction-guard/metadata.json",
@@ -11941,8 +10316,8 @@
         },
         {
           "path": "skills/ovhcloud/techtide-ovhcloud-live-kms-key-destruction-guard/SKILL.md",
-          "sha256": "a6e948bdca138f63867977c68fa3a486c3be1288706e9ebcb1d2261dc5a947ae",
-          "bytes": 3020
+          "sha256": "de2c5b70e4878aa63f16a3fb537bec12dcbd5829ae534c0aa2cbc91be723c6e0",
+          "bytes": 3022
         }
       ]
     },
@@ -12234,7 +10609,7 @@
     {
       "id": "techtide-scaleway-kapsule-platform-operator",
       "path": "skills/scaleway/techtide-scaleway-kapsule-platform-operator",
-      "aggregate_sha256": "ab43529c4182de196adb81556b14eadc0fe7a0c1fbf5ad92cc5efb59c02ebbae",
+      "aggregate_sha256": "03f7f23e48732b3dae9adb3f19938f8b691b201b63772e2de01677c066d15482",
       "files": [
         {
           "path": "skills/scaleway/techtide-scaleway-kapsule-platform-operator/metadata.json",
@@ -12258,8 +10633,8 @@
         },
         {
           "path": "skills/scaleway/techtide-scaleway-kapsule-platform-operator/SKILL.md",
-          "sha256": "2dafd0623c59b1b6d6899f051feda41e16f1bd290ae73cd5353300f187347ad6",
-          "bytes": 3534
+          "sha256": "44e3de72e813bdcc7df3111146e3a11795442db194f5d583e184ebe82d78af63",
+          "bytes": 3536
         }
       ]
     },
@@ -12330,7 +10705,7 @@
     {
       "id": "techtide-scaleway-network-architect",
       "path": "skills/scaleway/techtide-scaleway-network-architect",
-      "aggregate_sha256": "2e80a01ef60e3cc781af420ef59b8b3de1f02c0d6efe002d1fbebccd4f385e2c",
+      "aggregate_sha256": "da8a559920657e4b35c774bba4419114e3046252cfdd40e5287da222a7d8e9f0",
       "files": [
         {
           "path": "skills/scaleway/techtide-scaleway-network-architect/metadata.json",
@@ -12354,8 +10729,8 @@
         },
         {
           "path": "skills/scaleway/techtide-scaleway-network-architect/SKILL.md",
-          "sha256": "76aad5e8619e02037e8b365eeb866c1c5fe4303501f5b23f6cd7c5d5ba6e7450",
-          "bytes": 3832
+          "sha256": "76fac1dd405bef0a8c45f7e7ad9bb63bd65fe8e9c67dd525d46422658aded780",
+          "bytes": 3834
         }
       ]
     },
@@ -12470,7 +10845,7 @@
     {
       "id": "techtide-v0-ui-prompt-hardener",
       "path": "skills/techtide/techtide-v0-ui-prompt-hardener",
-      "aggregate_sha256": "0fc5609b630e559f0cff6a90f3678d39f90c7439740298d09ba619c0c2d2d00b",
+      "aggregate_sha256": "e833a1b7733669c218121f4437264bc054e8f0b154c452834609f6299135b1ef",
       "files": [
         {
           "path": "skills/techtide/techtide-v0-ui-prompt-hardener/metadata.json",
@@ -12484,8 +10859,8 @@
         },
         {
           "path": "skills/techtide/techtide-v0-ui-prompt-hardener/references/source-patterns.md",
-          "sha256": "196ac7664aa7e473e6f56e4a29e823d0f514d9f3137d5074ce3906a5fa8bd689",
-          "bytes": 1025
+          "sha256": "29caa158029f68f7ae28cd763474dd61d64d512fadfec1f588a643516cae6f2a",
+          "bytes": 1021
         },
         {
           "path": "skills/techtide/techtide-v0-ui-prompt-hardener/SKILL.md",
@@ -12545,600 +10920,6 @@
           "path": "skills/techtide/techtide-windows-local-automation-guard/SKILL.md",
           "sha256": "c3de4932a79aef2acc70e13a62b9033e07fd17d25432a2e6cdf7e2e14e97844c",
           "bytes": 2964
-        }
-      ]
-    },
-    {
-      "id": "v0-context-management",
-      "path": "skills/v0/v0-context-management",
-      "aggregate_sha256": "8afdf0230b91eeda55f6bb9f059438746dbb1a9f861fa3829f6928875ad6bf98",
-      "files": [
-        {
-          "path": "skills/v0/v0-context-management/metadata.json",
-          "sha256": "cfb2730e6502eac78d37537c113088116b6ecdbf1e6f8f595daad573118ec50e",
-          "bytes": 1716
-        },
-        {
-          "path": "skills/v0/v0-context-management/references/source-evidence.md",
-          "sha256": "8c0a3807d6d88ac6806f978af615a214ab53606d60032e95720f2eb9df208aca",
-          "bytes": 1268
-        },
-        {
-          "path": "skills/v0/v0-context-management/SKILL.md",
-          "sha256": "ed34a2c469ed2079e8c3a9120820312cd1f8c1b3549d4194556b500002f3c881",
-          "bytes": 2140
-        }
-      ]
-    },
-    {
-      "id": "v0-cost-aware-routing",
-      "path": "skills/v0/v0-cost-aware-routing",
-      "aggregate_sha256": "5c44c9228338a869217a2b32499b61aac865e29a78b7f577162b3c2ce84bd130",
-      "files": [
-        {
-          "path": "skills/v0/v0-cost-aware-routing/metadata.json",
-          "sha256": "618e27493cb6539f96bee26b535f8a7eaf7ffd6ce39bc13d25663e67b1411555",
-          "bytes": 1706
-        },
-        {
-          "path": "skills/v0/v0-cost-aware-routing/references/source-evidence.md",
-          "sha256": "508537b3a50ba338b820457c00fc51d3f4e0794ec116a5b10f9fdb14e7f0d266",
-          "bytes": 1268
-        },
-        {
-          "path": "skills/v0/v0-cost-aware-routing/SKILL.md",
-          "sha256": "4b3cedaf2123d1fc5b1d322d8284570d737e12ec704f91d37ce30ca937589114",
-          "bytes": 2181
-        }
-      ]
-    },
-    {
-      "id": "v0-debugging-strategy",
-      "path": "skills/v0/v0-debugging-strategy",
-      "aggregate_sha256": "296012d27da6130febfa302f86238c87c6eb1c57954a7d31dd97f9aa4d42fe0f",
-      "files": [
-        {
-          "path": "skills/v0/v0-debugging-strategy/metadata.json",
-          "sha256": "18dfcc38b64f54ee655f63fdf2e6279cc91004996d3a41d8fc93c42f044d70e7",
-          "bytes": 1752
-        },
-        {
-          "path": "skills/v0/v0-debugging-strategy/references/source-evidence.md",
-          "sha256": "d9df4b4c26072827a4c0ff8adabb2ee05f87e953e139b7faa8bff50b757a589d",
-          "bytes": 1290
-        },
-        {
-          "path": "skills/v0/v0-debugging-strategy/SKILL.md",
-          "sha256": "bdf601480acb0068fed5c341e3bc4334c7ac8119261a9857e1b15f0f5d2ead94",
-          "bytes": 2238
-        }
-      ]
-    },
-    {
-      "id": "v0-deployment-readiness",
-      "path": "skills/v0/v0-deployment-readiness",
-      "aggregate_sha256": "fa13e5ce2ff7e596b99a882b16efa310ee55d55c3cf0ebaf1cbdb94ece7452af",
-      "files": [
-        {
-          "path": "skills/v0/v0-deployment-readiness/metadata.json",
-          "sha256": "3e5b32453ab38ab68cc959fa9490f7128cfba3ecfa443eb5e9b6f495436ac416",
-          "bytes": 1726
-        },
-        {
-          "path": "skills/v0/v0-deployment-readiness/references/source-evidence.md",
-          "sha256": "59cd547323496afce2a35f1dfd64cd52638db25f39213e6f55d3dd14c6801430",
-          "bytes": 1284
-        },
-        {
-          "path": "skills/v0/v0-deployment-readiness/SKILL.md",
-          "sha256": "9fd3107dec85c32a1195be947741f41aa889df5bbd443661afb0cbde4e748341",
-          "bytes": 2226
-        }
-      ]
-    },
-    {
-      "id": "v0-handoff-readiness-review",
-      "path": "skills/v0/v0-handoff-readiness-review",
-      "aggregate_sha256": "6e2bfc4518f34eda25b70ff44da2287c944912f0735002c55d47c67ce3726b5b",
-      "files": [
-        {
-          "path": "skills/v0/v0-handoff-readiness-review/metadata.json",
-          "sha256": "efa50b90e0b1f31733d24ff1a0de9ef36e7132bb64c063766cbf7784d56c9451",
-          "bytes": 1647
-        },
-        {
-          "path": "skills/v0/v0-handoff-readiness-review/references/source-evidence.md",
-          "sha256": "6b2fa4d8c75bfc8a5c4fc4d0af2726fc4503668e3004d9649238bbb9d9301bd0",
-          "bytes": 1076
-        },
-        {
-          "path": "skills/v0/v0-handoff-readiness-review/SKILL.md",
-          "sha256": "2d5118807e815bab87f1e2aa36a0b91915c1597384ac8d106e16165b3eb2d078",
-          "bytes": 2409
-        }
-      ]
-    },
-    {
-      "id": "v0-mcp-tool-safety",
-      "path": "skills/v0/v0-mcp-tool-safety",
-      "aggregate_sha256": "7dcd5b6d092c474755e185ebf5c77167ac206f137144b434889cc70c5c169634",
-      "files": [
-        {
-          "path": "skills/v0/v0-mcp-tool-safety/metadata.json",
-          "sha256": "9982507ce3bcde097d6e42c3e59e604813708120bd8a4556a9e9edb84beb1ce3",
-          "bytes": 1716
-        },
-        {
-          "path": "skills/v0/v0-mcp-tool-safety/references/source-evidence.md",
-          "sha256": "70a85732bea3a36946e4c8bdafbd94799e84e95abe2efbdc7616b3ad4cda65da",
-          "bytes": 1284
-        },
-        {
-          "path": "skills/v0/v0-mcp-tool-safety/SKILL.md",
-          "sha256": "8d5d76cb68b6043600c55526ae630876711e693fc36c1f73ae3d983b320c7395",
-          "bytes": 2226
-        }
-      ]
-    },
-    {
-      "id": "v0-multi-agent-orchestration",
-      "path": "skills/v0/v0-multi-agent-orchestration",
-      "aggregate_sha256": "e249b821a8414e740a6964c90407169b3071cd8a2d39ecb005e2b86f7476a80f",
-      "files": [
-        {
-          "path": "skills/v0/v0-multi-agent-orchestration/metadata.json",
-          "sha256": "eca404cbdc1021f477f1a48fce0fe819b15560133ff74384caf5f2eb855626f1",
-          "bytes": 1749
-        },
-        {
-          "path": "skills/v0/v0-multi-agent-orchestration/references/source-evidence.md",
-          "sha256": "4cef4bbd7c543f995ce6e08ac62fc3984abbcaca97ef979e4827d3231ba5ab67",
-          "bytes": 1282
-        },
-        {
-          "path": "skills/v0/v0-multi-agent-orchestration/SKILL.md",
-          "sha256": "5897d64e1dd256740fc925ffaf2f1a4691c55219f92b1902e70ce00cc70a7d28",
-          "bytes": 2208
-        }
-      ]
-    },
-    {
-      "id": "v0-native-packaging-bridge",
-      "path": "skills/v0/v0-native-packaging-bridge",
-      "aggregate_sha256": "d7b606f2edadd08c6a9e694e082cec968fc0a4d3c7b92b1d4fd822b88c130084",
-      "files": [
-        {
-          "path": "skills/v0/v0-native-packaging-bridge/metadata.json",
-          "sha256": "b35f118ed633df8d923f57b3969f058d5878612fd88447862ec0764e85833a88",
-          "bytes": 1628
-        },
-        {
-          "path": "skills/v0/v0-native-packaging-bridge/references/source-evidence.md",
-          "sha256": "708d5d8fca14e1101fcb178baca87cbf00f686f6de9b26d8db6aae794e16c683",
-          "bytes": 1074
-        },
-        {
-          "path": "skills/v0/v0-native-packaging-bridge/SKILL.md",
-          "sha256": "03122f425c4debd24d0441e2c0bb642ee008baf6a5875819e9c6aec13c062c63",
-          "bytes": 2340
-        }
-      ]
-    },
-    {
-      "id": "v0-prompt-hardening",
-      "path": "skills/v0/v0-prompt-hardening",
-      "aggregate_sha256": "3855693fbaf78feed41a59d15a7574a0a566348d3b35be0812e64a237e927c0b",
-      "files": [
-        {
-          "path": "skills/v0/v0-prompt-hardening/metadata.json",
-          "sha256": "4386924b6bee6b8bbcbac6ce62977722e9cdc7b88c47e87bbfb3681af43cc900",
-          "bytes": 1716
-        },
-        {
-          "path": "skills/v0/v0-prompt-hardening/references/source-evidence.md",
-          "sha256": "9a4f76afa40a0d1c682e4e6a5b23329de9f21d8018641b157e6246416469c10b",
-          "bytes": 1286
-        },
-        {
-          "path": "skills/v0/v0-prompt-hardening/SKILL.md",
-          "sha256": "8d2d6cee53d61b911838e65ed4ede20297cd9d8ed244663f2e69ed9894eb59dd",
-          "bytes": 2187
-        }
-      ]
-    },
-    {
-      "id": "v0-repo-reconnaissance",
-      "path": "skills/v0/v0-repo-reconnaissance",
-      "aggregate_sha256": "212f11e75620df7cf4a8d241fe037efe54971d5f02072730f74979a3bfa384f2",
-      "files": [
-        {
-          "path": "skills/v0/v0-repo-reconnaissance/metadata.json",
-          "sha256": "4ed3485fcbc118fee4b57a4520c0031d2d4447df2b2af66337610913c8168317",
-          "bytes": 1740
-        },
-        {
-          "path": "skills/v0/v0-repo-reconnaissance/references/source-evidence.md",
-          "sha256": "4372350c04ee00df4d4500502a5bc2d9acd626222a4ff6686b73eab05312e984",
-          "bytes": 1282
-        },
-        {
-          "path": "skills/v0/v0-repo-reconnaissance/SKILL.md",
-          "sha256": "8e1cd908a861032d334ba18c0715b9208c5b9fd720d130fd5c59557bb2be5659",
-          "bytes": 2200
-        }
-      ]
-    },
-    {
-      "id": "v0-security-review",
-      "path": "skills/v0/v0-security-review",
-      "aggregate_sha256": "2e5888609396a466147b7a269ff6d100e4a2d732c82e8034476eb784f44cd65a",
-      "files": [
-        {
-          "path": "skills/v0/v0-security-review/metadata.json",
-          "sha256": "9bb4dd9f95f1085ff4d066a869f9a2b657401358069d0ab7117efadd925eefba",
-          "bytes": 1705
-        },
-        {
-          "path": "skills/v0/v0-security-review/references/source-evidence.md",
-          "sha256": "a1ce02853d9e58f5b9efb641c99161311ba01fe9919ecfabec9f8974106408b2",
-          "bytes": 1284
-        },
-        {
-          "path": "skills/v0/v0-security-review/SKILL.md",
-          "sha256": "4101df299d7fb0b8b5efc5d5bd555a24b758411c7d8fb4ab399dd0fef7b9fd3c",
-          "bytes": 2158
-        }
-      ]
-    },
-    {
-      "id": "v0-source-trust-gate",
-      "path": "skills/v0/v0-source-trust-gate",
-      "aggregate_sha256": "841c5b970e0737587c980ff7a4829db3c3a033e803eadc38b760ccba5f1d6024",
-      "files": [
-        {
-          "path": "skills/v0/v0-source-trust-gate/metadata.json",
-          "sha256": "71577bc6a97dd54c0a20f80e64d9485acbcf85a4331ee507f5bab4e51e929dfb",
-          "bytes": 1622
-        },
-        {
-          "path": "skills/v0/v0-source-trust-gate/references/source-evidence.md",
-          "sha256": "33143dcfc8032f2f20a27c910466d43db2cef454311e6e0fa963301705fed081",
-          "bytes": 1062
-        },
-        {
-          "path": "skills/v0/v0-source-trust-gate/SKILL.md",
-          "sha256": "eb2df9a201d2166f67552f10ebd49cfa1f931c8fa3d20b5239744ae0f847c2cd",
-          "bytes": 2470
-        }
-      ]
-    },
-    {
-      "id": "vercel-context-management",
-      "path": "skills/vercel/vercel-context-management",
-      "aggregate_sha256": "0bcc840f3e64a156368fa96460e65bb268c57abe756fbd62e2c3c3bc46b9938b",
-      "files": [
-        {
-          "path": "skills/vercel/vercel-context-management/metadata.json",
-          "sha256": "9488fea2458369e83e50a0ced190d3df1e840f6e51709e9bd48368d10ed1e63f",
-          "bytes": 1800
-        },
-        {
-          "path": "skills/vercel/vercel-context-management/references/source-evidence.md",
-          "sha256": "780240946442de492a1d791760165d384fc58b5c6d1d6c2bd6e4322870033454",
-          "bytes": 1264
-        },
-        {
-          "path": "skills/vercel/vercel-context-management/SKILL.md",
-          "sha256": "b0a57fc6a936ddde277a5db70935e9b2fd5f72e45853a5f7930efbf5348f57db",
-          "bytes": 2249
-        }
-      ]
-    },
-    {
-      "id": "vercel-cost-aware-routing",
-      "path": "skills/vercel/vercel-cost-aware-routing",
-      "aggregate_sha256": "b3189a941f7bc7d63a3f9af15825b6074e55c809094b5423a2b17e904dc16fa6",
-      "files": [
-        {
-          "path": "skills/vercel/vercel-cost-aware-routing/metadata.json",
-          "sha256": "6faa6fd290912924648984e420e26e74deb51df52a94fb5100b127c667ed7475",
-          "bytes": 1790
-        },
-        {
-          "path": "skills/vercel/vercel-cost-aware-routing/references/source-evidence.md",
-          "sha256": "59ba6233717af2ddf6fd0942ce9da3adaf65452f9755dcb574aade20d1cef9a8",
-          "bytes": 1264
-        },
-        {
-          "path": "skills/vercel/vercel-cost-aware-routing/SKILL.md",
-          "sha256": "ed3045653874949aec5c870872445dd37f182a747e7dc47a33225a56ce0417a7",
-          "bytes": 2290
-        }
-      ]
-    },
-    {
-      "id": "vercel-debugging-strategy",
-      "path": "skills/vercel/vercel-debugging-strategy",
-      "aggregate_sha256": "ec2135674c3f16bc85e0b0de0f9bcf891ae6f74fe20e98f7ce52cc0b9773261b",
-      "files": [
-        {
-          "path": "skills/vercel/vercel-debugging-strategy/metadata.json",
-          "sha256": "ceae8b58116c86f4335d02d81916fdbf62a39fef75dacf76ca0c5264ac057693",
-          "bytes": 1836
-        },
-        {
-          "path": "skills/vercel/vercel-debugging-strategy/references/source-evidence.md",
-          "sha256": "bbe0100e21be0bbd3e303640ae981364df01d3afe0dbb50ce2fcc563b7fba95f",
-          "bytes": 1286
-        },
-        {
-          "path": "skills/vercel/vercel-debugging-strategy/SKILL.md",
-          "sha256": "6d470310a13dc83cc9dd5867246871d5264358dfe851dc23a296b7da89d6c330",
-          "bytes": 2347
-        }
-      ]
-    },
-    {
-      "id": "vercel-deployment-readiness",
-      "path": "skills/vercel/vercel-deployment-readiness",
-      "aggregate_sha256": "bdc4ef154ba27564793597591371b4993ad9b446a6b28cc9e68b7f1aac84e1b4",
-      "files": [
-        {
-          "path": "skills/vercel/vercel-deployment-readiness/metadata.json",
-          "sha256": "28d1788ea5975eded74823db205a1edb86932c66f25b070db30c04198cbf002f",
-          "bytes": 1810
-        },
-        {
-          "path": "skills/vercel/vercel-deployment-readiness/references/source-evidence.md",
-          "sha256": "4dcaff74fdea472f9e4b56ac18f332d9d7de209323597e504de86af1c9d52977",
-          "bytes": 1280
-        },
-        {
-          "path": "skills/vercel/vercel-deployment-readiness/SKILL.md",
-          "sha256": "a57317561773fc2808a5956c271a3b91abd5ce314ed9f825d6b9cd9e6208c39f",
-          "bytes": 2335
-        }
-      ]
-    },
-    {
-      "id": "vercel-frontend-review",
-      "path": "skills/vercel/vercel-frontend-review",
-      "aggregate_sha256": "1790178bcbfeb1e2650f681649ce905af6ab74f9f0e58ffd70ca0fbd3bab02e7",
-      "files": [
-        {
-          "path": "skills/vercel/vercel-frontend-review/metadata.json",
-          "sha256": "3fba8410527afae9c9ef236ebafdbd4764ce43577a6b0333e7432c13a26eaaf8",
-          "bytes": 1756
-        },
-        {
-          "path": "skills/vercel/vercel-frontend-review/references/source-evidence.md",
-          "sha256": "b4d0479d8455d839ec17792fc184fca679a561f4fc38f893528c0d9399f79bfa",
-          "bytes": 1161
-        },
-        {
-          "path": "skills/vercel/vercel-frontend-review/SKILL.md",
-          "sha256": "290d5dbd2676f7c6454e22bc13e01e7d4a690d7fede990179904f538182ae3e1",
-          "bytes": 2329
-        }
-      ]
-    },
-    {
-      "id": "vercel-handoff-readiness-review",
-      "path": "skills/vercel/vercel-handoff-readiness-review",
-      "aggregate_sha256": "0549b8f53497cfea46f11a8127fd5afacc0bee20661ba981809f32e0f3dcbf90",
-      "files": [
-        {
-          "path": "skills/vercel/vercel-handoff-readiness-review/metadata.json",
-          "sha256": "33bd28175b6ee9997dd4d339f050976542fcd7f9ade807edbba19dad3f2620df",
-          "bytes": 1751
-        },
-        {
-          "path": "skills/vercel/vercel-handoff-readiness-review/references/source-evidence.md",
-          "sha256": "bdca97cf2bb3d3d375c9c054207907198cfb58f680df327b26bc44e55509eb1d",
-          "bytes": 1072
-        },
-        {
-          "path": "skills/vercel/vercel-handoff-readiness-review/SKILL.md",
-          "sha256": "52b0f8bf7e1681b8ec033d2353fe6d32b939c20ab948d926e4d18d6e431ddb6d",
-          "bytes": 2532
-        }
-      ]
-    },
-    {
-      "id": "vercel-mcp-tool-safety",
-      "path": "skills/vercel/vercel-mcp-tool-safety",
-      "aggregate_sha256": "666aec77b67faa0c1101d6e663bd3ab3decfb534ebb022d5bc46c5156258fd93",
-      "files": [
-        {
-          "path": "skills/vercel/vercel-mcp-tool-safety/metadata.json",
-          "sha256": "0c606efdb52364b9c486f87a4b89356fd3dc16671435b8d733d8ab7097f06828",
-          "bytes": 1800
-        },
-        {
-          "path": "skills/vercel/vercel-mcp-tool-safety/references/source-evidence.md",
-          "sha256": "59d9f17c1f7f197edc1f19f13c543e4c0f33c59b4f6dd4bf4d9452b529f3eab1",
-          "bytes": 1280
-        },
-        {
-          "path": "skills/vercel/vercel-mcp-tool-safety/SKILL.md",
-          "sha256": "037cc9c537ef219b2cc373a5ffb59abd5a0b0f977037566688821cfe0c59852d",
-          "bytes": 2335
-        }
-      ]
-    },
-    {
-      "id": "vercel-multi-agent-orchestration",
-      "path": "skills/vercel/vercel-multi-agent-orchestration",
-      "aggregate_sha256": "6117286a73ea13b914c8bea5dba1b6a5a7f30d08eaad9c3774d40c95212769f6",
-      "files": [
-        {
-          "path": "skills/vercel/vercel-multi-agent-orchestration/metadata.json",
-          "sha256": "ae50b0d8d884ed4748179b2e6bbad9e600c6d3cd22fb35bb7142814b7f1a358e",
-          "bytes": 1833
-        },
-        {
-          "path": "skills/vercel/vercel-multi-agent-orchestration/references/source-evidence.md",
-          "sha256": "fdcf7b605394c55786ea30cf377f75598edfc21716b84507418ecba5795c5d9b",
-          "bytes": 1278
-        },
-        {
-          "path": "skills/vercel/vercel-multi-agent-orchestration/SKILL.md",
-          "sha256": "5112031bf9bc4a4f5c9ae4fddbbec7e0a5f06e31dd511c70345e1894ed97fd1f",
-          "bytes": 2317
-        }
-      ]
-    },
-    {
-      "id": "vercel-native-packaging-bridge",
-      "path": "skills/vercel/vercel-native-packaging-bridge",
-      "aggregate_sha256": "15b23f840642249cf139f3a288c95804a076286ce93c1b765867c670328edf8f",
-      "files": [
-        {
-          "path": "skills/vercel/vercel-native-packaging-bridge/metadata.json",
-          "sha256": "e45aa330bd6e3db5b8236024e09a4244a3da3506de0cd9f3916664a291ba9622",
-          "bytes": 1732
-        },
-        {
-          "path": "skills/vercel/vercel-native-packaging-bridge/references/source-evidence.md",
-          "sha256": "26294249472dd9fe55aa00dbca0433e60d1d92639597a95000b9d5024b52fa14",
-          "bytes": 1070
-        },
-        {
-          "path": "skills/vercel/vercel-native-packaging-bridge/SKILL.md",
-          "sha256": "b85ac3ef09f63d2d26b4ffa53558ef6c8091ac2a1819ebaef0b63af1066e35c7",
-          "bytes": 2467
-        }
-      ]
-    },
-    {
-      "id": "vercel-prompt-hardening",
-      "path": "skills/vercel/vercel-prompt-hardening",
-      "aggregate_sha256": "de2873e3940231e0aa75a7bfff3ec8b5b939c8e6db4a2626c45f8d333d1ce453",
-      "files": [
-        {
-          "path": "skills/vercel/vercel-prompt-hardening/metadata.json",
-          "sha256": "148296090454eb5bb20101becbece9047a4a49cbed5e516582c998f6f2ce6021",
-          "bytes": 1800
-        },
-        {
-          "path": "skills/vercel/vercel-prompt-hardening/references/source-evidence.md",
-          "sha256": "1a52aca1a98ca3e9d8482a953d89acefaeeef8adaa023ef4a947148780143abd",
-          "bytes": 1282
-        },
-        {
-          "path": "skills/vercel/vercel-prompt-hardening/SKILL.md",
-          "sha256": "79717c7bace822eae311c44109ca14215ef1619f34dfea85d06928df7abb76e3",
-          "bytes": 2296
-        }
-      ]
-    },
-    {
-      "id": "vercel-repo-reconnaissance",
-      "path": "skills/vercel/vercel-repo-reconnaissance",
-      "aggregate_sha256": "edc95dd63331be16a5ac1cd3d7d45c379ec02d9c29b099b31743863ea9b98d62",
-      "files": [
-        {
-          "path": "skills/vercel/vercel-repo-reconnaissance/metadata.json",
-          "sha256": "cb8d2002cb792347c8100ecf41aef75035ee04af123531a3f5f0d17bbeddc2ab",
-          "bytes": 1824
-        },
-        {
-          "path": "skills/vercel/vercel-repo-reconnaissance/references/source-evidence.md",
-          "sha256": "d36d30d910a1be74a3bdc3e803e2dc46994b5577269037ec3eb7aea294212782",
-          "bytes": 1278
-        },
-        {
-          "path": "skills/vercel/vercel-repo-reconnaissance/SKILL.md",
-          "sha256": "d835aaaf0825490bbbe4fba0f75eeb62416b185234bd6e45559eaf8380f53ac7",
-          "bytes": 2309
-        }
-      ]
-    },
-    {
-      "id": "vercel-security-review",
-      "path": "skills/vercel/vercel-security-review",
-      "aggregate_sha256": "5efc26dc2ccfce7304fdf1352257d14b04c9d5130825eadbffff6029ecf135b2",
-      "files": [
-        {
-          "path": "skills/vercel/vercel-security-review/metadata.json",
-          "sha256": "e946fe04f79061f94a23df93f9f2648c2444cb0b39e9cec30e2fe38dd0e29f53",
-          "bytes": 1789
-        },
-        {
-          "path": "skills/vercel/vercel-security-review/references/source-evidence.md",
-          "sha256": "f28b6c7998361a0302e2071158a969fa7dba133939508565fd1ea6be2bdd1e29",
-          "bytes": 1280
-        },
-        {
-          "path": "skills/vercel/vercel-security-review/SKILL.md",
-          "sha256": "48c26e80e0bb0ca947a7d74074e54404c88c61e50495f07757dbba91d52b6cd5",
-          "bytes": 2267
-        }
-      ]
-    },
-    {
-      "id": "vercel-source-trust-gate",
-      "path": "skills/vercel/vercel-source-trust-gate",
-      "aggregate_sha256": "f3bce13ddd07d3bdba5bcb0541e5c88cb6e0c23f22d215f0f79241a351bd2104",
-      "files": [
-        {
-          "path": "skills/vercel/vercel-source-trust-gate/metadata.json",
-          "sha256": "dea9479db47095865db94a445e55c9032016f8d6fcb2588f7f9341d89be60844",
-          "bytes": 1726
-        },
-        {
-          "path": "skills/vercel/vercel-source-trust-gate/references/source-evidence.md",
-          "sha256": "4e4ff88aa956418e3301e667c766a6908ccda4d56715034803818e702641637b",
-          "bytes": 1058
-        },
-        {
-          "path": "skills/vercel/vercel-source-trust-gate/SKILL.md",
-          "sha256": "bfb9cee0d0612743fb6f5d588c9dfe909fdccd7440b7b9cfb4ff2faf63676259",
-          "bytes": 2601
-        }
-      ]
-    },
-    {
-      "id": "vercel-tdd-red-green-refactor",
-      "path": "skills/vercel/vercel-tdd-red-green-refactor",
-      "aggregate_sha256": "847f9ade7afe94257c35bb4d499abc6beb4fa69068d0972999275c480404ad0a",
-      "files": [
-        {
-          "path": "skills/vercel/vercel-tdd-red-green-refactor/metadata.json",
-          "sha256": "57cf8f5a4f011bff832719f08d5051a37d8608cf72b928e843d8d82f0cd66723",
-          "bytes": 1808
-        },
-        {
-          "path": "skills/vercel/vercel-tdd-red-green-refactor/references/source-evidence.md",
-          "sha256": "05533d485133e252549ad86a11390469d7090c07dc381881565cc11d7a4c68d7",
-          "bytes": 1272
-        },
-        {
-          "path": "skills/vercel/vercel-tdd-red-green-refactor/SKILL.md",
-          "sha256": "4efb1a567ae94ef08d2959bdd1f14df47a7699aca3dd703d39746a4e970ffbab",
-          "bytes": 2214
-        }
-      ]
-    },
-    {
-      "id": "vercel-test-generation",
-      "path": "skills/vercel/vercel-test-generation",
-      "aggregate_sha256": "1438452799578f8372f9eedd2602089891d7642b88fb03ee3865cac93ffcae5d",
-      "files": [
-        {
-          "path": "skills/vercel/vercel-test-generation/metadata.json",
-          "sha256": "14bc115025294d0cd8d0c9f2c7db718f7d153c0ffa0a342cedda13f6fd645d71",
-          "bytes": 1810
-        },
-        {
-          "path": "skills/vercel/vercel-test-generation/references/source-evidence.md",
-          "sha256": "b152a7fdb95d78b8a432da705e1e6af9fbfadd2760c191d777bc1a7b331bd4db",
-          "bytes": 1280
-        },
-        {
-          "path": "skills/vercel/vercel-test-generation/SKILL.md",
-          "sha256": "545a0fac6ce434f7fa3b6581a54aa748bbef573cfab2f9d50efbb41ede461ec8",
-          "bytes": 2248
         }
       ]
     }

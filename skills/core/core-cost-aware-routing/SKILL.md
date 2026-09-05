@@ -1,4 +1,4 @@
-﻿---
+---
 name: core-cost-aware-routing
 description: "Route agent and companion tool work by task risk, context size, model cost, latency, and verification needs. Use when expanding, reviewing, or operating skills, rules, prompt kits, provider lanes, or generated-code handoffs in the TechTide skill library."
 allowed-tools: Read Grep Glob Bash Edit Write

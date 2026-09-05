@@ -3,7 +3,7 @@ name: techtide-azure-resilience-bcdr-review
 description: Use this skill for Azure resilience, business continuity, and disaster recovery reviews covering RTO/RPO realism, failover and failback assumptions, shared-responsibility gaps, and recovery runbook or drill quality.
 allowed-tools: Read Grep Glob
 metadata:
-  author: github: TechTide
+  author: "github: TechTide"
   version: 0.1.0
   updated: "2026-05-05"
   category: resilience
