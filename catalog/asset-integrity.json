@@ -21228,9 +21228,9 @@
     },
     {
       "path": ".releaserc.js",
-      "sha256": "7c8b8ff7f8b8768691a36323c3deca204dfb15f946603df42adcca8b793e2291",
-      "bytes": 4281
+      "sha256": "747a362966017f736b9920e7d3f3f45c73744c61ee3385dfbd400f0c5e7c5bee",
+      "bytes": 4440
     }
   ],
-  "aggregate_sha256": "bef24ef2c88b7d6d954368f74c4b524e36b24eb82ea98c4130038772909c9df7"
+  "aggregate_sha256": "85cf6dc610d8053c01d2505137b40c63683e2bf9dc7ecfa333e206b3a95ac0fe"
 }

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "techtide-harness-kit",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Portable, eval-backed marketplace for enterprise agent skills, specialist agents, rules, MCP references, and trust evidence.",
   "author": {
     "name": "Alex Cinovoj / TechTide",

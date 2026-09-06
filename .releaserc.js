@@ -105,6 +105,9 @@ module.exports = {
           ".github/plugin/marketplace.json",
           "SECURITY.md",
           "catalog/asset-integrity.json",
+          // Agent Plugins 1.0 manifest - version synced by
+          // scripts/release-prepare.mjs like the vendor manifests above.
+          "plugin.json",
         ],
         message: "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}",
       },
