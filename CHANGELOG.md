@@ -1,3 +1,32 @@
+## 🛡️ v1.1.1 - *Provenance, Policy, Portability* - 2026-09-06
+
+> _Multi-cloud agent marketplace · `AWS` · `Azure` · `OCI` · `Terraform`_
+>
+> Built for operators on the cloud frontier - least privilege, live evidence, safe rollback paths.
+
+
+### docs
+
+* sync counts, scopes, and accessibility across README and marketplace docs
+- Correct 331->348 agent counts in plugin READMEs and installation guide
+
+- Bump lovable-skills example release tag to v1.1.0
+
+- Add alt text to README section badges (MD045 clean)
+
+### fix
+
+* repair release-pipeline version ordering and polling
+- Run release-prepare after @semantic-release/npm so asset-integrity covers the bumped package.json
+
+- Extend npm-visibility polling to ~6 min for brand-new packages
+
+- Sync all plugin manifests to 1.1.0
+* resolve 30 dependabot alerts with semver-range audit fix
+- undici/js-yaml/tar/brace-expansion/postcss-selector-parser/ip-address/sigstore transitives
+
+- All dev-toolchain-only; shipped package has zero runtime deps. Full validate green.
+
 ## 🛡️ v1.1.0 - *Provenance, Policy, Portability* - 2026-09-06
 
 > _Multi-cloud agent marketplace · `AWS` · `Azure` · `OCI` · `Terraform`_
