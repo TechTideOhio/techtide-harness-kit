@@ -1,6 +1,6 @@
 {
   "name": "techtide-harness-kit",
-  "version": "1.1.0",
+  "version": "1.0.3",
   "description": "Open, portable, eval-backed skills for enterprise agents. Includes 348 agents, 487 skills, enterprise missions, and trust evidence across cloud, Kubernetes, Terraform, and AI harness lanes.",
   "author": {
     "name": "Alex Cinovoj / TechTide AI",
