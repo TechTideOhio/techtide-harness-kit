@@ -1,7 +1,7 @@
 # Agent Plugins 1.0 + skills.sh / gh skill Distribution Audit
 
 Date: 2026-09-05. Method: live local checks against this checkout (`master`,
-`@techtide/harness-kit@1.0.3`). Every claim below names the command that
+`@techtideai/harness-kit@1.0.3`). Every claim below names the command that
 produced it. No code was changed in this pass (Step 1 of the approved
 blueprint).
 

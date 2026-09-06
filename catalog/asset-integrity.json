@@ -16691,7 +16691,7 @@
     },
     {
       "tree": ".claude-plugin",
-      "aggregate_sha256": "b3c13059e943d902c70da6c2ff9b03abe65d2299bd2aa8062280fa6d69208e1c",
+      "aggregate_sha256": "d3e5bccb6c919957dbe5cdf3a39755b5e688695ae8588060738f0e7f02b22dfa",
       "files": [
         {
           "path": ".claude-plugin/marketplace.json",
@@ -16705,8 +16705,8 @@
         },
         {
           "path": ".claude-plugin/README.md",
-          "sha256": "87ed327861c81a008e1b36c09d6490800e51393b58aeaa51548150645d1f0d0e",
-          "bytes": 2755
+          "sha256": "ed3f39f1fcb0d4342bcb40e6b19b139dd4e6e45b17376df9f395ec1a34fc2239",
+          "bytes": 2757
         }
       ]
     },
@@ -21183,13 +21183,13 @@
   "root_files": [
     {
       "path": "README.md",
-      "sha256": "f6887e3b3001c24a7ea40e17917c2b5535e7c8f3484e18fc66888b1346968012",
-      "bytes": 13961
+      "sha256": "3f1e1d38ca360e4fe7eb31aefe7b9b88ce6d0f6227e3910e2fd8c1f24140f080",
+      "bytes": 13967
     },
     {
       "path": "SECURITY.md",
-      "sha256": "1cd7f4bfa4fbcc19068b2b1fbfdbdeffbc20418e0fccb07bd2da7b570e1d7e60",
-      "bytes": 7016
+      "sha256": "4d5c597059a2948536452e35be2037e34002dc41e7e1d8bbb2b2e315ede6d9e3",
+      "bytes": 7020
     },
     {
       "path": "LICENSE",
@@ -21223,8 +21223,8 @@
     },
     {
       "path": "package.json",
-      "sha256": "20f360125a78aa25cea59a330f8fed69eee827a683765832100c35076d4093ce",
-      "bytes": 7316
+      "sha256": "a32fec22f2dc51d76bf94126ccab8705163db917742be67cf678e41462226fbb",
+      "bytes": 7318
     },
     {
       "path": ".releaserc.js",
@@ -21232,5 +21232,5 @@
       "bytes": 3961
     }
   ],
-  "aggregate_sha256": "710ef9ae60e0b5d2b99c7162062b3cec682f5ac03e22370dbcf500cb1bb2a00f"
+  "aggregate_sha256": "78d7ae3928ce50ad4e3a364ece96d6202f5b86ce4f1cef2b6d214d36b4937100"
 }

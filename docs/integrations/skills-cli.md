@@ -8,7 +8,7 @@ This document covers the three supported install paths for TechTide Harness Kit 
 
 | Path | Source of truth | Versioning | Includes agents? | Includes skills? | Pinnable | Trust posture | Best for |
 |------|----------------|------------|-----------------|-----------------|----------|---------------|----------|
-| `npm i @techtide/harness-kit` | npm registry (release pipeline) | SemVer, explicit | Yes (via exporter CLI) | Yes | Yes - lock to exact semver or lockfile | **Highest.** Published artifacts are signed via the release pipeline; you control the version in your lockfile. | Production teams, CI/CD enforcement, auditability |
+| `npm i @techtideai/harness-kit` | npm registry (release pipeline) | SemVer, explicit | Yes (via exporter CLI) | Yes | Yes - lock to exact semver or lockfile | **Highest.** Published artifacts are signed via the release pipeline; you control the version in your lockfile. | Production teams, CI/CD enforcement, auditability |
 | `npx thk-export-agents` | npm registry (same package) | SemVer, explicit | Yes | Yes (default, opt out with `--no-skills`) | Yes - pin the package version | **High.** Same artifact as above; CLI is bundled in the npm package. | Engineers who want role-based or per-platform export with a single command |
 | `npx skills add TechTideOhio/techtide-harness-kit` | GitHub raw HEAD (via `vercel-labs/skills` CLI) | None by default - fetches latest commit on the default branch | No (skills only) | Yes | Not documented - see [pinning note](#pinning-the-skills-cli-path) below | **Lower.** Third-party CLI pulls raw GitHub content without version pinning or integrity verification at install time. | Quick local exploration; not recommended for shared or CI environments |
 
@@ -20,10 +20,10 @@ Install the versioned npm package. The exporter CLI (`thk-export-agents`) is bun
 
 ```bash
 # Install a specific version
-npm install @techtide/harness-kit@1.0.0
+npm install @techtideai/harness-kit@1.0.0
 
 # Or install latest and lock via package-lock.json / npm-shrinkwrap.json
-npm install @techtide/harness-kit@latest
+npm install @techtideai/harness-kit@latest
 ```
 
 After install, run the exporter from the local package to avoid fetching a different version:

@@ -311,7 +311,7 @@ separate add for each Power directory.
 Kiro agent adapters are exported via the npm path. After cloning:
 
 ```bash
-npm install @techtide/harness-kit@latest
+npm install @techtideai/harness-kit@latest
 
 # Export kiro-ide agent adapters (writes .kiro/agents/*.md)
 npx thk-export-agents --platform kiro-ide --all --repo .
@@ -349,7 +349,7 @@ There is no first-party marketplace install command. Use the npm exporter.
 
 ```bash
 # Step 1: install the package
-npm install @techtide/harness-kit@latest
+npm install @techtideai/harness-kit@latest
 
 # Step 2: export all agents + companion skills for Gemini Antigravity
 npx thk-export-agents --platform gemini --all --repo .
@@ -480,10 +480,10 @@ versioned exports with full control over what gets written to your repo.
 
 ```bash
 # Latest release
-npm install @techtide/harness-kit@latest
+npm install @techtideai/harness-kit@latest
 
 # Pinned release (recommended for production)
-npm install @techtide/harness-kit@1.0.0
+npm install @techtideai/harness-kit@1.0.0
 ```
 
 **Step 2 - export agents for your platform and role:**
@@ -595,7 +595,7 @@ silently pull in new agents and behavior changes. Pin when:
 | Copilot CLI | Replace `master` with tag in the raw URL |
 | Cursor | `git checkout v1.0.0` in the cloned repo |
 | Kiro | `git checkout v1.0.0` in the cloned repo |
-| Gemini / npm | `npm install @techtide/harness-kit@1.0.0` |
+| Gemini / npm | `npm install @techtideai/harness-kit@1.0.0` |
 | Codex | Set `ref = "v1.0.0"` in `config.toml` |
 | thk-export-agents | Pin the npm package version |
 | Skills CLI | **Not supported** - avoid for reproducible environments |

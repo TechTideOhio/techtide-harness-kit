@@ -9,7 +9,7 @@
 
 <br/>
 
-<a href="https://www.npmjs.com/package/@techtide/harness-kit"><img alt="npm" src="https://img.shields.io/npm/v/@techtide/harness-kit.svg?style=flat-square&logo=npm&logoColor=white&color=CB3837" /></a>
+<a href="https://www.npmjs.com/package/@techtideai/harness-kit"><img alt="npm" src="https://img.shields.io/npm/v/@techtideai/harness-kit.svg?style=flat-square&logo=npm&logoColor=white&color=CB3837" /></a>
 <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-Apache--2.0-3B82F6?style=flat-square" /></a>
 <a href="https://github.com/TechTideOhio/techtide-harness-kit/actions/workflows/codeql.yml"><img alt="CodeQL" src="https://img.shields.io/github/actions/workflow/status/TechTideOhio/techtide-harness-kit/codeql.yml?branch=master&style=flat-square&label=CodeQL&logo=github" /></a>
 <a href="https://scorecard.dev/viewer/?uri=github.com/TechTideOhio/techtide-harness-kit"><img alt="OpenSSF" src="https://img.shields.io/ossf-scorecard/github.com/TechTideOhio/techtide-harness-kit?style=flat-square&label=OpenSSF" /></a>
@@ -139,7 +139,7 @@ Full comparison and install paths: [docs/integrations/installation-guide.md](doc
 ## <img src="https://img.shields.io/badge/-Get_Started-0D1117?style=flat-square" height="24" />&ensp;Get Started
 
 ```bash
-npm install @techtide/harness-kit
+npm install @techtideai/harness-kit
 
 # Validate everything (25+ gates, no secrets required)
 npm run validate

@@ -67,7 +67,7 @@ jobs:
         run: |
           set -euo pipefail
           OUT="${{ runner.temp }}/thk-script.txt"
-          PKG_DIR="$CONSUMER_DIR/node_modules/@techtide/harness-kit"
+          PKG_DIR="$CONSUMER_DIR/node_modules/@techtideai/harness-kit"
           cd "$PKG_DIR"
           node scripts/export-marketplace-agents.mjs --list > "$OUT"
           test -s "$OUT"

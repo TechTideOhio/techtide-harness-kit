@@ -205,7 +205,7 @@ jobs:
       - name: Verify release result and write summary
         if: always()
         env:
-          PACKAGE_NAME: "@techtide/harness-kit"
+          PACKAGE_NAME: "@techtideai/harness-kit"
         run: |
           POST_TAG="$(git describe --tags --abbrev=0 2>/dev/null || echo none)"
           POST_VERSION="$(node -p "require('./package.json').version")"

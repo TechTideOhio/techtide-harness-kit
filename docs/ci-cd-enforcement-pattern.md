@@ -44,7 +44,7 @@ Each gate uses the same `thk-export-agents` CLI to install the correct agent har
 ### Prerequisites
 
 ```bash
-npm install -g @techtide/harness-kit
+npm install -g @techtideai/harness-kit
 ```
 
 Or pin via `package.json`:
@@ -52,7 +52,7 @@ Or pin via `package.json`:
 ```json
 {
   "devDependencies": {
-    "@techtide/harness-kit": "^1.0.0"
+    "@techtideai/harness-kit": "^1.0.0"
   }
 }
 ```
@@ -83,7 +83,7 @@ jobs:
 
       - name: Install TFA agents
         run: |
-          npx --yes @techtide/harness-kit \
+          npx --yes @techtideai/harness-kit \
             thk-export-agents \
             --platform codex \
             --role cloud-security-engineer \
@@ -133,7 +133,7 @@ jobs:
 
       - name: Install TFA agents
         run: |
-          npx --yes @techtide/harness-kit \
+          npx --yes @techtideai/harness-kit \
             thk-export-agents \
             --platform codex \
             --agents techtide-kubernetes-live-rbac-mutation-guard-agent \
@@ -198,7 +198,7 @@ jobs:
 
       - name: Install TFA role agents
         run: |
-          npx --yes @techtide/harness-kit \
+          npx --yes @techtideai/harness-kit \
             thk-export-agents \
             --platform ${{ inputs.platform }} \
             --role ${{ inputs.role }} \
@@ -224,7 +224,7 @@ Add to your pipeline `pool` or as a script step:
 
 ```yaml
 - script: |
-    npm install -g @techtide/harness-kit
+    npm install -g @techtideai/harness-kit
   displayName: Install TFA CLI
 ```
 
@@ -252,7 +252,7 @@ stages:
           - checkout: self
 
           - script: |
-              npx --yes @techtide/harness-kit \
+              npx --yes @techtideai/harness-kit \
                 thk-export-agents \
                 --platform codex \
                 --role cloud-security-engineer \
@@ -304,7 +304,7 @@ stages:
           - checkout: self
 
           - script: |
-              npx --yes @techtide/harness-kit \
+              npx --yes @techtideai/harness-kit \
                 thk-export-agents \
                 --platform codex \
                 --agents techtide-oci-live-network-security-rule-guard-agent \
@@ -346,7 +346,7 @@ steps:
   - type: Command
     name: Install TFA CLI
     command: |
-      npm install -g @techtide/harness-kit
+      npm install -g @techtideai/harness-kit
 
   - type: Command
     name: Export cloud-security-engineer agents
@@ -384,7 +384,7 @@ timeoutInSeconds: 900
 steps:
   - type: Command
     name: Install TFA CLI
-    command: npm install -g @techtide/harness-kit
+    command: npm install -g @techtideai/harness-kit
 
   - type: Command
     name: Export OCI IAM guard agent

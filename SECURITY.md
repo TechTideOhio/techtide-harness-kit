@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-The table below shows which versions of `@techtide/harness-kit`
+The table below shows which versions of `@techtideai/harness-kit`
 (current published version: **1.0.3**) receive security fixes.
 
 | Version range | Supported          |
@@ -145,7 +145,7 @@ Each tagged release publishes the following supply-chain evidence:
    ```sh
    npm audit signatures
    # or, for a single version:
-   npm view @techtide/harness-kit@<version> --json \
+   npm view @techtideai/harness-kit@<version> --json \
      | jq -r '.dist.attestations'
    ```
 

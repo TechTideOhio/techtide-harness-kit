@@ -1,5 +1,5 @@
 {
-  "name": "@techtide/harness-kit",
+  "name": "@techtideai/harness-kit",
   "version": "1.0.3",
   "description": "Portable, eval-backed marketplace for enterprise agent skills, specialist agents, rules, MCP references, and trust evidence.",
   "author": {
