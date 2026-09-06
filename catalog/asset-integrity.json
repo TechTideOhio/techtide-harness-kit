@@ -16675,7 +16675,7 @@
     },
     {
       "tree": "plugins",
-      "aggregate_sha256": "912e26d4a34c06f174d0f9d149cfcbe0bafb44bb942ba8b27de369a3c4a67603",
+      "aggregate_sha256": "a457ad7f3c5f83f02b48d92f9cc6541d0568bcf26fc3b1ccc02693ff3dd6819b",
       "files": [
         {
           "path": "plugins/techtide-cross-platform-agent-template/.codex-plugin/plugin.json",
@@ -16684,7 +16684,7 @@
         },
         {
           "path": "plugins/techtide-harness-kit/.codex-plugin/plugin.json",
-          "sha256": "f9418a782bd5a0e36c536a7dc66109bc6523b94b7774068da1a15975dd09986a",
+          "sha256": "b877e48127f725c20ffae16b106ffb0a939fb8d247b95dfb3e322a95eadb4168",
           "bytes": 1937
         }
       ]
@@ -16728,11 +16728,11 @@
     },
     {
       "tree": ".github/plugin",
-      "aggregate_sha256": "e683ee2ee26ad576d65d98e25a4d0781ef1b4782d1015ea00584cad166641e9d",
+      "aggregate_sha256": "c4ef98a5fcdb1ad85f523b812b9204e6925d77037e27a65aeb32524fee540515",
       "files": [
         {
           "path": ".github/plugin/marketplace.json",
-          "sha256": "b4700a9bd04ec8acfe7e797b9e82112f4b55318d8d932311ad8ad43449a3eb92",
+          "sha256": "dec15bd5d633b0f5fbd2705696ea88067af3f1535a8573a0c5e21c57dd342df0",
           "bytes": 835
         },
         {
@@ -21188,7 +21188,7 @@
     },
     {
       "path": "SECURITY.md",
-      "sha256": "4d5c597059a2948536452e35be2037e34002dc41e7e1d8bbb2b2e315ede6d9e3",
+      "sha256": "76a6a26457c5cfc75d3b5bb7df82753bb70dc47ba013b8d3917bf6c6a74afe62",
       "bytes": 7020
     },
     {
@@ -21232,5 +21232,5 @@
       "bytes": 3961
     }
   ],
-  "aggregate_sha256": "78d7ae3928ce50ad4e3a364ece96d6202f5b86ce4f1cef2b6d214d36b4937100"
+  "aggregate_sha256": "3b34179d5a333c9285dbd8070a40ef91fe9ef8999080253f7ed56097f83f944a"
 }
