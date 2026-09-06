@@ -3,7 +3,7 @@
 ## Supported Versions
 
 The table below shows which versions of `@techtideai/harness-kit`
-(current published version: **1.1.1**) receive security fixes.
+(current published version: **1.1.2**) receive security fixes.
 
 | Version range | Supported          |
 | ------------- | ------------------ |

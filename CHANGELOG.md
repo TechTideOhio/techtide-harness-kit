@@ -1,3 +1,17 @@
+## 🛡️ v1.1.2 - *Provenance, Policy, Portability* - 2026-09-06
+
+> _Multi-cloud agent marketplace · `AWS` · `Azure` · `OCI` · `Terraform`_
+>
+> Built for operators on the cloud frontier - least privilege, live evidence, safe rollback paths.
+
+
+### fix
+
+* commit root Agent Plugins manifest in release assets
+- .releaserc.js git assets omitted plugin.json, so the v1.1.1 release commit left it at 1.1.0
+
+- Synced to 1.1.1; full validate green
+
 ## 🛡️ v1.1.1 - *Provenance, Policy, Portability* - 2026-09-06
 
 > _Multi-cloud agent marketplace · `AWS` · `Azure` · `OCI` · `Terraform`_
