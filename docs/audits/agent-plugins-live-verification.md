@@ -29,6 +29,30 @@ noted. No code was changed in this pass (Step 8 of the approved blueprint).
   (Step 9). Check `skills.sh/TechTideOhio/techtide-harness-kit` ~24h after
   release.
 
+## Release v1.1.0 record (2026-09-06)
+
+- Tag: `v1.1.0`; npm `@techtideai/harness-kit@1.1.0` (scope moved from
+  `@techtide`, which is held by an unrelated account).
+- Assets: `techtideai-harness-kit-1.1.0.tgz`, `sbom.spdx.json`,
+  `asset-integrity.json` (all attested).
+- `npx skills add TechTideOhio/techtide-harness-kit --list` → 385 skills,
+  0 skipped.
+- skills.sh still stale at check time; refreshes via telemetry.
+
+## Release-pipeline fixes shipped after v1.1.0
+
+1. **Integrity-manifest staleness (root cause).** `@semantic-release/exec`
+   ran *before* `@semantic-release/npm`, so `release-prepare.mjs`
+   regenerated `catalog/asset-integrity.json` against the pre-bump
+   `package.json`; the release commit then stored a manifest hashing the
+   wrong bytes and `validate:asset-integrity` failed on master. Fixed by
+   moving the exec block after `@semantic-release/npm` in `.releaserc.js`
+   (prepare phase still runs before pack/publish). Do not revert the order.
+2. **Verify-step false failure.** `npm view` polling (5 x 5s) is too short
+   for brand-new packages (~5 min registry lag). Extended to 36 x 10s
+   (~6 min) in `release.yml`. Publish success is independently proven by
+   the attestation steps; this check is a lagging indicator only.
+
 ## Pre-existing, out of scope
 
 - `npm run lint:md` reports MD045 (no-alt-text) on README.md lines

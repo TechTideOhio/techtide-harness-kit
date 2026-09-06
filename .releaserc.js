@@ -65,19 +65,23 @@ module.exports = {
         },
       },
     ],
-    ["@semantic-release/changelog", { changelogFile: "CHANGELOG.md" }],
-    [
-      "@semantic-release/exec",
-      {
-        // Runs AFTER changelog writes and BEFORE npm packs the tarball.
-        // Synchronizes plugin manifest versions and the cross-asset
-        // integrity manifest to the bumped package.json so the released
-        // tarball is internally consistent. See scripts/release-prepare.mjs.
-        prepareCmd: "node scripts/release-prepare.mjs ${nextRelease.version}",
-      },
-    ],
-    "@semantic-release/npm",
-    [
+      ["@semantic-release/changelog", { changelogFile: "CHANGELOG.md" }],
+      "@semantic-release/npm",
+      [
+        "@semantic-release/exec",
+        {
+          // Runs AFTER @semantic-release/npm writes the bumped version into
+          // package.json and BEFORE anything packs the tarball. Order matters:
+          // release-prepare regenerates catalog/asset-integrity.json LAST so
+          // the manifest covers the bumped package.json. When this block ran
+          // before @semantic-release/npm, the committed manifest hashed the
+          // pre-bump package.json and every release left
+          // validate:asset-integrity red on master. Do not move this above
+          // "@semantic-release/npm". See scripts/release-prepare.mjs.
+          prepareCmd: "node scripts/release-prepare.mjs ${nextRelease.version}",
+        },
+      ],
+      [
       "@semantic-release/github",
       {
         successComment: false,

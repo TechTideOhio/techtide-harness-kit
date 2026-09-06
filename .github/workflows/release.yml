@@ -217,12 +217,16 @@ jobs:
 
           NPM_VERSION=""
           if [ "$RELEASE_CREATED" = true ]; then
-            for attempt in 1 2 3 4 5; do
+            # Brand-new packages can take minutes to become visible on the
+            # registry (v1.1.0 took ~5 min). Poll for up to ~6 minutes before
+            # calling the release bad: the publish itself is already verified
+            # by the attestation steps above.
+            for attempt in $(seq 1 36); do
               NPM_VERSION="$(npm view "$PACKAGE_NAME" version 2>/dev/null || true)"
               if [ "$NPM_VERSION" = "$POST_VERSION" ]; then
                 break
               fi
-              sleep 5
+              sleep 10
             done
           fi
 
