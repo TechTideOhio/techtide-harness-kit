@@ -10,9 +10,9 @@ This repo uses eval-driven development. The public proof layer summarizes what C
 
 | Asset | Count |
 | --- | ---: |
-| Skills | 487 |
+| Skills | 385 |
 | Agents | 348 |
-| Promoted external candidates | 114 |
+| Promoted external candidates | 12 |
 | Install roles | 17 |
 | Enterprise missions | 5 |
 

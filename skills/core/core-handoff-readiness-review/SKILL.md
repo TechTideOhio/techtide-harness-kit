@@ -1,4 +1,4 @@
-﻿---
+---
 name: core-handoff-readiness-review
 description: "Review agent session output before it enters the durable TechTide repo by checking provenance, tests, security, deployment boundaries, and rollback expectations. Use when expanding, reviewing, or operating skills, rules, prompt kits, provider lanes, or generated-code handoffs in the TechTide skill library."
 allowed-tools: Read Grep Glob Bash Edit Write

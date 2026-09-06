@@ -1,4 +1,4 @@
-﻿# Installation Guide - TechTide Harness Kit
+# Installation Guide - TechTide Harness Kit
 
 **Audience:** engineers setting up TechTide Harness Kit in any supported coding harness.
 **Scope:** all eight install paths with prerequisites, step-by-step commands, verification, advanced configuration, pinning, and troubleshooting.
@@ -104,7 +104,7 @@ Replace `v1.0.0` with any tag from the
 
 ### What gets installed
 
-- **331 agent adapters** - resolved via the `agents[]` array in
+- **348 agent adapters** - resolved via the `agents[]` array in
   `.claude-plugin/plugin.json`. Each adapter is a Claude Code-compatible
   markdown file at `agents/<provider>/<agent>/harnesses/claude-code.agent.md`.
 - **Not installed automatically:** skills (`skills/`), rules (`rules/`), MCP
@@ -173,7 +173,7 @@ Replace `master` in the URL with a tag or SHA:
 ### What gets installed
 
 - **Single plugin** declared in `.github/plugin/marketplace.json` with `source: "./"` - the repo root is the plugin root.
-- **331 Copilot agent adapters** at `agents/<provider>/<agent>/harnesses/copilot.agent.md`.
+- **348 Copilot agent adapters** at `agents/<provider>/<agent>/harnesses/copilot.agent.md`.
 - **Plugin instructions file** is `AGENTS.md` at repo root (Copilot reads `AGENTS.md` or `.github/copilot-instructions.md`).
 
 ### Verify
@@ -204,7 +204,7 @@ git clone --branch v1.0.0 https://github.com/TechTideOhio/techtide-harness-kit
 
 **Step 2 - register the plugin directory in Cursor:**
 
-Open Cursor â†’ `Settings` â†’ `Plugins` â†’ `Add Plugin Directory` â†’ select the cloned directory.
+Open Cursor → `Settings` → `Plugins` → `Add Plugin Directory` → select the cloned directory.
 
 Or via the Cursor Extension API (e.g., from a VS Code extension or workspace script):
 
@@ -219,7 +219,7 @@ Open the Agent panel. You should see agents from `techtide-aws`, `techtide-azure
 ### How the plugin manifest works
 
 Cursor reads `.cursor-plugin/plugin.json` from the registered directory. The
-manifest enumerates all **331 Cursor agent adapters** explicitly via the
+manifest enumerates all **348 Cursor agent adapters** explicitly via the
 `agents[]` array:
 
 ```json
@@ -293,7 +293,7 @@ cd techtide-harness-kit
 
 **Step 2 - add Powers in Kiro:**
 
-In Kiro, open the **Powers panel** â†’ `Add Custom Power` â†’ `Local Directory`.
+In Kiro, open the **Powers panel** → `Add Custom Power` → `Local Directory`.
 
 Paste the absolute path for each Power you need, one at a time. For example:
 
@@ -311,7 +311,7 @@ separate add for each Power directory.
 Kiro agent adapters are exported via the npm path. After cloning:
 
 ```bash
-npm install @techtide/harness-kit@latest
+npm install @techtideai/harness-kit@latest
 
 # Export kiro-ide agent adapters (writes .kiro/agents/*.md)
 npx thk-export-agents --platform kiro-ide --all --repo .
@@ -349,7 +349,7 @@ There is no first-party marketplace install command. Use the npm exporter.
 
 ```bash
 # Step 1: install the package
-npm install @techtide/harness-kit@latest
+npm install @techtideai/harness-kit@latest
 
 # Step 2: export all agents + companion skills for Gemini Antigravity
 npx thk-export-agents --platform gemini --all --repo .
@@ -438,7 +438,7 @@ The marketplace registry (`/.agents/plugins/marketplace.json`) declares two plug
 | `techtide-harness-kit` | `plugins/techtide-harness-kit/.codex-plugin/plugin.json` | Main plugin - 348 agents |
 | `techtide-cross-platform-agent-template` | `plugins/techtide-cross-platform-agent-template/.codex-plugin/plugin.json` | Scaffold for new cross-platform agents |
 
-For the 331 Codex agent adapter files (`.codex/agents/*.toml`):
+For the 348 Codex agent adapter files (`.codex/agents/*.toml`):
 
 ```bash
 npx thk-export-agents --platform codex --all --repo .
@@ -480,10 +480,10 @@ versioned exports with full control over what gets written to your repo.
 
 ```bash
 # Latest release
-npm install @techtide/harness-kit@latest
+npm install @techtideai/harness-kit@latest
 
 # Pinned release (recommended for production)
-npm install @techtide/harness-kit@1.0.0
+npm install @techtideai/harness-kit@1.0.0
 ```
 
 **Step 2 - export agents for your platform and role:**
@@ -595,7 +595,7 @@ silently pull in new agents and behavior changes. Pin when:
 | Copilot CLI | Replace `master` with tag in the raw URL |
 | Cursor | `git checkout v1.0.0` in the cloned repo |
 | Kiro | `git checkout v1.0.0` in the cloned repo |
-| Gemini / npm | `npm install @techtide/harness-kit@1.0.0` |
+| Gemini / npm | `npm install @techtideai/harness-kit@1.0.0` |
 | Codex | Set `ref = "v1.0.0"` in `config.toml` |
 | thk-export-agents | Pin the npm package version |
 | Skills CLI | **Not supported** - avoid for reproducible environments |

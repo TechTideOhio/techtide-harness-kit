@@ -1,4 +1,4 @@
-﻿{
+{
   "id": "core-native-packaging-bridge",
   "name": "Core Native Packaging Bridge",
   "type": "skill",
@@ -6,7 +6,7 @@
   "harnesses": [
     "core"
   ],
-  "summary": "Translate TechTide-authored workflows into the documented Claude Code packaging surface without pretending every agent uses the same activation model.",
+  "summary": "Translate TechTide-authored workflows into the documented packaging surface without pretending every agent uses the same activation model.",
   "source_type": "reference-only",
   "official_docs": [
     "https://code.claude.com/docs/en/skills"
@@ -31,7 +31,7 @@
   "upstream_author": "TechTide synthesis from verified sources",
   "import_mode": "techtide-synthesis",
   "verification_status": "candidate-valid",
-  "duplicate_hash": "f7c3b61ad82ae5dcd063cd9962dad3436cc2d8550c0f684728b25b949519687c",
+  "duplicate_hash": "cb036ad018bcea58c9de9d1eb116f975165e948ac8066d3f25525a487fb20991",
   "native_skill_surface": "SKILL.md skill packages",
   "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
 }

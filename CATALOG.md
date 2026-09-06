@@ -4,7 +4,7 @@
 
 Generated: 2026-05-17
 
-TechTide Harness Kit ships **391 skills**, **348 agents**, **114 promoted external research candidates**, and **17 install roles**.
+TechTide Harness Kit ships **385 skills**, **348 agents**, **12 promoted external research candidates**, and **17 install roles**.
 
 The best way to read the catalog is not as a giant list. It is a set of portable, eval-backed implementation assets for cloud, security, compliance, and agent engineering work.
 
@@ -31,16 +31,14 @@ The best way to read the catalog is not as a giant list. It is a set of portable
 | techtide | 24 |
 | marketing | 14 |
 | core | 12 |
+| kubernetes | 12 |
 | nvidia | 12 |
-| kubernetes | 10 |
-| finops | 7 |
 | contabo | 6 |
 | hetzner | 6 |
 | ionos | 6 |
 | ovhcloud | 6 |
 | scaleway | 6 |
-| gemini | 3 |
-| vercel | 3 |
+| multi-cloud | 5 |
 | argocd | 2 |
 | backstage | 1 |
 | cert-manager | 1 |
@@ -92,8 +90,7 @@ The best way to read the catalog is not as a giant list. It is a set of portable
 
 | Provider lane | Promoted candidates |
 | --- | ---: |
-| gemini | 3 |
-| vercel | 3 |
+| core | 12 |
 
 ## Role-Based Entry Points
 

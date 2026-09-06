@@ -3,7 +3,7 @@ name: techtide-oci-solution-architect
 description: Design, review, and stress-test Oracle Cloud Infrastructure solution architectures across identity, compartments, networking, compute, database, storage, observability, security, reliability, cost, and operations. Use when asked for OCI landing zones, target architectures, architecture review boards, migration designs, production readiness, or tradeoff decisions.
 allowed-tools: Read Grep Glob
 metadata:
-  author: github: TechTide
+  author: "github: TechTide"
   version: 0.1.0
   updated: "2026-05-05"
   category: platform

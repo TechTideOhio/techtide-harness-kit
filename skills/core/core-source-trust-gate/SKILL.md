@@ -1,4 +1,4 @@
-﻿---
+---
 name: core-source-trust-gate
 description: "Verify skill, rule, and agent sources before installation or reuse by checking primary docs, repository identity, license, native surface, and privacy risk. Use when expanding, reviewing, or operating skills, rules, prompt kits, provider lanes, or generated-code handoffs in the TechTide skill library."
 allowed-tools: Read Grep Glob Bash Edit Write

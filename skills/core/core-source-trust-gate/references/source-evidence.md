@@ -1,4 +1,4 @@
-﻿# Source Evidence
+# Source Evidence
 
 This reference records the verified sources for `core-source-trust-gate`. It is evidence for packaging and promotion decisions.
 
@@ -11,13 +11,13 @@ This reference records the verified sources for `core-source-trust-gate`. It is 
 - Source path: synthesized/capabilities/source-trust-gate.md
 - Import mode: techtide-synthesis
 - Upstream author: TechTide synthesis from verified sources
-- Duplicate hash: 32db28650d88f2d9610d676d7e4516d8fc66c96507f28456bd8c04a699aca9d9
+- Duplicate hash: 0fa194e6b0ab1d7a7abf04bdc1f70070863f1e73d4a6ea25e3dd9028dc722a76
 
 ## Registry Entries
 
-- anthropic-claude-code-skills-docs: https://code.claude.com/docs/en/skills (documentation-reference-only; verified-primary-source)
-- alirezarezvani-claude-skills: https://github.com/alirezarezvani/claude-skills (MIT; verified-github-api)
 - gsd-build-get-shit-done: https://github.com/gsd-build/get-shit-done (MIT; verified-github-api)
+- alirezarezvani-claude-skills: https://github.com/alirezarezvani/claude-skills (MIT; verified-github-api)
+- anthropic-claude-code-skills-docs: https://code.claude.com/docs/en/skills (documentation-reference-only; verified-primary-source)
 
 ## Native Surface
 

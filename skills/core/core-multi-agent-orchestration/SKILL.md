@@ -1,4 +1,4 @@
-﻿---
+---
 name: core-multi-agent-orchestration
 description: "Coordinate agents with each other by splitting work into bounded scopes, clear contracts, integration checks, and review gates. Use when expanding, reviewing, or operating skills, rules, prompt kits, provider lanes, or generated-code handoffs in the TechTide skill library."
 allowed-tools: Read Grep Glob Bash Edit Write

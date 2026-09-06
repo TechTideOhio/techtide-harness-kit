@@ -1,4 +1,4 @@
-﻿---
+---
 name: core-prompt-hardening
 description: "Harden agent prompts so the work has explicit scope, constraints, data states, guardrails, and validation evidence. Use when expanding, reviewing, or operating skills, rules, prompt kits, provider lanes, or generated-code handoffs in the TechTide skill library."
 allowed-tools: Read Grep Glob Bash Edit Write

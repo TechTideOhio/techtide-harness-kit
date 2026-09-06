@@ -1,4 +1,4 @@
-﻿{
+{
   "id": "core-multi-agent-orchestration",
   "name": "Core Multi-Agent Orchestration",
   "type": "skill",
@@ -6,7 +6,7 @@
   "harnesses": [
     "core"
   ],
-  "summary": "Coordinate with other agents by splitting work into bounded scopes, clear contracts, integration checks, and review gates.",
+  "summary": "Coordinate agents with each other by splitting work into bounded scopes, clear contracts, integration checks, and review gates.",
   "source_type": "reference-only",
   "official_docs": [
     "https://code.claude.com/docs/en/skills"
@@ -31,7 +31,7 @@
   "upstream_author": "TechTide synthesis from verified sources",
   "import_mode": "techtide-synthesis",
   "verification_status": "candidate-valid",
-  "duplicate_hash": "c8c231dae71be82f970a68aa7b43e893024558eb1ae2508142e1df0585b2ae72",
+  "duplicate_hash": "e2c187cd910af91319576915fd1e5bcfd72d4a22ecf4cf7e71284b1e3d9eef33",
   "native_skill_surface": "SKILL.md skill packages",
   "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
 }

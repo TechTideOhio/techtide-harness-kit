@@ -1,4 +1,4 @@
-﻿{
+{
   "id": "core-mcp-tool-safety",
   "name": "Core MCP Tool Safety",
   "type": "skill",
@@ -6,7 +6,7 @@
   "harnesses": [
     "core"
   ],
-  "summary": "Review tool and MCP usage for credential scope, network egress, mutation risk, logging, and human approval gates.",
+  "summary": "Review agent tool and MCP usage for credential scope, network egress, mutation risk, logging, and human approval gates.",
   "source_type": "reference-only",
   "official_docs": [
     "https://code.claude.com/docs/en/skills"
@@ -32,7 +32,7 @@
   "upstream_author": "TechTide synthesis from verified sources",
   "import_mode": "techtide-synthesis",
   "verification_status": "candidate-valid",
-  "duplicate_hash": "09af79d77657182def1908b190f50e50181e848c9b0f735ecf653384e9584842",
+  "duplicate_hash": "4416e358715ba58ab5a637a7da851d3a69762d7ef8eb8eab6c06ee32b168937c",
   "native_skill_surface": "SKILL.md skill packages",
   "promotion_notes": "TechTide-authored synthesis based on verified source surfaces; no third-party body copied."
 }

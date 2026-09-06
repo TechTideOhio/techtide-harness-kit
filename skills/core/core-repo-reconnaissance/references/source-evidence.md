@@ -1,4 +1,4 @@
-﻿# Source Evidence
+# Source Evidence
 
 This reference records the verified sources for `core-repo-reconnaissance`. It is evidence for packaging and promotion decisions.
 
@@ -11,7 +11,7 @@ This reference records the verified sources for `core-repo-reconnaissance`. It i
 - Source path: synthesized/capabilities/repo-reconnaissance.md
 - Import mode: techtide-synthesis
 - Upstream author: TechTide synthesis from verified sources
-- Duplicate hash: 0136df3f0576ca0f24e56465d387abb597d6a4fa6cbf81358dc2b153e817b90e
+- Duplicate hash: 1874ffe696b11ca5e83368c843863723b01c2584b6c62d965af3179569f98de2
 
 ## Registry Entries
 

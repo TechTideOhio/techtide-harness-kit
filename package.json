@@ -1,6 +1,6 @@
 {
-  "name": "@techtide/harness-kit",
-  "version": "1.0.3",
+  "name": "@techtideai/harness-kit",
+  "version": "1.1.2",
   "description": "Portable, eval-backed marketplace for enterprise agent skills, specialist agents, rules, MCP references, and trust evidence.",
   "author": {
     "name": "Alex Cinovoj / TechTide",
@@ -22,6 +22,7 @@
   "files": [
     "README.md",
     "LICENSE",
+    "plugin.json",
     ".agents/",
     ".claude-plugin/",
     ".cursor-plugin/",
@@ -72,6 +73,7 @@
     "validate:install-coverage": "node tests/test-thk-export-coverage.test.mjs",
     "validate:maestro-routing": "python3 tests/validate-maestro-routing.py",
     "validate:plugin-manifest": "python3 tests/validate-plugin-manifest.py",
+    "validate:agent-plugins": "python3 tests/validate-agent-plugins-manifest.py",
     "validate:kiro-powers": "python3 tests/validate-kiro-powers.py",
     "validate:multi-harness-marketplace": "python3 tests/validate-multi-harness-marketplace.py",
     "validate:codex-marketplace": "python3 tests/validate-codex-marketplace.py",
@@ -79,6 +81,8 @@
     "test:marketplace-validators": "python3 tests/test-marketplace-validators.py",
     "maestro-routing:write": "python3 tests/_generate_maestro_routing_fixtures.py",
     "plugin-manifest:write": "node scripts/generate-plugin-manifest.mjs",
+    "agent-plugins:write": "node scripts/generate-agent-plugins-manifest.mjs && node scripts/generate-agent-plugins-skills.mjs",
+    "agent-plugins:check": "node scripts/generate-agent-plugins-manifest.mjs --check && node scripts/generate-agent-plugins-skills.mjs --check",
     "cursor-plugin:write": "node scripts/generate-cursor-plugin.mjs",
     "kiro-powers:write": "node scripts/generate-kiro-powers.mjs",
     "asset-integrity:write": "python3 tests/validate-asset-integrity.py --write",
@@ -90,7 +94,7 @@
     "test:lovable-skill-packaging": "node tests/test-lovable-skill-packaging.test.mjs",
     "test:proof-layer": "node tests/test-proof-layer.test.mjs",
     "test:fuzz": "node tests/fuzz-properties.test.mjs",
-    "validate": "npm run dedup:check && npm run techtide-skills:check && npm run external-skills:check && npm run proof-layer:check && npm run hygiene:check && npm run test:techtide-skill-ingestion && npm run test:external-skill-research && npm run test:lovable-skill-packaging && npm run test:proof-layer && npm run validate:catalog && npm run validate:aws && npm run manifest:check && npm run validate:allowed-tools && npm run validate:skill-schema && npm run validate:agent-schema && npm run validate:links && npm run validate:asset-integrity && npm run validate:mcp-trust-matrix && npm run validate:no-lifecycle-scripts && npm run validate:promotion-gatekeeper && npm run validate:install-coverage && npm run validate:maestro-routing && npm run validate:plugin-manifest && npm run validate:kiro-powers && npm run validate:multi-harness-marketplace && npm run validate:codex-marketplace && npm run validate:finops-fixtures",
+    "validate": "npm run dedup:check && npm run techtide-skills:check && npm run external-skills:check && npm run proof-layer:check && npm run hygiene:check && npm run test:techtide-skill-ingestion && npm run test:external-skill-research && npm run test:lovable-skill-packaging && npm run test:proof-layer && npm run validate:catalog && npm run validate:aws && npm run manifest:check && npm run validate:allowed-tools && npm run validate:skill-schema && npm run validate:agent-schema && npm run validate:links && npm run validate:asset-integrity && npm run validate:mcp-trust-matrix && npm run validate:no-lifecycle-scripts && npm run validate:promotion-gatekeeper && npm run validate:install-coverage && npm run validate:maestro-routing && npm run validate:agent-plugins && npm run validate:plugin-manifest && npm run validate:kiro-powers && npm run validate:multi-harness-marketplace && npm run validate:codex-marketplace && npm run validate:finops-fixtures",
     "release:sbom": "command -v syft >/dev/null 2>&1 && syft scan dir:. -o spdx-json=sbom.spdx.json || echo 'syft not installed; SBOM is built in CI by anchore/sbom-action'",
     "lint:md": "npx --yes markdownlint-cli2 \"**/*.md\" \"#node_modules\" \"#.git\" \"#.code-review-graph\" \"#CHANGELOG.md\"",
     "lint:spell": "codespell",

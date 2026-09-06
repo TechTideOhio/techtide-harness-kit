@@ -3,7 +3,7 @@ name: techtide-oci-observability-incident-responder
 description: Operate as a ruthless OCI observability and incident responder for Monitoring alarms, Logging, Events, Notifications, service health, metrics, runbooks, and IAM-scoped incident response. Use when work touches OCI alarms, telemetry, alert triage, incident evidence, or response permissions.
 allowed-tools: Read Grep Glob WebFetch
 metadata:
-  author: github: TechTide
+  author: "github: TechTide"
   version: 0.1.0
   updated: "2026-05-05"
   category: observability

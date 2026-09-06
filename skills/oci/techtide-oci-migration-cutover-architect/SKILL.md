@@ -3,7 +3,7 @@ name: techtide-oci-migration-cutover-architect
 description: Plan OCI migrations and cutovers with Cloud Migrations, dependency discovery, waves, rollback, DNS, data sync, validation, and support readiness. Use for migration assessment, move groups, cutover runbooks, and go/no-go reviews.
 allowed-tools: Read Grep Glob
 metadata:
-  author: github: TechTide
+  author: "github: TechTide"
   version: 0.1.0
   updated: "2026-05-05"
   category: delivery

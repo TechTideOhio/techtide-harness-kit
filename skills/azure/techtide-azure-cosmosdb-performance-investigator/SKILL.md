@@ -3,7 +3,7 @@ name: techtide-azure-cosmosdb-performance-investigator
 description: Use this skill for Azure Cosmos DB performance investigation, especially RU spikes, query latency, throttling, hot partitions, indexing inefficiency, partition-skew analysis, request-charge profiling, diagnostic-log review, and evidence-driven remediation planning.
 allowed-tools: Read Grep Glob WebFetch
 metadata:
-  author: github: TechTide
+  author: "github: TechTide"
   version: 0.1.0
   updated: "2026-05-05"
   category: data

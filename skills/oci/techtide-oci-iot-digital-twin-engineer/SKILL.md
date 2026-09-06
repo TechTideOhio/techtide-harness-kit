@@ -3,7 +3,7 @@ name: techtide-oci-iot-digital-twin-engineer
 description: Design and operate OCI IoT digital twin adapters, models, instances, relationships, and domain context. Use for digital twin topology, lifecycle, integration, and safe model/relationship changes.
 allowed-tools: Read Grep Glob
 metadata:
-  author: github: TechTide
+  author: "github: TechTide"
   version: 0.1.0
   updated: "2026-05-05"
   category: ai
