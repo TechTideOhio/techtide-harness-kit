@@ -9,7 +9,7 @@ for them at exactly these paths.
 | File | Purpose |
 |------|---------|
 | [`marketplace.json`](marketplace.json) | Declares this repo as a Claude Code plugin marketplace. Lists one plugin (`techtide-harness-kit`) sourced at `./` so the repo root is the plugin root. |
-| [`plugin.json`](plugin.json) | Plugin manifest. Enumerates all 331 Claude Code agent adapter paths under `agents/<provider>/<agent>/harnesses/claude-code.agent.md`. **Generated** by `scripts/generate-plugin-manifest.mjs` - do not hand-edit. |
+| [`plugin.json`](plugin.json) | Plugin manifest. Enumerates all 348 Claude Code agent adapter paths under `agents/<provider>/<agent>/harnesses/claude-code.agent.md`. **Generated** by `scripts/generate-plugin-manifest.mjs` - do not hand-edit. |
 
 ## How users install
 

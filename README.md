@@ -31,7 +31,7 @@
 
 <br/>
 
-## <img src="https://img.shields.io/badge/-Works_With-0D1117?style=flat-square" height="24" />&ensp;Works With
+## <img src="https://img.shields.io/badge/-Works_With-0D1117?style=flat-square" height="24" alt="Works With" />&ensp;Works With
 
 <table>
 <tr>
@@ -136,7 +136,7 @@ Full comparison and install paths: [docs/integrations/installation-guide.md](doc
 
 <br/>
 
-## <img src="https://img.shields.io/badge/-Get_Started-0D1117?style=flat-square" height="24" />&ensp;Get Started
+## <img src="https://img.shields.io/badge/-Get_Started-0D1117?style=flat-square" height="24" alt="Get Started" />&ensp;Get Started
 
 ```bash
 npm install @techtideai/harness-kit
@@ -152,7 +152,7 @@ npx thk-export-agents --platform gemini --all --repo .
 
 <br/>
 
-## <img src="https://img.shields.io/badge/-By_The_Numbers-0D1117?style=flat-square" height="24" />&ensp;By The Numbers
+## <img src="https://img.shields.io/badge/-By_The_Numbers-0D1117?style=flat-square" height="24" alt="By The Numbers" />&ensp;By The Numbers
 
 | | | | |
 | :---: | :---: | :---: | :---: |
@@ -164,7 +164,7 @@ npx thk-export-agents --platform gemini --all --repo .
 
 <br/>
 
-## <img src="https://img.shields.io/badge/-Cloud_Coverage-0D1117?style=flat-square" height="24" />&ensp;Cloud Coverage
+## <img src="https://img.shields.io/badge/-Cloud_Coverage-0D1117?style=flat-square" height="24" alt="Cloud Coverage" />&ensp;Cloud Coverage
 
 Every cloud has deep, provider-specific skills with inline assessment questions and validation checklists -- not generic templates with names swapped.
 
@@ -207,7 +207,7 @@ Every cloud has deep, provider-specific skills with inline assessment questions 
 
 <br/>
 
-## <img src="https://img.shields.io/badge/-Skill_Anatomy-0D1117?style=flat-square" height="24" />&ensp;Skill Anatomy
+## <img src="https://img.shields.io/badge/-Skill_Anatomy-0D1117?style=flat-square" height="24" alt="Skill Anatomy" />&ensp;Skill Anatomy
 
 Every skill follows a consistent, agent-optimized structure with least-privilege tool scoping:
 
@@ -262,7 +262,7 @@ No `Write`. No `Bash`. No network. Least-privilege by default.
 
 <br/>
 
-## <img src="https://img.shields.io/badge/-What_Ships-0D1117?style=flat-square" height="24" />&ensp;What Ships
+## <img src="https://img.shields.io/badge/-What_Ships-0D1117?style=flat-square" height="24" alt="What Ships" />&ensp;What Ships
 
 | Surface | Purpose |
 | --- | --- |
@@ -279,7 +279,7 @@ No `Write`. No `Bash`. No network. Least-privilege by default.
 
 <br/>
 
-## <img src="https://img.shields.io/badge/-Enterprise_Trust-0D1117?style=flat-square" height="24" />&ensp;Enterprise Trust
+## <img src="https://img.shields.io/badge/-Enterprise_Trust-0D1117?style=flat-square" height="24" alt="Enterprise Trust" />&ensp;Enterprise Trust
 
 <table>
 <tr>
@@ -318,7 +318,7 @@ No `Write`. No `Bash`. No network. Least-privilege by default.
 
 <br/>
 
-## <img src="https://img.shields.io/badge/-vs_Alternatives-0D1117?style=flat-square" height="24" />&ensp;vs Alternatives
+## <img src="https://img.shields.io/badge/-vs_Alternatives-0D1117?style=flat-square" height="24" alt="vs Alternatives" />&ensp;vs Alternatives
 
 | Feature | TechTide Harness Kit | Awesome lists | Toolkit repos |
 | --- | :---: | :---: | :---: |
@@ -335,7 +335,7 @@ No `Write`. No `Bash`. No network. Least-privilege by default.
 
 <br/>
 
-## <img src="https://img.shields.io/badge/-Commands-0D1117?style=flat-square" height="24" />&ensp;Common Commands
+## <img src="https://img.shields.io/badge/-Commands-0D1117?style=flat-square" height="24" alt="Common Commands" />&ensp;Common Commands
 
 ```bash
 # Validate everything (25+ gates)
@@ -355,7 +355,7 @@ npm run proof-layer:write && npm run plugin-manifest:write
 
 <br/>
 
-## <img src="https://img.shields.io/badge/-Documentation-0D1117?style=flat-square" height="24" />&ensp;Documentation
+## <img src="https://img.shields.io/badge/-Documentation-0D1117?style=flat-square" height="24" alt="Documentation" />&ensp;Documentation
 
 | Topic | Link |
 | --- | --- |
@@ -370,7 +370,7 @@ npm run proof-layer:write && npm run plugin-manifest:write
 
 <br/>
 
-## <img src="https://img.shields.io/badge/-Contributing-0D1117?style=flat-square" height="24" />&ensp;Contributing
+## <img src="https://img.shields.io/badge/-Contributing-0D1117?style=flat-square" height="24" alt="Contributing" />&ensp;Contributing
 
 Contributions should be evidence-backed, source-grounded, and safe by default.
 

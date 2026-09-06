@@ -16691,11 +16691,11 @@
     },
     {
       "tree": ".claude-plugin",
-      "aggregate_sha256": "f545e18c25988ae4efd3cfa1ce14752691449f78a8f8b6e7ebb5f7b8abce341e",
+      "aggregate_sha256": "94a08de9a6c9f3374f6af257e7bdaaf5568149c969121bcf8c5d7f27c6610c42",
       "files": [
         {
           "path": ".claude-plugin/marketplace.json",
-          "sha256": "4ef93f002236fa66e7121fb245f35c778700322dc40fbad5c7fe387c37d4aa1d",
+          "sha256": "515da963b642fdadd91d489f0781f0a584cf90a806cca5f8f7258d557ec08c74",
           "bytes": 995
         },
         {
@@ -16705,14 +16705,14 @@
         },
         {
           "path": ".claude-plugin/README.md",
-          "sha256": "ed3f39f1fcb0d4342bcb40e6b19b139dd4e6e45b17376df9f395ec1a34fc2239",
+          "sha256": "fcd2200105cc96bf9e702b0d953193152ea2d76948c88e2ef5c40794fc14e18f",
           "bytes": 2757
         }
       ]
     },
     {
       "tree": ".cursor-plugin",
-      "aggregate_sha256": "5106510cc9388dadd5ea9c0a2459e3150a28a8b83e3e917e47153ccc863a7d27",
+      "aggregate_sha256": "f763daac0b7a0e26659613298fb3f0303e5c7b9e36afb5437d742be15ffd0283",
       "files": [
         {
           "path": ".cursor-plugin/plugin.json",
@@ -16721,7 +16721,7 @@
         },
         {
           "path": ".cursor-plugin/README.md",
-          "sha256": "7b07b33b312b3b598e1e7aac8187471def1b8592babe9370042faec7cf03c853",
+          "sha256": "75ff312d306426f01ec9a4ad28a8db23f43ce13f18b57ab15f25d359480a5990",
           "bytes": 2218
         }
       ]
@@ -21183,8 +21183,8 @@
   "root_files": [
     {
       "path": "README.md",
-      "sha256": "3f1e1d38ca360e4fe7eb31aefe7b9b88ce6d0f6227e3910e2fd8c1f24140f080",
-      "bytes": 13967
+      "sha256": "ad47a418a8737519d9078031919ad7a881870cb67fd868d811a1d6d524cea358",
+      "bytes": 14187
     },
     {
       "path": "SECURITY.md",
@@ -21232,5 +21232,5 @@
       "bytes": 4281
     }
   ],
-  "aggregate_sha256": "cca0ebdc6f175fa7c307332ac0fb9ba262698329c09db640f8e28a4ec39d8ed6"
+  "aggregate_sha256": "66b767197e5594aabcfc4b840a207a93db9d4193866098a815798454b8011061"
 }
