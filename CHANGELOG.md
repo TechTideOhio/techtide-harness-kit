@@ -1,3 +1,77 @@
+## 🛡️ v1.1.0 - *Provenance, Policy, Portability* - 2026-09-06
+
+> _Multi-cloud agent marketplace · `AWS` · `Azure` · `OCI` · `Terraform`_
+>
+> Built for operators on the cloud frontier - least privilege, live evidence, safe rollback paths.
+
+
+### fix
+
+* publish package under @techtideai npm scope
+* update coverage-map SVG skill count from 487 to 391
+Aligns the bottom stats bar in coverage-map.svg with the actual
+skill count after the clone removal in f93e8bb.
+
+### docs
+
+* record supply-chain hardening in distribution audit
+* redesign README as professional landing page
+- Hero section with centered logo, tagline, flat-square badge row
+- Four hero harnesses front and center: Claude Code, Cursor, Codex,
+  Lovable with for-the-badge style, install commands, and doc links
+- Collapsible section for Copilot, Gemini, Kiro
+- Two-column HTML tables for cloud coverage and enterprise trust
+- Section headers using shield badges for visual consistency
+- Side-by-side skill anatomy showing frontmatter and assessment questions
+- Updated showcase-hero.svg: 487->391, added Lovable pill with brand
+  colors for all four hero harnesses (amber, cyan, green, pink)
+- By-the-numbers grid with 8 key metrics
+- vs-alternatives comparison table
+
+### feat
+
+* add Agent Plugins 1.0 distribution and restore validation green
+- Add Agent Plugins 1.0 root plugin.json via closed-schema generator with containment checks; flat skills build artifact at dist/agent-plugins
+
+- Rebuild external skill research generator around the core lane (12 skills); purge stale provider-clone catalog entries
+
+- Quote strict-YAML frontmatter (62 files): npx skills discovers 385/385 with zero skipped
+
+- Remove 6 stale on-disk-only clone dirs; retarget Lovable packaging at core lane
+
+- Move enriched AWS guidance into references/review-guidance.md (90-line progressive-disclosure rule)
+
+- Register core lane in catalog validator; add validate:agent-plugins gate and CI job; wire plugin.json into npm files and release-prepare sync
+
+- Docs: distribution audit, live verification log, Agent Plugins install path
+
+### chore
+
+* **actions:** bump github/codeql-action in the actions group (#4)
+Bumps the actions group with 1 update: [github/codeql-action](https://github.com/github/codeql-action).
+
+Updates `github/codeql-action` from 4.35.4 to 4.35.5
+- [Release notes](https://github.com/github/codeql-action/releases)
+- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/github/codeql-action/compare/68bde559dea0fdcac2102bfdf6230c5f70eb485e...9e0d7b8d25671d64c341c19c0152d693099fb5ba)
+* replace local source-anchor path with generic placeholder
+
+### refactor
+
+* remove 96 clone skills, enrich AWS skills, add dedup CI gate
+- Delete 96 harness-clone skills (cursor, codex, kiro, lovable, v0, replit
+  directories + 12 clones each from gemini and vercel)
+- Move 12 canonical skills from skills/claude/ to skills/core/ with
+  updated frontmatter and metadata
+- Inline assessment questions and validation checklists into top 5 AWS
+  skills (39-52 lines -> 161-173 lines each)
+- Add scripts/check-skill-dedup.mjs CI gate (exits 1 on hash collision)
+- Wire dedup:check into npm run validate pipeline
+- Update README.md counts: 487 -> 391 unique production skills
+- Update CATALOG.md provider table to reflect actual state
+
+Dedup check passes clean: 391 skills, zero duplicates.
+
 # Changelog
 
 This changelog records neutral TechTide Harness Kit release history. It
