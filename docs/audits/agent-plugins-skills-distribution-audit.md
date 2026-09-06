@@ -19,7 +19,7 @@ clients, is **partially consumable** via `npx skills` (329/391 skills), and is
 | 2 | Agent Plugins 1.0 `mcp.json` at plugin root | Missing (acceptable per spec 6.2) | `Test-Path mcp.json` = False | Step 2 (ship without; see 6) |
 | 3 | Skills discoverable at `skills/<skill>/SKILL.md` (immediate child, spec 7.1) | Canonical tree is `skills/<provider>/<skill>/SKILL.md` (2 levels); Agent Plugins clients discover **0 skills** | `(Get-ChildItem -Recurse -Filter SKILL.md skills).Count` = 391, all at depth 3 | Step 3 (flat build artifact; do NOT move canonical tree) |
 | 4 | Strict-YAML frontmatter (`npx skills`, `skills-ref`, `gh skill`) | **62/391 SKILL.md skipped** by `npx skills add . --list` | CLI count 62; local heuristic reproduces exactly 62 (see table) | Step 4 |
-| 5 | Repo supply-chain for `gh skill` publish checks | `master` branch **not protected** (HTTP 404); secret scanning **disabled**; code scanning null via API | `gh api .../branches/master/protection`, `gh api repos/... --jq secret/code scanning` | Step 5 |
+| 5 | Repo supply-chain for `gh skill` publish checks | Partially remediated 2026-09-06: secret scanning **enabled**, push protection **enabled**, `master` protected (force-push/deletion blocked; direct push still allowed). **Still missing: `NPM_TOKEN` secret** (secret list empty; package never published to npm) | `gh api .../branches/master/protection`, `gh secret list` | Step 5/9 |
 
 ## Finding 4 detail: strict-YAML failures by lane
 
