@@ -16417,7 +16417,7 @@
     },
     {
       "tree": "catalog",
-      "aggregate_sha256": "f0702f84f745061a795e69af155f8689a81951c6673b95e0a72c42934930ec43",
+      "aggregate_sha256": "22e609bed94a7ec3a72dfb365e1c4ea9bdc23348f4290f0b7b006c18e1e5240e",
       "files": [
         {
           "path": "catalog/agents.json",
@@ -16461,34 +16461,34 @@
         },
         {
           "path": "catalog/skill-manifest.json",
-          "sha256": "c5bfe471a3510c914a0184004f6057c242f3f4aefadfb49f9749167db179cbe7",
-          "bytes": 563903
+          "sha256": "7ac47d28d451093828560d47ea136a28bf9eb9d1fdcf3a6253b03f8bcc1b41ea",
+          "bytes": 476983
         },
         {
           "path": "catalog/skill-research-quarantine.json",
-          "sha256": "9b6ebd189199d3905a3ae172c05de033e57bd03a0c84c6a29632e84cbbfe8287",
-          "bytes": 143589
+          "sha256": "2720b8c26b8319b6c053ef2cb318dcc672330d4bbed422c421d3f7184e31f2ac",
+          "bytes": 15375
         },
         {
           "path": "catalog/skill-trust.json",
-          "sha256": "8da24c19de9a6aff35958c96e2f2adbf325fdfeede41ee4eccc0bff875441b22",
-          "bytes": 783248
+          "sha256": "7381d154f80ab1a5e0a06fe1292b92414c6504bf4bbdb804929aed2c14c0d14b",
+          "bytes": 620577
         },
         {
           "path": "catalog/skills.json",
-          "sha256": "071145e5fbf1c31f318caf05f822699554c2671edb9fcf685fd350cb494e32cb",
-          "bytes": 684991
+          "sha256": "42208695075e50348bcfd36459b24e8712c4ade6cc4d0f6331d8316e1721e878",
+          "bytes": 503676
         },
         {
           "path": "catalog/techtide-skill-ingestion-manifest.json",
-          "sha256": "8de377e0cadae1a122afd1b52001e02de8c094924648f3e9ada83c01b8b7c1ec",
-          "bytes": 28254
+          "sha256": "5629492333b472f8fa16590b80a61311716c86e6bdedd64dfc254d07e74fe248",
+          "bytes": 28246
         }
       ]
     },
     {
       "tree": "scripts",
-      "aggregate_sha256": "d60b4cefba37605bec9fd301e0b7df25d7f0871aff3b13a219f221fb94b56ae5",
+      "aggregate_sha256": "0ff744adf771805e2ff68dd0f76e5e19370f777b40b933094fcbfff3dd58f323",
       "files": [
         {
           "path": "scripts/apply-skill-allowed-tools.py",
@@ -16499,6 +16499,11 @@
           "path": "scripts/backfill-skill-metadata.py",
           "sha256": "650ef4685bb47b46b5cc114654bc111b42662f41f4292d391e2a5776e4b6152d",
           "bytes": 16823
+        },
+        {
+          "path": "scripts/check-skill-dedup.mjs",
+          "sha256": "0b2ce7ab49c3440d837a8f09593014dd5064e8e372548a4321d04f1cdef8fcb7",
+          "bytes": 4079
         },
         {
           "path": "scripts/enterprise-mission-demo.mjs",
@@ -16512,8 +16517,8 @@
         },
         {
           "path": "scripts/external-skill-research.mjs",
-          "sha256": "50829c614185b9887d4fec6104c6134a12e5310ebd6e61a5cbe60bcb7e5aa953",
-          "bytes": 52663
+          "sha256": "d1da3c6acd22424f1ab67522bbaa78f0623c55dc4473b74028e363f5ce9ca512",
+          "bytes": 47476
         },
         {
           "path": "scripts/gen_azure_live_guards.py",
@@ -16524,6 +16529,16 @@
           "path": "scripts/gen_oci_live_guards.py",
           "sha256": "4d138af465e9805d8005fce4b3618ed730efe44912d9a68746f800fd72ee1825",
           "bytes": 69110
+        },
+        {
+          "path": "scripts/generate-agent-plugins-manifest.mjs",
+          "sha256": "2ee5926fc8cce594604dec3831ac9e269c52eb08abf975f7f868f1f3ab619c7a",
+          "bytes": 5468
+        },
+        {
+          "path": "scripts/generate-agent-plugins-skills.mjs",
+          "sha256": "a17a852cf068e567ddbcc8aded5f2bbd1fc1ac038bbd8fc30a1531394b3a7a11",
+          "bytes": 5983
         },
         {
           "path": "scripts/generate-changelog-counts.mjs",
@@ -16542,8 +16557,8 @@
         },
         {
           "path": "scripts/generate-lovable-skills.mjs",
-          "sha256": "93db531e7da734bf32b4be9fab434249aaf1e77eea73b9dd216bf8a06d510cdf",
-          "bytes": 16550
+          "sha256": "dbb234c7e456ebf6466fc7b9f05fcfdd64dd2209a0cd854ad84b278bed37eb8d",
+          "bytes": 16511
         },
         {
           "path": "scripts/generate-plugin-manifest.mjs",
@@ -16562,13 +16577,13 @@
         },
         {
           "path": "scripts/release-prepare.mjs",
-          "sha256": "359f54a045121e994c04cf3111b38d85ffda826f2d876dd511181a77c575ad08",
-          "bytes": 7519
+          "sha256": "491dc3a6428cdc57029cd272afb57c0d4dd2c7e0356afdd678da23d38333edda",
+          "bytes": 7672
         },
         {
           "path": "scripts/techtide-skill-ingestion.mjs",
-          "sha256": "be7e744093393d2212edfdd2b017af3817bc7a94a33eaab71717f3954b635d85",
-          "bytes": 52654
+          "sha256": "fee7dca551840f143252f70f82a697f91d194287f971e8e328ba51cd13bec305",
+          "bytes": 52646
         },
         {
           "path": "scripts/update-catalog-new-agents.py",
@@ -16660,7 +16675,7 @@
     },
     {
       "tree": "plugins",
-      "aggregate_sha256": "912e26d4a34c06f174d0f9d149cfcbe0bafb44bb942ba8b27de369a3c4a67603",
+      "aggregate_sha256": "e8616b4565c01006f961e8bc6f47b1f89056364d16309fff4adabfdd4af56bf0",
       "files": [
         {
           "path": "plugins/techtide-cross-platform-agent-template/.codex-plugin/plugin.json",
@@ -16669,55 +16684,55 @@
         },
         {
           "path": "plugins/techtide-harness-kit/.codex-plugin/plugin.json",
-          "sha256": "f9418a782bd5a0e36c536a7dc66109bc6523b94b7774068da1a15975dd09986a",
+          "sha256": "8ee4f9d53f1783f76768ef8c31d014a13984ae99c7c625a66ed1f3ba3524ae7f",
           "bytes": 1937
         }
       ]
     },
     {
       "tree": ".claude-plugin",
-      "aggregate_sha256": "b3c13059e943d902c70da6c2ff9b03abe65d2299bd2aa8062280fa6d69208e1c",
+      "aggregate_sha256": "c6f1bcebd9e99743d20ea2d4c6bfeeb0a5ee4c67155f72fc220b9a948ba313f7",
       "files": [
         {
           "path": ".claude-plugin/marketplace.json",
-          "sha256": "4ef93f002236fa66e7121fb245f35c778700322dc40fbad5c7fe387c37d4aa1d",
+          "sha256": "515da963b642fdadd91d489f0781f0a584cf90a806cca5f8f7258d557ec08c74",
           "bytes": 995
         },
         {
           "path": ".claude-plugin/plugin.json",
-          "sha256": "aeeac3dd30928504e72ce39f578d794e34ee3c3c2408e9d338d93dfbf2c89598",
+          "sha256": "7af97b0d5b16bb1d132ab88ca38ae9e8973dba3148a1b37cea8b42cd9b04635b",
           "bytes": 35635
         },
         {
           "path": ".claude-plugin/README.md",
-          "sha256": "87ed327861c81a008e1b36c09d6490800e51393b58aeaa51548150645d1f0d0e",
-          "bytes": 2755
+          "sha256": "fcd2200105cc96bf9e702b0d953193152ea2d76948c88e2ef5c40794fc14e18f",
+          "bytes": 2757
         }
       ]
     },
     {
       "tree": ".cursor-plugin",
-      "aggregate_sha256": "5b26d82c71edc864930c11d03fb1fc1223735ee263b755af81ac055d1e27208e",
+      "aggregate_sha256": "e6b32f4ca47520e43192c3c59b083659c3763d937087674a5c6f792cf6866c27",
       "files": [
         {
           "path": ".cursor-plugin/plugin.json",
-          "sha256": "1a5b627996aefe8ac04baaffa92f06e969ddc1db21e8546e86b6e1b3e47998ce",
+          "sha256": "95f2b4ef53c337f8135d46d4888700405feebb1c30e1d972a4288205aa40f367",
           "bytes": 33871
         },
         {
           "path": ".cursor-plugin/README.md",
-          "sha256": "7b07b33b312b3b598e1e7aac8187471def1b8592babe9370042faec7cf03c853",
+          "sha256": "75ff312d306426f01ec9a4ad28a8db23f43ce13f18b57ab15f25d359480a5990",
           "bytes": 2218
         }
       ]
     },
     {
       "tree": ".github/plugin",
-      "aggregate_sha256": "fb9d13a5c7c752b546235bc7c48358262d42425499419a995cce128dec65bea9",
+      "aggregate_sha256": "45c24df7c9e4f95ec1b7cdbd91d4543e2d9a9cfb522a380e6c97053420bdda83",
       "files": [
         {
           "path": ".github/plugin/marketplace.json",
-          "sha256": "81dd431493098062ad2d511274e36bf29f3154c6e2e1f424dc3e44713b8c2180",
+          "sha256": "eb3d0af5b65405b4fe6fd2067b6dfa217b8673babeeb53c1938fb6cdc87e2011",
           "bytes": 835
         },
         {
@@ -16745,7 +16760,7 @@
     },
     {
       "tree": "tests",
-      "aggregate_sha256": "6adae114945f08725ff362c72ea141db493e3b3facd7996d52b3b3d49da350c9",
+      "aggregate_sha256": "425fd5970af1a77ddb2f0ca76912ffc5d416589b9835afeb3a13c527ea0f1e28",
       "files": [
         {
           "path": "tests/_generate_maestro_routing_fixtures.py",
@@ -21039,8 +21054,8 @@
         },
         {
           "path": "tests/test-lovable-skill-packaging.test.mjs",
-          "sha256": "8198efb1f85452aff2b727e71bced30b2766096dbfeff5535a250ea58b12c80b",
-          "bytes": 2980
+          "sha256": "8bf3b009ec7b8aa17f27f5cedcc8cc61e18505b89f18069989092cbbdf4835f5",
+          "bytes": 2967
         },
         {
           "path": "tests/test-marketplace-validators.py",
@@ -21068,6 +21083,11 @@
           "bytes": 9932
         },
         {
+          "path": "tests/validate-agent-plugins-manifest.py",
+          "sha256": "8e297529ae8c0a5b3bbcaac70c37db5490042a081970cfa49371e0c516121637",
+          "bytes": 6830
+        },
+        {
           "path": "tests/validate-asset-integrity.py",
           "sha256": "62abe68b43fe224592903ef233cf601b2bb9519a793d7c8922ed09fbbd22f0d9",
           "bytes": 7966
@@ -21089,8 +21109,8 @@
         },
         {
           "path": "tests/validate-catalog.py",
-          "sha256": "6ca2d3c64207190e1341255dbd0a676ce2aca122d13ac9c1c88e0ffb49950edd",
-          "bytes": 14159
+          "sha256": "14806df0f29880fcce3f7544db8fe8fb3892e8e2c99fda4a95f66ab5f7e7926a",
+          "bytes": 14179
         },
         {
           "path": "tests/validate-codex-marketplace.py",
@@ -21163,13 +21183,13 @@
   "root_files": [
     {
       "path": "README.md",
-      "sha256": "58d313ff3ef2097696746df96a6b66fca05542b1b19fa6e39f83b531690c28e1",
-      "bytes": 9623
+      "sha256": "ad47a418a8737519d9078031919ad7a881870cb67fd868d811a1d6d524cea358",
+      "bytes": 14187
     },
     {
       "path": "SECURITY.md",
-      "sha256": "1cd7f4bfa4fbcc19068b2b1fbfdbdeffbc20418e0fccb07bd2da7b570e1d7e60",
-      "bytes": 7016
+      "sha256": "2061437a2b4ca0d0ae9dd85fd305ea345a5605a6c3bcd3e68ad0fcd29e09216a",
+      "bytes": 7020
     },
     {
       "path": "LICENSE",
@@ -21203,14 +21223,14 @@
     },
     {
       "path": "package.json",
-      "sha256": "651b3596a47b99b7872139007c8427e7cc9fb36a7e05f73251c802cc8b978f6c",
-      "bytes": 6827
+      "sha256": "2c06f60073be4f4471ed7664a01043af6a6ec936313960cf18166bfa85c456e0",
+      "bytes": 7318
     },
     {
       "path": ".releaserc.js",
-      "sha256": "178b6e07b0d8e745904127def9177bb3b9f768aed7d13e10f0cc0f16094a35ca",
-      "bytes": 3961
+      "sha256": "747a362966017f736b9920e7d3f3f45c73744c61ee3385dfbd400f0c5e7c5bee",
+      "bytes": 4440
     }
   ],
-  "aggregate_sha256": "b35bd10b37361c2cbb1808d91e7a2c86f2768e6a0fbb367fa8d8d79c23037ca2"
+  "aggregate_sha256": "153ba07d2cd7cfbe0883a7122cffba2d35c28c3961f1baf87eec03ca22e064ad"
 }

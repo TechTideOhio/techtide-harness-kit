@@ -3,7 +3,7 @@ name: techtide-oci-security-compliance-reviewer
 description: "Review Oracle Cloud Infrastructure security, IAM, network, logging, encryption, and compliance posture. Use when asked to audit OCI policies, compartments, tenancy security, Cloud Guard findings, buckets, vaults, security lists, NSGs, or least-privilege access; prepare compliance evidence; or challenge risky OCI admin assumptions before changes."
 allowed-tools: Read Grep Glob
 metadata:
-  author: github: TechTide
+  author: "github: TechTide"
   version: 0.1.0
   updated: "2026-05-05"
   category: compliance

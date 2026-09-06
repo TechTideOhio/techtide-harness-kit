@@ -1,4 +1,4 @@
-﻿# Source Evidence
+# Source Evidence
 
 This reference records the verified sources for `core-cost-aware-routing`. It is evidence for packaging and promotion decisions.
 
@@ -11,7 +11,7 @@ This reference records the verified sources for `core-cost-aware-routing`. It is
 - Source path: synthesized/capabilities/cost-aware-routing.md
 - Import mode: techtide-synthesis
 - Upstream author: TechTide synthesis from verified sources
-- Duplicate hash: 072e613f1c5e78de488b6cd2b691fd9c6a61fb6b5b6846b2deeacf7bb230349d
+- Duplicate hash: f5fe07276acf5603824869b5f95efa9b0b06aeb7264a0273f0444562c07de3e6
 
 ## Registry Entries
 

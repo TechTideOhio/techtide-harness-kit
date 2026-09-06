@@ -14,7 +14,7 @@ const PACKAGE = path.join(ROOT, "package.json");
 const MAX_FILES = 200;
 const MAX_FILE_BYTES = 1024 * 1024;
 const MAX_TOTAL_BYTES = 10 * 1024 * 1024;
-const DEFAULT_VIBE_PROVIDERS = ["lovable", "v0", "vercel", "replit", "cursor"];
+const DEFAULT_VIBE_PROVIDERS = ["core"];
 const TECHTIDE_VIBE_SKILLS = [
   "techtide-ai-tool-decision-router",
   "techtide-cross-harness-export-hygiene",

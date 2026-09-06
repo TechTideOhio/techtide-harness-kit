@@ -9,7 +9,7 @@ for them at exactly these paths.
 | File | Purpose |
 |------|---------|
 | [`marketplace.json`](marketplace.json) | Declares this repo as a Claude Code plugin marketplace. Lists one plugin (`techtide-harness-kit`) sourced at `./` so the repo root is the plugin root. |
-| [`plugin.json`](plugin.json) | Plugin manifest. Enumerates all 331 Claude Code agent adapter paths under `agents/<provider>/<agent>/harnesses/claude-code.agent.md`. **Generated** by `scripts/generate-plugin-manifest.mjs` - do not hand-edit. |
+| [`plugin.json`](plugin.json) | Plugin manifest. Enumerates all 348 Claude Code agent adapter paths under `agents/<provider>/<agent>/harnesses/claude-code.agent.md`. **Generated** by `scripts/generate-plugin-manifest.mjs` - do not hand-edit. |
 
 ## How users install
 
@@ -57,4 +57,4 @@ The `validate` chain runs `validate:plugin-manifest` automatically.
 
 - **Plugin source is `"./"`** so the repo root is the plugin root. This lets us keep agents at their existing nested paths (`agents/<provider>/<agent>/...`) instead of restructuring to the conventional flat `agents/<name>.md` layout.
 - **Custom paths via `agents[]` array** - Claude Code's plugin spec explicitly supports an array of file paths for the `agents` field, which we use to enumerate every claude-code adapter file. This avoids forcing a flatten of the multi-harness directory structure.
-- **Skills are omitted** from this manifest because the repo nests skills as `skills/<provider>/<skill>/SKILL.md`, one level deeper than Claude Code's flat `skills/<skill>/SKILL.md` convention. Skills remain available via `npm install @techtide/harness-kit` + the `thk-export-agents` CLI.
+- **Skills are omitted** from this manifest because the repo nests skills as `skills/<provider>/<skill>/SKILL.md`, one level deeper than Claude Code's flat `skills/<skill>/SKILL.md` convention. Skills remain available via `npm install @techtideai/harness-kit` + the `thk-export-agents` CLI.

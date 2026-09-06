@@ -50,7 +50,7 @@
   </g>
   <g transform="translate(68 262)">
     <rect width="1110" height="72" rx="18" fill="#0B1C2C" stroke="#294B61"/>
-    <text x="28" y="44" class="cell sans">391 skills</text>
+    <text x="28" y="44" class="cell sans">385 skills</text>
     <text x="190" y="44" class="cell sans">348 agents</text>
     <text x="355" y="44" class="cell sans">114 promoted research candidates</text>
     <text x="685" y="44" class="cell sans">5 enterprise missions</text>

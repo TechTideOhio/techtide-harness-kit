@@ -3,7 +3,7 @@ name: techtide-oci-cloud-guard-responder
 description: Triage and govern OCI Cloud Guard problems, targets, responder recipes, detector findings, and security remediation safely. Use for Cloud Guard reviews, problem prioritization, remediation planning, and compliance evidence when official Oracle MCP tools or documentation fallback are needed.
 allowed-tools: Read Grep Glob WebFetch
 metadata:
-  author: github: TechTide
+  author: "github: TechTide"
   version: 0.1.0
   updated: "2026-05-05"
   category: security

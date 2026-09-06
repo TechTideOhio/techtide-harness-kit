@@ -3,7 +3,7 @@ name: techtide-azure-maestro
 description: Use this skill to classify a user task, select the right Azure specialist agent or team of specialists from the catalog, and dispatch them. Single specialist for focused single-domain tasks; parallel team (max 4) for tasks that span multiple domains. Never auto-dispatches live-guard agents - those always pause for human confirmation.
 allowed-tools: Agent Skill Read Grep Glob
 metadata:
-  author: github: TechTide
+  author: "github: TechTide"
   version: 0.1.0
   updated: "2026-05-05"
   category: ai

@@ -1,4 +1,4 @@
-﻿# Source Evidence
+# Source Evidence
 
 This reference records the verified sources for `core-mcp-tool-safety`. It is evidence for packaging and promotion decisions.
 
@@ -11,7 +11,7 @@ This reference records the verified sources for `core-mcp-tool-safety`. It is ev
 - Source path: synthesized/capabilities/mcp-tool-safety.md
 - Import mode: techtide-synthesis
 - Upstream author: TechTide synthesis from verified sources
-- Duplicate hash: 09af79d77657182def1908b190f50e50181e848c9b0f735ecf653384e9584842
+- Duplicate hash: 4416e358715ba58ab5a637a7da851d3a69762d7ef8eb8eab6c06ee32b168937c
 
 ## Registry Entries
 

@@ -1,4 +1,4 @@
-﻿# Source Evidence
+# Source Evidence
 
 This reference records the verified sources for `core-debugging-strategy`. It is evidence for packaging and promotion decisions.
 
@@ -11,7 +11,7 @@ This reference records the verified sources for `core-debugging-strategy`. It is
 - Source path: synthesized/capabilities/debugging-strategy.md
 - Import mode: techtide-synthesis
 - Upstream author: TechTide synthesis from verified sources
-- Duplicate hash: de204faeb27de250359e4261a17ed88f9f55467aef6bcac0deabe998ed86c079
+- Duplicate hash: 034f2c68ccaba29dfed6de2a8731875cb9cf51607b1df1cbc77cb4a63861988f
 
 ## Registry Entries
 

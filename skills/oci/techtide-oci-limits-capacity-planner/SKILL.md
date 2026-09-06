@@ -3,7 +3,7 @@ name: techtide-oci-limits-capacity-planner
 description: Review OCI service limits, quotas, capacity availability, regional subscriptions, and growth risk. Use before deployments, migrations, DR expansion, shape changes, OKE scaling, database scaling, or quota increase requests.
 allowed-tools: Read Grep Glob WebFetch
 metadata:
-  author: github: TechTide
+  author: "github: TechTide"
   version: 0.1.0
   updated: "2026-05-05"
   category: platform

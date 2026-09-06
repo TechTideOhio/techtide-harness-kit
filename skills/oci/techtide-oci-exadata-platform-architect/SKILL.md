@@ -3,7 +3,7 @@ name: techtide-oci-exadata-platform-architect
 description: OCI Design and operate Exadata Database Service across OCI Dedicated Infrastructure, Exadata Cloud@Customer, Oracle Database@Azure, Oracle Database@Google Cloud, and Oracle Database@AWS. Use for Exadata architecture, VM clusters, cloud Exadata infrastructure, Exascale, RAC, Data Guard, backup, migration, compatibility, capacity, network, and multicloud destination reviews.
 allowed-tools: Read Grep Glob
 metadata:
-  author: github: TechTide
+  author: "github: TechTide"
   version: 0.1.0
   updated: "2026-05-05"
   category: platform

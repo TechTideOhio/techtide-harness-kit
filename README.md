@@ -5,11 +5,11 @@
 # TechTide Harness Kit
 
 **The enterprise skill platform for AI coding agents.**<br/>
-391 production skills. 348 specialist agents. 6 cloud providers. 7 harnesses. One repo.
+385 production skills. 348 specialist agents. 6 cloud providers. 7 harnesses. One repo.
 
 <br/>
 
-<a href="https://www.npmjs.com/package/@techtide/harness-kit"><img alt="npm" src="https://img.shields.io/npm/v/@techtide/harness-kit.svg?style=flat-square&logo=npm&logoColor=white&color=CB3837" /></a>
+<a href="https://www.npmjs.com/package/@techtideai/harness-kit"><img alt="npm" src="https://img.shields.io/npm/v/@techtideai/harness-kit.svg?style=flat-square&logo=npm&logoColor=white&color=CB3837" /></a>
 <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-Apache--2.0-3B82F6?style=flat-square" /></a>
 <a href="https://github.com/TechTideOhio/techtide-harness-kit/actions/workflows/codeql.yml"><img alt="CodeQL" src="https://img.shields.io/github/actions/workflow/status/TechTideOhio/techtide-harness-kit/codeql.yml?branch=master&style=flat-square&label=CodeQL&logo=github" /></a>
 <a href="https://scorecard.dev/viewer/?uri=github.com/TechTideOhio/techtide-harness-kit"><img alt="OpenSSF" src="https://img.shields.io/ossf-scorecard/github.com/TechTideOhio/techtide-harness-kit?style=flat-square&label=OpenSSF" /></a>
@@ -21,7 +21,7 @@
 
 <br/>
 
-<img src="assets/readme/showcase-hero.svg" alt="391 skills, 348 agents, 27 providers flowing through the TechTide Harness Kit" width="100%" />
+<img src="assets/readme/showcase-hero.svg" alt="385 skills, 348 agents, 27 providers flowing through the TechTide Harness Kit" width="100%" />
 
 </div>
 
@@ -31,7 +31,7 @@
 
 <br/>
 
-## <img src="https://img.shields.io/badge/-Works_With-0D1117?style=flat-square" height="24" />&ensp;Works With
+## <img src="https://img.shields.io/badge/-Works_With-0D1117?style=flat-square" height="24" alt="Works With" />&ensp;Works With
 
 <table>
 <tr>
@@ -136,10 +136,10 @@ Full comparison and install paths: [docs/integrations/installation-guide.md](doc
 
 <br/>
 
-## <img src="https://img.shields.io/badge/-Get_Started-0D1117?style=flat-square" height="24" />&ensp;Get Started
+## <img src="https://img.shields.io/badge/-Get_Started-0D1117?style=flat-square" height="24" alt="Get Started" />&ensp;Get Started
 
 ```bash
-npm install @techtide/harness-kit
+npm install @techtideai/harness-kit
 
 # Validate everything (25+ gates, no secrets required)
 npm run validate
@@ -152,11 +152,11 @@ npx thk-export-agents --platform gemini --all --repo .
 
 <br/>
 
-## <img src="https://img.shields.io/badge/-By_The_Numbers-0D1117?style=flat-square" height="24" />&ensp;By The Numbers
+## <img src="https://img.shields.io/badge/-By_The_Numbers-0D1117?style=flat-square" height="24" alt="By The Numbers" />&ensp;By The Numbers
 
 | | | | |
 | :---: | :---: | :---: | :---: |
-| **391** | **348** | **6** | **33** |
+| **385** | **348** | **6** | **33** |
 | Production skills | Specialist agents | Cloud providers | Provider lanes |
 | | | | |
 | **9** | **25+** | **7** | **12** |
@@ -164,7 +164,7 @@ npx thk-export-agents --platform gemini --all --repo .
 
 <br/>
 
-## <img src="https://img.shields.io/badge/-Cloud_Coverage-0D1117?style=flat-square" height="24" />&ensp;Cloud Coverage
+## <img src="https://img.shields.io/badge/-Cloud_Coverage-0D1117?style=flat-square" height="24" alt="Cloud Coverage" />&ensp;Cloud Coverage
 
 Every cloud has deep, provider-specific skills with inline assessment questions and validation checklists -- not generic templates with names swapped.
 
@@ -207,7 +207,7 @@ Every cloud has deep, provider-specific skills with inline assessment questions 
 
 <br/>
 
-## <img src="https://img.shields.io/badge/-Skill_Anatomy-0D1117?style=flat-square" height="24" />&ensp;Skill Anatomy
+## <img src="https://img.shields.io/badge/-Skill_Anatomy-0D1117?style=flat-square" height="24" alt="Skill Anatomy" />&ensp;Skill Anatomy
 
 Every skill follows a consistent, agent-optimized structure with least-privilege tool scoping:
 
@@ -262,7 +262,7 @@ No `Write`. No `Bash`. No network. Least-privilege by default.
 
 <br/>
 
-## <img src="https://img.shields.io/badge/-What_Ships-0D1117?style=flat-square" height="24" />&ensp;What Ships
+## <img src="https://img.shields.io/badge/-What_Ships-0D1117?style=flat-square" height="24" alt="What Ships" />&ensp;What Ships
 
 | Surface | Purpose |
 | --- | --- |
@@ -279,7 +279,7 @@ No `Write`. No `Bash`. No network. Least-privilege by default.
 
 <br/>
 
-## <img src="https://img.shields.io/badge/-Enterprise_Trust-0D1117?style=flat-square" height="24" />&ensp;Enterprise Trust
+## <img src="https://img.shields.io/badge/-Enterprise_Trust-0D1117?style=flat-square" height="24" alt="Enterprise Trust" />&ensp;Enterprise Trust
 
 <table>
 <tr>
@@ -318,11 +318,11 @@ No `Write`. No `Bash`. No network. Least-privilege by default.
 
 <br/>
 
-## <img src="https://img.shields.io/badge/-vs_Alternatives-0D1117?style=flat-square" height="24" />&ensp;vs Alternatives
+## <img src="https://img.shields.io/badge/-vs_Alternatives-0D1117?style=flat-square" height="24" alt="vs Alternatives" />&ensp;vs Alternatives
 
 | Feature | TechTide Harness Kit | Awesome lists | Toolkit repos |
 | --- | :---: | :---: | :---: |
-| **Production skills** | 391 | Links only | 35-184 |
+| **Production skills** | 385 | Links only | 35-184 |
 | **Cloud providers** | 6 | 0 | 1-2 |
 | **Schema validation** | 9 schemas, 25+ gates | None | None |
 | **Trust metadata** | Per-skill scopes + approval gates | None | None |
@@ -335,7 +335,7 @@ No `Write`. No `Bash`. No network. Least-privilege by default.
 
 <br/>
 
-## <img src="https://img.shields.io/badge/-Commands-0D1117?style=flat-square" height="24" />&ensp;Common Commands
+## <img src="https://img.shields.io/badge/-Commands-0D1117?style=flat-square" height="24" alt="Common Commands" />&ensp;Common Commands
 
 ```bash
 # Validate everything (25+ gates)
@@ -355,7 +355,7 @@ npm run proof-layer:write && npm run plugin-manifest:write
 
 <br/>
 
-## <img src="https://img.shields.io/badge/-Documentation-0D1117?style=flat-square" height="24" />&ensp;Documentation
+## <img src="https://img.shields.io/badge/-Documentation-0D1117?style=flat-square" height="24" alt="Documentation" />&ensp;Documentation
 
 | Topic | Link |
 | --- | --- |
@@ -370,7 +370,7 @@ npm run proof-layer:write && npm run plugin-manifest:write
 
 <br/>
 
-## <img src="https://img.shields.io/badge/-Contributing-0D1117?style=flat-square" height="24" />&ensp;Contributing
+## <img src="https://img.shields.io/badge/-Contributing-0D1117?style=flat-square" height="24" alt="Contributing" />&ensp;Contributing
 
 Contributions should be evidence-backed, source-grounded, and safe by default.
 

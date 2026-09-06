@@ -3,7 +3,7 @@ name: techtide-azure-landing-zone-architect
 description: Use this skill for Azure landing-zone design, management-group and subscription hierarchy reviews, platform-versus-application boundary decisions, or multi-subscription Azure platform architecture critiques that span governance, identity, networking, security, and operations.
 allowed-tools: Read Grep Glob
 metadata:
-  author: github: TechTide
+  author: "github: TechTide"
   version: 0.1.0
   updated: "2026-05-05"
   category: compliance

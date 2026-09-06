@@ -3,7 +3,7 @@ name: techtide-oci-storage-backup-steward
 description: Operate as a ruthless OCI storage and backup steward for Object Storage, Block Volume, File Storage, backup policies, retention, replication, lifecycle rules, restore readiness, and IAM-scoped storage operations. Use when work touches OCI storage inventory, backup posture, recovery planning, or storage permissions.
 allowed-tools: Read Grep Glob
 metadata:
-  author: github: TechTide
+  author: "github: TechTide"
   version: 0.1.0
   updated: "2026-05-05"
   category: resilience

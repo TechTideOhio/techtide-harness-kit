@@ -1,4 +1,4 @@
-﻿# Source Evidence
+# Source Evidence
 
 This reference records the verified sources for `core-multi-agent-orchestration`. It is evidence for packaging and promotion decisions.
 
@@ -11,7 +11,7 @@ This reference records the verified sources for `core-multi-agent-orchestration`
 - Source path: synthesized/capabilities/multi-agent-orchestration.md
 - Import mode: techtide-synthesis
 - Upstream author: TechTide synthesis from verified sources
-- Duplicate hash: c8c231dae71be82f970a68aa7b43e893024558eb1ae2508142e1df0585b2ae72
+- Duplicate hash: e2c187cd910af91319576915fd1e5bcfd72d4a22ecf4cf7e71284b1e3d9eef33
 
 ## Registry Entries
 

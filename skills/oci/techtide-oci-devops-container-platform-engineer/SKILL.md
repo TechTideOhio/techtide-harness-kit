@@ -3,7 +3,7 @@ name: techtide-oci-devops-container-platform-engineer
 description: "Engineer and review Oracle Cloud Infrastructure DevOps, OKE, OCIR, build/deploy pipelines, Kubernetes platform, and container runtime workflows. Use when asked to inspect OCI Container Engine clusters, DevOps projects, OCIR repositories, CI/CD IAM, deployment safety, cluster operations, image promotion, or container platform reliability."
 allowed-tools: Read Grep Glob
 metadata:
-  author: github: TechTide
+  author: "github: TechTide"
   version: 0.1.0
   updated: "2026-05-05"
   category: platform

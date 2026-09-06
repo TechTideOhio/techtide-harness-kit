@@ -23,7 +23,7 @@ Dependabot alert dismissed" or "why does workflow X need write scope Y".
    exclusively via the bundled copy inside the `npm` CLI itself
    (`node_modules/npm/node_modules/ip-address`, `inBundle: true`),
    reached through `@semantic-release/npm` -> `npm`. It is never
-   shipped to consumers of `@techtide/harness-kit`; the
+   shipped to consumers of `@techtideai/harness-kit`; the
    `files` allowlist in `package.json` excludes `node_modules` and
    only ships source assets.
 2. **No HTML rendering surface.** The vulnerable methods only matter
@@ -107,7 +107,7 @@ workflow file. Verifiable with `npm install --foreground-scripts=false`
 clients that honour provenance, or with `gh attestation verify`.
 
 This covers **registry trust**: a consumer pulling
-`@techtide/harness-kit` from npm can prove the tarball
+`@techtideai/harness-kit` from npm can prove the tarball
 was built here.
 
 ### Layer 2: GitHub artifact attestations on tarball, SBOM, and integrity manifest

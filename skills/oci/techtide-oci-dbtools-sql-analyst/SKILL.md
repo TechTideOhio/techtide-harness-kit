@@ -3,7 +3,7 @@ name: techtide-oci-dbtools-sql-analyst
 description: Use OCI Database Tools and database documentation safely for SQL inspection, report definitions, table metadata, and controlled query execution. Use for DBTools connections, read-only SQL analysis, and schema/report exploration.
 allowed-tools: Read Grep Glob WebFetch
 metadata:
-  author: github: TechTide
+  author: "github: TechTide"
   version: 0.1.0
   updated: "2026-05-05"
   category: data

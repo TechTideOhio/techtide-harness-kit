@@ -3,7 +3,7 @@ name: techtide-azure-identity-governance-review
 description: Review Microsoft Entra identity governance posture for Azure operators, with focus on standing versus eligible access, Privileged Identity Management, access reviews, entitlement management, ownership gaps, and least-privilege control patterns.
 allowed-tools: Read Grep Glob
 metadata:
-  author: github: TechTide
+  author: "github: TechTide"
   version: 0.1.0
   updated: "2026-05-05"
   category: compliance

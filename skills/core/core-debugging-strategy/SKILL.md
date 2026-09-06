@@ -1,4 +1,4 @@
-﻿---
+---
 name: core-debugging-strategy
 description: "Run a disciplined agent debugging loop that captures symptoms, isolates reproduction, tests hypotheses, patches narrowly, and verifies the fix. Use when expanding, reviewing, or operating skills, rules, prompt kits, provider lanes, or generated-code handoffs in the TechTide skill library."
 allowed-tools: Read Grep Glob Bash Edit Write

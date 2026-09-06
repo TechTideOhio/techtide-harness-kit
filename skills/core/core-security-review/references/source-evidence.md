@@ -1,4 +1,4 @@
-﻿# Source Evidence
+# Source Evidence
 
 This reference records the verified sources for `core-security-review`. It is evidence for packaging and promotion decisions.
 
@@ -11,7 +11,7 @@ This reference records the verified sources for `core-security-review`. It is ev
 - Source path: synthesized/capabilities/security-review.md
 - Import mode: techtide-synthesis
 - Upstream author: TechTide synthesis from verified sources
-- Duplicate hash: dedce9cbe8d1ad620f22aa8b8e1c9c2d0fe2442fa0eb210392dac98c855ccc18
+- Duplicate hash: 178b025ed32389a90ae78e6e38ad78f7e9e330e2437cca96709614577cc39cba
 
 ## Registry Entries
 

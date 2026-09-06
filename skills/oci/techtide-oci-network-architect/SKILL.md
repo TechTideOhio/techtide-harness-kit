@@ -3,7 +3,7 @@ name: techtide-oci-network-architect
 description: Design, review, and troubleshoot OCI networking with safe compartment/region scoping, least-privilege network access, VCN/subnet/routing/security-list/NSG analysis, and evidence-based MCP or CLI discovery.
 allowed-tools: Read Grep Glob
 metadata:
-  author: github: TechTide
+  author: "github: TechTide"
   version: 0.1.0
   updated: "2026-05-05"
   category: networking

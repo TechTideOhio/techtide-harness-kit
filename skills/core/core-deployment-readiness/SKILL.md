@@ -1,4 +1,4 @@
-﻿---
+---
 name: core-deployment-readiness
 description: "Use the agent to decide whether an app, feature, or prototype is ready for deployment, rollback, and operational ownership. Use when expanding, reviewing, or operating skills, rules, prompt kits, provider lanes, or generated-code handoffs in the TechTide skill library."
 allowed-tools: Read Grep Glob Bash Edit Write

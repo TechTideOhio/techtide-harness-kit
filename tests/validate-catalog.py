@@ -20,6 +20,7 @@ CATALOGS = {
 
 ALLOWED_PROVIDERS = {
     "aws",
+    "core",
     "azure",
     "oracle",
     "oci",
@@ -62,7 +63,7 @@ ALLOWED_PROVIDERS = {
     "marketing",
     "techtide",
 }
-ALLOWED_HARNESSES = {"codex", "copilot", "claude-code", "cursor", "gemini", "kiro", "other"}
+ALLOWED_HARNESSES = {"codex", "copilot", "claude-code", "cursor", "gemini", "kiro", "other", "core"}
 ALLOWED_SOURCE_TYPES = {"original", "adapted", "reference-only"}
 REQUIRED_COMMON = {
     "id",

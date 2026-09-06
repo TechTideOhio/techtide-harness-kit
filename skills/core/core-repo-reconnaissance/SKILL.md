@@ -1,4 +1,4 @@
-﻿---
+---
 name: core-repo-reconnaissance
 description: "Use the agent to map an unfamiliar repository before implementation by finding entrypoints, commands, ownership boundaries, risks, and tests. Use when expanding, reviewing, or operating skills, rules, prompt kits, provider lanes, or generated-code handoffs in the TechTide skill library."
 allowed-tools: Read Grep Glob Bash Edit Write

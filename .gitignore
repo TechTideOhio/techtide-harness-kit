@@ -156,3 +156,6 @@ vite.config.ts.timestamp-*
 # Python bytecode
 __pycache__/
 *.pyc
+
+dist/
+# Agent Plugins 1.0 flat skills build artifact (rebuilt by npm run agent-plugins:write)

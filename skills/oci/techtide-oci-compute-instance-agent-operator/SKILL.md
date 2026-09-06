@@ -3,7 +3,7 @@ name: techtide-oci-compute-instance-agent-operator
 description: Operate OCI Compute Instance Agent commands and executions safely for diagnostics, automation, and remediation. Use when issuing, tracking, or reviewing instance-agent commands across compute fleets.
 allowed-tools: Read Grep Glob
 metadata:
-  author: github: TechTide
+  author: "github: TechTide"
   version: 0.1.0
   updated: "2026-05-05"
   category: platform
