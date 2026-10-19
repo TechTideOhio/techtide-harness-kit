@@ -10,6 +10,7 @@
 
 import crypto from "node:crypto";
 import fs from "node:fs";
+import { writeGeneratedFile } from "./atomic-generated-file.mjs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -423,12 +424,7 @@ for (const [rel, next] of outputs) {
       errors.push(`${rel} is stale; run proof-layer generator`);
     }
   } else {
-    const current = fs.existsSync(abs) ? fs.readFileSync(abs, "utf8") : "";
-    if (current !== next) {
-      fs.mkdirSync(path.dirname(abs), { recursive: true });
-      fs.writeFileSync(abs, next, "utf8");
-      changed += 1;
-    }
+    if (writeGeneratedFile(abs, next)) changed += 1;
   }
 }
 

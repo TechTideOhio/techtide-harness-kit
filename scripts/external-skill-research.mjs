@@ -9,6 +9,7 @@
 
 import crypto from "node:crypto";
 import fs from "node:fs";
+import { writeGeneratedFile } from "./atomic-generated-file.mjs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -1077,12 +1078,7 @@ function mergedCatalogSkills() {
 
 function writeFileIfChanged(relativePath, content) {
   const absolutePath = path.join(repoRoot, relativePath);
-  fs.mkdirSync(path.dirname(absolutePath), { recursive: true });
-  if (fs.existsSync(absolutePath) && fs.readFileSync(absolutePath, "utf8") === content) {
-    return false;
-  }
-  fs.writeFileSync(absolutePath, content, "utf8");
-  return true;
+  return writeGeneratedFile(absolutePath, content);
 }
 
 function assertNoDrift(relativePath, expected, errors) {
