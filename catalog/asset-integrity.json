@@ -16488,12 +16488,17 @@
     },
     {
       "tree": "scripts",
-      "aggregate_sha256": "0ff744adf771805e2ff68dd0f76e5e19370f777b40b933094fcbfff3dd58f323",
+      "aggregate_sha256": "c4c432db82ecb70790fb21f9309b6762430f82ad9f643064554009a591a2c885",
       "files": [
         {
           "path": "scripts/apply-skill-allowed-tools.py",
           "sha256": "2c0200a6e41cd59a69ae733619af15297bbd8a9e1ba59cfae5902dacee21c193",
           "bytes": 4371
+        },
+        {
+          "path": "scripts/atomic-generated-file.mjs",
+          "sha256": "95cac067c096f11cfeb2ac2c5040097e3252d163100fc6eaabe155b81b089b54",
+          "bytes": 984
         },
         {
           "path": "scripts/backfill-skill-metadata.py",
@@ -16517,8 +16522,8 @@
         },
         {
           "path": "scripts/external-skill-research.mjs",
-          "sha256": "d1da3c6acd22424f1ab67522bbaa78f0623c55dc4473b74028e363f5ce9ca512",
-          "bytes": 47476
+          "sha256": "6d827371a285f2eeadad8cc2505a74fee80b312166d0490398fa885e68b85c87",
+          "bytes": 47351
         },
         {
           "path": "scripts/gen_azure_live_guards.py",
@@ -16572,8 +16577,8 @@
         },
         {
           "path": "scripts/proof-layer.mjs",
-          "sha256": "83669af435842489ad18edb757f2f4697cb33f595a380e31b5bc452091c61ef1",
-          "bytes": 18775
+          "sha256": "5b44bee29a676b3c85b47f9f0025039b185de51f46b7c2152b82fef9f4bd8947",
+          "bytes": 18661
         },
         {
           "path": "scripts/release-prepare.mjs",
@@ -16582,8 +16587,8 @@
         },
         {
           "path": "scripts/techtide-skill-ingestion.mjs",
-          "sha256": "fee7dca551840f143252f70f82a697f91d194287f971e8e328ba51cd13bec305",
-          "bytes": 52646
+          "sha256": "43489cc718566a572e58eeb119a7ba7790fd02dc9ab53ac707059c52876bcfaf",
+          "bytes": 52521
         },
         {
           "path": "scripts/update-catalog-new-agents.py",
@@ -16760,7 +16765,7 @@
     },
     {
       "tree": "tests",
-      "aggregate_sha256": "425fd5970af1a77ddb2f0ca76912ffc5d416589b9835afeb3a13c527ea0f1e28",
+      "aggregate_sha256": "312a6339cfa03f95acca556704370f809644f673c1d770423bc3de659dec1fb5",
       "files": [
         {
           "path": "tests/_generate_maestro_routing_fixtures.py",
@@ -16771,6 +16776,11 @@
           "path": "tests/AGENTS.md",
           "sha256": "d925bbd025e392b9ef4699de5c39550e739e4459f25e137582e7e1cac5e89ccb",
           "bytes": 587
+        },
+        {
+          "path": "tests/atomic-generated-file.test.mjs",
+          "sha256": "22ed953b28208524709b3e0a0ab01f9afca7a5d9e6617bd48892197bd9ce41b0",
+          "bytes": 1263
         },
         {
           "path": "tests/export-cursor-kiro-skill-notice.test.mjs",
@@ -21223,8 +21233,8 @@
     },
     {
       "path": "package.json",
-      "sha256": "296cf0d2c64b8b0b0d11e571eb0499ba67637576dbfecfeee554fa77f6c846b3",
-      "bytes": 7320
+      "sha256": "f1d8f27b3337b5e895500ecf4036043203ba857a4086ff3e641700040358c120",
+      "bytes": 7372
     },
     {
       "path": ".releaserc.js",
@@ -21232,5 +21242,5 @@
       "bytes": 4440
     }
   ],
-  "aggregate_sha256": "d554983e6575918f82af21af572829c44af3ab0b4df6b620ed116dcf89d75233"
+  "aggregate_sha256": "4f19a0a7260905c99d3b5638e04a3d0a10c7c023fd2c24a0525da06249c92126"
 }
