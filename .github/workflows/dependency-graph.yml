@@ -1,0 +1,64 @@
+name: Dependency graph
+
+on:
+  pull_request:
+    paths:
+      - package.json
+      - package-lock.json
+      - scripts/dependency-snapshot.mjs
+      - tests/dependency-snapshot.test.mjs
+      - .github/workflows/dependency-graph.yml
+  push:
+    branches: [master]
+    paths:
+      - package.json
+      - package-lock.json
+      - scripts/dependency-snapshot.mjs
+      - tests/dependency-snapshot.test.mjs
+      - .github/workflows/dependency-graph.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: dependency-graph-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '22'
+      - run: npm ci --ignore-scripts
+      - run: node --test tests/dependency-snapshot.test.mjs
+
+  submit:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '22'
+      - run: npm ci --ignore-scripts
+      - name: Generate complete locked snapshot
+        run: node scripts/dependency-snapshot.mjs > "$RUNNER_TEMP/dependency-snapshot.json"
+      - name: Submit snapshot
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api --method POST "repos/$GITHUB_REPOSITORY/dependency-graph/snapshots" \
+            --input "$RUNNER_TEMP/dependency-snapshot.json" > "$RUNNER_TEMP/submission-result.json"
+          jq -e '.result == "SUCCESS" or .result == "ACCEPTED"' "$RUNNER_TEMP/submission-result.json"
+          cat "$RUNNER_TEMP/submission-result.json"
