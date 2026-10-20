@@ -21233,7 +21233,7 @@
     },
     {
       "path": "package.json",
-      "sha256": "f1d8f27b3337b5e895500ecf4036043203ba857a4086ff3e641700040358c120",
+      "sha256": "ddacfef0834ec73f88e286159c9d8049ccb84d3f61859ce8b3e4959bf4e22062",
       "bytes": 7372
     },
     {
@@ -21242,5 +21242,5 @@
       "bytes": 4440
     }
   ],
-  "aggregate_sha256": "4f19a0a7260905c99d3b5638e04a3d0a10c7c023fd2c24a0525da06249c92126"
+  "aggregate_sha256": "80e395f066e0125c04c8d43b360eb89b483c9ddf268808a29073930a43946bee"
 }
