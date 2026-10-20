@@ -16488,7 +16488,7 @@
     },
     {
       "tree": "scripts",
-      "aggregate_sha256": "c4c432db82ecb70790fb21f9309b6762430f82ad9f643064554009a591a2c885",
+      "aggregate_sha256": "8db7793568a91b911bd819b5acacffb5a9c89503ee477fc0592fbebf9f0f5ec9",
       "files": [
         {
           "path": "scripts/apply-skill-allowed-tools.py",
@@ -16509,6 +16509,11 @@
           "path": "scripts/check-skill-dedup.mjs",
           "sha256": "0b2ce7ab49c3440d837a8f09593014dd5064e8e372548a4321d04f1cdef8fcb7",
           "bytes": 4079
+        },
+        {
+          "path": "scripts/dependency-snapshot.mjs",
+          "sha256": "60fbb0fd556d39936d3d8e6e483a021c9f82117dfd1c8c81ffec9aefd36dd7c7",
+          "bytes": 3203
         },
         {
           "path": "scripts/enterprise-mission-demo.mjs",
@@ -16765,7 +16770,7 @@
     },
     {
       "tree": "tests",
-      "aggregate_sha256": "312a6339cfa03f95acca556704370f809644f673c1d770423bc3de659dec1fb5",
+      "aggregate_sha256": "74005eada497aae4bcb043184101897c5bb495e181014d9d0061b9fbc6f6d90f",
       "files": [
         {
           "path": "tests/_generate_maestro_routing_fixtures.py",
@@ -16781,6 +16786,11 @@
           "path": "tests/atomic-generated-file.test.mjs",
           "sha256": "22ed953b28208524709b3e0a0ab01f9afca7a5d9e6617bd48892197bd9ce41b0",
           "bytes": 1263
+        },
+        {
+          "path": "tests/dependency-snapshot.test.mjs",
+          "sha256": "12ee95ca3f5ab9a46903159544838dd47589320251d0103d0914c348e7e0fead",
+          "bytes": 4379
         },
         {
           "path": "tests/export-cursor-kiro-skill-notice.test.mjs",
@@ -21242,5 +21252,5 @@
       "bytes": 4440
     }
   ],
-  "aggregate_sha256": "80e395f066e0125c04c8d43b360eb89b483c9ddf268808a29073930a43946bee"
+  "aggregate_sha256": "6b5ef1bc163992c485957107125495082df011f4dc97caf7c92119ec2ca595f3"
 }
