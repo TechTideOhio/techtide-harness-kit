@@ -21203,8 +21203,8 @@
   "root_files": [
     {
       "path": "README.md",
-      "sha256": "ad47a418a8737519d9078031919ad7a881870cb67fd868d811a1d6d524cea358",
-      "bytes": 14187
+      "sha256": "fae6967ee2357bc504d2b271efd0ca89bed3a3ec709e247edaae682c868ac812",
+      "bytes": 19575
     },
     {
       "path": "SECURITY.md",
@@ -21252,5 +21252,5 @@
       "bytes": 4440
     }
   ],
-  "aggregate_sha256": "6b5ef1bc163992c485957107125495082df011f4dc97caf7c92119ec2ca595f3"
+  "aggregate_sha256": "cb2fc13ace1d1e2ff251b973ca472286d047826e76eb2215e33ab44e3b101320"
 }
