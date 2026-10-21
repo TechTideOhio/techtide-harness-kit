@@ -31,6 +31,23 @@
 
 <br/>
 
+## Why this exists
+
+**What it does.** Ships 385 skills and 348 specialist agents as a schema-validated catalog (`skills/`, `agents/`, `catalog/`, `schemas/`), exporters that package them for Claude Code, Codex, Cursor, Copilot, Gemini CLI, Kiro, and Lovable (`scripts/export-marketplace-agents.mjs`, `plugins/`, `powers/`, `.claude-plugin/`), and a `npm run validate` chain of 25+ gates that checks frontmatter, tool scopes, link syntax, asset integrity hashes, MCP trust matrices, and plugin manifests before the package is published to npm as `@techtideai/harness-kit`.
+
+**Who it serves.** Platform, cloud, and security engineers who want agent skills with declared tool permissions, approval gates, and provenance they can show an auditor, and maintainers who need one source tree exported to several agent harnesses without copying files by hand.
+
+**Why Alex built it.** The repository opened on 2026-05-18 as a "showcase release" (`bbc5aad`). [AGENTS.md](AGENTS.md) states the purpose: a "cloud and zero-trust agentic marketplace for skills, agents, rules, MCP references, and npm distribution" that optimizes for "evidence-backed security workflows: least privilege, source grounding, manifests, validation, and safe automation". [TRUST.md](TRUST.md) records the reasoning behind the gates: "skills are treated as behavior packages that can influence tool use, so every public asset needs source evidence, scoped permissions, security notes, and human accountability." Four days in, a dedup pass removed 96 harness-clone skills and added a hash-collision CI gate (`f93e8bb`, 2026-05-22: "487 -> 391 unique production skills"), and the Agent Plugins 1.0 distribution landed on 2026-09-05 (`894952c`). Built by Alex Cinovoj, Founder & CTO of TechTide AI.
+
+**Real-world use case (2025-2026 evidence).** **Verified in this repository.** A team adopts Agent Skills, the folder-plus-`SKILL.md` format Anthropic introduced on 2025-10-16[^1] that is now an open specification with required `name` and `description` frontmatter and an optional `allowed-tools` field[^2], and installs this catalog into Claude Code through a plugin marketplace, the distribution mechanism Anthropic shipped on 2025-10-09[^3]. Before every release `npm run validate` fails if any skill's `allowed-tools`, metadata, or integrity hash drifts, and the OpenSSF Scorecard workflow (`.github/workflows/scorecard.yml`; Scorecard v5.6.0 was released 2026-10-12[^4]) publishes the supply-chain posture reported by the badge above. The install paths and the packed npm artifact are exercised on every push by `.github/workflows/install-paths-smoke.yml` and `.github/workflows/packed-artifact-smoke.yml`, which is the evidence behind the verified label.
+
+[^1]: Anthropic, "Introducing Agent Skills", <https://claude.com/resources/articles/skills>, published 2025-10-16.
+[^2]: Agent Skills, "Specification", <https://agentskills.io/specification>, updated 2026-08-04.
+[^3]: Anthropic, "Customize Claude Code with plugins", <https://claude.com/resources/articles/claude-code-plugins>, published 2025-10-09.
+[^4]: ossf/scorecard, release v5.6.0, <https://github.com/ossf/scorecard/releases/tag/v5.6.0>, published 2026-10-12.
+
+<br/>
+
 ## <img src="https://img.shields.io/badge/-Works_With-0D1117?style=flat-square" height="24" alt="Works With" />&ensp;Works With
 
 <table>
@@ -315,6 +332,20 @@ No `Write`. No `Bash`. No network. Least-privilege by default.
 </td>
 </tr>
 </table>
+
+<br/>
+
+## <img src="https://img.shields.io/badge/-Security-0D1117?style=flat-square" height="24" alt="Security" />&ensp;Security
+
+Report vulnerabilities through [SECURITY.md](SECURITY.md). The findings below were open on the repository's Dependabot and code-scanning dashboards as of 2026-10-20. They are documented here rather than dismissed.
+
+| Finding | Status |
+| --- | --- |
+| `braces` 3.0.3, [GHSA-vfj7-8cjw-p6xm](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm) (stack-exhaustion denial of service through deeply nested patterns) | Known upstream advisory with no fixed release as of 2026-10-20. It reaches this repository only as a devDependency transitive (`@semantic-release/commit-analyzer` -> `micromatch` -> `braces` in `package-lock.json`) used by the release workflow; the published npm package declares no runtime dependencies, so consumers do not install it. The Scorecard `Vulnerabilities` check reports the same advisory. No code-level mitigation exists in this repository. |
+| OpenSSF Scorecard `Code-Review` | Scorecard found 0 of the last 19 changesets with an approving review from a second account. That is an accurate description of a single-maintainer project: changes land through pull requests with CI gates, but no independent reviewer approves them. It is a process finding, not a code defect, and it stays open until a second maintainer reviews changes. |
+| OpenSSF Scorecard `Pinned-Dependencies` | `.github/workflows/packed-artifact-smoke.yml` installs the tarball it just built with `npm install` inside a throwaway consumer project. There is no registry version to pin because the artifact comes from the same job. |
+| OpenSSF Scorecard `Fuzzing` and `CII-Best-Practices` | The repository runs property-based tests with fast-check (`npm run test:fuzz`) but is not registered with OSS-Fuzz, and it has not applied for an OpenSSF Best Practices badge. |
+| CodeQL `js/unused-local-variable` (two notes in `scripts/proof-layer.mjs`) | Dead code, not a security defect: an unused `posix()` helper and an unused `proofSources` list of external references. Left for a deliberate code change by the maintainer because the list may be intended for future use. |
 
 <br/>
 
