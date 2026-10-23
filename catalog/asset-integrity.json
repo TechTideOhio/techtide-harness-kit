@@ -16488,7 +16488,7 @@
     },
     {
       "tree": "scripts",
-      "aggregate_sha256": "165a72f0221bfcb3c8374d62967d3f5ba02c94eba50fbfdafbb573c0d55aadc3",
+      "aggregate_sha256": "b7dc7593a6cbe3eec59c30fd5f1ada6cb3c5c80466511298566c599e3266ab09",
       "files": [
         {
           "path": "scripts/apply-skill-allowed-tools.py",
@@ -16522,8 +16522,8 @@
         },
         {
           "path": "scripts/export-marketplace-agents.mjs",
-          "sha256": "64a2ffcb520c039c58242c2bf28c613ac540fc15c5d7d7435fd3b40ec552dddc",
-          "bytes": 25376
+          "sha256": "6d9ba793970a6a26bbd1d70d3f358222c7c78cf67c9f8436be338c207d8e8f8a",
+          "bytes": 25938
         },
         {
           "path": "scripts/external-skill-research.mjs",
@@ -16770,7 +16770,7 @@
     },
     {
       "tree": "tests",
-      "aggregate_sha256": "74005eada497aae4bcb043184101897c5bb495e181014d9d0061b9fbc6f6d90f",
+      "aggregate_sha256": "55a1d2672332d1eb71a38ac84b674eaf8afd9ed212ef83ff85bafb25b0d9bed4",
       "files": [
         {
           "path": "tests/_generate_maestro_routing_fixtures.py",
@@ -16796,6 +16796,11 @@
           "path": "tests/export-cursor-kiro-skill-notice.test.mjs",
           "sha256": "a8d6dba702b1ed9a686530120f073fb2e123b49d082f306bb28fabb0695ff352",
           "bytes": 3284
+        },
+        {
+          "path": "tests/export-destination-boundaries.test.mjs",
+          "sha256": "e0f0fc1b779487eef50a191dc63991c4cd93da3fce1965178d9abd7cfe4e4536",
+          "bytes": 3440
         },
         {
           "path": "tests/fixtures/README.md",
@@ -21243,8 +21248,8 @@
     },
     {
       "path": "package.json",
-      "sha256": "ddacfef0834ec73f88e286159c9d8049ccb84d3f61859ce8b3e4959bf4e22062",
-      "bytes": 7372
+      "sha256": "485a4addb445d6aa8ef2483e0ba91edf72d3139a224e9c7075800d26e7c437c3",
+      "bytes": 7417
     },
     {
       "path": ".releaserc.js",
@@ -21252,5 +21257,5 @@
       "bytes": 4440
     }
   ],
-  "aggregate_sha256": "195e329c0e7184616078c2752f4a2c85fa4a11e9c86856a31c6fa2a62155acd6"
+  "aggregate_sha256": "3fe10d50aa7e648cac8f77a27f5fb0c115658836f1c15ae18a55b0cda17c48c0"
 }

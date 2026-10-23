@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import fs from "node:fs";
+import { randomUUID } from "node:crypto";
 import path from "node:path";
 import process from "node:process";
 import { fileURLToPath } from "node:url";
@@ -276,12 +277,8 @@ function assertWithin(parent, child, label) {
   // NOT follow symlinks. This guards against traversal strings (../../) and
   // metadata.json with absolute paths outside the repo.
   //
-  // Residual TOCTOU: if an adversary races to create a symlink at `child`
-  // AFTER this check but BEFORE the actual write, the symlink target would be
-  // written to. copyFile()/copySkillTree() use lstatSync on source AND
-  // destination to detect pre-existing symlinks, which closes the window for
-  // the common case. A fully TOCTOU-proof solution requires O_NOFOLLOW at the
-  // kernel level, which is not exposed by Node.js fs APIs.
+  // prepareDestination rejects existing unsafe ancestors and leaves.
+  // A hostile same-UID process racing ancestor renames is outside this boundary.
   const resolvedParent = path.resolve(parent);
   const resolvedChild = path.resolve(child);
   const sep = path.sep;
@@ -312,7 +309,7 @@ function loadSkills() {
   return byName;
 }
 
-function copySkillTree(sourceDir, destDir, force) {
+function copySkillTree(sourceDir, destDir, force, destinationRoot) {
   assertWithin(repoRoot, sourceDir, "read skill source");
   for (const entry of fs.readdirSync(sourceDir, { withFileTypes: true })) {
     const src = path.join(sourceDir, entry.name);
@@ -321,15 +318,11 @@ function copySkillTree(sourceDir, destDir, force) {
       throw new Error(`Refusing to copy symbolic link in skill tree: ${src}`);
     }
     if (entry.isDirectory()) {
-      copySkillTree(src, dst, force);
+      copySkillTree(src, dst, force, destinationRoot);
       continue;
     }
     if (!entry.isFile()) continue;
-    if (!force && fs.existsSync(dst)) {
-      throw new Error(`Refusing to overwrite existing file without --force: ${dst}`);
-    }
-    fs.mkdirSync(path.dirname(dst), { recursive: true });
-    fs.copyFileSync(src, dst);
+    copyFile(src, dst, force, destinationRoot);
   }
 }
 
@@ -383,29 +376,57 @@ function resolveCompanionSkills(selectedAgents, skillsByName, role, includeAll, 
   return { skillNames: [...skillNames].sort(), orphans };
 }
 
-function copyFile(source, destination, force) {
+function prepareDestination(destinationRoot, destination) {
+  assertWithin(destinationRoot, destination, "write destination");
+  const relative = path.relative(destinationRoot, destination);
+  let current = destinationRoot;
+  for (const segment of relative.split(path.sep).slice(0, -1)) {
+    current = path.join(current, segment);
+    let stat;
+    try {
+      stat = fs.lstatSync(current);
+    } catch (error) {
+      if (error.code !== "ENOENT") throw error;
+      fs.mkdirSync(current);
+      stat = fs.lstatSync(current);
+    }
+    if (stat.isSymbolicLink() || !stat.isDirectory()) {
+      throw new Error(`Refusing unsafe destination directory: ${current}`);
+    }
+  }
+  try {
+    const stat = fs.lstatSync(destination);
+    if (!stat.isFile() || stat.isSymbolicLink() || stat.nlink !== 1) {
+      throw new Error(`Refusing unsafe destination file: ${destination}`);
+    }
+    return true;
+  } catch (error) {
+    if (error.code !== "ENOENT") throw error;
+    return false;
+  }
+}
+
+function copyFile(source, destination, force, destinationRoot) {
   const sourceStat = fs.lstatSync(source);
   if (sourceStat.isSymbolicLink()) {
     throw new Error(`Refusing to copy symbolic link as harness source: ${source}`);
   }
-  if (fs.existsSync(destination)) {
-    // Reject symlink destinations regardless of --force. A symlink at the
-    // destination would redirect the write outside the repo tree, bypassing
-    // assertWithin(). lstatSync does not follow the symlink - exactly what we
-    // want here to detect the link itself.
-    const destStat = fs.lstatSync(destination);
-    if (destStat.isSymbolicLink()) {
-      throw new Error(
-        `Refusing to write to symbolic link destination: ${destination}. ` +
-        `Remove the symlink and retry.`
-      );
-    }
-    if (!force) {
-      throw new Error(`Refusing to overwrite existing file without --force: ${destination}`);
-    }
+  const exists = prepareDestination(destinationRoot, destination);
+  if (exists && !force) {
+    throw new Error(`Refusing to overwrite existing file without --force: ${destination}`);
   }
-  fs.mkdirSync(path.dirname(destination), { recursive: true });
-  fs.copyFileSync(source, destination);
+  if (!force) {
+    fs.copyFileSync(source, destination, fs.constants.COPYFILE_EXCL);
+    return;
+  }
+  const temporary = path.join(path.dirname(destination), `.thk-${randomUUID()}.tmp`);
+  try {
+    fs.copyFileSync(source, temporary, fs.constants.COPYFILE_EXCL);
+    prepareDestination(destinationRoot, destination);
+    fs.renameSync(temporary, destination);
+  } finally {
+    fs.rmSync(temporary, { force: true });
+  }
 }
 
 function loadRoles() {
@@ -598,6 +619,8 @@ function main() {
     return;
   }
 
+  fs.mkdirSync(args.repo, { recursive: true });
+  args.repo = fs.realpathSync(args.repo);
   const operations = [];
   for (const agent of selectedAgents) {
     for (const destination of buildDestinations(agent, platform)) {
@@ -611,7 +634,7 @@ function main() {
 
   for (const operation of operations) {
     assertWithin(args.repo, operation.dest, "write destination");
-    copyFile(operation.source, operation.dest, args.force);
+    copyFile(operation.source, operation.dest, args.force, args.repo);
     console.log(
       `installed\t${operation.agentId}\t${operation.variantKey}\t${path.relative(args.repo, operation.dest)}`
     );
@@ -651,7 +674,7 @@ function main() {
       if (!sourceDir) continue;
       const destDir = path.join(args.repo, skillsDestRoot, skillName);
       assertWithin(args.repo, destDir, "write skill destination");
-      copySkillTree(sourceDir, destDir, args.force);
+      copySkillTree(sourceDir, destDir, args.force, args.repo);
       console.log(`installed\tskill:${skillName}\t${platform}\t${path.relative(args.repo, destDir)}`);
       bundled += 1;
     }
