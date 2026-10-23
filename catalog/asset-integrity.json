@@ -16770,7 +16770,7 @@
     },
     {
       "tree": "tests",
-      "aggregate_sha256": "55a1d2672332d1eb71a38ac84b674eaf8afd9ed212ef83ff85bafb25b0d9bed4",
+      "aggregate_sha256": "7f19974a5479d8addbc7e84b4c78f4686ab3ffd24193c7b6cda14f3bd3d6cbe5",
       "files": [
         {
           "path": "tests/_generate_maestro_routing_fixtures.py",
@@ -21003,9 +21003,9 @@
           "bytes": 2779
         },
         {
-          "path": "tests/fuzz-properties.test.mjs",
-          "sha256": "5ac57420ee0a8d6f11f3bdf9ebc2682fa71a1098da4d95788dac2be5ddd85d07",
-          "bytes": 6920
+          "path": "tests/fuzz-properties.test.js",
+          "sha256": "0a851a64b871665058702666d1e3c04918a21cc7cfde41ab3a608c229d49f1f7",
+          "bytes": 7060
         },
         {
           "path": "tests/integration/rbac-pre-flight/ci/kind-rbac-preflight.yaml",
@@ -21248,8 +21248,8 @@
     },
     {
       "path": "package.json",
-      "sha256": "485a4addb445d6aa8ef2483e0ba91edf72d3139a224e9c7075800d26e7c437c3",
-      "bytes": 7417
+      "sha256": "2a1468f682c4511474a2f1e958871909151195ac739279d7abd1872202446093",
+      "bytes": 7416
     },
     {
       "path": ".releaserc.js",
@@ -21257,5 +21257,5 @@
       "bytes": 4440
     }
   ],
-  "aggregate_sha256": "3fe10d50aa7e648cac8f77a27f5fb0c115658836f1c15ae18a55b0cda17c48c0"
+  "aggregate_sha256": "ceea0f1332942a9d24f62d569c6e86fe1319faaf9e87f0eb116e1d88cf237827"
 }

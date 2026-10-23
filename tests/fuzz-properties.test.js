@@ -5,15 +5,19 @@
  * Uses fast-check to generate adversarial inputs and verify the invariants
  * that guard against path traversal, ID injection, and platform instability.
  *
- * Run: node tests/fuzz-properties.test.mjs
+ * Run: node tests/fuzz-properties.test.js
  *
  * Satisfies OpenSSF Scorecard FuzzingID requirement for JS/TS projects.
+ * Scorecard only scans *.js files for fast-check imports, so this file is
+ * CommonJS (.js) rather than .mjs.
  * Reference: https://github.com/ossf/scorecard/blob/main/docs/checks.md#fuzzing
  */
 
-import assert from "node:assert/strict";
-import path from "node:path";
-import fc from "fast-check";
+"use strict";
+
+const assert = require("node:assert/strict");
+const path = require("node:path");
+const fc = require("fast-check");
 
 // ── Security-critical implementations under test ─────────────────────────────
 // Reproduced verbatim from scripts/export-marketplace-agents.mjs.
