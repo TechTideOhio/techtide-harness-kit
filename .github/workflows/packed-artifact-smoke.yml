@@ -36,7 +36,7 @@ jobs:
           mkdir -p "$CONSUMER_DIR"
           cd "$CONSUMER_DIR"
           npm init -y
-          npm install "$GITHUB_WORKSPACE/$TARBALL"
+          npm install --offline --ignore-scripts --no-audit --no-fund "$GITHUB_WORKSPACE/$TARBALL"
           # Export CONSUMER_DIR for subsequent steps
           echo "CONSUMER_DIR=$CONSUMER_DIR" >> "$GITHUB_ENV"
       - name: Smoke packaged CLI - list
@@ -44,7 +44,7 @@ jobs:
           set -euo pipefail
           OUT="${{ runner.temp }}/thk-list.txt"
           cd "$CONSUMER_DIR"
-          npx thk-export-agents --list > "$OUT"
+          ./node_modules/.bin/thk-export-agents --list > "$OUT"
           test -s "$OUT"
           echo "CLI --list output: $(wc -l < "$OUT") lines"
       - name: Smoke packaged CLI - list-roles
@@ -52,7 +52,7 @@ jobs:
           set -euo pipefail
           OUT="${{ runner.temp }}/thk-roles.txt"
           cd "$CONSUMER_DIR"
-          npx thk-export-agents --list-roles > "$OUT"
+          ./node_modules/.bin/thk-export-agents --list-roles > "$OUT"
           test -s "$OUT"
           echo "CLI --list-roles output: $(wc -l < "$OUT") lines"
       - name: Smoke packaged CLI - list-providers
@@ -60,7 +60,7 @@ jobs:
           set -euo pipefail
           OUT="${{ runner.temp }}/thk-providers.txt"
           cd "$CONSUMER_DIR"
-          npx thk-export-agents --list-providers > "$OUT"
+          ./node_modules/.bin/thk-export-agents --list-providers > "$OUT"
           test -s "$OUT"
           echo "CLI --list-providers output: $(wc -l < "$OUT") lines"
       - name: Smoke packaged script - agents:export

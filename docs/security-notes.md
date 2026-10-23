@@ -217,3 +217,21 @@ package ships only documentation and JSON; there is no legitimate
 reason for any install-time code execution. The defense is direct:
 do not allow the primitive that the xz-style supply-chain incidents
 abused.
+
+## Packed consumer smoke and remaining Scorecard findings
+
+The consumer smoke installs the tarball produced by the current checkout,
+not a registry package name or floating version. Installation is offline,
+with lifecycle scripts and audit network calls disabled. The three CLI
+checks execute the installed binary directly, so a missing package cannot
+fall back to fetching a similarly named registry executable through npx.
+A Scorecard npm-command pin warning on this local tarball is not evidence
+of an unpinned remote dependency; review the command and its artifact input.
+
+The Fuzzing, CII Best Practices badge, and historical Code Review checks
+require separate evidence. Existing property tests do not establish an
+integrated fuzzing service, this repository does not claim an earned badge,
+and automated review cannot retroactively create human PR approvals.
+Keep those policy findings visible until their actual requirements are met.
+The braces advisory remains tracked independently; an unavailable upstream
+fix must not be concealed with an incompatible dependency override.
