@@ -712,6 +712,10 @@ Ensure you pass `--repo .` (or an explicit path). Without it, the exporter
 defaults to a dry run. Add `--force` if files already exist and you want to
 overwrite.
 
+### Export rejects an unsafe destination
+
+Agent and companion-skill exports reject symlinked destination folders, symlinked or multiply linked files, and special files, even with `--force`. Use ordinary directories within the selected repository. An explicitly selected repository alias is resolved to its actual root. Forced updates replace a regular file rather than writing through existing links. These checks protect against pre-existing hostile paths; they do not claim protection against a process running as the same OS user racing ancestor-directory changes during export.
+
 ### Agents show outdated behavior after update
 
 The harness may have cached the old manifest. In Claude Code: `/plugin
