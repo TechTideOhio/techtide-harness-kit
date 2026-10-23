@@ -16488,7 +16488,7 @@
     },
     {
       "tree": "scripts",
-      "aggregate_sha256": "8db7793568a91b911bd819b5acacffb5a9c89503ee477fc0592fbebf9f0f5ec9",
+      "aggregate_sha256": "165a72f0221bfcb3c8374d62967d3f5ba02c94eba50fbfdafbb573c0d55aadc3",
       "files": [
         {
           "path": "scripts/apply-skill-allowed-tools.py",
@@ -16582,8 +16582,8 @@
         },
         {
           "path": "scripts/proof-layer.mjs",
-          "sha256": "5b44bee29a676b3c85b47f9f0025039b185de51f46b7c2152b82fef9f4bd8947",
-          "bytes": 18661
+          "sha256": "25a22422ef6e2bbabc632f3020760443ef3528e61eb3c6fa863579fa38ddfee9",
+          "bytes": 17483
         },
         {
           "path": "scripts/release-prepare.mjs",
@@ -21252,5 +21252,5 @@
       "bytes": 4440
     }
   ],
-  "aggregate_sha256": "cb2fc13ace1d1e2ff251b973ca472286d047826e76eb2215e33ab44e3b101320"
+  "aggregate_sha256": "195e329c0e7184616078c2752f4a2c85fa4a11e9c86856a31c6fa2a62155acd6"
 }

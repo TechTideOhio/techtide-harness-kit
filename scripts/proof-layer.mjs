@@ -37,10 +37,6 @@ function readJson(rel) {
   return JSON.parse(fs.readFileSync(path.join(repoRoot, rel), "utf8"));
 }
 
-function posix(rel) {
-  return rel.split(path.sep).join("/");
-}
-
 function sha256(value) {
   return crypto.createHash("sha256").update(value).digest("hex");
 }
@@ -61,21 +57,6 @@ const quarantine = readJson("catalog/skill-research-quarantine.json");
 
 const promotedExternal = (quarantine.entries ?? []).filter((entry) => entry.status === "promoted");
 const externalByProvider = groupedCount(promotedExternal, "provider");
-
-const proofSources = [
-  ["Eliza.com", "https://eliza.com/"],
-  ["Eliza approach", "https://eliza.com/our-approach"],
-  ["PwC responsible AI agents", "https://www.pwc.com/us/en/tech-effect/ai-analytics/responsible-ai-agents.html"],
-  ["PwC and Anthropic enterprise agents", "https://www.pwc.com/us/en/about-us/newsroom/press-releases/pwc-anthropic-ai-native-finance-life-sciences-enterprise-agents.html"],
-  ["OpenAI Frontier Alliances", "https://openai.com/index/frontier-alliance-partners/"],
-  ["OpenAI Deployment Company", "https://openai.com/index/openai-launches-the-deployment-company/"],
-  ["OpenAI Promptfoo acquisition", "https://openai.com/index/openai-to-acquire-promptfoo/"],
-  ["NVIDIA Enterprise AI Factory", "https://developer.nvidia.com/blog/powering-ai-factories-with-nvidia-enterprise-reference-architectures/"],
-  ["OWASP Agentic Skills Top 10", "https://owasp.org/www-project-agentic-skills-top-10/"],
-  ["OWASP LLM Top 10", "https://genai.owasp.org/llm-top-10/"],
-  ["NIST AI RMF", "https://www.nist.gov/itl/ai-risk-management-framework"],
-  ["MITRE ATLAS", "https://atlas.mitre.org/"],
-];
 
 const missionDefinitions = [
   {
