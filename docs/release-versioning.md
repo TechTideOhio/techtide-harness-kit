@@ -75,6 +75,20 @@ release just because the project is young.
 
 ## Release Gate
 
+The release toolchain uses `vendor/npm-11.21.1-techtide.1.tgz`, an npm 11.21.1
+rebuild with bundled Undici 6.29.1 and ip-address 10.7.5. The repository override
+also selects this bundle for `@semantic-release/npm`. This is a development
+dependency and is not included in the published catalog package.
+
+`python3 scripts/rebuild-release-npm.py --check` verifies a byte-for-byte rebuild
+from SHA-512-pinned official registry archives. The rebuild retains upstream
+licenses and all other npm files; the only additional metadata change is the
+explicit `+techtide.1` build version. CI tests the actual release plugin's
+version, pack, and publish operations against a disposable loopback registry.
+These tests do not publish externally or certify live OIDC/provenance access.
+Replace this maintained bundle with an upstream npm distribution once its
+bundled dependencies pass the same checks.
+
 Before publishing:
 
 ```bash

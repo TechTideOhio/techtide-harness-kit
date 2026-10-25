@@ -68,6 +68,7 @@ web_modules/
 
 # Output of 'npm pack'
 *.tgz
+!vendor/npm-11.21.1-techtide.1.tgz
 
 # Generated Lovable import ZIPs and package folders
 exports/

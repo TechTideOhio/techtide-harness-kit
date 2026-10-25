@@ -16488,7 +16488,7 @@
     },
     {
       "tree": "scripts",
-      "aggregate_sha256": "b7dc7593a6cbe3eec59c30fd5f1ada6cb3c5c80466511298566c599e3266ab09",
+      "aggregate_sha256": "26278c1e78aa5c400c900d5c2151c06c8d9dfdf4f19dc07fa2b31f9edbbd917a",
       "files": [
         {
           "path": "scripts/apply-skill-allowed-tools.py",
@@ -16584,6 +16584,11 @@
           "path": "scripts/proof-layer.mjs",
           "sha256": "25a22422ef6e2bbabc632f3020760443ef3528e61eb3c6fa863579fa38ddfee9",
           "bytes": 17483
+        },
+        {
+          "path": "scripts/rebuild-release-npm.py",
+          "sha256": "17502a4e1cc84e4074aa0e9424d09372f5534c5aab7cd5e2aadfb44770011909",
+          "bytes": 3482
         },
         {
           "path": "scripts/release-prepare.mjs",
@@ -16770,7 +16775,7 @@
     },
     {
       "tree": "tests",
-      "aggregate_sha256": "7f19974a5479d8addbc7e84b4c78f4686ab3ffd24193c7b6cda14f3bd3d6cbe5",
+      "aggregate_sha256": "ac095bb88e595e0ab45780163b748337a6443d881c44f15824498ae68923d39e",
       "files": [
         {
           "path": "tests/_generate_maestro_routing_fixtures.py",
@@ -21063,6 +21068,11 @@
           "bytes": 7826
         },
         {
+          "path": "tests/release-npm-bundle.test.mjs",
+          "sha256": "1c48e50aef77c8300bb48825be7833afc29839a797123ce92999d0758525fdc1",
+          "bytes": 4667
+        },
+        {
           "path": "tests/test-copilot-skill-bundling.py",
           "sha256": "433442b44315b5703946f1b66ce5e5265aebd252b603db1c980807067f87c67a",
           "bytes": 4096
@@ -21248,8 +21258,8 @@
     },
     {
       "path": "package.json",
-      "sha256": "2a1468f682c4511474a2f1e958871909151195ac739279d7abd1872202446093",
-      "bytes": 7416
+      "sha256": "9d210f3cb418b45c4c9e120e7ddc22efbf63bbfcf9dbf530976e5d7b4319f6af",
+      "bytes": 7509
     },
     {
       "path": ".releaserc.js",
@@ -21257,5 +21267,5 @@
       "bytes": 4440
     }
   ],
-  "aggregate_sha256": "ceea0f1332942a9d24f62d569c6e86fe1319faaf9e87f0eb116e1d88cf237827"
+  "aggregate_sha256": "934ae5646a468adbce1b330a4377a89116b49d3d3a471183cced0f7b9a19df58"
 }
