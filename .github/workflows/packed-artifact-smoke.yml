@@ -18,6 +18,10 @@ jobs:
           cache: "npm"
       - name: Install dev dependencies
         run: npm ci
+      - name: Verify reproducible release npm bundle
+        run: python3 scripts/rebuild-release-npm.py --check
+      - name: Test release npm against loopback registry
+        run: node --test tests/release-npm-bundle.test.mjs
       - name: Pack artefact
         run: npm pack --silent
       - name: Install tarball into clean consumer project
