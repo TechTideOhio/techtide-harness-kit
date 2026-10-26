@@ -24,16 +24,21 @@ Rules:
   intentionally **not** enforced because merge commits are non-linear
   by definition.
 - **Pull request required**:
-  - `required_approving_review_count: 0` - solo-maintainer repository,
-    so we cannot require approvals from a second human, but
+  - `required_approving_review_count: 1` - one approval from an account
+    other than the author.
   - `require_code_owner_review: true` - the
     [`CODEOWNERS`](../.github/CODEOWNERS) file routes review requests
     and a code-owner must approve before merge for paths it covers.
   - `dismiss_stale_reviews_on_push: true` - new commits invalidate
     prior approvals.
+  - `require_last_push_approval: true` - the most recent push must be
+    approved by someone other than its pusher.
+  - Repository admins keep a `pull_request` bypass for emergencies.
 - **Required status checks** (strict - branch must be up to date with
-  `master` before merge):
+  `master` before merge). Each context must match a check-run name that
+  CI actually reports, or merges block forever:
   - `validate`
+  - `Property-based fuzz tests`
   - `smoke`
   - `Analyze (javascript-typescript)`
   - `Analyze (python)`
@@ -63,6 +68,24 @@ gh workflow run apply-ruleset.yml -f ruleset_file=.github/rulesets/master.json
 The workflow is idempotent. It looks up an existing ruleset named
 `master-branch-protection` and `PUT`s the new definition, or `POST`s a
 new ruleset if none exists.
+
+## Onboarding a second maintainer (apply order)
+
+Requiring an approval while only one human has write access just forces
+an admin bypass on every merge, so the ruleset is applied only after a
+second human maintainer exists. As a repository admin, from the
+repository root:
+
+```bash
+scripts/onboard-second-maintainer.sh <github-username> --apply
+```
+
+Without `--apply` the script only prints what it would do. The first
+run verifies the account, invites it with `push` access (`--permission
+maintain` is also accepted) and opens a CODEOWNERS pull request. After
+the invitation is accepted and that pull request is merged, run the
+same command again to apply this ruleset (`PUT` if it exists, `POST`
+otherwise). The admin bypass entry is kept.
 
 ## How to update
 

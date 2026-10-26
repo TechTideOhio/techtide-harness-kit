@@ -7,6 +7,13 @@
 #
 # Reference:
 # https://docs.github.com/en/repositories/managing-your-repositories-settings-and-customizations/customizing-your-repository/about-code-owners
+#
+# Second maintainer: OpenSSF Scorecard "Code-Review" only counts approvals from
+# an account other than the author. Once a second human maintainer has accepted
+# write access, run `scripts/onboard-second-maintainer.sh <github-username> --apply`;
+# it appends that user to every owner line below in a pull request.
+# Placeholder (do not uncomment by hand with a fake account):
+# * @Alexi5000 @<second-maintainer>
 
 # Default fallback - covers anything not matched by a more-specific rule
 * @Alexi5000

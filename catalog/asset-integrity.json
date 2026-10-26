@@ -16488,7 +16488,7 @@
     },
     {
       "tree": "scripts",
-      "aggregate_sha256": "26278c1e78aa5c400c900d5c2151c06c8d9dfdf4f19dc07fa2b31f9edbbd917a",
+      "aggregate_sha256": "6978539bd6075aeb61febbda6ad01677eadb1b88b118e17315e371b8d2b684db",
       "files": [
         {
           "path": "scripts/apply-skill-allowed-tools.py",
@@ -16579,6 +16579,11 @@
           "path": "scripts/hygiene-check.mjs",
           "sha256": "67c814b763cea420cd7856e575915f13f5b93812810329b45f46d5f8e30a27ab",
           "bytes": 2616
+        },
+        {
+          "path": "scripts/onboard-second-maintainer.sh",
+          "sha256": "861a395edcdd488e9db612798715d7d1e3b648881f697ad5a8475d862875d0c5",
+          "bytes": 7233
         },
         {
           "path": "scripts/proof-layer.mjs",
@@ -21267,5 +21272,5 @@
       "bytes": 4440
     }
   ],
-  "aggregate_sha256": "934ae5646a468adbce1b330a4377a89116b49d3d3a471183cced0f7b9a19df58"
+  "aggregate_sha256": "882404087fe93825c5d9a443c2b33508c28c447a79df7c18b1b1a9a041db2a7c"
 }
