@@ -16780,7 +16780,7 @@
     },
     {
       "tree": "tests",
-      "aggregate_sha256": "ac095bb88e595e0ab45780163b748337a6443d881c44f15824498ae68923d39e",
+      "aggregate_sha256": "f8ed8f2bb4e010cb43eb498bf4b42eb7c528016ad05e0d3ccf9832b704a8e409",
       "files": [
         {
           "path": "tests/_generate_maestro_routing_fixtures.py",
@@ -21018,11 +21018,6 @@
           "bytes": 7060
         },
         {
-          "path": "tests/integration/rbac-pre-flight/ci/kind-rbac-preflight.yaml",
-          "sha256": "5d5099d55af1b7d1dcb7249c1130e14b51c265cf144e7ddb116d109db1bd80db",
-          "bytes": 1490
-        },
-        {
           "path": "tests/integration/rbac-pre-flight/guards/admission-policy.sh",
           "sha256": "37c116d72da1540a6d677fb15e08727034c0d9d4a96f00b6809f32b630b44bc7",
           "bytes": 2700
@@ -21064,8 +21059,8 @@
         },
         {
           "path": "tests/integration/rbac-pre-flight/README.md",
-          "sha256": "0636a94cd38f7af37a8f4b96bb2492d5fb10c40de70a1663230142814256f5a4",
-          "bytes": 5472
+          "sha256": "a178c1edf2d66b96daa275ec8230904ff97c8f1d8ceffe321b4d893a460e7b7f",
+          "bytes": 5665
         },
         {
           "path": "tests/integration/rbac-pre-flight/run-all.sh",
@@ -21144,8 +21139,8 @@
         },
         {
           "path": "tests/validate-azure-oci-live-guards.sh",
-          "sha256": "9f37dc84238f960c7519cf79e15d4b8d1ac36ec1cb0061e2f25d84b94d78c813",
-          "bytes": 7349
+          "sha256": "4b3d16dd511656382d8f04a92a68e6f415e0b0b08392faf2109004ae5ae27c0b",
+          "bytes": 7798
         },
         {
           "path": "tests/validate-catalog.py",
@@ -21263,8 +21258,8 @@
     },
     {
       "path": "package.json",
-      "sha256": "9d210f3cb418b45c4c9e120e7ddc22efbf63bbfcf9dbf530976e5d7b4319f6af",
-      "bytes": 7509
+      "sha256": "adb0a4afbb51acde13747e98cb911d3118aea28d63e5df7f9205c13fe3d84ed4",
+      "bytes": 7627
     },
     {
       "path": ".releaserc.js",
@@ -21272,5 +21267,5 @@
       "bytes": 4440
     }
   ],
-  "aggregate_sha256": "882404087fe93825c5d9a443c2b33508c28c447a79df7c18b1b1a9a041db2a7c"
+  "aggregate_sha256": "efa248241cd5fe564618c5ebae1d7116d107f79825c725cae334d257f1ee048b"
 }

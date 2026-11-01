@@ -40,6 +40,9 @@ jobs:
       - name: Validate links (offline)
         run: python3 tests/validate-links.py --offline
 
+      - name: Validate Azure/OCI live-guard structure
+        run: bash tests/validate-azure-oci-live-guards.sh
+
   agent-plugins:
     name: Agent Plugins 1.0 + skills distribution
     runs-on: ubuntu-latest
