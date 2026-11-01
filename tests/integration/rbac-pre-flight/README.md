@@ -70,14 +70,18 @@ A timestamped log is always written to `/tmp/rbac-preflight-<timestamp>.log`.
 
 ## How CI works
 
-The GitHub Actions workflow is at `ci/kind-rbac-preflight.yaml`. It triggers
-on any change to:
+The GitHub Actions workflow is at
+[`.github/workflows/rbac-pre-flight.yml`](../../../.github/workflows/rbac-pre-flight.yml).
+It needs no secrets or cloud credentials (the cluster is a local kind cluster
+on the runner) and can also be started manually with `workflow_dispatch`. It
+triggers on any change to:
 
 - `agents/**/references/least-privilege-rbac.yaml`
 - `skills/**/references/least-privilege-rbac.yaml`
 - `agents/**/references/rbac-pre-flight.md`
 - `skills/**/references/rbac-pre-flight.md`
 - `tests/integration/rbac-pre-flight/**`
+- `.github/workflows/rbac-pre-flight.yml`
 
 The workflow runs `run-all.sh` in a matrix across four Kubernetes versions
 (1.28, 1.29, 1.30, 1.31) using `fail-fast: false` so all matrix legs
@@ -155,6 +159,4 @@ tests/integration/rbac-pre-flight/
     argocd-sync.sh           - argocd-sync guard
     rbac-mutation.sh         - rbac-mutation guard
     velero-restore.sh        - velero-restore guard
-  ci/
-    kind-rbac-preflight.yaml - GitHub Actions workflow
 ```

@@ -32,7 +32,7 @@ HARNESSES=(claude-code.agent.md codex.toml copilot.agent.md cursor.agent.md gemi
 
 echo "=== STRUCTURAL EVALS ==="
 for id in "${AZURE_AGENTS[@]}" "${OCI_AGENTS[@]}"; do
-  cloud="${id%%-*}"
+  cloud="$(cut -d- -f2 <<<"$id")"  # techtide-<cloud>-live-...
   dir="agents/$cloud/${id}-agent"
   for f in AGENT.md PERMISSIONS.md PREFLIGHT.md ROLLBACK.md metadata.json; do
     [ -f "$dir/$f" ] && pass "$dir/$f exists" || fail "$dir/$f missing"
@@ -56,7 +56,7 @@ skill_schema = json.load(open("schemas/skill.schema.json"))
 ids = ["techtide-azure-live-arm-deployment-stack-guard","techtide-azure-live-pim-jit-activation-guard","techtide-azure-live-aks-rollout-guard","techtide-azure-live-app-service-slot-swap-guard","techtide-azure-live-keyvault-rotation-purge-guard","techtide-azure-live-cost-budget-action-guard","techtide-oci-live-resource-manager-stack-guard","techtide-oci-live-iam-policy-compartment-guard","techtide-oci-live-oke-rollout-guard","techtide-oci-live-autonomous-db-lifecycle-guard","techtide-oci-live-vault-key-destruction-guard","techtide-oci-live-cost-budget-runaway-guard"]
 errs = 0
 for id_ in ids:
-    cloud = id_.split("-")[0]
+    cloud = id_.split("-")[1]  # techtide-<cloud>-live-...
     a = root / f"agents/{cloud}/{id_}-agent/metadata.json"
     s = root / f"skills/{cloud}/{id_}/metadata.json"
     for path, schema, required_id in [(a, agent_schema, f"{id_}-agent"), (s, skill_schema, id_)]:
@@ -70,12 +70,14 @@ for id_ in ids:
         if not re.match(r"^\d{4}-\d{2}-\d{2}$", m.get("last_verified","")):
             print(f"  FAIL: {path} bad last_verified"); errs += 1
 print(f"  schema errors: {errs}")
+sys.exit(1 if errs else 0)
 PY
+[ $? -eq 0 ] && pass "schema evals clean" || fail "schema evals reported errors"
 
 echo
 echo "=== ANTI-PATTERN EVALS ==="
 for id in "${AZURE_AGENTS[@]}" "${OCI_AGENTS[@]}"; do
-  cloud="${id%%-*}"
+  cloud="$(cut -d- -f2 <<<"$id")"  # techtide-<cloud>-live-...
   perm="agents/$cloud/${id}-agent/PERMISSIONS.md"
   [ -f "$perm" ] || continue
   if grep -qi 'AdministratorAccess' "$perm"; then
@@ -102,7 +104,7 @@ done
 echo
 echo "=== PREFLIGHT/ROLLBACK COMMAND PRESENCE ==="
 for id in "${AZURE_AGENTS[@]}" "${OCI_AGENTS[@]}"; do
-  cloud="${id%%-*}"
+  cloud="$(cut -d- -f2 <<<"$id")"  # techtide-<cloud>-live-...
   pf="agents/$cloud/${id}-agent/PREFLIGHT.md"
   rb="agents/$cloud/${id}-agent/ROLLBACK.md"
   cli=$([ "$cloud" = "azure" ] && echo "az " || echo "oci ")
@@ -115,6 +117,7 @@ echo "=== UNIQUENESS EVAL ==="
 python3 - <<'PY'
 import pathlib, hashlib, re
 root = pathlib.Path(".")
+dup = False
 for cloud, ids in [("azure",["techtide-azure-live-arm-deployment-stack-guard","techtide-azure-live-pim-jit-activation-guard","techtide-azure-live-aks-rollout-guard","techtide-azure-live-app-service-slot-swap-guard","techtide-azure-live-keyvault-rotation-purge-guard","techtide-azure-live-cost-budget-action-guard"]),
                    ("oci",["techtide-oci-live-resource-manager-stack-guard","techtide-oci-live-iam-policy-compartment-guard","techtide-oci-live-oke-rollout-guard","techtide-oci-live-autonomous-db-lifecycle-guard","techtide-oci-live-vault-key-destruction-guard","techtide-oci-live-cost-budget-runaway-guard"])]:
     bodies = {}
@@ -131,13 +134,16 @@ for cloud, ids in [("azure",["techtide-azure-live-arm-deployment-stack-guard","t
             ratio = shared / max(len(set(a.split())), 1)
             if ratio > 0.92:
                 print(f"  FAIL: {items[i][0]} vs {items[j][0]} word-set overlap {ratio:.2f}")
+                dup = True
             else:
                 print(f"  PASS: {items[i][0]} vs {items[j][0]} overlap {ratio:.2f}")
+raise SystemExit(1 if dup else 0)
 PY
+[ $? -eq 0 ] && pass "uniqueness evals clean" || fail "uniqueness evals found near-duplicate agents"
 
 echo
 echo "=== REGRESSION EVALS ==="
-aws_count=$(ls -d agents/aws/aws-live-* 2>/dev/null | wc -l)
+aws_count=$(ls -d agents/aws/techtide-aws-live-* 2>/dev/null | wc -l)
 [ "$aws_count" = "5" ] && pass "AWS live agents intact (5)" || fail "AWS live count drift: $aws_count"
 azure_total=$(ls -d agents/azure/*-agent 2>/dev/null | wc -l)
 oci_total=$(ls -d agents/oci/*-agent 2>/dev/null | wc -l)
