@@ -5,6 +5,8 @@ export function writeGeneratedFile(target, content) {
   let current;
   let fd;
   try {
+    const lstat = fs.lstatSync(target);
+    if (lstat.isSymbolicLink()) throw new Error("Generated target must not be a symbolic link");
     fd = fs.openSync(target, fs.constants.O_RDONLY | fs.constants.O_NOFOLLOW | fs.constants.O_NONBLOCK);
     if (!fs.fstatSync(fd).isFile()) throw new Error("Generated target must be a regular file");
     current = fs.readFileSync(fd, "utf8");
